@@ -148,6 +148,59 @@ Users and catches persist across restarts in the automatically created, gitignor
 `backend/data/demo.sqlite3`. Set `DEMO_DB_PATH` before starting the server to use a
 different SQLite file. No database service or additional dependencies are needed.
 
+## Regulation baseline checks
+
+Recommended flow: **upload → predict → user confirms species and measures total
+length → check regulations → optionally save the catch**. The frontend should call
+the check after confirmation, not automatically treat the top model candidate as
+confirmed. Changing species or length only requires repeating the check, not ML.
+
+`POST /regulations/check` is a standalone, unauthenticated, read-only route:
+
+```powershell
+Invoke-RestMethod http://127.0.0.1:8000/regulations/check -Method Post -ContentType 'application/json' -Body '{"species_id":"micropterus_salmoides","length_inches":13}'
+```
+
+Use an exact ID from `GET /species` and positive finite total length in inches.
+Unknown IDs, missing fields, extra fields, and invalid lengths return HTTP 422.
+Weight is not an input to this baseline check. Existing prediction and catch APIs
+remain independent: saving a catch does not check regulations or imply permission
+to keep a fish. No database record, username, or model initialization is needed.
+
+The response includes `scope: "statewide_baseline"`, the minimum if reviewed,
+`length_guidance`, shared daily-limit group and guidance, exception notes, source
+URLs and rule references, `ruleset_version`, and `reviewed_on`. `length_result` is:
+
+| Result | Meaning |
+| --- | --- |
+| `below_baseline` | Shorter than the encoded statewide minimum |
+| `meets_baseline` | At or above that minimum, without evaluating local overrides |
+| `no_baseline_length_limit` | Reviewed statewide guidance has no length restriction; local rules may apply |
+| `not_evaluated` | No reviewed length rule for this species |
+
+Every result has `legal_status: "undetermined"`. Daily limits are displayed only
+(`daily_limit.evaluated: false`); saved catches do not represent retained counts.
+There is no waterbody selection, seasonal/historical evaluation, license check,
+method check, or keep/release decision. Statewide baselines can be more or less
+restrictive than local rules, so even `below_baseline` is not a local legal verdict.
+
+Rules are bundled in `backend/regulations/rules.json`, separately from the ML
+catalog, with explicit entries for all 290 current catalog IDs. Selected starter
+species have reviewed guidance; remaining entries are explicitly unreviewed,
+including species with potential protection or unresolved taxonomy. An unreviewed
+entry never means unrestricted harvest. Catfish count guidance is distinct from
+unreviewed length guidance. Missing future mappings also fall back to unreviewed;
+catalog-coverage tests require an explicit mapping before a catalog update passes.
+
+Sources: [Georgia rules 391-4-3](https://rules.sos.ga.gov/gac/391-4-3), and the
+current guide linked by [Georgia DNR](https://georgiawildlife.com/fishing-regulations):
+[daily limits](https://www.eregulations.com/georgia/fishing/game-species-daily-limits)
+and [general regulations](https://www.eregulations.com/georgia/fishing/general-regulations).
+The snapshot was reviewed on October 24, 2026; this is not a promise of ongoing
+currency. Review source changes, update affected profiles and version/date, and
+rerun boundary and coverage tests before publishing a new snapshot. There are no
+network requests during regulation checks; restart the server after rule edits.
+
 ## Model configuration
 
 Set environment variables **before** starting the server:
