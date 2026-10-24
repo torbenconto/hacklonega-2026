@@ -6,9 +6,10 @@ import type { Species } from '@/lib/api';
 import { measurement } from '@/lib/collection';
 import { FishImage } from './fish-image';
 import { Button, colors, Page, ui } from './fishing-ui';
-import { ProgressBar, Reveal } from './motion';
+import { Reveal } from './motion';
+import { XpGain } from './xp-gain';
 
-export type SavedMilestone = { discovery: boolean; best: boolean; xpBefore: number | null; weightBest: number | null; lengthBest: number | null };
+export type SavedMilestone = { completedQuests?: string[]; discovery: boolean; best: boolean; xpBefore: number | null; weightBest: number | null; lengthBest: number | null };
 function Spark({ index, gold }: { index: number; gold: boolean }) {
   const travel = useSharedValue(0);
   useEffect(() => { travel.set(withDelay(180, withTiming(1, { duration: 1100, reduceMotion: ReduceMotion.System }))); }, [travel]);
@@ -35,7 +36,7 @@ export function CatchCelebration({ species, milestone, weight, length, onAgain }
       <View style={{ height: 230, width: '100%', maxWidth: 360, alignItems: 'center', justifyContent: 'center' }}>
         <View accessible={false} style={{ position: 'absolute', height: 190, width: 190, borderRadius: 95, backgroundColor: milestone.best ? colors.gold : colors.soft }} />
         {!reduced && (milestone.discovery || milestone.best || levelUp) && <View pointerEvents="none" accessible={false} style={{ position: 'absolute', width: '100%', height: '100%' }}>{Array.from({ length: 14 }, (_, i) => <Spark key={i} index={i} gold={milestone.best} />)}</View>}
-        <Animated.View style={[{ width: '88%', borderBottomWidth: 3, borderBottomColor: milestone.best ? '#CC8A2F' : colors.green }, fishStyle]}><FishImage speciesId={species.species_id} name={species.common_name} height={170} unlocked reveal={milestone.discovery} /></Animated.View>
+        <Animated.View style={[{ width: '88%' }, fishStyle]}><FishImage speciesId={species.species_id} name={species.common_name} height={170} unlocked reveal={milestone.discovery} /></Animated.View>
       </View>
       <Reveal delay={180} style={{ alignItems: 'center', gap: 6 }}><Text style={[ui.section, { textAlign: 'center', fontSize: 26 }]}>{species.common_name}</Text><Text style={ui.body}>{measurement(Number(weight))} lb · {measurement(Number(length))} in</Text></Reveal>
     </View>
@@ -44,11 +45,9 @@ export function CatchCelebration({ species, milestone, weight, length, onAgain }
       {milestone.lengthBest !== null && <Text style={ui.body}>Longest catch: {measurement(milestone.lengthBest)} → <Text style={{ fontWeight: '800', color: colors.ink }}>{measurement(Number(length))} in</Text></Text>}
     </Reveal>}
     <Reveal delay={320} style={{ gap: 12 }}>
-      {gained !== null && total !== null && <>
-        <View style={[ui.row, { flexWrap: 'wrap' }]}><Text style={{ color: colors.green, fontSize: 32, fontWeight: '800' }}>+{gained} XP</Text><Text style={ui.eyebrow}>{levelUp ? `LEVEL UP! LEVEL ${level}` : `LEVEL ${level} · ${total} XP`}</Text></View>
-        <ProgressBar initialProgress={((milestone.xpBefore ?? 0) % 300) / 300} rollover={levelUp} progress={(total % 300) / 300} label={`${total % 300} of 300 XP toward your next level`} />
-      </>}
+      {gained !== null && milestone.xpBefore !== null && <XpGain key={`${milestone.xpBefore}-${gained}`} before={milestone.xpBefore} gained={gained} />}
       {gained === null && <Text style={ui.small}>Your catch is saved. Reload your journal to see your updated explorer progress.</Text>}
+      {!!milestone.completedQuests?.length && <View style={{ padding: 18, borderRadius: 16, backgroundColor: colors.gold, gap: 8 }}><Text style={ui.eyebrow}>✦ QUEST COMPLETE</Text>{milestone.completedQuests.map(title => <Text key={title} style={ui.name}>{title}</Text>)}<Button title="Choose my next quest" secondary onPress={() => router.navigate('/(tabs)/quests')} /></View>}
       <Button title={milestone.discovery ? 'Meet your new fish' : 'See this fish in my dex'} onPress={() => router.push({ pathname: '/fish/[id]', params: { id: species.species_id } })} />
       <Button title="Find another fish" secondary onPress={onAgain} />
     </Reveal>

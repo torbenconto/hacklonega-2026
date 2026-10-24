@@ -28,6 +28,12 @@ def connect():
             );
             CREATE INDEX IF NOT EXISTS catches_by_user ON catches(username, id);
         """)
+        # Upgrade existing demo journals without losing their entries.
+        columns = {row["name"] for row in connection.execute("PRAGMA table_info(catches)")}
+        if "photo_data" not in columns:
+            connection.execute("ALTER TABLE catches ADD COLUMN photo_data TEXT")
+        if "disposition" not in columns:
+            connection.execute("ALTER TABLE catches ADD COLUMN disposition TEXT NOT NULL DEFAULT 'unknown'")
         with connection:
             yield connection
     finally:

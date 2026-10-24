@@ -8,7 +8,8 @@ const allowed = new Map([
 async function forward(request: Request) {
   const path = new URL(request.url).searchParams.get('path') || '';
   const pathname = path.split('?')[0];
-  if (!allowed.get(pathname)?.split(' ').includes(request.method)) {
+  const catchUpdate = /^\/catches\/\d+$/.test(pathname) && request.method === 'PATCH';
+  if (!catchUpdate && !allowed.get(pathname)?.split(' ').includes(request.method)) {
     return Response.json({ detail: 'Unknown API route.' }, { status: 404 });
   }
   const headers = new Headers();
@@ -36,3 +37,5 @@ async function forward(request: Request) {
 
 export const GET = forward;
 export const POST = forward;
+
+export const PATCH = forward;

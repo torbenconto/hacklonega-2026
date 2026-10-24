@@ -31,7 +31,7 @@ Use **Python 3.12** for compatible PyTorch wheels. From the repository root:
 python3.12 -m venv backend/.venv
 source backend/.venv/bin/activate
 python -m pip install -r backend/requirements.txt
-python -m uvicorn backend.main:app --reload
+python -m backend
 ```
 
 Windows PowerShell:
@@ -40,11 +40,30 @@ Windows PowerShell:
 py -3.12 -m venv backend/.venv
 .\backend\.venv\Scripts\Activate.ps1
 python -m pip install -r backend/requirements.txt
-python -m uvicorn backend.main:app --reload
+python -m backend
 ```
 
-Running `uvicorn main:app --reload` from inside `backend/` also works.
+The development launcher binds to `0.0.0.0:8000` so Expo Go on a phone can
+reach the API. Running `python -m uvicorn main:app --host 0.0.0.0 --port 8000 --reload`
+from inside `backend/` also works.
 Interactive API docs: http://127.0.0.1:8000/docs.
+
+### Connecting Expo
+
+Expo and FastAPI are separate servers; starting Expo alone does not start this API.
+Keep `python -m backend` running in one terminal, then run `npm start` from `app/`
+in another terminal. Stop each with `Ctrl+C` when finished.
+
+For Expo Go, put the phone and computer on the same Wi-Fi network and use Expo's
+LAN connection. The app calls port 8000 on the Expo host automatically. A server
+bound only to `127.0.0.1` cannot accept the phone's requests. Allow Python through
+the computer's firewall if prompted. Check `http://<computer-LAN-IP>:8000/health`
+in the phone's browser; it should return `{"status":"ok"}`.
+
+If Expo uses a tunnel, its tunnel only carries Expo traffic. Set
+`EXPO_PUBLIC_API_URL` to a separate backend URL reachable from the phone and restart
+Expo. For web, the Expo API proxy defaults to `http://127.0.0.1:8000`; set
+`BACKEND_API_URL` in Expo's environment if FastAPI runs elsewhere.
 
 The first prediction downloads the model from Hugging Face and initializes it;
 allow extra time and an internet connection for this request. Later requests reuse
@@ -140,6 +159,18 @@ Invoke-RestMethod http://127.0.0.1:8000/catches -Headers $demoHeaders
 
 Catches require a nonempty free-text species and positive finite measurements in
 pounds and inches. Each saved record includes an integer `id` and UTC `created_at`.
+An optional `photo_data` field accepts a JPEG, PNG, or WebP base64 data URL
+(up to 3,000,000 characters). It is validated and stored as a JPEG thumbnail up
+to 640 × 640 pixels, then returned only with that user's catch records. Existing
+entries have `photo_data: null`. Each response also includes `daily_limit` with
+the species' shared limit group, status, baseline limit, and guidance; unknown
+species remain explicitly unreviewed.
+
+The app counts saved timestamps within the current `America/New_York` calendar
+day and combines species in the same daily-limit group. Counts reset at Georgia
+midnight, including daylight-saving changes. This tracks logged observations,
+including released fish, rather than retained harvest; local rules and sublimits
+still need checking.
 Ownership comes from the header; owner fields in catch requests are rejected.
 Missing or unknown usernames return 401; malformed fields return 422.
 There is no automatic prediction saving or regulation evaluation.

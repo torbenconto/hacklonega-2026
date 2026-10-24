@@ -1,3 +1,4 @@
+import { router } from 'expo-router';
 import { Text, View } from 'react-native';
 import { collectionProgress } from '@/lib/collection';
 import type { FishLog } from '@/lib/api';
@@ -24,6 +25,7 @@ export function CollectionJourney({ logs, onIdentify, loading = false }: { logs:
       </View>
       <View style={{ gap: 5, borderLeftWidth: 3, borderLeftColor: colors.orange, paddingLeft: 14 }}>
         <Text style={[ui.name, { fontSize: 17 }]}>Discover {journey.nextGoal} species · {journey.discoveries}/{journey.nextGoal}</Text>
+        <SpringPressable accessibilityRole="button" onPress={() => router.navigate('/(tabs)/quests')} style={{ minHeight: 44, justifyContent: 'center' }}><Text style={{ color: colors.green, fontWeight: '700' }}>Choose your next quest ↗</Text></SpringPressable>
         {onIdentify && <SpringPressable accessibilityRole="button" onPress={onIdentify} style={{ paddingVertical: 13, minHeight: 44 }}><Text style={{ color: colors.green, fontWeight: '700' }}>Identify →</Text></SpringPressable>}
       </View>
     </>}

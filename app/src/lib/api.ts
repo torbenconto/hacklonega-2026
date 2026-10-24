@@ -8,14 +8,15 @@ export const API_URL = (process.env.EXPO_PUBLIC_API_URL || (Platform.OS === 'web
 
 export type Species = { species_id: string; common_name: string; scientific_name: string; family?: string; taxon_rank?: string };
 export type Prediction = { status: 'candidate' | 'uncertain' | 'unsupported'; reason: string; notice: string; candidates: (Species & { similarity: number })[] };
-export type FishLog = { id: number; species: string; weight_lbs: number; length_inches: number; created_at: string };
+export type FishLog = { id: number; species: string; weight_lbs: number; length_inches: number; created_at: string; photo_data?: string | null; disposition?: 'kept' | 'released' | 'unknown'; daily_limit?: DailyLimit };
+export type DailyLimit = { group: string | null; status: 'specified' | 'no_statewide_limit' | 'not_evaluated'; limit: number | null; guidance: string };
 export type RegulationResult = {
   species_id: string;
   length_inches: number;
   length_result: 'below_baseline' | 'meets_baseline' | 'no_baseline_length_limit' | 'not_evaluated';
   minimum_length_inches: number | null;
   length_guidance: string;
-  daily_limit: { status: 'specified' | 'no_statewide_limit' | 'not_evaluated'; limit: number | null; guidance: string };
+  daily_limit: DailyLimit;
   exception_notes: string[];
   warnings: string[];
   sources: { url: string; reference: string }[];

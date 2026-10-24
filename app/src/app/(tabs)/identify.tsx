@@ -1,3 +1,4 @@
+import { CatchDisposition } from '@/components/catch-disposition';
 import { CatchCelebration, type SavedMilestone } from '@/components/catch-celebration';
 import { Reveal, SpringPressable } from '@/components/motion';
 import { CameraCapture } from '@/components/camera-capture';
@@ -6,8 +7,10 @@ import { useEffect, useMemo, useState } from 'react';
 import { ActivityIndicator, Image, Platform, Text, View } from 'react-native';
 import * as ImagePicker from 'expo-image-picker';
 import { Asset } from 'expo-asset';
-import { api, type Prediction, type Species } from '@/lib/api';
+import { File } from 'expo-file-system';
+import { api, type Prediction, type Species, type FishLog } from '@/lib/api';
 import { preparePhoto } from '@/lib/photos';
+import { fishingQuests } from '@/lib/quests';
 import { DEMO_PHOTOS } from '@/lib/demo-photos';
 import { collectionProgress, measurement, speciesKey, summarizeCatches } from '@/lib/collection';
 import { useSession } from '@/lib/session';
@@ -19,9 +22,11 @@ import { Button, ErrorMessage, Input, Page, colors, ui } from '@/components/fish
 
 type Photo = { uri: string };
 export default function Identify() {
-  const { username } = useSession();
+  const { username, activeQuest } = useSession();
   const catalog = useCatalog();
   const journal = useJournal();
+  const quests = journal.logs === null ? [] : fishingQuests(journal.logs);
+  const quest = quests.find(q => q.id === activeQuest && q.current < q.target) ?? quests.find(q => q.current < q.target);
   const records = useMemo(() => summarizeCatches(journal.logs || []), [journal.logs]);
   const [photo, setPhoto] = useState<Photo | null>(null);
   const [result, setResult] = useState<Prediction | null>(null);
@@ -33,6 +38,7 @@ export default function Identify() {
   const [query, setQuery] = useState('');
   const [weight, setWeight] = useState('');
   const [length, setLength] = useState('');
+  const [disposition, setDisposition] = useState<'kept' | 'released' | undefined>();
   const record = selected ? records.get(speciesKey(selected.common_name)) : undefined;
 
   useEffect(() => () => {
@@ -41,13 +47,13 @@ export default function Identify() {
 
   function reset() {
     setPhoto(null); setResult(null); setSelected(null); setSaved(null);
-    setManual(false); setQuery(''); setWeight(''); setLength(''); setError('');
+    setManual(false); setQuery(''); setWeight(''); setLength(''); setDisposition(undefined); setError('');
   }
 
   async function choose(uri: string) {
     const converted = await preparePhoto(uri);
     setPhoto({ uri: converted.uri }); setResult(null); setSelected(null); setSaved(null);
-    setManual(false); setQuery(''); setWeight(''); setLength(''); setError('');
+    setManual(false); setQuery(''); setWeight(''); setLength(''); setDisposition(undefined); setError('');
   }
 
   async function pick() {
@@ -81,7 +87,8 @@ export default function Identify() {
         if (!response.ok) throw new Error('This photo is no longer available. Please select it again.');
         form.append('file', await response.blob(), 'fish.jpg');
       } else {
-        form.append('file', { uri: photo.uri, name: 'fish.jpg', type: 'image/jpeg' } as unknown as Blob);
+        // Expo 58 fetch accepts file bytes, not React Native's legacy URI parts.
+        form.append('file', new File(photo.uri), 'fish.jpg');
       }
       setResult(await api<Prediction>('/predict?top_k=3', { method: 'POST', body: form }));
     } catch (e) { setError((e as Error).message); }
@@ -95,6 +102,7 @@ export default function Identify() {
       setError('Enter weight and length above zero.');
       return;
     }
+    if (!disposition) { setError('Choose kept or released.'); return; }
     const progressKnown = journal.logs !== null && !journal.loading;
     const milestone = {
       discovery: progressKnown && !record,
@@ -105,20 +113,28 @@ export default function Identify() {
     };
     setBusy('Saving catch…'); setError('');
     try {
-      await api('/catches', { method: 'POST', body: JSON.stringify({
-        species: selected.common_name, weight_lbs: pounds, length_inches: inches,
+      const snapshot = await preparePhoto(photo.uri, true);
+      if (!snapshot.base64) throw new Error('Could not save this photo. Please try again.');
+      const savedCatch = await api<FishLog>('/catches', { method: 'POST', body: JSON.stringify({
+        species: selected.common_name, weight_lbs: pounds, length_inches: inches, disposition,
+        photo_data: `data:image/jpeg;base64,${snapshot.base64}`,
       }) }, username);
-      setSaved(milestone); journal.refresh();
+      const before = fishingQuests(journal.logs || []);
+      const after = fishingQuests([...(journal.logs || []), savedCatch]);
+      const completedQuests = progressKnown ? after.filter(q => q.current >= q.target && before.find(old => old.id === q.id)!.current < q.target).map(q => q.title) : [];
+      setSaved({ ...milestone, completedQuests }); journal.refresh();
     } catch (e) { setError((e as Error).message); }
     finally { setBusy(''); }
   }
 
   const matches = catalog.species.filter(s => `${s.common_name} ${s.scientific_name}`.toLowerCase().includes(query.trim().toLowerCase()));
   if (saved && selected) return <CatchCelebration species={selected} milestone={saved} weight={weight} length={length} onAgain={reset} />;
-  if (!photo) return <CameraCapture busy={busy} error={error} onCapture={choose} onLibrary={() => void pick()} onDemo={item => void demo(item)} />;
+  if (!photo) return <CameraCapture quest={quest} busy={busy} error={error} onCapture={choose} onLibrary={() => void pick()} onDemo={item => void demo(item)} />;
   return <Page>
-    <View style={ui.row}><Text style={ui.section}>Identify</Text><Button title="Retake" secondary disabled={!!busy} onPress={reset} /></View>
-    <Image source={{ uri: photo.uri }} style={{ width: '100%', height: result ? 170 : 300, backgroundColor: colors.soft }} resizeMode="contain" />
+    <View style={ui.row}><View style={{ gap: 5 }}><Text style={ui.eyebrow}>YOUR FIELD NOTES</Text><Text style={ui.title}>{result ? 'Meet your fish' : 'A closer look'}</Text></View><Button title="Retake" secondary disabled={!!busy} onPress={reset} /></View>
+    <Image source={{ uri: photo.uri }} style={{ width: '100%', height: result ? 170 : 300, backgroundColor: colors.soft, borderRadius: 20 }} resizeMode="contain" />
+    {!result && <Text style={ui.body}>We’ll suggest a species. You confirm the match and add your measurements.</Text>}
+    {!!busy && <Text accessibilityLiveRegion="polite" style={ui.small}>{busy}</Text>}
     {!result && <Button title="Identify fish" onPress={() => void identify()} busy={!!busy} />}
     {!!busy && !!result && <ActivityIndicator accessibilityLabel={busy} color={colors.green} />}
     {!selected && <ErrorMessage message={error} />}
@@ -147,7 +163,8 @@ export default function Identify() {
         <MeasurementInput label="Total length" unit="in" value={length} onChangeText={setLength} editable={!busy} />
       </View>
       {record && <Text style={ui.small}>Your best: {measurement(record.heaviest.weight_lbs)} lb · {measurement(record.longest.length_inches)} in</Text>}
-      <RegulationCheck species={selected} length={length} />
+      <CatchDisposition value={disposition} onChange={setDisposition} disabled={!!busy} />
+      <RegulationCheck species={selected} length={length} logs={journal.logs} />
       <ErrorMessage message={error} />
       <Button title="Save catch" onPress={() => void save()} busy={!!busy} />
     </Reveal>}

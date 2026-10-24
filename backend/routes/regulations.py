@@ -82,8 +82,8 @@ def summary(species_id: str = Query(...)):
         "scope": "statewide_baseline",
         "season": parameters["season"],
         "size": parameters["size"],
-        "daily_limit": {"status": group["status"], "limit": group["limit"], "guidance": group["guidance"]} if group else {
-            "status": "not_evaluated", "limit": None, "guidance": "Daily limit guidance has not been reviewed for this species."
+        "daily_limit": {"group": profile["daily_limit_group"], "status": group["status"], "limit": group["limit"], "guidance": group["guidance"]} if group else {
+            "group": None, "status": "not_evaluated", "limit": None, "guidance": "Daily limit guidance has not been reviewed for this species."
         },
         "exception_notes": profile["exception_notes"],
         "warnings": rules["warnings"],

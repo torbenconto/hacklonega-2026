@@ -1,12 +1,13 @@
 import { useEffect, useState } from 'react';
 import { ActivityIndicator, Pressable, Text, View } from 'react-native';
-import { api, type RegulationSummary, type Species } from '@/lib/api';
+import { api, type RegulationSummary, type Species, type FishLog } from '@/lib/api';
 import { Button, ErrorMessage, TextLink, colors, ui } from './fishing-ui';
+import { DailyLimitProgress } from './daily-limit-progress';
 import { MeasurementInput } from './measurement-input';
 
 export const OFFICIAL_RULES = 'https://georgiawildlife.com/fishing-regulations';
 
-export function DexRegulations({ species, length: measuredLength }: { species: Species; length?: string }) {
+export function DexRegulations({ species, length: measuredLength, logs }: { species: Species; length?: string; logs?: FishLog[] | null }) {
   const [rules, setRules] = useState<RegulationSummary | null>(null);
   const [error, setError] = useState('');
   const [attempt, setAttempt] = useState(0);
@@ -45,13 +46,12 @@ export function DexRegulations({ species, length: measuredLength }: { species: S
           ['Season', seasonLabel],
         ].map(([label, value]) => <View key={label} style={{ flex: 1, minWidth: 85, gap: 5 }}><Text style={ui.small}>{label}</Text><Text style={[ui.name, { fontSize: 16 }]}>{value}</Text></View>)}
       </View>
-      {rules.daily_limit.status !== 'not_evaluated' && <Text style={ui.small}>{rules.daily_limit.guidance}</Text>}
-      {rules.exception_notes.map(note => <Text key={note} style={ui.small}>{note}</Text>)}
+      {logs !== undefined && <DailyLimitProgress logs={logs} rule={rules.daily_limit} />}
       {!closed && measuredLength === undefined && <MeasurementInput label="Your fish’s length" unit="in" value={length} onChangeText={setLength} />}
       {!closed && !!enteredLength.trim() && <Text accessibilityLiveRegion="polite" style={outside || !valid ? ui.error : ui.small}>{!valid ? 'Length must be above zero.' : outside ? 'Outside the statewide length limit.' : size?.status === 'not_reviewed' ? 'Length rules not reviewed.' : size?.status === 'no_verified_restriction' ? 'No verified statewide length restriction.' : 'Meets the statewide length limit only.'}</Text>}
       <Text style={ui.small}>Statewide only. Check local rules, licenses, and seasons before keeping.</Text>
       <Pressable accessibilityRole="button" accessibilityState={{ expanded }} onPress={() => setExpanded(value => !value)} style={{ minHeight: 44, justifyContent: 'center' }}><Text style={{ fontSize: 13, color: colors.green, fontWeight: '600' }}>{expanded ? 'Hide sources' : 'Sources & details'}</Text></Pressable>
-      {expanded && <View style={{ gap: 8 }}>{rules.warnings.map(warning => <Text key={warning} style={ui.small}>{warning}</Text>)}{rules.sources.map(source => <TextLink key={source.reference} title={source.reference} url={source.url} />)}<Text style={ui.small}>Reviewed {rules.reviewed_on}</Text><TextLink title="Official Georgia regulations" url={OFFICIAL_RULES} /></View>}
+      {expanded && <View style={{ gap: 8 }}><Text style={ui.small}>{rules.daily_limit.guidance}</Text>{rules.exception_notes.map(note => <Text key={note} style={ui.small}>{note}</Text>)}{rules.warnings.map(warning => <Text key={warning} style={ui.small}>{warning}</Text>)}{rules.sources.map(source => <TextLink key={source.reference} title={source.reference} url={source.url} />)}<Text style={ui.small}>Reviewed {rules.reviewed_on}</Text><TextLink title="Official Georgia regulations" url={OFFICIAL_RULES} /></View>}
     </>}
   </View>;
 }

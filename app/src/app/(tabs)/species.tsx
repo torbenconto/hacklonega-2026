@@ -2,7 +2,6 @@ import { useMemo, useState } from 'react';
 import { ActivityIndicator, Pressable, Text, View } from 'react-native';
 import { router } from 'expo-router';
 import { speciesKey, summarizeCatches } from '@/lib/collection';
-import { useSession } from '@/lib/session';
 import { useCatalog } from '@/hooks/use-catalog';
 import { useJournal } from '@/hooks/use-journal';
 import { FishImage } from '@/components/fish-image';
@@ -13,7 +12,6 @@ import { Button, ErrorMessage, Input, Page, colors, ui } from '@/components/fish
 
 type Filter = 'All fish' | 'Discovered' | 'To discover';
 export default function Fishdex() {
-  const { setUsername } = useSession();
   const catalog = useCatalog();
   const journal = useJournal();
   const [query, setQuery] = useState('');
@@ -30,7 +28,7 @@ export default function Fishdex() {
   return <Page>
     <View style={ui.row}>
       <View style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}><Icon name="fish" size={26} /><Text style={{ color: colors.ink, fontSize: 21, fontWeight: '700', letterSpacing: -0.6 }}>fishnerd</Text></View>
-      <Pressable accessibilityRole="button" onPress={() => { setUsername(null); router.replace('/auth'); }} style={{ minHeight: 44, paddingHorizontal: 8, justifyContent: 'center' }}><Text style={ui.small}>Sign out</Text></Pressable>
+      <SpringPressable accessibilityRole="button" onPress={() => router.navigate('/(tabs)/quests')} style={{ minHeight: 44, paddingHorizontal: 8, justifyContent: 'center' }}><Text style={[ui.small, { color: colors.green, fontWeight: '700' }]}>My quests ↗</Text></SpringPressable>
     </View>
     <Text style={ui.title}>Fishdex</Text>
     <CollectionJourney loading={journal.loading} logs={journal.logs} onIdentify={() => router.navigate('/(tabs)/identify')} />
