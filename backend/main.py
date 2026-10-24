@@ -4,10 +4,10 @@ from fastapi import Depends, FastAPI, File, HTTPException, Query, UploadFile
 from starlette.concurrency import run_in_threadpool
 
 if __package__:
-    from .ml.classifier import MODEL_ID, get_classifier, species_catalog
+    from .ml.classifier import MODEL_ID, catalog_metadata, get_classifier, species_catalog
     from .ml.images import MAX_UPLOAD_BYTES, decode_image
 else:
-    from ml.classifier import MODEL_ID, get_classifier, species_catalog
+    from ml.classifier import MODEL_ID, catalog_metadata, get_classifier, species_catalog
     from ml.images import MAX_UPLOAD_BYTES, decode_image
 
 logger = logging.getLogger(__name__)
@@ -26,7 +26,13 @@ def health():
 
 @app.get("/species")
 def species():
-    return {"scope": "Freshwater starter catalog; not exhaustive or jurisdiction-specific", "species": species_catalog()}
+    metadata = catalog_metadata()
+    return {
+        **{key: metadata[key] for key in (
+            "catalog_id", "region", "scope", "reviewed_on", "taxon_count", "taxon_ranks", "sources",
+        )},
+        "species": species_catalog(),
+    }
 
 
 @app.get("/health/ml")

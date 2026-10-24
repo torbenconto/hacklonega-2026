@@ -1,23 +1,2032 @@
 [
-  {"species_id": "micropterus_salmoides", "common_name": "Largemouth bass", "scientific_name": "Micropterus salmoides"},
-  {"species_id": "micropterus_dolomieu", "common_name": "Smallmouth bass", "scientific_name": "Micropterus dolomieu"},
-  {"species_id": "micropterus_punctulatus", "common_name": "Spotted bass", "scientific_name": "Micropterus punctulatus"},
-  {"species_id": "morone_saxatilis", "common_name": "Striped bass", "scientific_name": "Morone saxatilis"},
-  {"species_id": "morone_chrysops", "common_name": "White bass", "scientific_name": "Morone chrysops"},
-  {"species_id": "lepomis_macrochirus", "common_name": "Bluegill", "scientific_name": "Lepomis macrochirus"},
-  {"species_id": "lepomis_microlophus", "common_name": "Redear sunfish", "scientific_name": "Lepomis microlophus"},
-  {"species_id": "lepomis_auritus", "common_name": "Redbreast sunfish", "scientific_name": "Lepomis auritus"},
-  {"species_id": "lepomis_cyanellus", "common_name": "Green sunfish", "scientific_name": "Lepomis cyanellus"},
-  {"species_id": "pomoxis_nigromaculatus", "common_name": "Black crappie", "scientific_name": "Pomoxis nigromaculatus"},
-  {"species_id": "pomoxis_annularis", "common_name": "White crappie", "scientific_name": "Pomoxis annularis"},
-  {"species_id": "ictalurus_punctatus", "common_name": "Channel catfish", "scientific_name": "Ictalurus punctatus"},
-  {"species_id": "ictalurus_furcatus", "common_name": "Blue catfish", "scientific_name": "Ictalurus furcatus"},
-  {"species_id": "pylodictis_olivaris", "common_name": "Flathead catfish", "scientific_name": "Pylodictis olivaris"},
-  {"species_id": "oncorhynchus_mykiss", "common_name": "Rainbow trout", "scientific_name": "Oncorhynchus mykiss"},
-  {"species_id": "salmo_trutta", "common_name": "Brown trout", "scientific_name": "Salmo trutta"},
-  {"species_id": "salvelinus_fontinalis", "common_name": "Brook trout", "scientific_name": "Salvelinus fontinalis"},
-  {"species_id": "sander_vitreus", "common_name": "Walleye", "scientific_name": "Sander vitreus"},
-  {"species_id": "perca_flavescens", "common_name": "Yellow perch", "scientific_name": "Perca flavescens"},
-  {"species_id": "esox_niger", "common_name": "Chain pickerel", "scientific_name": "Esox niger"},
-  {"species_id": "cyprinus_carpio", "common_name": "Common carp", "scientific_name": "Cyprinus carpio"}
+  {
+    "species_id": "micropterus_salmoides",
+    "common_name": "Largemouth bass",
+    "scientific_name": "Micropterus salmoides",
+    "family": "Centrarchidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "micropterus_dolomieu",
+    "common_name": "Smallmouth bass",
+    "scientific_name": "Micropterus dolomieu",
+    "family": "Centrarchidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "micropterus_punctulatus",
+    "common_name": "Spotted bass",
+    "scientific_name": "Micropterus punctulatus",
+    "family": "Centrarchidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "morone_saxatilis",
+    "common_name": "Striped bass",
+    "scientific_name": "Morone saxatilis",
+    "family": "Moronidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "morone_chrysops",
+    "common_name": "White bass",
+    "scientific_name": "Morone chrysops",
+    "family": "Moronidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "lepomis_macrochirus",
+    "common_name": "Bluegill",
+    "scientific_name": "Lepomis macrochirus",
+    "family": "Centrarchidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "lepomis_microlophus",
+    "common_name": "Redear sunfish",
+    "scientific_name": "Lepomis microlophus",
+    "family": "Centrarchidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "lepomis_auritus",
+    "common_name": "Redbreast sunfish",
+    "scientific_name": "Lepomis auritus",
+    "family": "Centrarchidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "lepomis_cyanellus",
+    "common_name": "Green sunfish",
+    "scientific_name": "Lepomis cyanellus",
+    "family": "Centrarchidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "pomoxis_nigromaculatus",
+    "common_name": "Black crappie",
+    "scientific_name": "Pomoxis nigromaculatus",
+    "family": "Centrarchidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "pomoxis_annularis",
+    "common_name": "White crappie",
+    "scientific_name": "Pomoxis annularis",
+    "family": "Centrarchidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "ictalurus_punctatus",
+    "common_name": "Channel catfish",
+    "scientific_name": "Ictalurus punctatus",
+    "family": "Ictaluridae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "ictalurus_furcatus",
+    "common_name": "Blue catfish",
+    "scientific_name": "Ictalurus furcatus",
+    "family": "Ictaluridae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "pylodictis_olivaris",
+    "common_name": "Flathead catfish",
+    "scientific_name": "Pylodictis olivaris",
+    "family": "Ictaluridae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "oncorhynchus_mykiss",
+    "common_name": "Rainbow trout",
+    "scientific_name": "Oncorhynchus mykiss",
+    "family": "Salmonidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "salmo_trutta",
+    "common_name": "Brown trout",
+    "scientific_name": "Salmo trutta",
+    "family": "Salmonidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "salvelinus_fontinalis",
+    "common_name": "Brook trout",
+    "scientific_name": "Salvelinus fontinalis",
+    "family": "Salmonidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "sander_vitreus",
+    "common_name": "Walleye",
+    "scientific_name": "Sander vitreus",
+    "family": "Percidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "perca_flavescens",
+    "common_name": "Yellow perch",
+    "scientific_name": "Perca flavescens",
+    "family": "Percidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "esox_niger",
+    "common_name": "Chain pickerel",
+    "scientific_name": "Esox niger",
+    "family": "Esocidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "cyprinus_carpio",
+    "common_name": "Common carp",
+    "scientific_name": "Cyprinus carpio",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "acipenser_oxyrinchus_oxyrinchus",
+    "common_name": "Atlantic sturgeon",
+    "scientific_name": "Acipenser oxyrinchus oxyrinchus",
+    "family": "Acipenseridae",
+    "taxon_rank": "subspecies"
+  },
+  {
+    "species_id": "acipenser_fulvescens",
+    "common_name": "Lake sturgeon",
+    "scientific_name": "Acipenser fulvescens",
+    "family": "Acipenseridae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "acipenser_brevirostrum",
+    "common_name": "Shortnose sturgeon",
+    "scientific_name": "Acipenser brevirostrum",
+    "family": "Acipenseridae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "typhlichthys_subterraneus",
+    "common_name": "Southern cavefish",
+    "scientific_name": "Typhlichthys subterraneus",
+    "family": "Amblyopsidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "chologaster_cornuta",
+    "common_name": "Swampfish",
+    "scientific_name": "Chologaster cornuta",
+    "family": "Amblyopsidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "amia_calva",
+    "common_name": "Bowfin",
+    "scientific_name": "Amia calva",
+    "family": "Amiidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "anguilla_rostrata",
+    "common_name": "American eel",
+    "scientific_name": "Anguilla rostrata",
+    "family": "Anguillidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "aphredoderus_sayanus",
+    "common_name": "Pirate perch",
+    "scientific_name": "Aphredoderus sayanus",
+    "family": "Aphredoderidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "labidesthes_sicculus",
+    "common_name": "Brook silverside",
+    "scientific_name": "Labidesthes sicculus",
+    "family": "Atherinopsidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "menidia_beryllina",
+    "common_name": "Inland silverside",
+    "scientific_name": "Menidia beryllina",
+    "family": "Atherinopsidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "hypentelium_etowanum",
+    "common_name": "Alabama hog sucker",
+    "scientific_name": "Hypentelium etowanum",
+    "family": "Catostomidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "apalachicola_redhorse",
+    "common_name": "Apalachicola redhorse",
+    "scientific_name": "Moxostoma sp.",
+    "family": "Catostomidae",
+    "taxon_rank": "provisional"
+  },
+  {
+    "species_id": "ictiobus_niger",
+    "common_name": "Black buffalo",
+    "scientific_name": "Ictiobus niger",
+    "family": "Catostomidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "moxostoma_duquesnei",
+    "common_name": "Black redhorse",
+    "scientific_name": "Moxostoma duquesnei",
+    "family": "Catostomidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "moxostoma_poecilurum",
+    "common_name": "Blacktail redhorse",
+    "scientific_name": "Moxostoma poecilurum",
+    "family": "Catostomidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "brassy_jumprock",
+    "common_name": "Brassy jumprock",
+    "scientific_name": "Moxostoma sp. cf. M. lachneri",
+    "family": "Catostomidae",
+    "taxon_rank": "provisional"
+  },
+  {
+    "species_id": "erimyzon_oblongus",
+    "common_name": "Creek chubsucker",
+    "scientific_name": "Erimyzon oblongus",
+    "family": "Catostomidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "moxostoma_erythrurum",
+    "common_name": "Golden redhorse",
+    "scientific_name": "Moxostoma erythrurum",
+    "family": "Catostomidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "moxostoma_lachneri",
+    "common_name": "Greater jumprock",
+    "scientific_name": "Moxostoma lachneri",
+    "family": "Catostomidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "highfin_carpsucker_species",
+    "common_name": "Highfin carpsucker species",
+    "scientific_name": "Carpiodes sp. cf. C. velifer",
+    "family": "Catostomidae",
+    "taxon_rank": "provisional"
+  },
+  {
+    "species_id": "erimyzon_sucetta",
+    "common_name": "Lake chubsucker",
+    "scientific_name": "Erimyzon sucetta",
+    "family": "Catostomidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "hypentelium_nigricans",
+    "common_name": "Northern hog sucker",
+    "scientific_name": "Hypentelium nigricans",
+    "family": "Catostomidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "moxostoma_collapsum",
+    "common_name": "Notchlip redhorse",
+    "scientific_name": "Moxostoma collapsum",
+    "family": "Catostomidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "quillbacks",
+    "common_name": "Quillbacks",
+    "scientific_name": "Carpiodes sp. cf. C. cyprinus",
+    "family": "Catostomidae",
+    "taxon_rank": "provisional"
+  },
+  {
+    "species_id": "carpiodes_carpio",
+    "common_name": "River carpsucker",
+    "scientific_name": "Carpiodes carpio",
+    "family": "Catostomidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "moxostoma_carinatum",
+    "common_name": "River redhorse",
+    "scientific_name": "Moxostoma carinatum",
+    "family": "Catostomidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "moxostoma_robustum",
+    "common_name": "Robust redhorse",
+    "scientific_name": "Moxostoma robustum",
+    "family": "Catostomidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "sicklefin_redhorse",
+    "common_name": "Sicklefin redhorse",
+    "scientific_name": "Moxostoma sp.",
+    "family": "Catostomidae",
+    "taxon_rank": "provisional"
+  },
+  {
+    "species_id": "moxostoma_anisurum",
+    "common_name": "Silver redhorse",
+    "scientific_name": "Moxostoma anisurum",
+    "family": "Catostomidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "ictiobus_bubalus",
+    "common_name": "Smallmouth buffalo",
+    "scientific_name": "Ictiobus bubalus",
+    "family": "Catostomidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "minytrema_melanops",
+    "common_name": "Spotted sucker",
+    "scientific_name": "Minytrema melanops",
+    "family": "Catostomidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "moxostoma_rupiscartes",
+    "common_name": "Striped jumprock",
+    "scientific_name": "Moxostoma rupiscartes",
+    "family": "Catostomidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "catostomus_commersoni",
+    "common_name": "White sucker",
+    "scientific_name": "Catostomus commersoni",
+    "family": "Catostomidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "micropterus_henshalli",
+    "common_name": "Alabama bass",
+    "scientific_name": "Micropterus henshalli",
+    "family": "Centrarchidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "micropterus_calliurus",
+    "common_name": "Altamaha Bass",
+    "scientific_name": "Micropterus calliurus",
+    "family": "Centrarchidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "enneacanthus_obesus",
+    "common_name": "Banded sunfish",
+    "scientific_name": "Enneacanthus obesus",
+    "family": "Centrarchidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "micropterus_pucpuggy",
+    "common_name": "Bartram's bass",
+    "scientific_name": "Micropterus pucpuggy",
+    "family": "Centrarchidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "enneacanthus_chaetodon",
+    "common_name": "Blackbanded sunfish",
+    "scientific_name": "Enneacanthus chaetodon",
+    "family": "Centrarchidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "enneacanthus_gloriosus",
+    "common_name": "Bluespotted sunfish",
+    "scientific_name": "Enneacanthus gloriosus",
+    "family": "Centrarchidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "micropterus_chattahoochae",
+    "common_name": "Chattahoochee Bass",
+    "scientific_name": "Micropterus chattahoochae",
+    "family": "Centrarchidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "lepomis_marginatus",
+    "common_name": "Dollar sunfish",
+    "scientific_name": "Lepomis marginatus",
+    "family": "Centrarchidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "centrarchus_macropterus",
+    "common_name": "Flier",
+    "scientific_name": "Centrarchus macropterus",
+    "family": "Centrarchidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "lepomis_megalotis",
+    "common_name": "Longear sunfish",
+    "scientific_name": "Lepomis megalotis",
+    "family": "Centrarchidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "acantharchus_pomotis",
+    "common_name": "Mud sunfish",
+    "scientific_name": "Acantharchus pomotis",
+    "family": "Centrarchidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "lepomis_humilis",
+    "common_name": "Orangespotted sunfish",
+    "scientific_name": "Lepomis humilis",
+    "family": "Centrarchidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "lepomis_gibbosus",
+    "common_name": "Pumpkinseed",
+    "scientific_name": "Lepomis gibbosus",
+    "family": "Centrarchidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "micropterus_coosae",
+    "common_name": "Redeye bass",
+    "scientific_name": "Micropterus coosae",
+    "family": "Centrarchidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "ambloplites_rupestris",
+    "common_name": "Rock bass",
+    "scientific_name": "Ambloplites rupestris",
+    "family": "Centrarchidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "ambloplites_ariommus",
+    "common_name": "Shadow bass",
+    "scientific_name": "Ambloplites ariommus",
+    "family": "Centrarchidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "micropterus_cataractae",
+    "common_name": "Shoal bass",
+    "scientific_name": "Micropterus cataractae",
+    "family": "Centrarchidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "lepomis_punctatus",
+    "common_name": "Spotted sunfish",
+    "scientific_name": "Lepomis punctatus",
+    "family": "Centrarchidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "spotted_sunfish_integrade",
+    "common_name": "Spotted sunfish integrade",
+    "scientific_name": "Lepomis miniatus X L. punctatus integrade",
+    "family": "Centrarchidae",
+    "taxon_rank": "hybrid"
+  },
+  {
+    "species_id": "micropterus_notius",
+    "common_name": "Suwannee bass",
+    "scientific_name": "Micropterus notius",
+    "family": "Centrarchidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "micropterus_tallapoosae",
+    "common_name": "Tallapoosa bass",
+    "scientific_name": "Micropterus tallapoosae",
+    "family": "Centrarchidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "lepomis_gulosus",
+    "common_name": "Warmouth",
+    "scientific_name": "Lepomis gulosus",
+    "family": "Centrarchidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "pacu_species",
+    "common_name": "Pacu species",
+    "scientific_name": "Colossoma spp.",
+    "family": "Characidae",
+    "taxon_rank": "species_group"
+  },
+  {
+    "species_id": "astronotus_ocellatus",
+    "common_name": "Oscar",
+    "scientific_name": "Astronotus ocellatus",
+    "family": "Cichlidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "tilapia_species",
+    "common_name": "Tilapia species",
+    "scientific_name": "Oreochromis, Sarotherodon, and Tilapia spp.",
+    "family": "Cichlidae",
+    "taxon_rank": "species_group"
+  },
+  {
+    "species_id": "alosa_alabamae",
+    "common_name": "Alabama shad",
+    "scientific_name": "Alosa alabamae",
+    "family": "Clupeidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "alosa_pseudoharengus",
+    "common_name": "Alewife",
+    "scientific_name": "Alosa pseudoharengus",
+    "family": "Clupeidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "alosa_sapidissima",
+    "common_name": "American shad",
+    "scientific_name": "Alosa sapidissima",
+    "family": "Clupeidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "alosa_aestivalis",
+    "common_name": "Blueback herring",
+    "scientific_name": "Alosa aestivalis",
+    "family": "Clupeidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "dorosoma_cepedianum",
+    "common_name": "Gizzard shad",
+    "scientific_name": "Dorosoma cepedianum",
+    "family": "Clupeidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "alosa_mediocris",
+    "common_name": "Hickory shad",
+    "scientific_name": "Alosa mediocris",
+    "family": "Clupeidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "alosa_chrysochloris",
+    "common_name": "Skipjack herring",
+    "scientific_name": "Alosa chrysochloris",
+    "family": "Clupeidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "dorosoma_petenense",
+    "common_name": "Threadfin shad",
+    "scientific_name": "Dorosoma petenense",
+    "family": "Clupeidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "cottus_carolinae",
+    "common_name": "Banded sculpin",
+    "scientific_name": "Cottus carolinae",
+    "family": "Cottidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "banded_sculpin_species",
+    "common_name": "Banded sculpin species",
+    "scientific_name": "Cottus sp. cf. C. carolinae",
+    "family": "Cottidae",
+    "taxon_rank": "provisional"
+  },
+  {
+    "species_id": "cottus_chattahoochee",
+    "common_name": "Chattahoochee sculpin",
+    "scientific_name": "Cottus chattahoochee",
+    "family": "Cottidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "cottus_carolinae_zopherus",
+    "common_name": "Coosa banded sculpin",
+    "scientific_name": "Cottus carolinae zopherus",
+    "family": "Cottidae",
+    "taxon_rank": "subspecies"
+  },
+  {
+    "species_id": "ridge_and_valley_sculpin",
+    "common_name": "Ridge and Valley sculpin",
+    "scientific_name": "Cottus sp. cf. C. bairdi",
+    "family": "Cottidae",
+    "taxon_rank": "provisional"
+  },
+  {
+    "species_id": "savannah_sculpin",
+    "common_name": "Savannah sculpin",
+    "scientific_name": "Cottus sp. cf. C. bairdi",
+    "family": "Cottidae",
+    "taxon_rank": "provisional"
+  },
+  {
+    "species_id": "smoky_sculpin",
+    "common_name": "Smoky sculpin",
+    "scientific_name": "Cottus sp. cf. C. bairdi",
+    "family": "Cottidae",
+    "taxon_rank": "provisional"
+  },
+  {
+    "species_id": "cottus_tallapoosae",
+    "common_name": "Tallapoosa sculpin",
+    "scientific_name": "Cottus tallapoosae",
+    "family": "Cottidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "coosa_chub_fall_line_chub_complex",
+    "common_name": "\"Coosa\" chub (fall line chub complex)",
+    "scientific_name": "Macrhybopsis sp. cf M. aestivalis",
+    "family": "Cyprinidae",
+    "taxon_rank": "provisional"
+  },
+  {
+    "species_id": "cyprinella_callistia",
+    "common_name": "Alabama shiner",
+    "scientific_name": "Cyprinella callistia",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "cyprinella_xaenura",
+    "common_name": "Altamaha shiner",
+    "scientific_name": "Cyprinella xaenura",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "pteronotropis_grandipinnis",
+    "common_name": "Apalachee shiner",
+    "scientific_name": "Pteronotropis grandipinnis",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "luxilus_zonistius",
+    "common_name": "Bandfin shiner",
+    "scientific_name": "Luxilus zonistius",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "cyprinella_leedsi",
+    "common_name": "Bannerfin shiner",
+    "scientific_name": "Cyprinella leedsi",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "hybopsis_amblops",
+    "common_name": "Bigeye chub",
+    "scientific_name": "Hybopsis amblops",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "cyprinella_venusta",
+    "common_name": "Blacktail shiner",
+    "scientific_name": "Cyprinella venusta",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "lythrurus_atrapiculus",
+    "common_name": "Blacktip shiner",
+    "scientific_name": "Lythrurus atrapiculus",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "erimystax_insignis",
+    "common_name": "Blotched chub",
+    "scientific_name": "Erimystax insignis",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "cyprinella_caerulea",
+    "common_name": "Blue shiner",
+    "scientific_name": "Cyprinella caerulea",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "campostoma_pauciradii",
+    "common_name": "Bluefin stoneroller",
+    "scientific_name": "Campostoma pauciradii",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "nocomis_leptocephalus",
+    "common_name": "Bluehead chub",
+    "scientific_name": "Nocomis leptocephalus",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "pteronotropis_welaka",
+    "common_name": "Bluenose shiner",
+    "scientific_name": "Pteronotropis welaka",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "cyprinella_callitaenia",
+    "common_name": "Bluestripe shiner",
+    "scientific_name": "Cyprinella callitaenia",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "pimephales_notatus",
+    "common_name": "Bluntnose minnow",
+    "scientific_name": "Pimephales notatus",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "pteronotropis_euryzonus",
+    "common_name": "Broadstripe shiner",
+    "scientific_name": "Pteronotropis euryzonus",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "pimephales_vigilax",
+    "common_name": "Bullhead minnow",
+    "scientific_name": "Pimephales vigilax",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "notropis_asperifrons",
+    "common_name": "Burrhead shiner",
+    "scientific_name": "Notropis asperifrons",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "campostoma_anomalum",
+    "common_name": "Central stoneroller",
+    "scientific_name": "Campostoma anomalum",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "hybopsis_winchelli",
+    "common_name": "Coastal chub",
+    "scientific_name": "Hybopsis winchelli",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "notropis_petersoni",
+    "common_name": "Coastal shiner",
+    "scientific_name": "Notropis petersoni",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "notropis_xaenocephalus",
+    "common_name": "Coosa shiner",
+    "scientific_name": "Notropis xaenocephalus",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "semotilus_atromaculatus",
+    "common_name": "Creek chub",
+    "scientific_name": "Semotilus atromaculatus",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "semotilus_thoreauianus",
+    "common_name": "Dixie chub",
+    "scientific_name": "Semotilus thoreauianus",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "notropis_cummingsae",
+    "common_name": "Dusky shiner",
+    "scientific_name": "Notropis cummingsae",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "hybognathus_regius",
+    "common_name": "Eastern silvery minnow",
+    "scientific_name": "Hybognathus regius",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "notropis_atherinoides",
+    "common_name": "Emerald shiner",
+    "scientific_name": "Notropis atherinoides",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "etowah_chub",
+    "common_name": "Etowah chub",
+    "scientific_name": "Hybopsis sp. cf. H. winchelli",
+    "family": "Cyprinidae",
+    "taxon_rank": "provisional"
+  },
+  {
+    "species_id": "pimephales_promelas",
+    "common_name": "Fathead minnow",
+    "scientific_name": "Pimephales promelas",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "phenacobius_crassilabrum",
+    "common_name": "Fatlips minnow",
+    "scientific_name": "Phenacobius crassilabrum",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "cyprinella_pyrrhomelas",
+    "common_name": "Fieryblack shiner",
+    "scientific_name": "Cyprinella pyrrhomelas",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "hemitremia_flammea",
+    "common_name": "Flame chub",
+    "scientific_name": "Hemitremia flammea",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "notemigonus_crysoleucas",
+    "common_name": "Golden shiner",
+    "scientific_name": "Notemigonus crysoleucas",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "carassius_auratus",
+    "common_name": "Goldfish",
+    "scientific_name": "Carassius auratus",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "ctenopharyngodon_idella",
+    "common_name": "Grass carp",
+    "scientific_name": "Ctenopharyngodon idella",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "notropis_altipinnis",
+    "common_name": "Highfin shiner",
+    "scientific_name": "Notropis altipinnis",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "notropis_hypsilepis",
+    "common_name": "Highscale shiner",
+    "scientific_name": "Notropis hypsilepis",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "notropis_chalybaeus",
+    "common_name": "Ironcolor shiner",
+    "scientific_name": "Notropis chalybaeus",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "campostoma_oligolepis",
+    "common_name": "Largescale stoneroller",
+    "scientific_name": "Campostoma oligolepis",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "hybopsis_lineapunctata",
+    "common_name": "Lined chub",
+    "scientific_name": "Hybopsis lineapunctata",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "notropis_amplamala",
+    "common_name": "Longjaw minnow",
+    "scientific_name": "Notropis amplamala",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "rhinichthys_cataractae",
+    "common_name": "Longnose dace",
+    "scientific_name": "Rhinichthys cataractae",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "notropis_longirostris",
+    "common_name": "Longnose shiner",
+    "scientific_name": "Notropis longirostris",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "longnose_shiner_species",
+    "common_name": "Longnose shiner species",
+    "scientific_name": "Notropis sp. cf N. longirostris",
+    "family": "Cyprinidae",
+    "taxon_rank": "provisional"
+  },
+  {
+    "species_id": "pteronotropis_stonei",
+    "common_name": "Lowland shiner",
+    "scientific_name": "Pteronotropis stonei",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "metallic_shiner",
+    "common_name": "Metallic shiner",
+    "scientific_name": "Pteronotropis sp. cf. P. hypselopterus \"metallicus\"",
+    "family": "Cyprinidae",
+    "taxon_rank": "provisional"
+  },
+  {
+    "species_id": "notropis_volucellus",
+    "common_name": "Mimic shiner",
+    "scientific_name": "Notropis volucellus",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "notropis_spectrunculus",
+    "common_name": "Mirror shiner",
+    "scientific_name": "Notropis spectrunculus",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "lythrurus_lirus",
+    "common_name": "Mountain shiner",
+    "scientific_name": "Lythrurus lirus",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "cyprinella_callisema",
+    "common_name": "Ocmulgee shiner",
+    "scientific_name": "Cyprinella callisema",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "notropis_ariommus",
+    "common_name": "Popeye shiner",
+    "scientific_name": "Notropis ariommus",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "lythrurus_bellus",
+    "common_name": "Pretty shiner",
+    "scientific_name": "Lythrurus bellus",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "opsopoeodus_emiliae",
+    "common_name": "Pugnose minnow",
+    "scientific_name": "Opsopoeodus emiliae",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "notropis_chrosomus",
+    "common_name": "Rainbow shiner",
+    "scientific_name": "Notropis chrosomus",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "cyprinella_lutrensis",
+    "common_name": "Red shiner",
+    "scientific_name": "Cyprinella lutrensis",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "notropis_harperi",
+    "common_name": "Redeye chub",
+    "scientific_name": "Notropis harperi",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "phenacobius_catostomus",
+    "common_name": "Riffle minnow",
+    "scientific_name": "Phenacobius catostomus",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "nocomis_micropogon",
+    "common_name": "River chub",
+    "scientific_name": "Nocomis micropogon",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "hybopsis_rubrifrons",
+    "common_name": "Rosyface chub",
+    "scientific_name": "Hybopsis rubrifrons",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "clinostomus_funduloides",
+    "common_name": "Rosyside dace",
+    "scientific_name": "Clinostomus funduloides",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "notropis_baileyi",
+    "common_name": "Rough shiner",
+    "scientific_name": "Notropis baileyi",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "notropis_scepticus",
+    "common_name": "Sandbar shiner",
+    "scientific_name": "Notropis scepticus",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "lythrurus_fasciolaris",
+    "common_name": "Scarlet shiner",
+    "scientific_name": "Lythrurus fasciolaris",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "macrhybopsis_storeriana",
+    "common_name": "Silver chub",
+    "scientific_name": "Macrhybopsis storeriana",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "notropis_photogenis",
+    "common_name": "Silver shiner",
+    "scientific_name": "Notropis photogenis",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "notropis_stilbius",
+    "common_name": "Silverstripe shiner",
+    "scientific_name": "Notropis stilbius",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "cyprinella_spiloptera",
+    "common_name": "Spotfin shiner",
+    "scientific_name": "Cyprinella spiloptera",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "notropis_hudsonius",
+    "common_name": "Spottail shiner",
+    "scientific_name": "Notropis hudsonius",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "phenacobius_uranops",
+    "common_name": "Stargazing minnow",
+    "scientific_name": "Phenacobius uranops",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "cyprinella_whipplei",
+    "common_name": "Steelcolor shiner",
+    "scientific_name": "Cyprinella whipplei",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "luxilus_chrysocephalus",
+    "common_name": "Striped shiner",
+    "scientific_name": "Luxilus chrysocephalus",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "notropis_maculatus",
+    "common_name": "Taillight shiner",
+    "scientific_name": "Notropis maculatus",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "cyprinella_gibbsi",
+    "common_name": "Tallapoosa shiner",
+    "scientific_name": "Cyprinella gibbsi",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "notropis_telescopus",
+    "common_name": "Telescope shiner",
+    "scientific_name": "Notropis telescopus",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "phoxinus_tennesseensis",
+    "common_name": "Tennessee dace",
+    "scientific_name": "Phoxinus tennesseensis",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "notropis_leuciodus",
+    "common_name": "Tennessee shiner",
+    "scientific_name": "Notropis leuciodus",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "cyprinella_trichroistia",
+    "common_name": "Tricolor shiner",
+    "scientific_name": "Cyprinella trichroistia",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "luxilus_coccogenis",
+    "common_name": "Warpaint shiner",
+    "scientific_name": "Luxilus coccogenis",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "notropis_texanus",
+    "common_name": "Weed shiner",
+    "scientific_name": "Notropis texanus",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "rhinichthys_obtusus",
+    "common_name": "Western blacknose dace",
+    "scientific_name": "Rhinichthys obtusus",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "tanichthys_albonubes",
+    "common_name": "White cloud mountain minnow",
+    "scientific_name": "Tanichthys albonubes",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "cyprinella_nivea",
+    "common_name": "Whitefin shiner",
+    "scientific_name": "Cyprinella nivea",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "cyprinella_galactura",
+    "common_name": "Whitetail shiner",
+    "scientific_name": "Cyprinella galactura",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "notropis_lutipinnis",
+    "common_name": "Yellowfin shiner",
+    "scientific_name": "Notropis lutipinnis",
+    "family": "Cyprinidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "elassoma_zonatum",
+    "common_name": "Banded pygmy sunfish",
+    "scientific_name": "Elassoma zonatum",
+    "family": "Elassomatidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "elassoma_okatie",
+    "common_name": "Bluebarred pygmy sunfish",
+    "scientific_name": "Elassoma okatie",
+    "family": "Elassomatidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "elassoma_evergladei",
+    "common_name": "Everglades pygmy sunfish",
+    "scientific_name": "Elassoma evergladei",
+    "family": "Elassomatidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "elassoma_gilberti",
+    "common_name": "Gulf coast pygmy sunfish",
+    "scientific_name": "Elassoma gilberti",
+    "family": "Elassomatidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "elassoma_okefenokee",
+    "common_name": "Okefenokee pygmy sunfish",
+    "scientific_name": "Elassoma okefenokee",
+    "family": "Elassomatidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "esox_masquinongy",
+    "common_name": "Muskellunge",
+    "scientific_name": "Esox masquinongy",
+    "family": "Esocidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "esox_lucius",
+    "common_name": "Northern pike",
+    "scientific_name": "Esox lucius",
+    "family": "Esocidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "esox_americanus",
+    "common_name": "Redfin pickerel",
+    "scientific_name": "Esox americanus",
+    "family": "Esocidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "fundulus_diaphanus",
+    "common_name": "Banded killifish",
+    "scientific_name": "Fundulus diaphanus",
+    "family": "Fundulidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "fundulus_cingulatus",
+    "common_name": "Banded topminnow",
+    "scientific_name": "Fundulus cingulatus",
+    "family": "Fundulidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "fundulus_olivaceus",
+    "common_name": "Blackspotted topminnow",
+    "scientific_name": "Fundulus olivaceus",
+    "family": "Fundulidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "lucania_goodei",
+    "common_name": "Bluefin killifish",
+    "scientific_name": "Lucania goodei",
+    "family": "Fundulidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "fundulus_chrysotus",
+    "common_name": "Golden topminnow",
+    "scientific_name": "Fundulus chrysotus",
+    "family": "Fundulidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "fundulus_lineolatus",
+    "common_name": "Lined topminnow",
+    "scientific_name": "Fundulus lineolatus",
+    "family": "Fundulidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "fundulus_catenatus",
+    "common_name": "Northern studfish",
+    "scientific_name": "Fundulus catenatus",
+    "family": "Fundulidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "leptolucania_ommata",
+    "common_name": "Pygmy killifish",
+    "scientific_name": "Leptolucania ommata",
+    "family": "Fundulidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "lucania_parva",
+    "common_name": "Rainwater killifish",
+    "scientific_name": "Lucania parva",
+    "family": "Fundulidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "fundulus_rubrifrons",
+    "common_name": "Redface topminnow",
+    "scientific_name": "Fundulus rubrifrons",
+    "family": "Fundulidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "fundulus_escambiae",
+    "common_name": "Russetfin topminnow",
+    "scientific_name": "Fundulus escambiae",
+    "family": "Fundulidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "fundulus_stellifer",
+    "common_name": "Southern studfish",
+    "scientific_name": "Fundulus stellifer",
+    "family": "Fundulidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "fundulus_bifax",
+    "common_name": "Stippled studfish",
+    "scientific_name": "Fundulus bifax",
+    "family": "Fundulidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "ctenogobius_shufeldti",
+    "common_name": "Freshwater goby",
+    "scientific_name": "Ctenogobius shufeldti",
+    "family": "Gobiidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "hiodon_tergisus",
+    "common_name": "Mooneye",
+    "scientific_name": "Hiodon tergisus",
+    "family": "Hiodontidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "ameiurus_melas",
+    "common_name": "Black bullhead",
+    "scientific_name": "Ameiurus melas",
+    "family": "Ictaluridae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "noturus_funebris",
+    "common_name": "Black madtom",
+    "scientific_name": "Noturus funebris",
+    "family": "Ictaluridae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "ameiurus_nebulosus",
+    "common_name": "Brown bullhead",
+    "scientific_name": "Ameiurus nebulosus",
+    "family": "Ictaluridae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "coosa_madtom",
+    "common_name": "Coosa madtom",
+    "scientific_name": "Noturus sp. cf. N. munitus",
+    "family": "Ictaluridae",
+    "taxon_rank": "provisional"
+  },
+  {
+    "species_id": "ameiurus_platycephalus",
+    "common_name": "Flat bullhead",
+    "scientific_name": "Ameiurus platycephalus",
+    "family": "Ictaluridae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "noturus_nocturnus",
+    "common_name": "Freckled madtom",
+    "scientific_name": "Noturus nocturnus",
+    "family": "Ictaluridae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "noturus_insignis",
+    "common_name": "Margined madtom",
+    "scientific_name": "Noturus insignis",
+    "family": "Ictaluridae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "noturus_eleutherus",
+    "common_name": "Mountain madtom",
+    "scientific_name": "Noturus eleutherus",
+    "family": "Ictaluridae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "ameiurus_brunneus",
+    "common_name": "Snail bullhead",
+    "scientific_name": "Ameiurus brunneus",
+    "family": "Ictaluridae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "noturus_leptacanthus",
+    "common_name": "Speckled madtom",
+    "scientific_name": "Noturus leptacanthus",
+    "family": "Ictaluridae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "ameiurus_serracanthus",
+    "common_name": "Spotted bullhead",
+    "scientific_name": "Ameiurus serracanthus",
+    "family": "Ictaluridae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "noturus_gyrinus",
+    "common_name": "Tadpole madtom",
+    "scientific_name": "Noturus gyrinus",
+    "family": "Ictaluridae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "ameiurus_catus",
+    "common_name": "White catfish",
+    "scientific_name": "Ameiurus catus",
+    "family": "Ictaluridae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "ameiurus_natalis",
+    "common_name": "Yellow bullhead",
+    "scientific_name": "Ameiurus natalis",
+    "family": "Ictaluridae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "lepisosteus_platyrhincus",
+    "common_name": "Florida gar",
+    "scientific_name": "Lepisosteus platyrhincus",
+    "family": "Lepisosteidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "lepisosteus_osseus",
+    "common_name": "Longnose gar",
+    "scientific_name": "Lepisosteus osseus",
+    "family": "Lepisosteidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "lepisosteus_oculatus",
+    "common_name": "Spotted gar",
+    "scientific_name": "Lepisosteus oculatus",
+    "family": "Lepisosteidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "white_bass_x_striped_bass_hybrid",
+    "common_name": "White bass X striped bass hybrid",
+    "scientific_name": "Morone chrysops X M. saxatilis",
+    "family": "Moronidae",
+    "taxon_rank": "hybrid"
+  },
+  {
+    "species_id": "morone_americana",
+    "common_name": "White perch",
+    "scientific_name": "Morone americana",
+    "family": "Moronidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "morone_mississippiensis",
+    "common_name": "Yellow bass",
+    "scientific_name": "Morone mississippiensis",
+    "family": "Moronidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "agonostomus_monticola",
+    "common_name": "Mountain mullet",
+    "scientific_name": "Agonostomus monticola",
+    "family": "Mugilidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "mugil_cephalus",
+    "common_name": "Striped mullet",
+    "scientific_name": "Mugil cephalus",
+    "family": "Mugilidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "percina_antesella",
+    "common_name": "Amber darter",
+    "scientific_name": "Percina antesella",
+    "family": "Percidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "etheostoma_zonifer",
+    "common_name": "Backwater darter",
+    "scientific_name": "Etheostoma zonifer",
+    "family": "Percidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "etheostoma_zonale",
+    "common_name": "Banded darter",
+    "scientific_name": "Etheostoma zonale",
+    "family": "Percidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "etheostoma_duryi",
+    "common_name": "Black darter",
+    "scientific_name": "Etheostoma duryi",
+    "family": "Percidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "percina_nigrofasciata",
+    "common_name": "Blackbanded darter",
+    "scientific_name": "Percina nigrofasciata",
+    "family": "Percidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "etheostoma_jessiae",
+    "common_name": "Blueside darter",
+    "scientific_name": "Etheostoma jessiae",
+    "family": "Percidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "percina_kusha",
+    "common_name": "Bridled darter",
+    "scientific_name": "Percina kusha",
+    "family": "Percidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "percina_palmaris",
+    "common_name": "Bronze darter",
+    "scientific_name": "Percina palmaris",
+    "family": "Percidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "etheostoma_edwini",
+    "common_name": "Brown darter",
+    "scientific_name": "Etheostoma edwini",
+    "family": "Percidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "etheostoma_scotti",
+    "common_name": "Cherokee darter",
+    "scientific_name": "Etheostoma scotti",
+    "family": "Percidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "etheostoma_hopkinsi",
+    "common_name": "Christmas darter",
+    "scientific_name": "Etheostoma hopkinsi",
+    "family": "Percidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "etheostoma_ditrema",
+    "common_name": "Coldwater darter",
+    "scientific_name": "Etheostoma ditrema",
+    "family": "Percidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "percina_jenkinsi",
+    "common_name": "Conasauga logperch",
+    "scientific_name": "Percina jenkinsi",
+    "family": "Percidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "etheostoma_coosae",
+    "common_name": "Coosa darter",
+    "scientific_name": "Etheostoma coosae",
+    "family": "Percidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "percina_sciera",
+    "common_name": "Dusky darter",
+    "scientific_name": "Percina sciera",
+    "family": "Percidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "etheostoma_etowahae",
+    "common_name": "Etowah darter",
+    "scientific_name": "Etheostoma etowahae",
+    "family": "Percidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "percina_lenticula",
+    "common_name": "Freckled darter",
+    "scientific_name": "Percina lenticula",
+    "family": "Percidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "percina_evides",
+    "common_name": "Gilt darter",
+    "scientific_name": "Percina evides",
+    "family": "Percidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "percina_aurolineata",
+    "common_name": "Goldline darter",
+    "scientific_name": "Percina aurolineata",
+    "family": "Percidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "etheostoma_parvipinne",
+    "common_name": "Goldstripe darter",
+    "scientific_name": "Etheostoma parvipinne",
+    "family": "Percidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "etheostoma_jordani",
+    "common_name": "Greenbreast darter",
+    "scientific_name": "Etheostoma jordani",
+    "family": "Percidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "etheostoma_chlorobranchium",
+    "common_name": "Greenfin darter",
+    "scientific_name": "Etheostoma chlorobranchium",
+    "family": "Percidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "etheostoma_blennioides",
+    "common_name": "Greenside darter",
+    "scientific_name": "Etheostoma blennioides",
+    "family": "Percidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "etheostoma_swaini",
+    "common_name": "Gulf darter",
+    "scientific_name": "Etheostoma swaini",
+    "family": "Percidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "percina_crypta",
+    "common_name": "Halloween darter",
+    "scientific_name": "Percina crypta",
+    "family": "Percidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "holiday_darter_complex",
+    "common_name": "Holiday darter complex",
+    "scientific_name": "Etheostoma sp. cf. E. brevirostrum",
+    "family": "Percidae",
+    "taxon_rank": "provisional"
+  },
+  {
+    "species_id": "etheostoma_chuckwachatte",
+    "common_name": "Lipstick darter",
+    "scientific_name": "Etheostoma chuckwachatte",
+    "family": "Percidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "percina_caprodes",
+    "common_name": "Logperch",
+    "scientific_name": "Percina caprodes",
+    "family": "Percidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "percina_kathae",
+    "common_name": "Mobile logperch",
+    "scientific_name": "Percina kathae",
+    "family": "Percidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "percina_smithvanizi",
+    "common_name": "Muscadine darter",
+    "scientific_name": "Percina smithvanizi",
+    "family": "Percidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "percina_squamata",
+    "common_name": "Olive darter",
+    "scientific_name": "Percina squamata",
+    "family": "Percidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "etheostoma_caeruleum",
+    "common_name": "Rainbow darter",
+    "scientific_name": "Etheostoma caeruleum",
+    "family": "Percidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "etheostoma_rufilineatum",
+    "common_name": "Redline darter",
+    "scientific_name": "Etheostoma rufilineatum",
+    "family": "Percidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "redline_darter_species",
+    "common_name": "Redline darter species",
+    "scientific_name": "Etheostoma sp. cf. E. rufilineatum",
+    "family": "Percidae",
+    "taxon_rank": "provisional"
+  },
+  {
+    "species_id": "percina_shumardi",
+    "common_name": "River darter",
+    "scientific_name": "Percina shumardi",
+    "family": "Percidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "etheostoma_rupestre",
+    "common_name": "Rock darter",
+    "scientific_name": "Etheostoma rupestre",
+    "family": "Percidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "sander_canadensis",
+    "common_name": "Sauger",
+    "scientific_name": "Sander canadensis",
+    "family": "Percidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "etheostoma_fricksium",
+    "common_name": "Savannah darter",
+    "scientific_name": "Etheostoma fricksium",
+    "family": "Percidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "etheostoma_serrifer",
+    "common_name": "Sawcheek darter",
+    "scientific_name": "Etheostoma serrifer",
+    "family": "Percidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "percina_tanasi",
+    "common_name": "Snail darter",
+    "scientific_name": "Percina tanasi",
+    "family": "Percidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "etheostoma_stigmaeum",
+    "common_name": "Speckled darter",
+    "scientific_name": "Etheostoma stigmaeum",
+    "family": "Percidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "etheostoma_fusiforme",
+    "common_name": "Swamp darter",
+    "scientific_name": "Etheostoma fusiforme",
+    "family": "Percidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "etheostoma_tallapoosae",
+    "common_name": "Tallapoosa darter",
+    "scientific_name": "Etheostoma tallapoosae",
+    "family": "Percidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "percina_aurantiaca",
+    "common_name": "Tangerine darter",
+    "scientific_name": "Percina aurantiaca",
+    "family": "Percidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "etheostoma_tennesseense",
+    "common_name": "Tennessee darter",
+    "scientific_name": "Etheostoma tennesseense",
+    "family": "Percidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "etheostoma_olmstedi",
+    "common_name": "Tessellated darter",
+    "scientific_name": "Etheostoma olmstedi",
+    "family": "Percidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "etheostoma_trisella",
+    "common_name": "Trispot darter",
+    "scientific_name": "Etheostoma trisella",
+    "family": "Percidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "etheostoma_gutselli",
+    "common_name": "Tuckasegee darter",
+    "scientific_name": "Etheostoma gutselli",
+    "family": "Percidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "etheostoma_inscriptum",
+    "common_name": "Turquoise darter",
+    "scientific_name": "Etheostoma inscriptum",
+    "family": "Percidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "etheostoma_vulneratum",
+    "common_name": "Wounded darter",
+    "scientific_name": "Etheostoma vulneratum",
+    "family": "Percidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "lampetra_appendix",
+    "common_name": "American brook lamprey",
+    "scientific_name": "Lampetra appendix",
+    "family": "Petromyzontidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "ichthyomyzon_castaneus",
+    "common_name": "Chestnut lamprey",
+    "scientific_name": "Ichthyomyzon castaneus",
+    "family": "Petromyzontidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "lampetra_aepyptera",
+    "common_name": "Least brook lamprey",
+    "scientific_name": "Lampetra aepyptera",
+    "family": "Petromyzontidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "ichthyomyzon_greeleyi",
+    "common_name": "Mountain brook lamprey",
+    "scientific_name": "Ichthyomyzon greeleyi",
+    "family": "Petromyzontidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "ichthyomyzon_bdellium",
+    "common_name": "Ohio lamprey",
+    "scientific_name": "Ichthyomyzon bdellium",
+    "family": "Petromyzontidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "petromyzon_marinus",
+    "common_name": "Sea lamprey",
+    "scientific_name": "Petromyzon marinus",
+    "family": "Petromyzontidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "ichthyomyzon_gagei",
+    "common_name": "Southern brook lamprey",
+    "scientific_name": "Ichthyomyzon gagei",
+    "family": "Petromyzontidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "gambusia_holbrooki",
+    "common_name": "Eastern mosquitofish",
+    "scientific_name": "Gambusia holbrooki",
+    "family": "Poeciliidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "heterandria_formosa",
+    "common_name": "Least killifish",
+    "scientific_name": "Heterandria formosa",
+    "family": "Poeciliidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "poecilia_latipinna",
+    "common_name": "Sailfin molly",
+    "scientific_name": "Poecilia latipinna",
+    "family": "Poeciliidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "gambusia_affinis",
+    "common_name": "Western mosquitofish",
+    "scientific_name": "Gambusia affinis",
+    "family": "Poeciliidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "polyodon_spathula",
+    "common_name": "Paddlefish",
+    "scientific_name": "Polyodon spathula",
+    "family": "Polyodontidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "aplodinotus_grunniens",
+    "common_name": "Freshwater drum",
+    "scientific_name": "Aplodinotus grunniens",
+    "family": "Sciaenidae",
+    "taxon_rank": "species"
+  },
+  {
+    "species_id": "swamp_eel",
+    "common_name": "Swamp eel",
+    "scientific_name": "Monopterus sp. cf. M. albus",
+    "family": "Synbranchidae",
+    "taxon_rank": "provisional"
+  },
+  {
+    "species_id": "umbra_pygmaea",
+    "common_name": "Eastern mudminnow",
+    "scientific_name": "Umbra pygmaea",
+    "family": "Umbridae",
+    "taxon_rank": "species"
+  }
 ]
