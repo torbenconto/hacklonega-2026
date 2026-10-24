@@ -1,6 +1,6 @@
 import { type ReactNode } from 'react';
 import { useState } from 'react';
-import { ActivityIndicator, Linking, Pressable, ScrollView, StyleSheet, Text, TextInput, View, type TextInputProps } from 'react-native';
+import { ActivityIndicator, Linking, Platform, Pressable, ScrollView, StyleSheet, Text, TextInput, View, type TextInputProps } from 'react-native';
 import { SpringPressable } from './motion';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
@@ -38,7 +38,7 @@ export const ui = StyleSheet.create({
   button: { backgroundColor: colors.green, paddingHorizontal: 20, paddingVertical: 17, borderRadius: 5, alignItems: 'center', justifyContent: 'center', minHeight: 54 },
   secondary: { backgroundColor: 'transparent' },
   buttonText: { color: colors.white, fontWeight: '700', fontSize: 16 },
-  input: { backgroundColor: colors.white, borderWidth: 1, borderColor: colors.line, borderRadius: 4, padding: 17, color: colors.ink, fontSize: 16, minHeight: 54 },
+  input: { backgroundColor: colors.white, borderWidth: 1, borderColor: colors.line, borderRadius: 4, padding: 17, color: colors.ink, fontSize: 16, minHeight: 54, ...Platform.select({ web: { outlineWidth: 0 } }) },
   error: { color: '#A23928', backgroundColor: '#FBE8E0', padding: 14, borderRadius: 3, lineHeight: 21 },
   row: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: 12 },
   photo: { height: 240, width: '100%', borderRadius: 4, backgroundColor: '#E1E8DD' },
