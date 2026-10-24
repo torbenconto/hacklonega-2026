@@ -1,34 +1,40 @@
-import { useCallback, useState } from 'react';
-import { useFocusEffect, router } from 'expo-router';
+import { useMemo } from 'react';
+import { router } from 'expo-router';
 import { ActivityIndicator, Text, View } from 'react-native';
-import { api, type FishLog } from '@/lib/api';
-import { useSession } from '@/lib/session';
-import { Button, ErrorMessage, Heading, Page, colors, ui } from '@/components/fishing-ui';
+import { useJournal } from '@/hooks/use-journal';
+import { useCatalog } from '@/hooks/use-catalog';
+import { measurement, speciesKey, summarizeCatches } from '@/lib/collection';
+import { FishImage } from '@/components/fish-image';
+import { Badge, Button, ErrorMessage, Heading, Page, Stat, colors, ui } from '@/components/fishing-ui';
 
 export default function History() {
-  const { username } = useSession();
-  const [logs, setLogs] = useState<FishLog[]>([]);
-  const [error, setError] = useState('');
-  const [loading, setLoading] = useState(true);
-  const loadHistory = useCallback(() => {
-    let active = true;
-    async function load() {
-      if (!username) return;
-      setLoading(true); setError('');
-      try {
-        const rows = await api<FishLog[]>('/catches', {}, username);
-        if (active) setLogs(rows);
-      } catch (e) { if (active) setError((e as Error).message); }
-      finally { if (active) setLoading(false); }
-    }
-    void load();
-    return () => { active = false; };
-  }, [username]);
-  useFocusEffect(loadHistory);
-  return <Page><Heading eyebrow="Your fishing history" title="Days worth keeping." subtitle="Your confirmed catches, saved to your account on the fishing server." />
-    <View style={[ui.card, ui.row]}><View><Text style={[ui.title, { fontSize: 30 }]}>{logs.length}</Text><Text style={ui.small}>FISH LOGGED</Text></View><View><Text style={[ui.title, { fontSize: 30 }]}>{new Set(logs.map(l => l.species)).size}</Text><Text style={ui.small}>SPECIES DISCOVERED</Text></View></View>
-    <Button title="Refresh history" secondary disabled={loading} onPress={() => { loadHistory(); }} /><ErrorMessage message={error} />{loading && <ActivityIndicator color={colors.green} />}
-    {!loading && !error && !logs.length && <View style={ui.card}><Text style={ui.name}>Your first catch is waiting.</Text><Text style={ui.body}>Take a photo, upload one, or try a demo fish to start your journal.</Text><Button title="Log your first fish" onPress={() => router.navigate('/(tabs)/identify')} /></View>}
-    {logs.map(log => <View key={log.id} style={ui.card}><Text style={ui.eyebrow}>{new Date(log.created_at).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' })}</Text><Text style={ui.name}>{log.species}</Text><View style={ui.row}><Text style={ui.body}>{log.length_inches} inches</Text><Text style={ui.body}>{log.weight_lbs} lbs</Text></View><Text style={ui.small}>Journal entry #{log.id}</Text></View>)}
+  const journal = useJournal();
+  const catalog = useCatalog();
+  const records = useMemo(() => summarizeCatches(journal.logs || []), [journal.logs]);
+  const byName = useMemo(() => new Map(catalog.species.map(s => [speciesKey(s.common_name), s])), [catalog.species]);
+  const logs = journal.logs || [];
+  const biggest = logs.length ? Math.max(...logs.map(log => log.weight_lbs)) : null;
+  return <Page>
+    <Heading eyebrow="Reel Georgia / Field journal" title="Stories from the water." subtitle="Your catches, first discoveries, and the ones that set a new personal best." />
+    <View style={ui.hero}><View style={ui.row}><Stat light value={journal.logs ? String(logs.length) : '—'} label="catches logged" /><Stat light value={journal.logs ? String(records.size) : '—'} label="unique entries" /><Stat light value={biggest === null ? '—' : `${measurement(biggest)} lb`} label="heaviest catch" /></View></View>
+    <View style={ui.row}><Text style={ui.section}>Your catch timeline</Text><Button title="Refresh" secondary disabled={journal.loading} onPress={journal.refresh} /></View>
+    <ErrorMessage message={journal.error || catalog.error} />{journal.loading && <ActivityIndicator color={colors.green} />}
+    {!journal.loading && !journal.error && !logs.length && <View style={ui.card}><Badge gold>THE FIRST OF MANY</Badge><Text style={ui.name}>Every collection starts with one.</Text><Text style={ui.body}>Take a fish photo, confirm a match, and save a catch to start your Fishdex.</Text><Button title="Make your first discovery →" onPress={() => router.navigate('/(tabs)/identify')} /></View>}
+    {logs.map(log => {
+      const species = byName.get(speciesKey(log.species));
+      const record = records.get(speciesKey(log.species));
+      const best = record?.heaviest.id === log.id;
+      return <View key={log.id} style={[ui.card, { padding: 0, overflow: 'hidden' }]}>
+        <View style={{ flexDirection: 'row' }}>
+          {species && <View style={{ width: 110, alignSelf: 'stretch', backgroundColor: colors.soft }}><FishImage speciesId={species.species_id} name={species.common_name} height={140} /></View>}
+          <View style={{ flex: 1, padding: 18, gap: 8 }}>
+            <Text style={ui.eyebrow}>{new Date(log.created_at).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' })}</Text>
+            <Text style={ui.name}>{log.species}</Text>
+            <Text style={ui.body}>{measurement(log.weight_lbs)} lb · {measurement(log.length_inches)} in</Text>
+            {best && <Badge gold>★ PERSONAL BEST · WEIGHT</Badge>}
+          </View>
+        </View>
+      </View>;
+    })}
   </Page>;
 }

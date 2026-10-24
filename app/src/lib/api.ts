@@ -7,8 +7,22 @@ export const API_URL = (process.env.EXPO_PUBLIC_API_URL || (Platform.OS === 'web
   : `http://${host || 'localhost'}:8000`)).replace(/\/$/, '');
 
 export type Species = { species_id: string; common_name: string; scientific_name: string; family?: string; taxon_rank?: string };
-export type Prediction = { status: string; reason: string; notice: string; candidates: (Species & { similarity: number })[] };
+export type Prediction = { status: 'candidate' | 'uncertain' | 'unsupported'; reason: string; notice: string; candidates: (Species & { similarity: number })[] };
 export type FishLog = { id: number; species: string; weight_lbs: number; length_inches: number; created_at: string };
+export type RegulationResult = {
+  species_id: string;
+  length_inches: number;
+  length_result: 'below_baseline' | 'meets_baseline' | 'no_baseline_length_limit' | 'not_evaluated';
+  minimum_length_inches: number | null;
+  length_guidance: string;
+  daily_limit: { status: 'specified' | 'no_statewide_limit' | 'not_evaluated'; limit: number | null; guidance: string };
+  exception_notes: string[];
+  warnings: string[];
+  sources: { url: string; reference: string }[];
+  reviewed_on: string;
+  ruleset_version: string;
+  legal_status: 'undetermined';
+};
 
 export class ApiError extends Error {
   constructor(message: string, public status: number) { super(message); }
@@ -16,13 +30,27 @@ export class ApiError extends Error {
 
 export async function api<T>(path: string, options: RequestInit = {}, username?: string): Promise<T> {
   let response: Response;
+  const controller = new AbortController();
+  const abort = () => controller.abort();
+  options.signal?.addEventListener('abort', abort, { once: true });
+  if (options.signal?.aborted) abort();
+  const timeout = setTimeout(() => controller.abort(), path.startsWith('/predict') ? 180_000 : 20_000);
   try {
-    response = await fetch(`${API_URL}${path}`, {
+    const url = Platform.OS === 'web' && !process.env.EXPO_PUBLIC_API_URL
+      ? `/api/backend?path=${encodeURIComponent(path)}`
+      : `${API_URL}${path}`;
+    response = await fetch(url, {
       ...options,
+      signal: controller.signal,
       headers: { ...(options.body instanceof FormData ? {} : { 'Content-Type': 'application/json' }), ...(username ? { 'X-Username': username } : {}), ...options.headers },
     });
   } catch {
-    throw new Error(`Cannot reach the fishing server at ${API_URL}. Check that the backend is running and your device is on the same network.`);
+    throw new Error(controller.signal.aborted
+      ? 'The request took too long. Please try again.'
+      : 'Cannot reach the fishing server. Check your connection and try again.');
+  } finally {
+    clearTimeout(timeout);
+    options.signal?.removeEventListener('abort', abort);
   }
   if (!response.ok) {
     const error = await response.json().catch(() => ({}));

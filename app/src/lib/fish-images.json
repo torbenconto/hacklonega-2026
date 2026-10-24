@@ -1,0 +1,1423 @@
+{
+  "micropterus_salmoides": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Largemouth_Bass_%28Micropterus_salmoides%29_June_2023_%28cropped%29.jpg/960px-Largemouth_Bass_%28Micropterus_salmoides%29_June_2023_%28cropped%29.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Largemouth_Bass_(Micropterus_salmoides)_June_2023_(cropped).jpg",
+    "credit": "USFWS Mountain Prairie",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "micropterus_dolomieu": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Smallmouth_Bass_%2849561724026%29.jpg/960px-Smallmouth_Bass_%2849561724026%29.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Smallmouth_Bass_(49561724026).jpg",
+    "credit": "USFWS Mountain Prairie",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "micropterus_punctulatus": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Micropterus_punctulatus.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Micropterus_punctulatus.jpg",
+    "credit": "Wikimedia Commons contributor",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "morone_saxatilis": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/7/74/Morone_saxatilis_SI2.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Morone_saxatilis_SI2.jpg",
+    "credit": "D Ross Robertson",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "morone_chrysops": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/White_Bass_%28Morone_chrysops%29.jpg/960px-White_Bass_%28Morone_chrysops%29.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:White_Bass_(Morone_chrysops).jpg",
+    "credit": "USFWS Mountain Prairie",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "lepomis_macrochirus": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Bluegill_%28cropped%29.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Bluegill_(cropped).jpg",
+    "credit": "Paleo1954",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "lepomis_microlophus": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Redear_Sunfish_%28Lepomis_microlophus%29_black_background.jpg/960px-Redear_Sunfish_%28Lepomis_microlophus%29_black_background.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Redear_Sunfish_(Lepomis_microlophus)_black_background.jpg",
+    "credit": "USFWS Mountain Prairie",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "lepomis_auritus": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Lepomis_auritus.jpg/960px-Lepomis_auritus.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Lepomis_auritus.jpg",
+    "credit": "Duane Raver",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "lepomis_cyanellus": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Lepomis_cyanellus_Raver.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Lepomis_cyanellus_Raver.jpg",
+    "credit": "Duane Raver",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "pomoxis_nigromaculatus": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Black_crappie.jpg/960px-Black_crappie.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Black_crappie.jpg",
+    "credit": "United States Fish and Wildlife Services",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "pomoxis_annularis": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/9/9d/White_Crappie.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:White_Crappie.jpg",
+    "credit": "Wikimedia Commons contributor",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "ictalurus_punctatus": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Channel_Catfish_%28Ictalurus_punctatus%29_white_background.jpg/960px-Channel_Catfish_%28Ictalurus_punctatus%29_white_background.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Channel_Catfish_(Ictalurus_punctatus)_white_background.jpg",
+    "credit": "USFWS Mountain Prairie",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "ictalurus_furcatus": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Blue_Catfish_%28Ictalurus_furcatus%29_%2853011311615%29.jpg/960px-Blue_Catfish_%28Ictalurus_furcatus%29_%2853011311615%29.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Blue_Catfish_(Ictalurus_furcatus)_(53011311615).jpg",
+    "credit": "USFWS Mountain Prairie",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "pylodictis_olivaris": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Pylodictis_olivaris.jpg/960px-Pylodictis_olivaris.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Pylodictis_olivaris.jpg",
+    "credit": "Engbretson, Eric / U.S. Fish and Wildlife Service",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "oncorhynchus_mykiss": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Close_up_of_rainbow_trout_fish_underwater_oncorhynchus_mykiss.jpg/960px-Close_up_of_rainbow_trout_fish_underwater_oncorhynchus_mykiss.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Close_up_of_rainbow_trout_fish_underwater_oncorhynchus_mykiss.jpg",
+    "credit": "Engbretson Eric, U.S. Fish and Wildlife Service",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "salmo_trutta": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Brown_Trout_%28Salmo_trutta%29_%2853678765394%29.jpg/960px-Brown_Trout_%28Salmo_trutta%29_%2853678765394%29.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Brown_Trout_(Salmo_trutta)_(53678765394).jpg",
+    "credit": "USFWS Mountain Prairie",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "salvelinus_fontinalis": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Brook_trout_in_water.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Brook_trout_in_water.jpg",
+    "credit": "Jay Fleming (US Nat'l Park Svc)",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "sander_vitreus": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Walleye_%28Sander_vitreus%29_%281%29.jpg/960px-Walleye_%28Sander_vitreus%29_%281%29.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Walleye_(Sander_vitreus)_(1).jpg",
+    "credit": "USFWS Mountain Prairie",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "perca_flavescens": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Yellow_Perch_%28Perca_flavescens%29_%28cropped%29.jpg/960px-Yellow_Perch_%28Perca_flavescens%29_%28cropped%29.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Yellow_Perch_(Perca_flavescens)_(cropped).jpg",
+    "credit": "USFWS Mountain Prairie",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "cyprinus_carpio": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Cyprinus_carpio_2008_G1_%28cropped%29.jpg/960px-Cyprinus_carpio_2008_G1_%28cropped%29.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Cyprinus_carpio_2008_G1_(cropped).jpg",
+    "credit": "George Chernilevsky",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "acipenser_oxyrinchus_oxyrinchus": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Huge_sturgeon_in_the_Gulf_of_St._Lawrence_ecosystem_-_panoramio.jpg/960px-Huge_sturgeon_in_the_Gulf_of_St._Lawrence_ecosystem_-_panoramio.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Huge_sturgeon_in_the_Gulf_of_St._Lawrence_ecosystem_-_panoramio.jpg",
+    "credit": "Jiaqian AirplaneFan",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+  },
+  "acipenser_brevirostrum": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Acipenser_brevirostrum_head.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Acipenser_brevirostrum_head.jpg",
+    "credit": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "typhlichthys_subterraneus": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Typhlichthys_subterraneus_%2810.3897-subtbiol.20.9693%29_Figure_1.jpg/960px-Typhlichthys_subterraneus_%2810.3897-subtbiol.20.9693%29_Figure_1.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Typhlichthys_subterraneus_(10.3897-subtbiol.20.9693)_Figure_1.jpg",
+    "credit": "Niemiller ML, Zigler KS, Hart PB, Kuhajda BR, Armbruster JW, Ayala BN, Engel AS (2016) First definitive record of a stygobiotic fish (Percopsiformes, Amblyopsidae, Typhlichthys) from the Appalachians karst region in the eastern United States. Subterranean Biology 20: 39-50. https://doi.org/10.3897/subtbiol.20.9693",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "chologaster_cornuta": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Chologaster_cornuta_471931908.jpg/960px-Chologaster_cornuta_471931908.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Chologaster_cornuta_471931908.jpg",
+    "credit": "Ashwin Srinivasan",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "amia_calva": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Amia_calva.png/960px-Amia_calva.png",
+    "source": "https://commons.wikimedia.org/wiki/File:Amia_calva.png",
+    "credit": "Zachary Randall",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+  },
+  "anguilla_rostrata": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/a/a7/American_eel_%28Anguilla_rostrata%29_%284015394951%29.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:American_eel_(Anguilla_rostrata)_(4015394951).jpg",
+    "credit": "Clinton & Charles Robertson from RAF Lakenheath, UK & San Marcos, TX, USA & UK",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+  },
+  "aphredoderus_sayanus": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Pirate_perch.JPG/960px-Pirate_perch.JPG",
+    "source": "https://commons.wikimedia.org/wiki/File:Pirate_perch.JPG",
+    "credit": "Fredlyfish4",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "labidesthes_sicculus": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/7/70/Labidesthes_sicculus.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Labidesthes_sicculus.jpg",
+    "credit": "Wikimedia Commons contributor",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5"
+  },
+  "menidia_beryllina": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Menidia_beryllina.jpeg",
+    "source": "https://commons.wikimedia.org/wiki/File:Menidia_beryllina.jpeg",
+    "credit": "Bill Stagnaro",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "hypentelium_etowanum": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Hypentelium_etowanum.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Hypentelium_etowanum.jpg",
+    "credit": "Noel M. Burkhead - US Geological Survey",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "ictiobus_niger": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Ictiobus_niger.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Ictiobus_niger.jpg",
+    "credit": "Wikimedia Commons contributor",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "moxostoma_duquesnei": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Black_redhorse.jpg/960px-Black_redhorse.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Black_redhorse.jpg",
+    "credit": "Neilhamrick",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "moxostoma_poecilurum": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Blacktail_Redhorse_%28Moxostoma_poecilurum%29.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Blacktail_Redhorse_(Moxostoma_poecilurum).jpg",
+    "credit": "Clinton & Charles Robertson",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+  },
+  "erimyzon_oblongus": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Erimyzon_oblongus.jpg/960px-Erimyzon_oblongus.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Erimyzon_oblongus.jpg",
+    "credit": "Ellen Edmonson and Hugh Chrisp",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "moxostoma_erythrurum": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Moxostoma_erythrurum.jpg/960px-Moxostoma_erythrurum.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Moxostoma_erythrurum.jpg",
+    "credit": "Ellen Edmonson and Hugh Chrisp",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "erimyzon_sucetta": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Erimyzon_sucetta.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Erimyzon_sucetta.jpg",
+    "credit": "Wikimedia Commons contributor",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "hypentelium_nigricans": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Northern_hogsucker_Hypentelium_nigricans.jpg/960px-Northern_hogsucker_Hypentelium_nigricans.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Northern_hogsucker_Hypentelium_nigricans.jpg",
+    "credit": "Brian Gratwicke",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+  },
+  "carpiodes_carpio": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/River_Carpsucker_%28Carpiodes_carpio%29_%2854048899722%29.jpg/960px-River_Carpsucker_%28Carpiodes_carpio%29_%2854048899722%29.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:River_Carpsucker_(Carpiodes_carpio)_(54048899722).jpg",
+    "credit": "USFWS Mountain Prairie",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "moxostoma_robustum": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Robust_Redhorse_Sucker_Moxostoma_robustum.jpg/960px-Robust_Redhorse_Sucker_Moxostoma_robustum.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Robust_Redhorse_Sucker_Moxostoma_robustum.jpg",
+    "credit": "Brian Gratwicke",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+  },
+  "moxostoma_anisurum": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Moxostoma_anisurum.jpg/960px-Moxostoma_anisurum.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Moxostoma_anisurum.jpg",
+    "credit": "Ellen Edmonson and Hugh Chrisp",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "ictiobus_bubalus": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Smallmouth-buffalo.jpg/960px-Smallmouth-buffalo.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Smallmouth-buffalo.jpg",
+    "credit": "Sam Stukel",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "minytrema_melanops": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/FMIB_51348_Spotted_Sucker_Minytrema_melanops.jpeg/960px-FMIB_51348_Spotted_Sucker_Minytrema_melanops.jpeg",
+    "source": "https://commons.wikimedia.org/wiki/File:FMIB_51348_Spotted_Sucker_Minytrema_melanops.jpeg",
+    "credit": "Hugh McCormick Smith",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "moxostoma_rupiscartes": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/1/10/FMIB_51349_Sucker%3B_Jump-Rocks_Moxostoma_rupiscartes.jpeg",
+    "source": "https://commons.wikimedia.org/wiki/File:FMIB_51349_Sucker;_Jump-Rocks_Moxostoma_rupiscartes.jpeg",
+    "credit": "Hugh McCormick Smith",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "catostomus_commersoni": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/White_Sucker%2C_Catostomus_commersonii.jpg/960px-White_Sucker%2C_Catostomus_commersonii.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:White_Sucker,_Catostomus_commersonii.jpg",
+    "credit": "Brian Gratwicke",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+  },
+  "micropterus_henshalli": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/8/82/Alabama_Bass1.png",
+    "source": "https://commons.wikimedia.org/wiki/File:Alabama_Bass1.png",
+    "credit": "LDS20",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "enneacanthus_obesus": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/f/f5/Enneacanthus_obesus.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Enneacanthus_obesus.jpg",
+    "credit": "Noel Burkhead",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5"
+  },
+  "enneacanthus_chaetodon": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Enneacanthus_chaetodon_Natural_History_Museum_University_of_Pisa.jpg/960px-Enneacanthus_chaetodon_Natural_History_Museum_University_of_Pisa.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Enneacanthus_chaetodon_Natural_History_Museum_University_of_Pisa.jpg",
+    "credit": "Mattia Nocciola",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "enneacanthus_gloriosus": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/7/75/Enneacanthus_gloriosus.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Enneacanthus_gloriosus.jpg",
+    "credit": "Noel Burkhead/Howard Jelks",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5"
+  },
+  "lepomis_marginatus": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Lepomis_marginatus_UMFS_2014_1.JPG/960px-Lepomis_marginatus_UMFS_2014_1.JPG",
+    "source": "https://commons.wikimedia.org/wiki/File:Lepomis_marginatus_UMFS_2014_1.JPG",
+    "credit": "Fredlyfish4",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "centrarchus_macropterus": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/4/44/Centrarchus_macropterus_%281%29.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Centrarchus_macropterus_(1).jpg",
+    "credit": "Drawing by Duane Raver\n\nThe original uploader was Tkinias at English Wikipedia.",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "lepomis_megalotis": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Lepomis_megalotis2.jpg/960px-Lepomis_megalotis2.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Lepomis_megalotis2.jpg",
+    "credit": "Duane Raver",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "acantharchus_pomotis": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/9/93/Acantharchus_pomotis.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Acantharchus_pomotis.jpg",
+    "credit": "Drawing by Duane Raver",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "lepomis_gibbosus": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Lepomis_adult.jpg/960px-Lepomis_adult.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Lepomis_adult.jpg",
+    "credit": "Lorenz Seebauer",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "micropterus_coosae": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/a/ad/TypicalRedeyeBassCoosaRiverNorthGeorgia.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:TypicalRedeyeBassCoosaRiverNorthGeorgia.jpg",
+    "credit": "Mike Cline",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "ambloplites_rupestris": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/1/14/Rock_Bass.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Rock_Bass.jpg",
+    "credit": "Illustration by Ted Walke for the Pennsylvania Fish & Boat Commission",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "ambloplites_ariommus": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/6/61/Ambloplites_ariommus.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Ambloplites_ariommus.jpg",
+    "credit": "USGS",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "micropterus_cataractae": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/8/84/Shoal_Bass_%28Micropterus_Cataractae%29_Flint_River%2C_GA.png",
+    "source": "https://commons.wikimedia.org/wiki/File:Shoal_Bass_(Micropterus_Cataractae)_Flint_River,_GA.png",
+    "credit": "Drewrmorgan",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
+  "lepomis_punctatus": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Lepomis_punctatus_440818366_%28cropped%29.jpg/960px-Lepomis_punctatus_440818366_%28cropped%29.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Lepomis_punctatus_440818366_(cropped).jpg",
+    "credit": "David Roach",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
+  "micropterus_notius": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/4/42/Micropterus_notius.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Micropterus_notius.jpg",
+    "credit": "Duane Raver",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "lepomis_gulosus": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Warmouth%2C_Green_Oak_Township%2C_MI%2C_USA_imported_from_iNaturalist_photo_520428562.jpg/960px-Warmouth%2C_Green_Oak_Township%2C_MI%2C_USA_imported_from_iNaturalist_photo_520428562.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Warmouth,_Green_Oak_Township,_MI,_USA_imported_from_iNaturalist_photo_520428562.jpg",
+    "credit": "(c) Quinn, some rights reserved (CC BY)",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "astronotus_ocellatus": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Astronotus_ocellatus.jpg/960px-Astronotus_ocellatus.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Astronotus_ocellatus.jpg",
+    "credit": "J\u00f3n Helgi J\u00f3nsson (Amything)",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "alosa_alabamae": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/2/2a/FMIB_33784_Ohio_Shad.jpeg",
+    "source": "https://commons.wikimedia.org/wiki/File:FMIB_33784_Ohio_Shad.jpeg",
+    "credit": "Barton Warren Evermann",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "alosa_pseudoharengus": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Alosa_pseudoharengus.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Alosa_pseudoharengus.jpg",
+    "credit": "Wikimedia Commons contributor",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "alosa_sapidissima": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Dentonshad1904.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Dentonshad1904.jpg",
+    "credit": "Shermon Foote Denton",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "alosa_aestivalis": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Blueback_herring_fish_image.jpg/960px-Blueback_herring_fish_image.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Blueback_herring_fish_image.jpg",
+    "credit": "Duane Raver, U.S. Fish and Wildlife Service",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "dorosoma_cepedianum": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/American_Gizzard_Shad.png/960px-American_Gizzard_Shad.png",
+    "source": "https://commons.wikimedia.org/wiki/File:American_Gizzard_Shad.png",
+    "credit": "Charles Homler d/b/a FocusOnWildlife",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "alosa_chrysochloris": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Skipjack_herring_fish_alosa_chrysochloris.jpg/960px-Skipjack_herring_fish_alosa_chrysochloris.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Skipjack_herring_fish_alosa_chrysochloris.jpg",
+    "credit": "Raver Duane, U.S. Fish and Wildlife Service",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "dorosoma_petenense": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Dorosoma_petenense.jpeg",
+    "source": "https://commons.wikimedia.org/wiki/File:Dorosoma_petenense.jpeg",
+    "credit": "Bill Stagnaro",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "cottus_carolinae": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Banded_sculpin.jpg/960px-Banded_sculpin.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Banded_sculpin.jpg",
+    "credit": "Jeff Finley, USFWS",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "cyprinella_callistia": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Alabama_Shiner-Jemmison_Park%2C_AL.jpg/960px-Alabama_Shiner-Jemmison_Park%2C_AL.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Alabama_Shiner-Jemmison_Park,_AL.jpg",
+    "credit": "Dhester88",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "cyprinella_xaenura": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Altamaha_Shiner_1.jpg/960px-Altamaha_Shiner_1.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Altamaha_Shiner_1.jpg",
+    "credit": "Thebarredowl",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "cyprinella_leedsi": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Bannerfin_Shiner%2C_Cross_Creek%2C_Augusta%2C_GA%2C_US_imported_from_iNaturalist_photo_381419742.jpg/960px-Bannerfin_Shiner%2C_Cross_Creek%2C_Augusta%2C_GA%2C_US_imported_from_iNaturalist_photo_381419742.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Bannerfin_Shiner,_Cross_Creek,_Augusta,_GA,_US_imported_from_iNaturalist_photo_381419742.jpg",
+    "credit": "(c) JamesLaFontaine, some rights reserved (CC BY)",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "hybopsis_amblops": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Bigeye_chub.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Bigeye_chub.jpg",
+    "credit": "Noel M. Burkhead - U.S. Geological Survey",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "cyprinella_venusta": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Cyprinella_venusta.jpg/960px-Cyprinella_venusta.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Cyprinella_venusta.jpg",
+    "credit": "Dan Johnson",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "lythrurus_atrapiculus": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Blacktip_shiner.jpg/960px-Blacktip_shiner.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Blacktip_shiner.jpg",
+    "credit": "Tayton Alvis",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "erimystax_insignis": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Blotched_Chub%2C_Cheatham_County%2C_TN%2C_USA_imported_from_iNaturalist_photo_332788789.jpg/960px-Blotched_Chub%2C_Cheatham_County%2C_TN%2C_USA_imported_from_iNaturalist_photo_332788789.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Blotched_Chub,_Cheatham_County,_TN,_USA_imported_from_iNaturalist_photo_332788789.jpg",
+    "credit": "(c) Zakqary Roy, some rights reserved (CC BY)",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "cyprinella_caerulea": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Cyprinella_caerulea.jpg/960px-Cyprinella_caerulea.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Cyprinella_caerulea.jpg",
+    "credit": "Dick Biggins, USFWS",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "nocomis_leptocephalus": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/5/51/Nocomis_leptocephalus.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Nocomis_leptocephalus.jpg",
+    "credit": "Noel M. Burkhead _ USGS",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "pteronotropis_welaka": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/FMIB_39788_Notropis_welaka%2C_new_species_Type.jpeg/960px-FMIB_39788_Notropis_welaka%2C_new_species_Type.jpeg",
+    "source": "https://commons.wikimedia.org/wiki/File:FMIB_39788_Notropis_welaka,_new_species_Type.jpeg",
+    "credit": "Barton Warren Evermann / William Converse Kendall",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "pimephales_notatus": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/Pimephales_notatus_-_Stumpfnasen-Zwergd%C3%B6bel_192957406.jpg/960px-Pimephales_notatus_-_Stumpfnasen-Zwergd%C3%B6bel_192957406.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Pimephales_notatus_-_Stumpfnasen-Zwergd%C3%B6bel_192957406.jpg",
+    "credit": "evangrimes",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "pimephales_vigilax": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Pimephales_vigilax.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Pimephales_vigilax.jpg",
+    "credit": "Konrad P. Schmidt",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "campostoma_anomalum": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Central_Stoneroller-Campostoma_anomalum_%2C_Cedar_River%2C_IA.jpg/960px-Central_Stoneroller-Campostoma_anomalum_%2C_Cedar_River%2C_IA.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Central_Stoneroller-Campostoma_anomalum_,_Cedar_River,_IA.jpg",
+    "credit": "Dhester88",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "notropis_petersoni": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Notropis_petersoni.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Notropis_petersoni.jpg",
+    "credit": "Wikimedia Commons contributor",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5"
+  },
+  "notropis_xaenocephalus": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Notropis_xaenocephalus.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Notropis_xaenocephalus.jpg",
+    "credit": "Wikimedia Commons contributor",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5"
+  },
+  "semotilus_atromaculatus": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Creek_Chub%2C_Semotilus_atromaculatus.jpg/960px-Creek_Chub%2C_Semotilus_atromaculatus.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Creek_Chub,_Semotilus_atromaculatus.jpg",
+    "credit": "Brian Gratwicke",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+  },
+  "notropis_atherinoides": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Emerald_shiner_01.jpg/960px-Emerald_shiner_01.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Emerald_shiner_01.jpg",
+    "credit": "United States Fish and Wildlife Services",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "pimephales_promelas": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Fathead_Minnow-Pimephales_promelas%2C_Bear_Creek%2C_IA.jpg/960px-Fathead_Minnow-Pimephales_promelas%2C_Bear_Creek%2C_IA.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Fathead_Minnow-Pimephales_promelas,_Bear_Creek,_IA.jpg",
+    "credit": "Dhester88",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "phenacobius_crassilabrum": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Fatlips_Minnow%2C_North_Carolina%2C_US_imported_from_iNaturalist_photo_414274942.jpg/960px-Fatlips_Minnow%2C_North_Carolina%2C_US_imported_from_iNaturalist_photo_414274942.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Fatlips_Minnow,_North_Carolina,_US_imported_from_iNaturalist_photo_414274942.jpg",
+    "credit": "(c) Tayton Alvis, some rights reserved (CC BY)",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "hemitremia_flammea": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Hemitremia_flammea.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Hemitremia_flammea.jpg",
+    "credit": "Wikimedia Commons contributor",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5"
+  },
+  "notemigonus_crysoleucas": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Notemigonus_crysoleucas-1.jpg/960px-Notemigonus_crysoleucas-1.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Notemigonus_crysoleucas-1.jpg",
+    "credit": "Wikimedia Commons contributor",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "carassius_auratus": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Gold_fish1.jpg/960px-Gold_fish1.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Gold_fish1.jpg",
+    "credit": "\u05dc\u05d9\u05e0\u05d4 \u05d0\u05d1\u05d5\u05d2\u05d5\u05e9",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "ctenopharyngodon_idella": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/2x_amur_b%C3%ADl%C3%BD.jpg/960px-2x_amur_b%C3%ADl%C3%BD.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:2x_amur_b%C3%ADl%C3%BD.jpg",
+    "credit": "Dezidor",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+  },
+  "notropis_altipinnis": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Notropis_altipinnis_364470266.jpg/960px-Notropis_altipinnis_364470266.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Notropis_altipinnis_364470266.jpg",
+    "credit": "Tayton Alvis",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "notropis_chalybaeus": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Notropis_chalybaeus_FWS_20915.jpg/960px-Notropis_chalybaeus_FWS_20915.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Notropis_chalybaeus_FWS_20915.jpg",
+    "credit": "Matthew Patterson/USFWS",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "campostoma_oligolepis": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/a/a3/C.oligolepsis.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:C.oligolepsis.jpg",
+    "credit": "Noel M. Burkhead",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "rhinichthys_cataractae": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Rhinichthys_cataractae_-_Langnasen-Wei%C3%9Ffisch_93587939.jpg/960px-Rhinichthys_cataractae_-_Langnasen-Wei%C3%9Ffisch_93587939.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Rhinichthys_cataractae_-_Langnasen-Wei%C3%9Ffisch_93587939.jpg",
+    "credit": "Rob Foster",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "notropis_longirostris": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/8/86/Notropis_longirostris.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Notropis_longirostris.jpg",
+    "credit": "Wikimedia Commons contributor",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5"
+  },
+  "notropis_volucellus": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Notropis_volucellus.jpg/960px-Notropis_volucellus.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Notropis_volucellus.jpg",
+    "credit": "Ellen Edmonson and Hugh Chrisp",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "notropis_spectrunculus": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Notropis_spectrunculus.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Notropis_spectrunculus.jpg",
+    "credit": "Noel M. Burkhead USGS",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "notropis_ariommus": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Popeye_shiner.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Popeye_shiner.jpg",
+    "credit": "Noel Burkhead (USGS) (archive link: https://web.archive.org/web/20130605103003/http://profile.usgs.gov/nburkhead )",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "opsopoeodus_emiliae": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/FMIB_40129_Opsopoeodus_oscula_Evermann_Type_Buffalo_Bayou%2C_Houston%2C_Texas.jpeg/960px-FMIB_40129_Opsopoeodus_oscula_Evermann_Type_Buffalo_Bayou%2C_Houston%2C_Texas.jpeg",
+    "source": "https://commons.wikimedia.org/wiki/File:FMIB_40129_Opsopoeodus_oscula_Evermann_Type_Buffalo_Bayou,_Houston,_Texas.jpeg",
+    "credit": "Barton Warren Evermann / William Converse Kendall",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "notropis_chrosomus": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Notropis_chrosomus_-_Wilhelma_01.jpg/960px-Notropis_chrosomus_-_Wilhelma_01.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Notropis_chrosomus_-_Wilhelma_01.jpg",
+    "credit": "H. Zell",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "cyprinella_lutrensis": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Cyprinella_lutrensis%2C_breeding_male.jpg/960px-Cyprinella_lutrensis%2C_breeding_male.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Cyprinella_lutrensis,_breeding_male.jpg",
+    "credit": "USFWS Mountain Prairie",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "notropis_harperi": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Pteronotropis_harperi.jpg/960px-Pteronotropis_harperi.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Pteronotropis_harperi.jpg",
+    "credit": "Gabriel Somarriba",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "phenacobius_catostomus": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/7/70/Phenacobius_catostomus.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Phenacobius_catostomus.jpg",
+    "credit": "Patterson, Matthew",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "clinostomus_funduloides": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Clinostomus_funduloides_Rosyside_Dace.jpg/960px-Clinostomus_funduloides_Rosyside_Dace.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Clinostomus_funduloides_Rosyside_Dace.jpg",
+    "credit": "Brian Gratwicke",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+  },
+  "lythrurus_fasciolaris": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Scarletshinermale.jpg/960px-Scarletshinermale.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Scarletshinermale.jpg",
+    "credit": "Dylan Shaw",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "notropis_photogenis": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Silvershiner.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Silvershiner.jpg",
+    "credit": "Bob Jenkins and Noel Burkhead (Salem College)",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "notropis_stilbius": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Notropis_stilbius_silverstripe_shiner.JPG/960px-Notropis_stilbius_silverstripe_shiner.JPG",
+    "source": "https://commons.wikimedia.org/wiki/File:Notropis_stilbius_silverstripe_shiner.JPG",
+    "credit": "Sesamehoneytart",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "cyprinella_spiloptera": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Spotfin_shiner_%2851247793440%29.jpg/960px-Spotfin_shiner_%2851247793440%29.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Spotfin_shiner_(51247793440).jpg",
+    "credit": "USFWS Mountain Prairie",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "notropis_hudsonius": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Notropis_hudsonius.jpg/960px-Notropis_hudsonius.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Notropis_hudsonius.jpg",
+    "credit": "Painting by Ellen Edmonson",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "phenacobius_uranops": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/f/f0/FMIB_51355_Minnow_Phenacobius_uranops.jpeg",
+    "source": "https://commons.wikimedia.org/wiki/File:FMIB_51355_Minnow_Phenacobius_uranops.jpeg",
+    "credit": "Hugh McCormick Smith",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "cyprinella_whipplei": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Cyprinella_whipplei.jpg/960px-Cyprinella_whipplei.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Cyprinella_whipplei.jpg",
+    "credit": "Painting by Ellen Edmonson",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "luxilus_chrysocephalus": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Luxilus_chrysocephalus_chrysocephalus_409005244_%28cropped%29.jpg/960px-Luxilus_chrysocephalus_chrysocephalus_409005244_%28cropped%29.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Luxilus_chrysocephalus_chrysocephalus_409005244_(cropped).jpg",
+    "credit": "qfc79",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "notropis_maculatus": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/5/57/Notropis_maculatus.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Notropis_maculatus.jpg",
+    "credit": "Wikimedia Commons contributor",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5"
+  },
+  "notropis_telescopus": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/3/3c/FMIB_51354_Minnow_Notropis_telescopus.jpeg",
+    "source": "https://commons.wikimedia.org/wiki/File:FMIB_51354_Minnow_Notropis_telescopus.jpeg",
+    "credit": "Hugh McCormick Smith",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "notropis_leuciodus": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/d/db/Notropis_leuciodus_crop.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Notropis_leuciodus_crop.jpg",
+    "credit": "Noel Burkhead",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "cyprinella_trichroistia": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Tricolor_shiner_-_Cyprinella_trichroistia.jpg/960px-Tricolor_shiner_-_Cyprinella_trichroistia.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Tricolor_shiner_-_Cyprinella_trichroistia.jpg",
+    "credit": "Brian Gratwicke",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+  },
+  "luxilus_coccogenis": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Warpaint_shiner_%28Luxilus_coccogenis%29.jpg/960px-Warpaint_shiner_%28Luxilus_coccogenis%29.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Warpaint_shiner_(Luxilus_coccogenis).jpg",
+    "credit": "Brian Gratwicke",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+  },
+  "notropis_texanus": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/FMIB_40137_Notropis_nux_Evermann_Type_Neches_River%2C_Palestine%2C_Texas.jpeg/960px-FMIB_40137_Notropis_nux_Evermann_Type_Neches_River%2C_Palestine%2C_Texas.jpeg",
+    "source": "https://commons.wikimedia.org/wiki/File:FMIB_40137_Notropis_nux_Evermann_Type_Neches_River,_Palestine,_Texas.jpeg",
+    "credit": "Barton Warren Evermann / William Converse Kendall",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "rhinichthys_obtusus": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Western_Blacknose_Dace%2C_Guelph%2C_ON%2C_Canada_imported_from_iNaturalist_photo_36091681.jpg/960px-Western_Blacknose_Dace%2C_Guelph%2C_ON%2C_Canada_imported_from_iNaturalist_photo_36091681.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Western_Blacknose_Dace,_Guelph,_ON,_Canada_imported_from_iNaturalist_photo_36091681.jpg",
+    "credit": "(c) Owen Strickland, some rights reserved (CC BY)",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "tanichthys_albonubes": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/c/c8/White_Cloud_Mountain_Minnow_1.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:White_Cloud_Mountain_Minnow_1.jpg",
+    "credit": "Wikimedia Commons contributor",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  "cyprinella_galactura": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Whitetail_Shiner.jpg/960px-Whitetail_Shiner.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Whitetail_Shiner.jpg",
+    "credit": "Jwade30",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "notropis_lutipinnis": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Notropis_lutipinnis.jpg/960px-Notropis_lutipinnis.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Notropis_lutipinnis.jpg",
+    "credit": "Brian Gratwicke",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+  },
+  "elassoma_zonatum": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Elassomazonatum.jpg/960px-Elassomazonatum.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Elassomazonatum.jpg",
+    "credit": "Aciddandy",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "elassoma_okatie": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Elassoma_okatie.jpg/960px-Elassoma_okatie.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Elassoma_okatie.jpg",
+    "credit": "Luxquine",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "elassoma_evergladei": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Pygmy_Sunfish%2C_Elassoma_evergladei.jpg/960px-Pygmy_Sunfish%2C_Elassoma_evergladei.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Pygmy_Sunfish,_Elassoma_evergladei.jpg",
+    "credit": "Brian Gratwicke",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+  },
+  "elassoma_gilberti": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Elassoma_Gilberti_male_in_breeding_colors.jpg/960px-Elassoma_Gilberti_male_in_breeding_colors.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Elassoma_Gilberti_male_in_breeding_colors.jpg",
+    "credit": "Okiimiru (Erica Wieser)",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "elassoma_okefenokee": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Elassoma_okefenokee_male.png/960px-Elassoma_okefenokee_male.png",
+    "source": "https://commons.wikimedia.org/wiki/File:Elassoma_okefenokee_male.png",
+    "credit": "Andrew Bogott",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "esox_masquinongy": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Esox_masquinongyeditcrop.jpg/960px-Esox_masquinongyeditcrop.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Esox_masquinongyeditcrop.jpg",
+    "credit": "Engbretson, Eric / U.S. Fish and Wildlife Service",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "esox_lucius": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Esox_lucius_ZOO_1.jpg/960px-Esox_lucius_ZOO_1.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Esox_lucius_ZOO_1.jpg",
+    "credit": "Jik jik",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "fundulus_cingulatus": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Fundulus_cingulatus_whiteBG.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Fundulus_cingulatus_whiteBG.jpg",
+    "credit": "Howard Jelks",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5"
+  },
+  "lucania_goodei": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Lucania_goodei_%28female%29.jpg/960px-Lucania_goodei_%28female%29.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Lucania_goodei_(female).jpg",
+    "credit": "Tarragons",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
+  "fundulus_chrysotus": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Fundulus_chrysotus_UMFS_2.jpg/960px-Fundulus_chrysotus_UMFS_2.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Fundulus_chrysotus_UMFS_2.jpg",
+    "credit": "Fredlyfish4",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "fundulus_lineolatus": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/0/09/Fundulus_lineolatus.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Fundulus_lineolatus.jpg",
+    "credit": "Noel Burkhead; USGS",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5"
+  },
+  "fundulus_catenatus": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/2/25/Fundulus_catenatus.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Fundulus_catenatus.jpg",
+    "credit": "Noel Burkhead, USGS",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "leptolucania_ommata": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Pygmy_Killifish%2C_Apalachicola_NF_--_County_Road_379_creek_bridge%2C_Liberty_County%2C_FL%2C_USA_imported_from_iNaturalist_photo_251770574.jpg/960px-Pygmy_Killifish%2C_Apalachicola_NF_--_County_Road_379_creek_bridge%2C_Liberty_County%2C_FL%2C_USA_imported_from_iNaturalist_photo_251770574.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Pygmy_Killifish,_Apalachicola_NF_--_County_Road_379_creek_bridge,_Liberty_County,_FL,_USA_imported_from_iNaturalist_photo_251770574.jpg",
+    "credit": "(c) Leila Dasher, some rights reserved (CC BY)",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "lucania_parva": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/6/66/Lucania_parva.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Lucania_parva.jpg",
+    "credit": "Richard A. Ingebrigtsen",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "fundulus_escambiae": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Fundulus_escambiae_2.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Fundulus_escambiae_2.jpg",
+    "credit": "Howard Jenks; USGS",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5"
+  },
+  "fundulus_stellifer": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Southern_Studfish_GA.jpg/960px-Southern_Studfish_GA.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Southern_Studfish_GA.jpg",
+    "credit": "skitterbug",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "fundulus_bifax": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Stippled_Studfish_499694649.jpg/960px-Stippled_Studfish_499694649.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Stippled_Studfish_499694649.jpg",
+    "credit": "(c) James-LaFontaine, some rights reserved (CC BY)",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "hiodon_tergisus": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Hiodon_tergisus_NOAA.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Hiodon_tergisus_NOAA.jpg",
+    "credit": "NOAA",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "ameiurus_melas": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Ameiurus_melas_2021_G1.jpg/960px-Ameiurus_melas_2021_G1.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Ameiurus_melas_2021_G1.jpg",
+    "credit": "George Chernilevsky",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "noturus_funebris": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Black_Madtom%2C_Mississippi%2C_US_imported_from_iNaturalist_photo_30418596.jpg/960px-Black_Madtom%2C_Mississippi%2C_US_imported_from_iNaturalist_photo_30418596.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Black_Madtom,_Mississippi,_US_imported_from_iNaturalist_photo_30418596.jpg",
+    "credit": "(c) Will McFarland, some rights reserved (CC BY)",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "ameiurus_nebulosus": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Ameiurus_nebulosus.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Ameiurus_nebulosus.jpg",
+    "credit": "Wikimedia Commons contributor",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5"
+  },
+  "ameiurus_platycephalus": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/8/8e/FMIB_34271_Ameiurus_platycephalus_%28Girard%29_Mud_cat_%28SC%29.jpeg",
+    "source": "https://commons.wikimedia.org/wiki/File:FMIB_34271_Ameiurus_platycephalus_(Girard)_Mud_cat_(SC).jpeg",
+    "credit": "Hugh McCormick Smith",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "noturus_nocturnus": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/0/00/Freckled_madtom_%28Noturus_nocturnus%29_%284015394815%29.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Freckled_madtom_(Noturus_nocturnus)_(4015394815).jpg",
+    "credit": "Clinton & Charles Robertson from RAF Lakenheath, UK & San Marcos, TX, USA & UK",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+  },
+  "noturus_insignis": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Margined_madtom.jpeg/960px-Margined_madtom.jpeg",
+    "source": "https://commons.wikimedia.org/wiki/File:Margined_madtom.jpeg",
+    "credit": "Ellen Edmonson and Hugh Chrisp",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "ameiurus_brunneus": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Snailbullhead.jpg/960px-Snailbullhead.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Snailbullhead.jpg",
+    "credit": "iNaturalist user skitterbug",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "noturus_gyrinus": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Tadpole_madtom.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Tadpole_madtom.jpg",
+    "credit": "Ellen Edmonson and Hugh Chrisp",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "ameiurus_catus": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/White_catfish.jpeg/960px-White_catfish.jpeg",
+    "source": "https://commons.wikimedia.org/wiki/File:White_catfish.jpeg",
+    "credit": "Ellen Edmonson and Hugh Chrisp",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "ameiurus_natalis": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Ameiurus_natalis.jpg/960px-Ameiurus_natalis.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Ameiurus_natalis.jpg",
+    "credit": "Eric Engbretson/U.S. Fish and Wildlife Service",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "lepisosteus_platyrhincus": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Lepisosteus_platyrhincus.JPG/960px-Lepisosteus_platyrhincus.JPG",
+    "source": "https://commons.wikimedia.org/wiki/File:Lepisosteus_platyrhincus.JPG",
+    "credit": "Infinitysend at English Wikipedia",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "lepisosteus_osseus": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Longnose_Gar_%28Lepisosteus_osseus%29_%2853084345984%29.jpg/960px-Longnose_Gar_%28Lepisosteus_osseus%29_%2853084345984%29.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Longnose_Gar_(Lepisosteus_osseus)_(53084345984).jpg",
+    "credit": "USFWS Mountain-Prairie",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "lepisosteus_oculatus": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Lepisosteus_oculatus1.jpg/960px-Lepisosteus_oculatus1.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Lepisosteus_oculatus1.jpg",
+    "credit": "Brian.gratwicke on English Wikipedia",
+    "license": "CC BY 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.5"
+  },
+  "morone_americana": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Morone_americana_PAQ.jpg/960px-Morone_americana_PAQ.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Morone_americana_PAQ.jpg",
+    "credit": "Cephas",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "agonostomus_monticola": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/9/91/Agonostomus_monticola_USGS.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Agonostomus_monticola_USGS.jpg",
+    "credit": "N Burkhead (USGS)",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "mugil_cephalus": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/M%C3%BAjol_%28Mugil_cephalus%29%2C_Parque_natural_de_la_Arr%C3%A1bida%2C_Portugal%2C_2021-09-09%2C_DD_25.jpg/960px-M%C3%BAjol_%28Mugil_cephalus%29%2C_Parque_natural_de_la_Arr%C3%A1bida%2C_Portugal%2C_2021-09-09%2C_DD_25.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:M%C3%BAjol_(Mugil_cephalus),_Parque_natural_de_la_Arr%C3%A1bida,_Portugal,_2021-09-09,_DD_25.jpg",
+    "credit": "Diego Delso",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "percina_antesella": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/1/17/Ambdrtr.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Ambdrtr.jpg",
+    "credit": "Wikimedia Commons contributor",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "etheostoma_zonale": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Etheostoma_zonale_267443085_%28cropped%29.jpg/960px-Etheostoma_zonale_267443085_%28cropped%29.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Etheostoma_zonale_267443085_(cropped).jpg",
+    "credit": "rainbowkitten",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "etheostoma_duryi": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Etheostoma_duryi_-_Dominic_-_601776016.jpeg/960px-Etheostoma_duryi_-_Dominic_-_601776016.jpeg",
+    "source": "https://commons.wikimedia.org/wiki/File:Etheostoma_duryi_-_Dominic_-_601776016.jpeg",
+    "credit": "Dominic",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "percina_nigrofasciata": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Blackbanded_Darter-Percina_nigrofasciata%2C_Jemmison_Park%2C_AL.jpg/960px-Blackbanded_Darter-Percina_nigrofasciata%2C_Jemmison_Park%2C_AL.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Blackbanded_Darter-Percina_nigrofasciata,_Jemmison_Park,_AL.jpg",
+    "credit": "Dhester88",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "etheostoma_jessiae": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Etheostoma_jessiae.jpg/960px-Etheostoma_jessiae.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Etheostoma_jessiae.jpg",
+    "credit": "Dick Biggins, USFWS",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "etheostoma_edwini": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Brown_Darter%2C_Alabama%2C_US_imported_from_iNaturalist_photo_180521089.jpg/960px-Brown_Darter%2C_Alabama%2C_US_imported_from_iNaturalist_photo_180521089.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Brown_Darter,_Alabama,_US_imported_from_iNaturalist_photo_180521089.jpg",
+    "credit": "(c) evangrimes, some rights reserved (CC BY)",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "etheostoma_scotti": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Etheostoma_scotti_188296617_%28cropped%29.jpg/960px-Etheostoma_scotti_188296617_%28cropped%29.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Etheostoma_scotti_188296617_(cropped).jpg",
+    "credit": "skitterbug",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "etheostoma_hopkinsi": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Etheostoma_hopkinsi_FWS_20935.jpg/960px-Etheostoma_hopkinsi_FWS_20935.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Etheostoma_hopkinsi_FWS_20935.jpg",
+    "credit": "Matthew Patterson/USFWS",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "percina_jenkinsi": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Percina_jenkinsi.jpg/960px-Percina_jenkinsi.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Percina_jenkinsi.jpg",
+    "credit": "Jerry A. Payne, USDA Agricultural Research Service, Bugwood.org",
+    "license": "CC BY 3.0 us",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/us/deed.en"
+  },
+  "etheostoma_coosae": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Etheostoma_coosae2.jpg/960px-Etheostoma_coosae2.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Etheostoma_coosae2.jpg",
+    "credit": "John P. Friel",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "percina_sciera": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/2/21/Dusky_darter_%28Percina_sciera%29.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Dusky_darter_(Percina_sciera).jpg",
+    "credit": "Clinton & Charles Robertson",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+  },
+  "etheostoma_etowahae": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Etheostoma_etowahae.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Etheostoma_etowahae.jpg",
+    "credit": "Unknown authorUnknown author",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "percina_evides": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Gilt_Darter.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Gilt_Darter.jpg",
+    "credit": "Wikimedia Commons contributor",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "percina_aurolineata": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/2/2b/GoldlineDarter.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:GoldlineDarter.jpg",
+    "credit": "Wikimedia Commons contributor",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "etheostoma_jordani": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/Greenbreast_Darter%2C_Cleburne_County%2C_AL%2C_USA_imported_from_iNaturalist_photo_333267781.jpg/960px-Greenbreast_Darter%2C_Cleburne_County%2C_AL%2C_USA_imported_from_iNaturalist_photo_333267781.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Greenbreast_Darter,_Cleburne_County,_AL,_USA_imported_from_iNaturalist_photo_333267781.jpg",
+    "credit": "(c) AVNJ, some rights reserved (CC BY)",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "etheostoma_chlorobranchium": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Etheostoma_chlorobranchium_392231519_%28cropped%29.jpg/960px-Etheostoma_chlorobranchium_392231519_%28cropped%29.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Etheostoma_chlorobranchium_392231519_(cropped).jpg",
+    "credit": "Tayton Alvis",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "etheostoma_blennioides": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Etheostoma_blennioides.jpg/960px-Etheostoma_blennioides.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Etheostoma_blennioides.jpg",
+    "credit": "Yzx",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "etheostoma_swaini": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Etheostoma_swaini.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Etheostoma_swaini.jpg",
+    "credit": "Noel Burkhead/Howard Jelks",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "percina_crypta": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Percina_crypta_669269299.jpg/960px-Percina_crypta_669269299.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Percina_crypta_669269299.jpg",
+    "credit": "Tayton Alvis",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "percina_caprodes": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Percina_caprodes.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Percina_caprodes.jpg",
+    "credit": "Wikimedia Commons contributor",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "percina_kathae": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Percina_kathae.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Percina_kathae.jpg",
+    "credit": "Noel Burkhead",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5"
+  },
+  "percina_squamata": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Olive_Darter%2C_North_Carolina%2C_US_imported_from_iNaturalist_photo_414273246.jpg/960px-Olive_Darter%2C_North_Carolina%2C_US_imported_from_iNaturalist_photo_414273246.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Olive_Darter,_North_Carolina,_US_imported_from_iNaturalist_photo_414273246.jpg",
+    "credit": "(c) Tayton Alvis, some rights reserved (CC BY)",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "etheostoma_caeruleum": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Rainbow_Darter-Etheostoma_caeruleum%2C_Grannis_Creek_WMA%2C_IA.jpg/960px-Rainbow_Darter-Etheostoma_caeruleum%2C_Grannis_Creek_WMA%2C_IA.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Rainbow_Darter-Etheostoma_caeruleum,_Grannis_Creek_WMA,_IA.jpg",
+    "credit": "Dhester88",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "etheostoma_rufilineatum": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Redline_Darter-Etheostoma_rufilineatum%2C_41A_Speedway%2C_TN.jpg/960px-Redline_Darter-Etheostoma_rufilineatum%2C_41A_Speedway%2C_TN.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Redline_Darter-Etheostoma_rufilineatum,_41A_Speedway,_TN.jpg",
+    "credit": "Dhester88",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "sander_canadensis": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Saugernctc.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Saugernctc.jpg",
+    "credit": "Duane Raver",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "etheostoma_fricksium": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/4/45/FMIB_33629_Etheostoma_fricksia%2C_sp_nov.jpeg",
+    "source": "https://commons.wikimedia.org/wiki/File:FMIB_33629_Etheostoma_fricksia,_sp_nov.jpeg",
+    "credit": "Samuel F. Hildebrand",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "percina_tanasi": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Percina_tanasi.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Percina_tanasi.jpg",
+    "credit": "US Fish and Wildlife Service",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "etheostoma_stigmaeum": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Etheostoma_stigmaeum.jpg/960px-Etheostoma_stigmaeum.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Etheostoma_stigmaeum.jpg",
+    "credit": "Dick Biggins, USFWS",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "etheostoma_fusiforme": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/0/04/Etheostoma_fusiforme.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Etheostoma_fusiforme.jpg",
+    "credit": "Noel Burkhead/Howard Jelks",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "percina_aurantiaca": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Tangerine_Darter_Underwater.png/960px-Tangerine_Darter_Underwater.png",
+    "source": "https://commons.wikimedia.org/wiki/File:Tangerine_Darter_Underwater.png",
+    "credit": "Gavin Ridley",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "etheostoma_olmstedi": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Tesselated_darter_%28Etheostoma_olmstedi%29.jpg/960px-Tesselated_darter_%28Etheostoma_olmstedi%29.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Tesselated_darter_(Etheostoma_olmstedi).jpg",
+    "credit": "Painting by Ellen Edmonson",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "etheostoma_trisella": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Etheostoma_trisella.jpg/960px-Etheostoma_trisella.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Etheostoma_trisella.jpg",
+    "credit": "Dick Biggins, USFWS",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "etheostoma_gutselli": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Tuckasegee_Darter%2C_Nantahala_National_Forest%2C_Franklin%2C_NC%2C_US_imported_from_iNaturalist_photo_397017892.jpg/960px-Tuckasegee_Darter%2C_Nantahala_National_Forest%2C_Franklin%2C_NC%2C_US_imported_from_iNaturalist_photo_397017892.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Tuckasegee_Darter,_Nantahala_National_Forest,_Franklin,_NC,_US_imported_from_iNaturalist_photo_397017892.jpg",
+    "credit": "(c) Tayton Alvis, some rights reserved (CC BY)",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "lampetra_appendix": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/American_brook_lamprey_ammocoete_%28SC%29_2.JPG/960px-American_brook_lamprey_ammocoete_%28SC%29_2.JPG",
+    "source": "https://commons.wikimedia.org/wiki/File:American_brook_lamprey_ammocoete_(SC)_2.JPG",
+    "credit": "Fungus Guy",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "ichthyomyzon_castaneus": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/6/60/Chestnut_Lamprey.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Chestnut_Lamprey.jpg",
+    "credit": "USFWSmidwest",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+  },
+  "ichthyomyzon_bdellium": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Ohio_lamprey.jpg/960px-Ohio_lamprey.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Ohio_lamprey.jpg",
+    "credit": "Julien Renoult",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "petromyzon_marinus": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Petromyzon_marinus.001_-_Aquarium_Finisterrae.jpg/960px-Petromyzon_marinus.001_-_Aquarium_Finisterrae.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Petromyzon_marinus.001_-_Aquarium_Finisterrae.jpg",
+    "credit": "Fernando Losada Rodr\u00edguez",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "gambusia_holbrooki": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/EasternMosquitoFishJG_Female.jpg/960px-EasternMosquitoFishJG_Female.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:EasternMosquitoFishJG_Female.jpg",
+    "credit": "JeffreyGammon",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  "heterandria_formosa": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Least_killifish_female_Heterandria_formosa.jpg/960px-Least_killifish_female_Heterandria_formosa.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Least_killifish_female_Heterandria_formosa.jpg",
+    "credit": "Brian Gratwicke",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+  },
+  "poecilia_latipinna": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Poecilia_latipinna%2C_I-75_N%2C_Fort_Lauderdale%2C_FL%2C_US_imported_from_iNaturalist_photo_360070481_%28cropped%29.jpg/960px-Poecilia_latipinna%2C_I-75_N%2C_Fort_Lauderdale%2C_FL%2C_US_imported_from_iNaturalist_photo_360070481_%28cropped%29.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Poecilia_latipinna,_I-75_N,_Fort_Lauderdale,_FL,_US_imported_from_iNaturalist_photo_360070481_(cropped).jpg",
+    "credit": "(c) Nick Tobler (Cowturtle), some rights reserved (CC BY)",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+  },
+  "gambusia_affinis": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Gambusia_affinis_male.jpg/960px-Gambusia_affinis_male.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Gambusia_affinis_male.jpg",
+    "credit": "NOZO",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  "polyodon_spathula": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Paddlefish-USFWS-Fish-and-Aquatic-Conservation-2160x1440.jpg/960px-Paddlefish-USFWS-Fish-and-Aquatic-Conservation-2160x1440.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Paddlefish-USFWS-Fish-and-Aquatic-Conservation-2160x1440.jpg",
+    "credit": "U.S. Fish and Wildlife Service",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "aplodinotus_grunniens": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Freshwaterdrum.png/960px-Freshwaterdrum.png",
+    "source": "https://commons.wikimedia.org/wiki/File:Freshwaterdrum.png",
+    "credit": "Drawing by Dunana Raver",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "umbra_pygmaea": {
+    "uri": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Umbra_pygmaea_2.jpg/960px-Umbra_pygmaea_2.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Umbra_pygmaea_2.jpg",
+    "credit": "Ellen Edmonson and Hugh Chrisp",
+    "license": "Public domain",
+    "licenseUrl": ""
+  },
+  "esox_niger": {
+    "uri": "https://upload.wikimedia.org/wikipedia/commons/5/58/Esox_niger.jpg",
+    "source": "https://commons.wikimedia.org/wiki/File:Esox_niger.jpg",
+    "credit": "Noel Burkhead/Howard Jelks",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5"
+  }
+}

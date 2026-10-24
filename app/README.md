@@ -1,105 +1,113 @@
-# Welcome to your Expo app 👋
+# Reel Georgia frontend
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A small Expo SDK 58 app with four tabs: Identify, Fishdex, Journal, and Rules.
+A single journal-name entry uses
+the backend's create-or-reuse demo login.
 
-## Get started
+## Run
 
-1. Install dependencies
-
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **src/app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **example** directory and create a blank **src/app** directory where you can start developing.
-
-### Other setup steps
-
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
-
-## Reel Georgia frontend
-
-The app uses the existing FastAPI service. No frontend-owned database, mock
-predictions, or replacement backend routes are used.
-
-| Screen | Backend API |
-| --- | --- |
-| Sign in | `GET /auth/me` with `X-Username` |
-| Create account | Check `/auth/me`, then `POST /auth/login` |
-| Species browser | `GET /species` |
-| Photo identification | `POST /predict?top_k=3`, multipart `file` |
-| Confirm catch | `POST /catches`, `species`, `weight_lbs`, `length_inches` |
-| Fishing history | `GET /catches` with `X-Username` |
-
-Usernames use the frontend's requested letters/underscores/spaces validation.
-The current backend rejects spaces, so spaces need backend-team support before
-those usernames can be created. Existing names containing digits/hyphens can be
-used for sign-in. Account creation checks for existing users first, but the backend's
-create-or-reuse endpoint cannot guarantee exclusive registration during a race.
-
-The five team-provided `IMG_*.png` photos in `assets/images` are the demo choices.
-There is currently no demo-photo API on main. Expo serves those assets; selections
-are resized and converted to JPEG on-device and sent to the real ML endpoint,
-exactly like camera/library photos. There are no hardcoded identifications.
-
-History displays the server's saved catch records and measurements. The current
-backend does not store photos. The session is in memory; reopening the app asks
-for your username again, while catches remain in the backend database.
-
-Start your backend using its README, then start the frontend:
+Start FastAPI using the backend README, then:
 
 ```bash
 cd app
 npm ci
-npx expo start
+npm start
 ```
 
-The app defaults to port 8000 on the Expo development host (or browser hostname).
-Set `EXPO_PUBLIC_API_URL=http://YOUR_BACKEND_HOST:8000` in `app/.env.local` to override
-it, and restart Expo. A physical phone must be able to reach that host. Expo's
-tunnel does not tunnel the backend. Browser use requires the backend to allow the
-frontend origin with CORS; main currently has no CORS configuration. Native apps
-do not require browser CORS. Hosted web deployments need an HTTPS backend URL.
+Press `w` for web or open the project on a device. The dev server is normally
+http://localhost:8081.
 
-The first real identification may take several minutes to download and initialize
-BioCLIP. Backend ML dependencies and model access are managed by the backend team.
-Camera/library handling follows the Expo SDK 58 image-picker documentation; verify
-native camera permissions on a physical device.
+## Backend connection
+
+- **Web:** requests go through the Expo server at `/api/backend`, avoiding
+  browser CORS issues. The proxy forwards only the existing identification,
+  species, auth, catch, and regulation-check routes. It defaults to `http://127.0.0.1:8000`.
+  Set server environment variable `BACKEND_API_URL` for another backend.
+- **Native:** requests go directly to port 8000 on the Expo development host.
+  FastAPI must bind to `0.0.0.0` for a physical phone to reach it.
+- Set `EXPO_PUBLIC_API_URL` to override direct requests on either platform.
+  A browser override requires the backend to allow that origin with CORS.
+- Restart Expo after changing environment variables. Expo's tunnel does not
+  tunnel the native backend connection. Hosted web builds require an Expo server
+  runtime for the proxy and an accessible backend; static-only hosting is insufficient.
+
+## Photo flow
+
+Camera, library, and sample photos all go to the real `POST /predict` endpoint.
+The app preserves the whole frame, bounds image decoding to 2048 × 2048, and
+encodes JPEG at 85% quality. It does not force a square crop.
+Prepared web photo URLs are released when replaced or when the screen unmounts.
+
+The five bundled samples in `assets/demo/` are optimized copies totaling about
+1.6 MB, instead of referencing the original 123 MB of PNGs. Originals remain
+unchanged in `assets/images/` and are not imported into the application bundle.
+
+Predictions are suggestions, not verified identifications. The first ranked match
+is labeled **Most likely match**; uncertainty is still explicit and the selection
+requires user confirmation. Unsupported results do not offer a species to confirm.
+The user supplies positive measurements before saving a catch. Scores stay out of
+the consumer flow. No prediction decides whether a fish is legal to keep.
+
+## Fishdex & personal bests
+
+The Fishdex displays image cards, discovered/not-yet filters, collection progress,
+and per-species best weight. Open a fish's detail page to see its heaviest catch,
+longest catch, first discovery, and number of catches. The Journal displays a
+catch timeline with personal-best badges. New-discovery and new-record messages
+appear only after a successful save.
+
+All progress and records come from `GET /catches` for the active username; there
+are no seeded records in frontend code. Weight and length records are independent
+and can come from different catches. Existing catch names are matched to common
+names case-insensitively, with whitespace normalized. Records refresh on screen
+focus and after saving. A failed journal load is shown as unavailable rather than
+claiming the user has not discovered a fish.
+
+`src/lib/fish-images.json` contains 203 species-specific Wikimedia reference images
+and attribution metadata, including references for all 21 original sport-fish
+labels. Images are loaded remotely; they do not enlarge the bundled photo assets.
+Missing references (particularly provisional taxa) and network failures get an
+explicit placeholder, never an image of another species. Detail pages show author,
+license, and a source link. Refresh this metadata from the repo root with:
+
+```bash
+python3 app/scripts/build-fish-images.py
+```
+
+The script uses freely licensed encyclopedia lead images, Commons credits, query
+caching in the temporary directory, and rate-limit backoff. Metadata should be
+reviewed when the species catalog or source taxonomy changes.
+
+## Regulations in the catch flow
+
+The Rules tab provides a pre-fishing checklist and official Georgia DNR links.
+After confirming a species and entering measured length, the same regulation
+component is available beside the save action. It calls the existing
+`POST /regulations/check` endpoint and shows baseline length results, daily-limit
+guidance, exceptions, sources, and review dates. Changing species or length resets
+and cancels the old check so a previous fish's guidance cannot remain visible.
+
+The check covers a **statewide baseline**, not a legal keep/release decision. It
+does not evaluate waterbody exceptions, licenses, seasons, protected status, or
+retained-fish counts. Unreviewed guidance is labeled accordingly. A journal entry
+does not mean a fish was kept, and collection progress never requires harvesting.
+
+## Demo account behavior
+
+Names accept 1–32 ASCII letters, numbers, underscores, or hyphens, matching the
+backend. The session is in memory; reopening the app requires the same name.
+Catches live in the backend database. This is demo identification, without
+passwords: anyone who knows a journal name can access it.
+
+## Checks
+
+```bash
+npm run typecheck
+npm run lint
+npm test
+npx expo export --platform web
+```
+
+The unused Expo tutorial screen, duplicate tab components, starter theme/animation
+scaffolding, and reset-project script have been removed. Navigation remains
+Expo Router with native-compatible shared components.
