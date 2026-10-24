@@ -35,7 +35,7 @@ export function CatchCelebration({ species, milestone, weight, length, onAgain }
       <View style={{ height: 230, width: '100%', maxWidth: 360, alignItems: 'center', justifyContent: 'center' }}>
         <View accessible={false} style={{ position: 'absolute', height: 190, width: 190, borderRadius: 95, backgroundColor: milestone.best ? colors.gold : colors.soft }} />
         {!reduced && (milestone.discovery || milestone.best || levelUp) && <View pointerEvents="none" accessible={false} style={{ position: 'absolute', width: '100%', height: '100%' }}>{Array.from({ length: 14 }, (_, i) => <Spark key={i} index={i} gold={milestone.best} />)}</View>}
-        <Animated.View style={[{ width: '88%', borderBottomWidth: 3, borderBottomColor: milestone.best ? '#CC8A2F' : colors.green }, fishStyle]}><FishImage speciesId={species.species_id} name={species.common_name} height={170} /></Animated.View>
+        <Animated.View style={[{ width: '88%', borderBottomWidth: 3, borderBottomColor: milestone.best ? '#CC8A2F' : colors.green }, fishStyle]}><FishImage speciesId={species.species_id} name={species.common_name} height={170} unlocked reveal={milestone.discovery} /></Animated.View>
       </View>
       <Reveal delay={180} style={{ alignItems: 'center', gap: 6 }}><Text style={[ui.section, { textAlign: 'center', fontSize: 26 }]}>{species.common_name}</Text><Text style={ui.body}>{measurement(Number(weight))} lb · {measurement(Number(length))} in</Text></Reveal>
     </View>

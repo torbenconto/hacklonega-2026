@@ -29,7 +29,7 @@ export default function History() {
       const best = record?.heaviest.id === log.id;
       return <Reveal key={log.id} style={[ui.card, { paddingVertical: 12 }]}>
         <View style={{ flexDirection: 'row' }}>
-          {species && <View style={{ width: 110, alignSelf: 'stretch', backgroundColor: 'transparent' }}><FishImage speciesId={species.species_id} name={species.common_name} height={140} /></View>}
+          {species && <View style={{ width: 110, alignSelf: 'stretch', backgroundColor: 'transparent' }}><FishImage speciesId={species.species_id} name={species.common_name} height={140} unlocked animated={false} /></View>}
           <View style={{ flex: 1, padding: 18, gap: 8 }}>
             <Text style={ui.eyebrow}>{new Date(log.created_at).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' })}</Text>
             <Text style={ui.name}>{log.species}</Text>

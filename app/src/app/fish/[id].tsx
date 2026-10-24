@@ -7,7 +7,7 @@ import { useCatalog } from '@/hooks/use-catalog';
 import { useJournal } from '@/hooks/use-journal';
 import { measurement, speciesKey, summarizeCatches } from '@/lib/collection';
 import { useSession } from '@/lib/session';
-import { FishCredit, FishImage } from '@/components/fish-image';
+import { FishImage } from '@/components/fish-image';
 import { Badge, Button, ErrorMessage, Heading, Page, Stat, colors, ui } from '@/components/fishing-ui';
 
 export default function FishDetails() {
@@ -27,7 +27,7 @@ export default function FishDetails() {
     {species && <>
       <View style={ui.row}><Badge gold={!!record}>{record ? '✓ DISCOVERED' : journal.logs !== null ? 'YOUR NEXT DISCOVERY' : !username ? 'FIELD GUIDE' : journal.loading ? 'LOADING JOURNAL' : 'JOURNAL UNAVAILABLE'}</Badge><Text style={ui.eyebrow}>#{String(catalog.species.indexOf(species) + 1).padStart(3, '0')}</Text></View>
       <View style={{ gap: 6 }}><Text style={ui.title}>{species.common_name}</Text><Text style={[ui.small, { fontStyle: 'italic' }]}>{species.scientific_name}</Text></View>
-      <Reveal><FishImage speciesId={species.species_id} name={species.common_name} height={260} /></Reveal>
+      <Reveal><FishImage speciesId={species.species_id} name={species.common_name} height={260} unlocked={!!record} /></Reveal>
       <DexRegulations key={species.species_id} species={species} />
       {record ? <View style={{ gap: 16, paddingVertical: 20, borderTopWidth: 2, borderTopColor: colors.orange }}>
         <Badge gold>YOUR PERSONAL BESTS</Badge>
@@ -38,7 +38,6 @@ export default function FishDetails() {
         {!username && <Button title="Open my journal →" accent onPress={() => router.navigate('/auth')} />}
         {journal.logs !== null && <Button title="Log a catch" accent onPress={() => router.navigate('/(tabs)/identify')} />}
       </View>}
-        <FishCredit speciesId={species.species_id} />
     </>}
   </Page>;
 }

@@ -1,6 +1,6 @@
 # Fishnerd frontend
 
-A small Expo SDK 58 app with four tabs: Identify, Fishdex, Journal, and Rules.
+A small Expo SDK 58 app with three tabs: Identify, Fishdex, and Journal.
 A single journal-name entry uses
 the backend's create-or-reuse demo login.
 
@@ -63,34 +63,32 @@ names case-insensitively, with whitespace normalized. Records refresh on screen
 focus and after saving. A failed journal load is shown as unavailable rather than
 claiming the user has not discovered a fish.
 
-`src/lib/fish-images.json` contains 203 species-specific Wikimedia reference images
-and attribution metadata, including references for all 21 original sport-fish
-labels. Images are loaded remotely; they do not enlarge the bundled photo assets.
-Missing references (particularly provisional taxa) and network failures get an
-explicit placeholder, never an image of another species. Detail pages show author,
-license, and a source link. Refresh this metadata from the repo root with:
+All 290 fish illustrations come from the local SVG collection in
+`../assets/fish/`. `src/lib/fish-art.json` bundles this artwork for offline native
+and web rendering. The original SVGs remain the source of truth; rebuild after
+editing them with:
 
 ```bash
-python3 app/scripts/build-fish-images.py
+python3 app/scripts/build-fish-art.py
 ```
 
-The script uses freely licensed encyclopedia lead images, Commons credits, query
-caching in the temporary directory, and rate-limit backoff. Metadata should be
-reviewed when the species catalog or source taxonomy changes.
+Undiscovered species appear as solid black silhouettes. A successful first catch
+reveals the original colors; unlocked fish gently swim. Motion respects the
+system's reduced-motion setting. Each SVG instance has separate clipping IDs so
+multiple fish and animation layers render correctly together. These are stylized
+collection illustrations, not scientifically verified identification references.
+The uploaded and demo identification photos remain photographs.
 
 ## Regulations in the catch flow
 
-The Rules tab provides a pre-fishing checklist and official Georgia DNR links.
-After confirming a species and entering measured length, the same regulation
-component is available beside the save action. It calls the existing
-`POST /regulations/check` endpoint and shows baseline length results, daily-limit
-guidance, exceptions, sources, and review dates. Changing species or length resets
-and cancels the old check so a previous fish's guidance cannot remain visible.
+Rules load automatically in fish details and after choosing a species. The shared
+component uses `GET /regulations/summary` for statewide length, daily-limit, and
+season guidance; measured length updates the comparison without another request
+or button press. Sources and detailed scope notes are expandable.
 
-The check covers a **statewide baseline**, not a legal keep/release decision. It
-does not evaluate waterbody exceptions, licenses, seasons, protected status, or
-retained-fish counts. Unreviewed guidance is labeled accordingly. A journal entry
-does not mean a fish was kept, and collection progress never requires harvesting.
+Statewide guidance does not establish permission to keep a fish. Waterbody rules,
+licenses, combined limits, and unreviewed restrictions still apply. Logging a
+catch records an observation, not a harvest decision.
 
 ## Demo account behavior
 

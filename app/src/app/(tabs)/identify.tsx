@@ -127,7 +127,7 @@ export default function Identify() {
       {result.status !== 'unsupported' && result.candidates.map((s, index) => {
         const checked = selected?.species_id === s.species_id;
         return <SpringPressable key={s.species_id} accessibilityRole="radio" accessibilityLabel={`${s.common_name}${index === 0 ? ', best match' : ''}`} accessibilityState={{ checked }} disabled={!!busy} onPress={() => setSelected(s)} style={{ flexDirection: 'row', alignItems: 'center', gap: 12, paddingVertical: 12, paddingHorizontal: 8, borderBottomWidth: 1, borderBottomColor: colors.line, backgroundColor: checked ? colors.soft : 'transparent' }}>
-          <View style={{ width: 70 }}><FishImage speciesId={s.species_id} name={s.common_name} height={60} /></View>
+          <View style={{ width: 70 }}><FishImage speciesId={s.species_id} name={s.common_name} height={60} unlocked={records.has(speciesKey(s.common_name))} animated={false} /></View>
           <View style={{ flex: 1, gap: 3 }}><Text style={[ui.name, { fontSize: 17 }]}>{s.common_name}</Text><Text style={ui.small}>{index === 0 ? 'Best match' : s.scientific_name}</Text></View>
           <Text style={{ fontSize: 24, color: colors.green }}>{checked ? '●' : '○'}</Text>
         </SpringPressable>;

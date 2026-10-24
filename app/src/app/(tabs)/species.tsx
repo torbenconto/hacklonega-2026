@@ -53,7 +53,7 @@ export default function Fishdex() {
         return <SpringPressable key={s.species_id} accessibilityRole="button" accessibilityLabel={`${s.common_name}. ${caught ? 'Discovered' : 'View fish and rules'}.`} onPress={() => router.push({ pathname: '/fish/[id]', params: { id: s.species_id } })} style={{ width: containerWidth ? (containerWidth - 20 * (columns - 1)) / columns : '100%', paddingBottom: 16, borderBottomWidth: 1, borderBottomColor: colors.line, gap: 8 }}>
           <View style={{ height: 140, justifyContent: 'center' }}>
             <Text accessible={false} style={{ position: 'absolute', top: 0, left: 0, color: caught ? '#C8DCD0' : '#E2E5DD', fontSize: 42, fontWeight: '900', letterSpacing: -2 }}>{String(number).padStart(3, '0')}</Text>
-            <View style={{ paddingTop: 18 }}><FishImage speciesId={s.species_id} name={s.common_name} height={112} /></View>
+            <View style={{ paddingTop: 18 }}><FishImage speciesId={s.species_id} name={s.common_name} height={112} unlocked={!!caught} /></View>
           </View>
           <Text style={[ui.name, { fontSize: 17 }]}>{s.common_name}</Text>
           <Text style={[ui.small, { fontSize: 12, fontStyle: 'italic' }]}>{s.scientific_name}</Text>
