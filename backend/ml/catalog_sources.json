@@ -1,0 +1,294 @@
+{
+  "catalog_id": "georgia_freshwater_v1",
+  "region": "Georgia, USA",
+  "reviewed_on": "2026-10-24",
+  "scope": "Georgia inland freshwater fishes, including migratory and introduced taxa",
+  "taxon_count": 290,
+  "taxon_ranks": {
+    "species": 267,
+    "subspecies": 2,
+    "provisional": 17,
+    "hybrid": 2,
+    "species_group": 2
+  },
+  "sources": [
+    {
+      "url": "https://fishesofgeorgia.org/index.php?class=fish&page=speciespages/list_species",
+      "purpose": "Baseline names and family assignments; includes historical and provisional taxonomy"
+    },
+    {
+      "url": "https://georgiawildlife.com/fishing/identification",
+      "purpose": "Sport fish coverage; Tallapoosa bass addition"
+    },
+    {
+      "url": "https://georgiawildlife.com/FreshwaterFish",
+      "purpose": "Freshwater scope and extirpated taxa exclusions"
+    },
+    {
+      "url": "https://news.uga.edu/new-bass-species/",
+      "purpose": "2025 Altamaha and Bartram bass names"
+    }
+  ],
+  "curation_notes": [
+    "Not an exhaustive or fully modernized taxonomic checklist; source entries can reflect historical records or uncommon introductions.",
+    "Species-group, provisional, hybrid and subspecies labels are explicitly marked; they are not all distinct species.",
+    "Includes all 21 previous labels with their existing stable IDs.",
+    "Split the atlas combined mosquitofish entry into Gambusia affinis and Gambusia holbrooki.",
+    "Added Micropterus tallapoosae from the DNR identification guide.",
+    "Corrected atlas Colosossoma to Colossoma and fireyblack shiner to fieryblack shiner.",
+    "Retained atlas names Micropterus calliurus and Micropterus pucpuggy, consistent with the 2025 UGA announcement.",
+    "Occurrence in this catalog does not establish native, legal, protected, or currently present status in any waterbody."
+  ],
+  "excluded_atlas_entries": [
+    {
+      "common_name": "Atlantic stingray",
+      "scientific_name": "Dasyatis sabina",
+      "reason": "Coastal/marine emphasis outside this inland freshwater catalog"
+    },
+    {
+      "common_name": "Gulf sturgeon",
+      "scientific_name": "Acipenser oxyrinchus desotoi",
+      "reason": "Listed as extirpated from Georgia by DNR"
+    },
+    {
+      "common_name": "ladyfish",
+      "scientific_name": "Elops saurus",
+      "reason": "Coastal/marine emphasis outside this inland freshwater catalog"
+    },
+    {
+      "common_name": "tarpon",
+      "scientific_name": "Megalops atlanticus",
+      "reason": "Coastal/marine emphasis outside this inland freshwater catalog"
+    },
+    {
+      "common_name": "speckled worm eel",
+      "scientific_name": "Myrophis punctatus",
+      "reason": "Coastal/marine emphasis outside this inland freshwater catalog"
+    },
+    {
+      "common_name": "bay anchovy",
+      "scientific_name": "Anchoa mitchilli",
+      "reason": "Coastal/marine emphasis outside this inland freshwater catalog"
+    },
+    {
+      "common_name": "yellowfin menhaden",
+      "scientific_name": "Brevoortia smithi",
+      "reason": "Coastal/marine emphasis outside this inland freshwater catalog"
+    },
+    {
+      "common_name": "Atlantic menhaden",
+      "scientific_name": "Brevoortia tyrannus",
+      "reason": "Coastal/marine emphasis outside this inland freshwater catalog"
+    },
+    {
+      "common_name": "Atlantic thread herring",
+      "scientific_name": "Opisthonema oglinum",
+      "reason": "Coastal/marine emphasis outside this inland freshwater catalog"
+    },
+    {
+      "common_name": "spotfin chub",
+      "scientific_name": "Erimonax monachus",
+      "reason": "Listed as extirpated from Georgia by DNR"
+    },
+    {
+      "common_name": "harelip sucker",
+      "scientific_name": "Moxostoma lacerum",
+      "reason": "Listed as extirpated from Georgia by DNR"
+    },
+    {
+      "common_name": "yellowfin madtom",
+      "scientific_name": "Noturus flavipinnis",
+      "reason": "Listed as extirpated from Georgia by DNR"
+    },
+    {
+      "common_name": "hardhead catfish",
+      "scientific_name": "Ariopsis felis",
+      "reason": "Coastal/marine emphasis outside this inland freshwater catalog"
+    },
+    {
+      "common_name": "gafftopsail catfish",
+      "scientific_name": "Bagre marinus",
+      "reason": "Coastal/marine emphasis outside this inland freshwater catalog"
+    },
+    {
+      "common_name": "white mullet",
+      "scientific_name": "Mugil curema",
+      "reason": "Coastal/marine emphasis outside this inland freshwater catalog"
+    },
+    {
+      "common_name": "rough silverside",
+      "scientific_name": "Membras martinica",
+      "reason": "Coastal/marine emphasis outside this inland freshwater catalog"
+    },
+    {
+      "common_name": "Atlantic silverside",
+      "scientific_name": "Menidia menidia",
+      "reason": "Coastal/marine emphasis outside this inland freshwater catalog"
+    },
+    {
+      "common_name": "Atlantic needlefish",
+      "scientific_name": "Strongylura marina",
+      "reason": "Coastal/marine emphasis outside this inland freshwater catalog"
+    },
+    {
+      "common_name": "mummichog",
+      "scientific_name": "Fundulus heteroclitus",
+      "reason": "Coastal/marine emphasis outside this inland freshwater catalog"
+    },
+    {
+      "common_name": "spotfin killifish",
+      "scientific_name": "Fundulus luciae",
+      "reason": "Coastal/marine emphasis outside this inland freshwater catalog"
+    },
+    {
+      "common_name": "striped killifish",
+      "scientific_name": "Fundulus majalis",
+      "reason": "Coastal/marine emphasis outside this inland freshwater catalog"
+    },
+    {
+      "common_name": "marsh killifish",
+      "scientific_name": "Fundulus confluentus",
+      "reason": "Coastal/marine emphasis outside this inland freshwater catalog"
+    },
+    {
+      "common_name": "sheepshead minnow",
+      "scientific_name": "Cyprinodon variegatus",
+      "reason": "Coastal/marine emphasis outside this inland freshwater catalog"
+    },
+    {
+      "common_name": "opossum pipefish",
+      "scientific_name": "Microphis brachyurus",
+      "reason": "Coastal/marine emphasis outside this inland freshwater catalog"
+    },
+    {
+      "common_name": "northern pipefish",
+      "scientific_name": "Syngnathus fuscus",
+      "reason": "Coastal/marine emphasis outside this inland freshwater catalog"
+    },
+    {
+      "common_name": "chain pipefish",
+      "scientific_name": "Syngnathus louisianae",
+      "reason": "Coastal/marine emphasis outside this inland freshwater catalog"
+    },
+    {
+      "common_name": "Gulf pipefish",
+      "scientific_name": "Syngnathus scovelli",
+      "reason": "Coastal/marine emphasis outside this inland freshwater catalog"
+    },
+    {
+      "common_name": "common snook",
+      "scientific_name": "Centropomus undecimalis",
+      "reason": "Coastal/marine emphasis outside this inland freshwater catalog"
+    },
+    {
+      "common_name": "ashy darter",
+      "scientific_name": "Etheostoma cinereum",
+      "reason": "Listed as extirpated from Georgia by DNR"
+    },
+    {
+      "common_name": "crevalle jack",
+      "scientific_name": "Caranx hippos",
+      "reason": "Coastal/marine emphasis outside this inland freshwater catalog"
+    },
+    {
+      "common_name": "spotfin mojarra",
+      "scientific_name": "Eucinostomus argenteus",
+      "reason": "Coastal/marine emphasis outside this inland freshwater catalog"
+    },
+    {
+      "common_name": "silver jenny",
+      "scientific_name": "Eucinostomus gula",
+      "reason": "Coastal/marine emphasis outside this inland freshwater catalog"
+    },
+    {
+      "common_name": "striped mojarra",
+      "scientific_name": "Eugerres plumieri",
+      "reason": "Coastal/marine emphasis outside this inland freshwater catalog"
+    },
+    {
+      "common_name": "sheepshead",
+      "scientific_name": "Archosargus probatocephalus",
+      "reason": "Coastal/marine emphasis outside this inland freshwater catalog"
+    },
+    {
+      "common_name": "pinfish",
+      "scientific_name": "Lagodon rhomboides",
+      "reason": "Coastal/marine emphasis outside this inland freshwater catalog"
+    },
+    {
+      "common_name": "silver perch",
+      "scientific_name": "Bairdiella chrysoura",
+      "reason": "Coastal/marine emphasis outside this inland freshwater catalog"
+    },
+    {
+      "common_name": "spotted seatrout",
+      "scientific_name": "Cynoscion nebulosus",
+      "reason": "Coastal/marine emphasis outside this inland freshwater catalog"
+    },
+    {
+      "common_name": "silver seatrout",
+      "scientific_name": "Cynoscion nothus",
+      "reason": "Coastal/marine emphasis outside this inland freshwater catalog"
+    },
+    {
+      "common_name": "weakfish",
+      "scientific_name": "Cynoscion regalis",
+      "reason": "Coastal/marine emphasis outside this inland freshwater catalog"
+    },
+    {
+      "common_name": "spot",
+      "scientific_name": "Leiostomus xanthurus",
+      "reason": "Coastal/marine emphasis outside this inland freshwater catalog"
+    },
+    {
+      "common_name": "Atlantic croaker",
+      "scientific_name": "Micropogonias undulatus",
+      "reason": "Coastal/marine emphasis outside this inland freshwater catalog"
+    },
+    {
+      "common_name": "red drum",
+      "scientific_name": "Sciaenops ocellatus",
+      "reason": "Coastal/marine emphasis outside this inland freshwater catalog"
+    },
+    {
+      "common_name": "fat sleeper",
+      "scientific_name": "Dormitator maculatus",
+      "reason": "Coastal/marine emphasis outside this inland freshwater catalog"
+    },
+    {
+      "common_name": "darter goby",
+      "scientific_name": "Ctenogobius boleosoma",
+      "reason": "Coastal/marine emphasis outside this inland freshwater catalog"
+    },
+    {
+      "common_name": "naked goby",
+      "scientific_name": "Gobiosoma bosc",
+      "reason": "Coastal/marine emphasis outside this inland freshwater catalog"
+    },
+    {
+      "common_name": "Atlantic spadefish",
+      "scientific_name": "Chaetodipterus faber",
+      "reason": "Coastal/marine emphasis outside this inland freshwater catalog"
+    },
+    {
+      "common_name": "bay whiff",
+      "scientific_name": "Citharichthys spilopterus",
+      "reason": "Coastal/marine emphasis outside this inland freshwater catalog"
+    },
+    {
+      "common_name": "summer flounder",
+      "scientific_name": "Paralichthys dentatus",
+      "reason": "Coastal/marine emphasis outside this inland freshwater catalog"
+    },
+    {
+      "common_name": "southern flounder",
+      "scientific_name": "Paralichthys lethostigma",
+      "reason": "Coastal/marine emphasis outside this inland freshwater catalog"
+    },
+    {
+      "common_name": "hogchoker",
+      "scientific_name": "Trinectes maculatus",
+      "reason": "Coastal/marine emphasis outside this inland freshwater catalog"
+    }
+  ]
+}

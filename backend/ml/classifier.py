@@ -30,6 +30,11 @@ def species_catalog():
     return json.loads((BACKEND_DIR / "ml" / "species.json").read_text())
 
 
+@lru_cache(maxsize=1)
+def catalog_metadata():
+    return json.loads((BACKEND_DIR / "ml" / "catalog_sources.json").read_text())
+
+
 def rank_prediction(species_scores, rejection_scores, top_k):
     catalog = species_catalog()
     ranked = sorted(range(len(catalog)), key=lambda i: species_scores[i], reverse=True)
@@ -47,6 +52,7 @@ def rank_prediction(species_scores, rejection_scores, top_k):
         reason = "Best matching supported species; user confirmation is required."
 
     return {
+        "catalog_id": catalog_metadata()["catalog_id"],
         "status": status,
         "reason": reason,
         "candidates": [
@@ -106,7 +112,13 @@ class FishClassifier:
             ])
         prompts.extend(REJECTION_PROMPTS)
         with torch.inference_mode():
-            features = model.encode_text(tokenizer(prompts).to(device)).float()
+            # Hundreds of Georgia taxa produce hundreds of prompts. Bound the
+            # encoder batch size so startup fits on local GPUs as well as CPUs.
+            batches = []
+            for start in range(0, len(prompts), 32):
+                batch = tokenizer(prompts[start:start + 32]).to(device)
+                batches.append(model.encode_text(batch).float())
+            features = torch.cat(batches)
             features = features / features.norm(dim=-1, keepdim=True)
             species_features = features[:len(species_catalog()) * 2].reshape(-1, 2, features.shape[-1]).mean(dim=1)
             species_features = species_features / species_features.norm(dim=-1, keepdim=True)
