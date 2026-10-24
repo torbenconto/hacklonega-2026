@@ -1,0 +1,513 @@
+{
+  "version": "ga-freshwater-baseline-2026-10-24-v1",
+  "reviewed_on": "2026-10-24",
+  "sources": {
+    "state_rules": {
+      "url": "https://rules.sos.ga.gov/gac/391-4-3",
+      "reference": "Rules 391-4-3-.05, -.06 and -.09"
+    },
+    "daily_guide": {
+      "url": "https://www.eregulations.com/georgia/fishing/game-species-daily-limits",
+      "reference": "Georgia DNR-linked guide, Game Species Daily Limits, updated August 27, 2026"
+    },
+    "general_guide": {
+      "url": "https://www.eregulations.com/georgia/fishing/general-regulations",
+      "reference": "Georgia DNR-linked guide, General Regulations, updated August 27, 2026"
+    }
+  },
+  "warnings": [
+    "Statewide baseline only. Waterbody and border-water overrides are not evaluated.",
+    "Daily and combined possession limits are displayed, not checked against retained fish.",
+    "Seasons, licenses, fishing methods, closures and protected-species restrictions are not evaluated.",
+    "Length results do not establish whether a fish may be kept. Confirm species and consult current official rules."
+  ],
+  "groups": {
+    "black_bass": {
+      "status": "specified",
+      "limit": 10,
+      "guidance": "Combined black bass limit; a five-fish sublimit covers smallmouth and other specified bass.",
+      "source_ids": [
+        "state_rules",
+        "daily_guide"
+      ]
+    },
+    "temperate_bass": {
+      "status": "specified",
+      "limit": 15,
+      "guidance": "Combined white, striped and hybrid bass limit; at most two may measure 22 inches or more.",
+      "source_ids": [
+        "state_rules",
+        "daily_guide"
+      ]
+    },
+    "bream": {
+      "status": "specified",
+      "limit": 50,
+      "guidance": "Combined eligible sunfish/bream limit, not a separate allowance per species.",
+      "source_ids": [
+        "state_rules",
+        "daily_guide"
+      ]
+    },
+    "crappie": {
+      "status": "specified",
+      "limit": 30,
+      "guidance": "Black and white crappie share this limit.",
+      "source_ids": [
+        "state_rules",
+        "daily_guide"
+      ]
+    },
+    "trout": {
+      "status": "specified",
+      "limit": 8,
+      "guidance": "Combined mountain trout limit, including brook, rainbow and brown trout.",
+      "source_ids": [
+        "state_rules",
+        "daily_guide"
+      ]
+    },
+    "walleye": {
+      "status": "specified",
+      "limit": 8,
+      "guidance": "Statewide walleye baseline.",
+      "source_ids": [
+        "state_rules",
+        "daily_guide"
+      ]
+    },
+    "pickerel": {
+      "status": "specified",
+      "limit": 15,
+      "guidance": "Combined chain, grass and redfin pickerel limit.",
+      "source_ids": [
+        "state_rules",
+        "daily_guide"
+      ]
+    },
+    "channel_flathead_catfish": {
+      "status": "no_statewide_limit",
+      "limit": null,
+      "guidance": "The daily-limit guide lists no statewide limit for channel and flathead catfish; local limits still apply.",
+      "source_ids": [
+        "daily_guide"
+      ]
+    }
+  },
+  "profiles": {
+    "largemouth": {
+      "length_rule": "minimum",
+      "minimum_length_inches": 12,
+      "daily_limit_group": "black_bass",
+      "exception_notes": [
+        "Some lakes have higher minima, no minimum, or a protected slot; statewide comparison does not resolve those waters."
+      ],
+      "source_ids": [
+        "state_rules",
+        "general_guide"
+      ]
+    },
+    "smallmouth": {
+      "length_rule": "none",
+      "minimum_length_inches": null,
+      "daily_limit_group": "black_bass",
+      "exception_notes": [
+        "Smallmouth contributes to the combined five-fish bass sublimit; shared waters can differ."
+      ],
+      "source_ids": [
+        "state_rules"
+      ]
+    },
+    "spotted": {
+      "length_rule": "none",
+      "minimum_length_inches": null,
+      "daily_limit_group": "black_bass",
+      "exception_notes": [
+        "Lake Lanier imposes a local length minimum."
+      ],
+      "source_ids": [
+        "state_rules"
+      ]
+    },
+    "temperate_bass": {
+      "length_rule": "none",
+      "minimum_length_inches": null,
+      "daily_limit_group": "temperate_bass",
+      "exception_notes": [
+        "River sections and border waters impose different length and count limits; striped bass also has seasonal restrictions."
+      ],
+      "source_ids": [
+        "state_rules",
+        "general_guide"
+      ]
+    },
+    "bream": {
+      "length_rule": "none",
+      "minimum_length_inches": null,
+      "daily_limit_group": "bream",
+      "exception_notes": [
+        "Public fishing areas and shared waters can have different limits."
+      ],
+      "source_ids": [
+        "state_rules"
+      ]
+    },
+    "crappie": {
+      "length_rule": "none",
+      "minimum_length_inches": null,
+      "daily_limit_group": "crappie",
+      "exception_notes": [
+        "Check shared-water rules and posted restrictions."
+      ],
+      "source_ids": [
+        "state_rules"
+      ]
+    },
+    "trout": {
+      "length_rule": "none",
+      "minimum_length_inches": null,
+      "daily_limit_group": "trout",
+      "exception_notes": [
+        "Waters Creek and Noontootla Creek have length restrictions; special trout waters can require release or impose other limits."
+      ],
+      "source_ids": [
+        "state_rules"
+      ]
+    },
+    "walleye": {
+      "length_rule": "none",
+      "minimum_length_inches": null,
+      "daily_limit_group": "walleye",
+      "exception_notes": [
+        "Shared-water limits can differ."
+      ],
+      "source_ids": [
+        "state_rules"
+      ]
+    },
+    "pickerel": {
+      "length_rule": "none",
+      "minimum_length_inches": null,
+      "daily_limit_group": "pickerel",
+      "exception_notes": [
+        "Check local and shared-water restrictions."
+      ],
+      "source_ids": [
+        "state_rules"
+      ]
+    },
+    "channel_flathead_catfish": {
+      "length_rule": "not_evaluated",
+      "minimum_length_inches": null,
+      "daily_limit_group": "channel_flathead_catfish",
+      "exception_notes": [
+        "Length guidance has not been reviewed for this demo. Public fishing areas can limit channel catfish."
+      ],
+      "source_ids": [
+        "daily_guide",
+        "state_rules"
+      ]
+    },
+    "unreviewed": {
+      "length_rule": "not_evaluated",
+      "minimum_length_inches": null,
+      "daily_limit_group": null,
+      "exception_notes": [
+        "No species-specific baseline has been reviewed. Do not infer unrestricted harvest, including for protected species or unresolved taxa."
+      ],
+      "source_ids": []
+    }
+  },
+  "species_profiles": {
+    "micropterus_salmoides": "largemouth",
+    "micropterus_dolomieu": "smallmouth",
+    "micropterus_punctulatus": "spotted",
+    "morone_saxatilis": "temperate_bass",
+    "morone_chrysops": "temperate_bass",
+    "lepomis_macrochirus": "bream",
+    "lepomis_microlophus": "bream",
+    "lepomis_auritus": "bream",
+    "lepomis_cyanellus": "unreviewed",
+    "pomoxis_nigromaculatus": "crappie",
+    "pomoxis_annularis": "crappie",
+    "ictalurus_punctatus": "channel_flathead_catfish",
+    "ictalurus_furcatus": "unreviewed",
+    "pylodictis_olivaris": "channel_flathead_catfish",
+    "oncorhynchus_mykiss": "trout",
+    "salmo_trutta": "trout",
+    "salvelinus_fontinalis": "trout",
+    "sander_vitreus": "walleye",
+    "perca_flavescens": "unreviewed",
+    "esox_niger": "pickerel",
+    "cyprinus_carpio": "unreviewed",
+    "acipenser_oxyrinchus_oxyrinchus": "unreviewed",
+    "acipenser_fulvescens": "unreviewed",
+    "acipenser_brevirostrum": "unreviewed",
+    "typhlichthys_subterraneus": "unreviewed",
+    "chologaster_cornuta": "unreviewed",
+    "amia_calva": "unreviewed",
+    "anguilla_rostrata": "unreviewed",
+    "aphredoderus_sayanus": "unreviewed",
+    "labidesthes_sicculus": "unreviewed",
+    "menidia_beryllina": "unreviewed",
+    "hypentelium_etowanum": "unreviewed",
+    "apalachicola_redhorse": "unreviewed",
+    "ictiobus_niger": "unreviewed",
+    "moxostoma_duquesnei": "unreviewed",
+    "moxostoma_poecilurum": "unreviewed",
+    "brassy_jumprock": "unreviewed",
+    "erimyzon_oblongus": "unreviewed",
+    "moxostoma_erythrurum": "unreviewed",
+    "moxostoma_lachneri": "unreviewed",
+    "highfin_carpsucker_species": "unreviewed",
+    "erimyzon_sucetta": "unreviewed",
+    "hypentelium_nigricans": "unreviewed",
+    "moxostoma_collapsum": "unreviewed",
+    "quillbacks": "unreviewed",
+    "carpiodes_carpio": "unreviewed",
+    "moxostoma_carinatum": "unreviewed",
+    "moxostoma_robustum": "unreviewed",
+    "sicklefin_redhorse": "unreviewed",
+    "moxostoma_anisurum": "unreviewed",
+    "ictiobus_bubalus": "unreviewed",
+    "minytrema_melanops": "unreviewed",
+    "moxostoma_rupiscartes": "unreviewed",
+    "catostomus_commersoni": "unreviewed",
+    "micropterus_henshalli": "unreviewed",
+    "micropterus_calliurus": "unreviewed",
+    "enneacanthus_obesus": "unreviewed",
+    "micropterus_pucpuggy": "unreviewed",
+    "enneacanthus_chaetodon": "unreviewed",
+    "enneacanthus_gloriosus": "unreviewed",
+    "micropterus_chattahoochae": "unreviewed",
+    "lepomis_marginatus": "unreviewed",
+    "centrarchus_macropterus": "unreviewed",
+    "lepomis_megalotis": "unreviewed",
+    "acantharchus_pomotis": "unreviewed",
+    "lepomis_humilis": "unreviewed",
+    "lepomis_gibbosus": "unreviewed",
+    "micropterus_coosae": "unreviewed",
+    "ambloplites_rupestris": "unreviewed",
+    "ambloplites_ariommus": "unreviewed",
+    "micropterus_cataractae": "unreviewed",
+    "lepomis_punctatus": "unreviewed",
+    "spotted_sunfish_integrade": "unreviewed",
+    "micropterus_notius": "unreviewed",
+    "micropterus_tallapoosae": "unreviewed",
+    "lepomis_gulosus": "unreviewed",
+    "pacu_species": "unreviewed",
+    "astronotus_ocellatus": "unreviewed",
+    "tilapia_species": "unreviewed",
+    "alosa_alabamae": "unreviewed",
+    "alosa_pseudoharengus": "unreviewed",
+    "alosa_sapidissima": "unreviewed",
+    "alosa_aestivalis": "unreviewed",
+    "dorosoma_cepedianum": "unreviewed",
+    "alosa_mediocris": "unreviewed",
+    "alosa_chrysochloris": "unreviewed",
+    "dorosoma_petenense": "unreviewed",
+    "cottus_carolinae": "unreviewed",
+    "banded_sculpin_species": "unreviewed",
+    "cottus_chattahoochee": "unreviewed",
+    "cottus_carolinae_zopherus": "unreviewed",
+    "ridge_and_valley_sculpin": "unreviewed",
+    "savannah_sculpin": "unreviewed",
+    "smoky_sculpin": "unreviewed",
+    "cottus_tallapoosae": "unreviewed",
+    "coosa_chub_fall_line_chub_complex": "unreviewed",
+    "cyprinella_callistia": "unreviewed",
+    "cyprinella_xaenura": "unreviewed",
+    "pteronotropis_grandipinnis": "unreviewed",
+    "luxilus_zonistius": "unreviewed",
+    "cyprinella_leedsi": "unreviewed",
+    "hybopsis_amblops": "unreviewed",
+    "cyprinella_venusta": "unreviewed",
+    "lythrurus_atrapiculus": "unreviewed",
+    "erimystax_insignis": "unreviewed",
+    "cyprinella_caerulea": "unreviewed",
+    "campostoma_pauciradii": "unreviewed",
+    "nocomis_leptocephalus": "unreviewed",
+    "pteronotropis_welaka": "unreviewed",
+    "cyprinella_callitaenia": "unreviewed",
+    "pimephales_notatus": "unreviewed",
+    "pteronotropis_euryzonus": "unreviewed",
+    "pimephales_vigilax": "unreviewed",
+    "notropis_asperifrons": "unreviewed",
+    "campostoma_anomalum": "unreviewed",
+    "hybopsis_winchelli": "unreviewed",
+    "notropis_petersoni": "unreviewed",
+    "notropis_xaenocephalus": "unreviewed",
+    "semotilus_atromaculatus": "unreviewed",
+    "semotilus_thoreauianus": "unreviewed",
+    "notropis_cummingsae": "unreviewed",
+    "hybognathus_regius": "unreviewed",
+    "notropis_atherinoides": "unreviewed",
+    "etowah_chub": "unreviewed",
+    "pimephales_promelas": "unreviewed",
+    "phenacobius_crassilabrum": "unreviewed",
+    "cyprinella_pyrrhomelas": "unreviewed",
+    "hemitremia_flammea": "unreviewed",
+    "notemigonus_crysoleucas": "unreviewed",
+    "carassius_auratus": "unreviewed",
+    "ctenopharyngodon_idella": "unreviewed",
+    "notropis_altipinnis": "unreviewed",
+    "notropis_hypsilepis": "unreviewed",
+    "notropis_chalybaeus": "unreviewed",
+    "campostoma_oligolepis": "unreviewed",
+    "hybopsis_lineapunctata": "unreviewed",
+    "notropis_amplamala": "unreviewed",
+    "rhinichthys_cataractae": "unreviewed",
+    "notropis_longirostris": "unreviewed",
+    "longnose_shiner_species": "unreviewed",
+    "pteronotropis_stonei": "unreviewed",
+    "metallic_shiner": "unreviewed",
+    "notropis_volucellus": "unreviewed",
+    "notropis_spectrunculus": "unreviewed",
+    "lythrurus_lirus": "unreviewed",
+    "cyprinella_callisema": "unreviewed",
+    "notropis_ariommus": "unreviewed",
+    "lythrurus_bellus": "unreviewed",
+    "opsopoeodus_emiliae": "unreviewed",
+    "notropis_chrosomus": "unreviewed",
+    "cyprinella_lutrensis": "unreviewed",
+    "notropis_harperi": "unreviewed",
+    "phenacobius_catostomus": "unreviewed",
+    "nocomis_micropogon": "unreviewed",
+    "hybopsis_rubrifrons": "unreviewed",
+    "clinostomus_funduloides": "unreviewed",
+    "notropis_baileyi": "unreviewed",
+    "notropis_scepticus": "unreviewed",
+    "lythrurus_fasciolaris": "unreviewed",
+    "macrhybopsis_storeriana": "unreviewed",
+    "notropis_photogenis": "unreviewed",
+    "notropis_stilbius": "unreviewed",
+    "cyprinella_spiloptera": "unreviewed",
+    "notropis_hudsonius": "unreviewed",
+    "phenacobius_uranops": "unreviewed",
+    "cyprinella_whipplei": "unreviewed",
+    "luxilus_chrysocephalus": "unreviewed",
+    "notropis_maculatus": "unreviewed",
+    "cyprinella_gibbsi": "unreviewed",
+    "notropis_telescopus": "unreviewed",
+    "phoxinus_tennesseensis": "unreviewed",
+    "notropis_leuciodus": "unreviewed",
+    "cyprinella_trichroistia": "unreviewed",
+    "luxilus_coccogenis": "unreviewed",
+    "notropis_texanus": "unreviewed",
+    "rhinichthys_obtusus": "unreviewed",
+    "tanichthys_albonubes": "unreviewed",
+    "cyprinella_nivea": "unreviewed",
+    "cyprinella_galactura": "unreviewed",
+    "notropis_lutipinnis": "unreviewed",
+    "elassoma_zonatum": "unreviewed",
+    "elassoma_okatie": "unreviewed",
+    "elassoma_evergladei": "unreviewed",
+    "elassoma_gilberti": "unreviewed",
+    "elassoma_okefenokee": "unreviewed",
+    "esox_masquinongy": "unreviewed",
+    "esox_lucius": "unreviewed",
+    "esox_americanus": "unreviewed",
+    "fundulus_diaphanus": "unreviewed",
+    "fundulus_cingulatus": "unreviewed",
+    "fundulus_olivaceus": "unreviewed",
+    "lucania_goodei": "unreviewed",
+    "fundulus_chrysotus": "unreviewed",
+    "fundulus_lineolatus": "unreviewed",
+    "fundulus_catenatus": "unreviewed",
+    "leptolucania_ommata": "unreviewed",
+    "lucania_parva": "unreviewed",
+    "fundulus_rubrifrons": "unreviewed",
+    "fundulus_escambiae": "unreviewed",
+    "fundulus_stellifer": "unreviewed",
+    "fundulus_bifax": "unreviewed",
+    "ctenogobius_shufeldti": "unreviewed",
+    "hiodon_tergisus": "unreviewed",
+    "ameiurus_melas": "unreviewed",
+    "noturus_funebris": "unreviewed",
+    "ameiurus_nebulosus": "unreviewed",
+    "coosa_madtom": "unreviewed",
+    "ameiurus_platycephalus": "unreviewed",
+    "noturus_nocturnus": "unreviewed",
+    "noturus_insignis": "unreviewed",
+    "noturus_eleutherus": "unreviewed",
+    "ameiurus_brunneus": "unreviewed",
+    "noturus_leptacanthus": "unreviewed",
+    "ameiurus_serracanthus": "unreviewed",
+    "noturus_gyrinus": "unreviewed",
+    "ameiurus_catus": "unreviewed",
+    "ameiurus_natalis": "unreviewed",
+    "lepisosteus_platyrhincus": "unreviewed",
+    "lepisosteus_osseus": "unreviewed",
+    "lepisosteus_oculatus": "unreviewed",
+    "white_bass_x_striped_bass_hybrid": "unreviewed",
+    "morone_americana": "unreviewed",
+    "morone_mississippiensis": "unreviewed",
+    "agonostomus_monticola": "unreviewed",
+    "mugil_cephalus": "unreviewed",
+    "percina_antesella": "unreviewed",
+    "etheostoma_zonifer": "unreviewed",
+    "etheostoma_zonale": "unreviewed",
+    "etheostoma_duryi": "unreviewed",
+    "percina_nigrofasciata": "unreviewed",
+    "etheostoma_jessiae": "unreviewed",
+    "percina_kusha": "unreviewed",
+    "percina_palmaris": "unreviewed",
+    "etheostoma_edwini": "unreviewed",
+    "etheostoma_scotti": "unreviewed",
+    "etheostoma_hopkinsi": "unreviewed",
+    "etheostoma_ditrema": "unreviewed",
+    "percina_jenkinsi": "unreviewed",
+    "etheostoma_coosae": "unreviewed",
+    "percina_sciera": "unreviewed",
+    "etheostoma_etowahae": "unreviewed",
+    "percina_lenticula": "unreviewed",
+    "percina_evides": "unreviewed",
+    "percina_aurolineata": "unreviewed",
+    "etheostoma_parvipinne": "unreviewed",
+    "etheostoma_jordani": "unreviewed",
+    "etheostoma_chlorobranchium": "unreviewed",
+    "etheostoma_blennioides": "unreviewed",
+    "etheostoma_swaini": "unreviewed",
+    "percina_crypta": "unreviewed",
+    "holiday_darter_complex": "unreviewed",
+    "etheostoma_chuckwachatte": "unreviewed",
+    "percina_caprodes": "unreviewed",
+    "percina_kathae": "unreviewed",
+    "percina_smithvanizi": "unreviewed",
+    "percina_squamata": "unreviewed",
+    "etheostoma_caeruleum": "unreviewed",
+    "etheostoma_rufilineatum": "unreviewed",
+    "redline_darter_species": "unreviewed",
+    "percina_shumardi": "unreviewed",
+    "etheostoma_rupestre": "unreviewed",
+    "sander_canadensis": "unreviewed",
+    "etheostoma_fricksium": "unreviewed",
+    "etheostoma_serrifer": "unreviewed",
+    "percina_tanasi": "unreviewed",
+    "etheostoma_stigmaeum": "unreviewed",
+    "etheostoma_fusiforme": "unreviewed",
+    "etheostoma_tallapoosae": "unreviewed",
+    "percina_aurantiaca": "unreviewed",
+    "etheostoma_tennesseense": "unreviewed",
+    "etheostoma_olmstedi": "unreviewed",
+    "etheostoma_trisella": "unreviewed",
+    "etheostoma_gutselli": "unreviewed",
+    "etheostoma_inscriptum": "unreviewed",
+    "etheostoma_vulneratum": "unreviewed",
+    "lampetra_appendix": "unreviewed",
+    "ichthyomyzon_castaneus": "unreviewed",
+    "lampetra_aepyptera": "unreviewed",
+    "ichthyomyzon_greeleyi": "unreviewed",
+    "ichthyomyzon_bdellium": "unreviewed",
+    "petromyzon_marinus": "unreviewed",
+    "ichthyomyzon_gagei": "unreviewed",
+    "gambusia_holbrooki": "unreviewed",
+    "heterandria_formosa": "unreviewed",
+    "poecilia_latipinna": "unreviewed",
+    "gambusia_affinis": "unreviewed",
+    "polyodon_spathula": "unreviewed",
+    "aplodinotus_grunniens": "unreviewed",
+    "swamp_eel": "unreviewed",
+    "umbra_pygmaea": "unreviewed"
+  }
+}
