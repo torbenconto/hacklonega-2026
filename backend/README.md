@@ -201,6 +201,58 @@ currency. Review source changes, update affected profiles and version/date, and
 rerun boundary and coverage tests before publishing a new snapshot. There are no
 network requests during regulation checks; restart the server after rule edits.
 
+### Descriptive season and size parameters
+
+`backend/regulations/rules.json` also contains `species_parameters`, keyed by all
+290 catalog IDs. These are data-only additions: the current checker does not read
+them, and existing profiles, endpoints, and response schemas remain unchanged.
+`parameter_scope` identifies the Georgia freshwater statewide baseline and its
+exclusions. Source references and the snapshot review date accompany reviewed data.
+
+Example, abbreviated from the largemouth bass entry:
+
+```json
+{
+  "season": {"status": "year_round", "source_ids": ["season_rules"]},
+  "size": {
+    "length": {
+      "status": "minimum",
+      "minimum_inches": 12,
+      "measurement": "total_length",
+      "source_ids": ["size_rules"]
+    },
+    "weight": {"status": "no_verified_restriction", "source_ids": ["size_rules"]}
+  }
+}
+```
+
+Season statuses are `year_round`, `restricted`, `closed_year_round`, or
+`not_reviewed`. Only `restricted` uses `opens_on` and `closes_on`, inclusive
+recurring `MM-DD` dates; none of the currently reviewed statewide entries requires
+these dates. Year-round describes the calendar baseline, not permission to harvest.
+Verified sturgeon closures are represented as `closed_year_round`.
+
+Length and weight statuses are `minimum`, `maximum`, `range`,
+`no_verified_restriction`, or `not_reviewed`. Numeric boundaries are present only
+when applicable: `minimum_inches`/`maximum_inches` or
+`minimum_lbs`/`maximum_lbs`. Length boundaries use `measurement: "total_length"`.
+`range` reserves an inclusive allowed interval; local protected slots are excluded
+from this statewide dataset. Unused parameters have no zero or null boundaries.
+
+`no_verified_restriction` means the relevant statewide size provision was reviewed
+without finding a boundary. `not_reviewed` means species applicability is unresolved;
+it must not be interpreted as unlimited or year-round. Per-parameter `source_ids`
+identify evidence, and each entry summarizes those references and, when reviewed,
+includes `reviewed_on`. Unknown entries have empty source summaries and no review date.
+
+The current snapshot records 21 reviewed seasons (18 year-round baselines and three
+sturgeon closures) and 16 reviewed size entries, including 12-inch largemouth and
+15-inch shoal bass minima. Other entries retain explicit review gaps. No verified
+statewide weight thresholds were identified for the reviewed size entries.
+Lake and river exceptions, border-water rules, method-specific seasons, daily
+limits, stocking schedules, and fishing-record weights are not encoded here.
+Shoal bass size data does not change its existing checker result in this data-only update.
+
 ## Model configuration
 
 Set environment variables **before** starting the server:

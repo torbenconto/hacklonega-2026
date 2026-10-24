@@ -1,5 +1,5 @@
 {
-  "version": "ga-freshwater-baseline-2026-10-24-v1",
+  "version": "ga-freshwater-baseline-2026-10-24-v2",
   "reviewed_on": "2026-10-24",
   "sources": {
     "state_rules": {
@@ -13,6 +13,18 @@
     "general_guide": {
       "url": "https://www.eregulations.com/georgia/fishing/general-regulations",
       "reference": "Georgia DNR-linked guide, General Regulations, updated August 27, 2026"
+    },
+    "season_rules": {
+      "url": "https://rules.sos.ga.gov/gac/391-4-3",
+      "reference": "Rule 391-4-3-.03(5): continuous freshwater baseline season, subject to other laws and local exceptions"
+    },
+    "size_rules": {
+      "url": "https://rules.sos.ga.gov/gac/391-4-3",
+      "reference": "Rule 391-4-3-.06(1)(a)(8), (1)(d), and (2): baseline length minima and other size limits"
+    },
+    "sturgeon_guide": {
+      "url": "https://www.eregulations.com/georgia/fishing/game-species-daily-limits",
+      "reference": "Georgia DNR-linked guide, Game Species Daily Limits, updated August 27, 2026: sturgeon may not be taken in Georgia"
     }
   },
   "warnings": [
@@ -509,5 +521,4321 @@
     "aplodinotus_grunniens": "unreviewed",
     "swamp_eel": "unreviewed",
     "umbra_pygmaea": "unreviewed"
+  },
+  "parameter_scope": {
+    "jurisdiction": "Georgia",
+    "water_type": "freshwater",
+    "scope": "statewide_baseline",
+    "notes": [
+      "Season describes calendar availability for ordinary recreational fishing, not overall harvest permission.",
+      "Local and border-water exceptions, method-specific seasons, daily limits and stocking schedules are excluded.",
+      "No verified restriction means the parameter was reviewed without finding a statewide size boundary; it is not a harvest authorization.",
+      "Not reviewed means applicability is unresolved, not that the parameter is unrestricted.",
+      "Species parameters are descriptive data only and are not consumed by the current regulation checker."
+    ]
+  },
+  "species_parameters": {
+    "micropterus_salmoides": {
+      "season": {
+        "status": "year_round",
+        "source_ids": [
+          "season_rules"
+        ]
+      },
+      "size": {
+        "length": {
+          "status": "minimum",
+          "minimum_inches": 12,
+          "measurement": "total_length",
+          "source_ids": [
+            "size_rules"
+          ]
+        },
+        "weight": {
+          "status": "no_verified_restriction",
+          "source_ids": [
+            "size_rules"
+          ]
+        }
+      },
+      "source_ids": [
+        "season_rules",
+        "size_rules"
+      ],
+      "reviewed_on": "2026-10-24"
+    },
+    "micropterus_dolomieu": {
+      "season": {
+        "status": "year_round",
+        "source_ids": [
+          "season_rules"
+        ]
+      },
+      "size": {
+        "length": {
+          "status": "no_verified_restriction",
+          "source_ids": [
+            "size_rules"
+          ]
+        },
+        "weight": {
+          "status": "no_verified_restriction",
+          "source_ids": [
+            "size_rules"
+          ]
+        }
+      },
+      "source_ids": [
+        "season_rules",
+        "size_rules"
+      ],
+      "reviewed_on": "2026-10-24"
+    },
+    "micropterus_punctulatus": {
+      "season": {
+        "status": "year_round",
+        "source_ids": [
+          "season_rules"
+        ]
+      },
+      "size": {
+        "length": {
+          "status": "no_verified_restriction",
+          "source_ids": [
+            "size_rules"
+          ]
+        },
+        "weight": {
+          "status": "no_verified_restriction",
+          "source_ids": [
+            "size_rules"
+          ]
+        }
+      },
+      "source_ids": [
+        "season_rules",
+        "size_rules"
+      ],
+      "reviewed_on": "2026-10-24"
+    },
+    "morone_saxatilis": {
+      "season": {
+        "status": "year_round",
+        "source_ids": [
+          "season_rules"
+        ]
+      },
+      "size": {
+        "length": {
+          "status": "no_verified_restriction",
+          "source_ids": [
+            "size_rules"
+          ]
+        },
+        "weight": {
+          "status": "no_verified_restriction",
+          "source_ids": [
+            "size_rules"
+          ]
+        }
+      },
+      "source_ids": [
+        "season_rules",
+        "size_rules"
+      ],
+      "reviewed_on": "2026-10-24"
+    },
+    "morone_chrysops": {
+      "season": {
+        "status": "year_round",
+        "source_ids": [
+          "season_rules"
+        ]
+      },
+      "size": {
+        "length": {
+          "status": "no_verified_restriction",
+          "source_ids": [
+            "size_rules"
+          ]
+        },
+        "weight": {
+          "status": "no_verified_restriction",
+          "source_ids": [
+            "size_rules"
+          ]
+        }
+      },
+      "source_ids": [
+        "season_rules",
+        "size_rules"
+      ],
+      "reviewed_on": "2026-10-24"
+    },
+    "lepomis_macrochirus": {
+      "season": {
+        "status": "year_round",
+        "source_ids": [
+          "season_rules"
+        ]
+      },
+      "size": {
+        "length": {
+          "status": "no_verified_restriction",
+          "source_ids": [
+            "size_rules"
+          ]
+        },
+        "weight": {
+          "status": "no_verified_restriction",
+          "source_ids": [
+            "size_rules"
+          ]
+        }
+      },
+      "source_ids": [
+        "season_rules",
+        "size_rules"
+      ],
+      "reviewed_on": "2026-10-24"
+    },
+    "lepomis_microlophus": {
+      "season": {
+        "status": "year_round",
+        "source_ids": [
+          "season_rules"
+        ]
+      },
+      "size": {
+        "length": {
+          "status": "no_verified_restriction",
+          "source_ids": [
+            "size_rules"
+          ]
+        },
+        "weight": {
+          "status": "no_verified_restriction",
+          "source_ids": [
+            "size_rules"
+          ]
+        }
+      },
+      "source_ids": [
+        "season_rules",
+        "size_rules"
+      ],
+      "reviewed_on": "2026-10-24"
+    },
+    "lepomis_auritus": {
+      "season": {
+        "status": "year_round",
+        "source_ids": [
+          "season_rules"
+        ]
+      },
+      "size": {
+        "length": {
+          "status": "no_verified_restriction",
+          "source_ids": [
+            "size_rules"
+          ]
+        },
+        "weight": {
+          "status": "no_verified_restriction",
+          "source_ids": [
+            "size_rules"
+          ]
+        }
+      },
+      "source_ids": [
+        "season_rules",
+        "size_rules"
+      ],
+      "reviewed_on": "2026-10-24"
+    },
+    "lepomis_cyanellus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "pomoxis_nigromaculatus": {
+      "season": {
+        "status": "year_round",
+        "source_ids": [
+          "season_rules"
+        ]
+      },
+      "size": {
+        "length": {
+          "status": "no_verified_restriction",
+          "source_ids": [
+            "size_rules"
+          ]
+        },
+        "weight": {
+          "status": "no_verified_restriction",
+          "source_ids": [
+            "size_rules"
+          ]
+        }
+      },
+      "source_ids": [
+        "season_rules",
+        "size_rules"
+      ],
+      "reviewed_on": "2026-10-24"
+    },
+    "pomoxis_annularis": {
+      "season": {
+        "status": "year_round",
+        "source_ids": [
+          "season_rules"
+        ]
+      },
+      "size": {
+        "length": {
+          "status": "no_verified_restriction",
+          "source_ids": [
+            "size_rules"
+          ]
+        },
+        "weight": {
+          "status": "no_verified_restriction",
+          "source_ids": [
+            "size_rules"
+          ]
+        }
+      },
+      "source_ids": [
+        "season_rules",
+        "size_rules"
+      ],
+      "reviewed_on": "2026-10-24"
+    },
+    "ictalurus_punctatus": {
+      "season": {
+        "status": "year_round",
+        "source_ids": [
+          "season_rules"
+        ]
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": [
+        "season_rules"
+      ],
+      "reviewed_on": "2026-10-24"
+    },
+    "ictalurus_furcatus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "pylodictis_olivaris": {
+      "season": {
+        "status": "year_round",
+        "source_ids": [
+          "season_rules"
+        ]
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": [
+        "season_rules"
+      ],
+      "reviewed_on": "2026-10-24"
+    },
+    "oncorhynchus_mykiss": {
+      "season": {
+        "status": "year_round",
+        "source_ids": [
+          "season_rules"
+        ]
+      },
+      "size": {
+        "length": {
+          "status": "no_verified_restriction",
+          "source_ids": [
+            "size_rules"
+          ]
+        },
+        "weight": {
+          "status": "no_verified_restriction",
+          "source_ids": [
+            "size_rules"
+          ]
+        }
+      },
+      "source_ids": [
+        "season_rules",
+        "size_rules"
+      ],
+      "reviewed_on": "2026-10-24"
+    },
+    "salmo_trutta": {
+      "season": {
+        "status": "year_round",
+        "source_ids": [
+          "season_rules"
+        ]
+      },
+      "size": {
+        "length": {
+          "status": "no_verified_restriction",
+          "source_ids": [
+            "size_rules"
+          ]
+        },
+        "weight": {
+          "status": "no_verified_restriction",
+          "source_ids": [
+            "size_rules"
+          ]
+        }
+      },
+      "source_ids": [
+        "season_rules",
+        "size_rules"
+      ],
+      "reviewed_on": "2026-10-24"
+    },
+    "salvelinus_fontinalis": {
+      "season": {
+        "status": "year_round",
+        "source_ids": [
+          "season_rules"
+        ]
+      },
+      "size": {
+        "length": {
+          "status": "no_verified_restriction",
+          "source_ids": [
+            "size_rules"
+          ]
+        },
+        "weight": {
+          "status": "no_verified_restriction",
+          "source_ids": [
+            "size_rules"
+          ]
+        }
+      },
+      "source_ids": [
+        "season_rules",
+        "size_rules"
+      ],
+      "reviewed_on": "2026-10-24"
+    },
+    "sander_vitreus": {
+      "season": {
+        "status": "year_round",
+        "source_ids": [
+          "season_rules"
+        ]
+      },
+      "size": {
+        "length": {
+          "status": "no_verified_restriction",
+          "source_ids": [
+            "size_rules"
+          ]
+        },
+        "weight": {
+          "status": "no_verified_restriction",
+          "source_ids": [
+            "size_rules"
+          ]
+        }
+      },
+      "source_ids": [
+        "season_rules",
+        "size_rules"
+      ],
+      "reviewed_on": "2026-10-24"
+    },
+    "perca_flavescens": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "esox_niger": {
+      "season": {
+        "status": "year_round",
+        "source_ids": [
+          "season_rules"
+        ]
+      },
+      "size": {
+        "length": {
+          "status": "no_verified_restriction",
+          "source_ids": [
+            "size_rules"
+          ]
+        },
+        "weight": {
+          "status": "no_verified_restriction",
+          "source_ids": [
+            "size_rules"
+          ]
+        }
+      },
+      "source_ids": [
+        "season_rules",
+        "size_rules"
+      ],
+      "reviewed_on": "2026-10-24"
+    },
+    "cyprinus_carpio": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "acipenser_oxyrinchus_oxyrinchus": {
+      "season": {
+        "status": "closed_year_round",
+        "source_ids": [
+          "sturgeon_guide"
+        ]
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": [
+        "sturgeon_guide"
+      ],
+      "reviewed_on": "2026-10-24"
+    },
+    "acipenser_fulvescens": {
+      "season": {
+        "status": "closed_year_round",
+        "source_ids": [
+          "sturgeon_guide"
+        ]
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": [
+        "sturgeon_guide"
+      ],
+      "reviewed_on": "2026-10-24"
+    },
+    "acipenser_brevirostrum": {
+      "season": {
+        "status": "closed_year_round",
+        "source_ids": [
+          "sturgeon_guide"
+        ]
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": [
+        "sturgeon_guide"
+      ],
+      "reviewed_on": "2026-10-24"
+    },
+    "typhlichthys_subterraneus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "chologaster_cornuta": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "amia_calva": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "anguilla_rostrata": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "aphredoderus_sayanus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "labidesthes_sicculus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "menidia_beryllina": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "hypentelium_etowanum": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "apalachicola_redhorse": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "ictiobus_niger": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "moxostoma_duquesnei": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "moxostoma_poecilurum": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "brassy_jumprock": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "erimyzon_oblongus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "moxostoma_erythrurum": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "moxostoma_lachneri": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "highfin_carpsucker_species": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "erimyzon_sucetta": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "hypentelium_nigricans": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "moxostoma_collapsum": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "quillbacks": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "carpiodes_carpio": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "moxostoma_carinatum": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "moxostoma_robustum": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "sicklefin_redhorse": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "moxostoma_anisurum": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "ictiobus_bubalus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "minytrema_melanops": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "moxostoma_rupiscartes": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "catostomus_commersoni": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "micropterus_henshalli": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "micropterus_calliurus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "enneacanthus_obesus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "micropterus_pucpuggy": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "enneacanthus_chaetodon": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "enneacanthus_gloriosus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "micropterus_chattahoochae": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "lepomis_marginatus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "centrarchus_macropterus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "lepomis_megalotis": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "acantharchus_pomotis": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "lepomis_humilis": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "lepomis_gibbosus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "micropterus_coosae": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "ambloplites_rupestris": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "ambloplites_ariommus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "micropterus_cataractae": {
+      "season": {
+        "status": "year_round",
+        "source_ids": [
+          "season_rules"
+        ]
+      },
+      "size": {
+        "length": {
+          "status": "minimum",
+          "minimum_inches": 15,
+          "measurement": "total_length",
+          "source_ids": [
+            "size_rules"
+          ]
+        },
+        "weight": {
+          "status": "no_verified_restriction",
+          "source_ids": [
+            "size_rules"
+          ]
+        }
+      },
+      "source_ids": [
+        "season_rules",
+        "size_rules"
+      ],
+      "reviewed_on": "2026-10-24"
+    },
+    "lepomis_punctatus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "spotted_sunfish_integrade": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "micropterus_notius": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "micropterus_tallapoosae": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "lepomis_gulosus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "pacu_species": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "astronotus_ocellatus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "tilapia_species": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "alosa_alabamae": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "alosa_pseudoharengus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "alosa_sapidissima": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "alosa_aestivalis": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "dorosoma_cepedianum": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "alosa_mediocris": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "alosa_chrysochloris": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "dorosoma_petenense": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "cottus_carolinae": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "banded_sculpin_species": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "cottus_chattahoochee": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "cottus_carolinae_zopherus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "ridge_and_valley_sculpin": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "savannah_sculpin": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "smoky_sculpin": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "cottus_tallapoosae": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "coosa_chub_fall_line_chub_complex": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "cyprinella_callistia": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "cyprinella_xaenura": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "pteronotropis_grandipinnis": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "luxilus_zonistius": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "cyprinella_leedsi": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "hybopsis_amblops": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "cyprinella_venusta": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "lythrurus_atrapiculus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "erimystax_insignis": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "cyprinella_caerulea": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "campostoma_pauciradii": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "nocomis_leptocephalus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "pteronotropis_welaka": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "cyprinella_callitaenia": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "pimephales_notatus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "pteronotropis_euryzonus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "pimephales_vigilax": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "notropis_asperifrons": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "campostoma_anomalum": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "hybopsis_winchelli": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "notropis_petersoni": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "notropis_xaenocephalus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "semotilus_atromaculatus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "semotilus_thoreauianus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "notropis_cummingsae": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "hybognathus_regius": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "notropis_atherinoides": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "etowah_chub": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "pimephales_promelas": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "phenacobius_crassilabrum": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "cyprinella_pyrrhomelas": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "hemitremia_flammea": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "notemigonus_crysoleucas": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "carassius_auratus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "ctenopharyngodon_idella": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "notropis_altipinnis": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "notropis_hypsilepis": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "notropis_chalybaeus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "campostoma_oligolepis": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "hybopsis_lineapunctata": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "notropis_amplamala": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "rhinichthys_cataractae": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "notropis_longirostris": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "longnose_shiner_species": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "pteronotropis_stonei": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "metallic_shiner": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "notropis_volucellus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "notropis_spectrunculus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "lythrurus_lirus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "cyprinella_callisema": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "notropis_ariommus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "lythrurus_bellus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "opsopoeodus_emiliae": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "notropis_chrosomus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "cyprinella_lutrensis": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "notropis_harperi": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "phenacobius_catostomus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "nocomis_micropogon": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "hybopsis_rubrifrons": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "clinostomus_funduloides": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "notropis_baileyi": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "notropis_scepticus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "lythrurus_fasciolaris": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "macrhybopsis_storeriana": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "notropis_photogenis": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "notropis_stilbius": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "cyprinella_spiloptera": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "notropis_hudsonius": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "phenacobius_uranops": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "cyprinella_whipplei": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "luxilus_chrysocephalus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "notropis_maculatus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "cyprinella_gibbsi": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "notropis_telescopus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "phoxinus_tennesseensis": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "notropis_leuciodus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "cyprinella_trichroistia": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "luxilus_coccogenis": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "notropis_texanus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "rhinichthys_obtusus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "tanichthys_albonubes": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "cyprinella_nivea": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "cyprinella_galactura": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "notropis_lutipinnis": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "elassoma_zonatum": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "elassoma_okatie": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "elassoma_evergladei": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "elassoma_gilberti": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "elassoma_okefenokee": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "esox_masquinongy": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "esox_lucius": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "esox_americanus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "fundulus_diaphanus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "fundulus_cingulatus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "fundulus_olivaceus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "lucania_goodei": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "fundulus_chrysotus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "fundulus_lineolatus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "fundulus_catenatus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "leptolucania_ommata": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "lucania_parva": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "fundulus_rubrifrons": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "fundulus_escambiae": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "fundulus_stellifer": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "fundulus_bifax": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "ctenogobius_shufeldti": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "hiodon_tergisus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "ameiurus_melas": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "noturus_funebris": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "ameiurus_nebulosus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "coosa_madtom": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "ameiurus_platycephalus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "noturus_nocturnus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "noturus_insignis": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "noturus_eleutherus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "ameiurus_brunneus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "noturus_leptacanthus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "ameiurus_serracanthus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "noturus_gyrinus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "ameiurus_catus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "ameiurus_natalis": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "lepisosteus_platyrhincus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "lepisosteus_osseus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "lepisosteus_oculatus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "white_bass_x_striped_bass_hybrid": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "morone_americana": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "morone_mississippiensis": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "agonostomus_monticola": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "mugil_cephalus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "percina_antesella": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "etheostoma_zonifer": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "etheostoma_zonale": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "etheostoma_duryi": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "percina_nigrofasciata": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "etheostoma_jessiae": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "percina_kusha": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "percina_palmaris": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "etheostoma_edwini": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "etheostoma_scotti": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "etheostoma_hopkinsi": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "etheostoma_ditrema": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "percina_jenkinsi": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "etheostoma_coosae": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "percina_sciera": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "etheostoma_etowahae": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "percina_lenticula": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "percina_evides": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "percina_aurolineata": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "etheostoma_parvipinne": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "etheostoma_jordani": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "etheostoma_chlorobranchium": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "etheostoma_blennioides": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "etheostoma_swaini": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "percina_crypta": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "holiday_darter_complex": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "etheostoma_chuckwachatte": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "percina_caprodes": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "percina_kathae": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "percina_smithvanizi": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "percina_squamata": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "etheostoma_caeruleum": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "etheostoma_rufilineatum": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "redline_darter_species": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "percina_shumardi": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "etheostoma_rupestre": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "sander_canadensis": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "etheostoma_fricksium": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "etheostoma_serrifer": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "percina_tanasi": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "etheostoma_stigmaeum": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "etheostoma_fusiforme": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "etheostoma_tallapoosae": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "percina_aurantiaca": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "etheostoma_tennesseense": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "etheostoma_olmstedi": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "etheostoma_trisella": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "etheostoma_gutselli": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "etheostoma_inscriptum": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "etheostoma_vulneratum": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "lampetra_appendix": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "ichthyomyzon_castaneus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "lampetra_aepyptera": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "ichthyomyzon_greeleyi": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "ichthyomyzon_bdellium": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "petromyzon_marinus": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "ichthyomyzon_gagei": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "gambusia_holbrooki": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "heterandria_formosa": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "poecilia_latipinna": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "gambusia_affinis": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "polyodon_spathula": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "aplodinotus_grunniens": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "swamp_eel": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    },
+    "umbra_pygmaea": {
+      "season": {
+        "status": "not_reviewed"
+      },
+      "size": {
+        "length": {
+          "status": "not_reviewed"
+        },
+        "weight": {
+          "status": "not_reviewed"
+        }
+      },
+      "source_ids": []
+    }
   }
 }
