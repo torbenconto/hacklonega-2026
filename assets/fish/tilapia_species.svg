@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Tilapia species</title>
+  <desc id="desc">Left-facing Tilapia species (Oreochromis, Sarotherodon, and Tilapia spp.), a stylized, approximate UI illustration with flat muted colors and simple splotches. Not a scientifically verified identification image.</desc>
+  <defs><clipPath id="body"><path d="M30 108C49 74.0 87 68.0 127 68.0C174 68.0 211 95 239 108L239 123C202 162.0 151 165.0 111 162.0Q57 161.0 30 120L43 114Z"/></clipPath></defs>
+  <g transform="translate(0 48)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M230 108L270 91Q289 110 271 140L230 123Z" fill="#799b86" />
+    <path d="M91 76.0L98 59.0L108 69.0L116 52.0L128 65.0L139 49.0L153 66.0Q177 48.0 198 82.0Z" fill="#799b86" />
+    <path d="M158 156.0L187 181.0Q194 186.0 188 156.0Z" fill="#799b86" />
+    <path d="M112 158.0L129 179.0Q134 183.0 142 159.0Z" fill="#799b86" />
+    <g clip-path="url(#body)">
+    <path d="M10 30H300V190H10Z" fill="#b9cbb2" />
+    <path d="M15 30H291V108Q187 81.0 131 84.0Q63 79.0 15 118Z" fill="#709c87" />
+    <path d="M15 126Q90 149.0 143 150.0Q205 154.0 250 121L300 190H15Z" fill="#f4e9cb" />
+    <path d="M91.95524120589369 58.6l13 1l-2 14l6 13l-8 69.8l-9 -4l3 -20Z" fill="#395d55" opacity="0.72"/>
+    <path d="M120.46974483893273 58.6l13 1l-2 14l6 13l-8 69.8l-9 -4l3 -20Z" fill="#395d55" opacity="0.72"/>
+    <path d="M144.3756736596233 58.6l13 1l-2 14l6 13l-8 69.8l-9 -4l3 -20Z" fill="#395d55" opacity="0.72"/>
+    <path d="M166.9035071115361 58.6l13 1l-2 14l6 13l-8 69.8l-9 -4l3 -20Z" fill="#395d55" opacity="0.72"/>
+    <path d="M193.33278045033452 58.6l13 1l-2 14l6 13l-8 69.8l-9 -4l3 -20Z" fill="#395d55" opacity="0.72"/>
+    <path d="M216.4749990329447 58.6l13 1l-2 14l6 13l-8 69.8l-9 -4l3 -20Z" fill="#395d55" opacity="0.72"/>
+    <ellipse cx="194.6" cy="112.1" rx="2.6" ry="2.3" fill="#395d55"/>
+    <ellipse cx="137.9" cy="105.7" rx="1.5" ry="1.5" fill="#395d55"/>
+    <ellipse cx="167.7" cy="130.5" rx="2.6" ry="2.4" fill="#395d55"/>
+    <ellipse cx="122.8" cy="126.6" rx="1.5" ry="2.2" fill="#395d55"/>
+    </g>
+    <ellipse cx="54.0" cy="101.0" rx="6.0" ry="6.0" fill="#f4e9cb"/>
+    <ellipse cx="53.2" cy="101.0" rx="3.6" ry="3.6" fill="#263e39"/>
+    <ellipse cx="52.0" cy="99.2" rx="1.1" ry="1.1" fill="#fff9eb"/>
+    <path d="M77 100q11 14 0 30" fill="none" stroke="#799b86" stroke-width="3"/>
+    <path d="M82 122l27 11q5 5 -4 5l-20 -5Z" fill="#799b86" />
+    <path d="M31 119h18" fill="none" stroke="#395d55" stroke-width="2.4"/>
+  </g>
+</svg>

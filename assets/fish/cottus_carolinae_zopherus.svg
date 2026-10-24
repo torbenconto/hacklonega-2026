@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Coosa banded sculpin</title>
+  <desc id="desc">Left-facing Coosa banded sculpin (Cottus carolinae zopherus), a stylized, approximate UI illustration with flat muted colors and simple splotches. Not a scientifically verified identification image.</desc>
+  <defs><clipPath id="body"><path d="M25 105Q49 81 88 92Q117 88.5 149 88.5Q203 103 239 108L239 123Q183 137 143 141.5Q67 153 27 125L40 117Z"/></clipPath></defs>
+  <g transform="translate(0 48)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M230 108L270 91Q289 110 271 140L230 123Z" fill="#a38e65" />
+    <path d="M97 93.5L104 78.5L113 87.5L124 68.5L143 95.5Z" fill="#a38e65" />
+    <path d="M153 93.5Q180 69.5 207 103.5Z" fill="#a38e65" />
+    <path d="M158 135.5L187 160.5Q194 165.5 188 135.5Z" fill="#a38e65" />
+    <path d="M112 137.5L129 158.5Q134 162.5 142 138.5Z" fill="#a38e65" />
+    <g clip-path="url(#body)">
+    <path d="M10 30H300V190H10Z" fill="#bfa978" />
+    <path d="M15 30H291V108Q187 101.5 131 104.5Q63 99.5 15 118Z" fill="#7f8862" />
+    <path d="M15 126Q90 128.5 143 129.5Q205 133.5 250 121L300 190H15Z" fill="#f1e3bf" />
+    <path d="M94.25356802922545 83.2l13 1l-2 14l6 13l-8 16.5l-9 -4l3 -20Z" fill="#5c6449" opacity="0.72"/>
+    <path d="M121.07888552810263 83.2l13 1l-2 14l6 13l-8 16.5l-9 -4l3 -20Z" fill="#5c6449" opacity="0.72"/>
+    <path d="M141.27536965729558 83.2l13 1l-2 14l6 13l-8 16.5l-9 -4l3 -20Z" fill="#5c6449" opacity="0.72"/>
+    <path d="M167.62002159308045 83.2l13 1l-2 14l6 13l-8 16.5l-9 -4l3 -20Z" fill="#5c6449" opacity="0.72"/>
+    <path d="M192.4271986797683 83.2l13 1l-2 14l6 13l-8 16.5l-9 -4l3 -20Z" fill="#5c6449" opacity="0.72"/>
+    <path d="M216.5840116544952 83.2l13 1l-2 14l6 13l-8 16.5l-9 -4l3 -20Z" fill="#5c6449" opacity="0.72"/>
+    <ellipse cx="135.7" cy="120.3" rx="2.5" ry="1.6" fill="#5c6449"/>
+    <ellipse cx="123.1" cy="124.1" rx="1.6" ry="2.7" fill="#5c6449"/>
+    <ellipse cx="108.6" cy="107.7" rx="2.6" ry="1.9" fill="#5c6449"/>
+    <ellipse cx="197.9" cy="119.1" rx="2.6" ry="1.6" fill="#5c6449"/>
+    </g>
+    <ellipse cx="54.0" cy="105.0" rx="6.0" ry="6.0" fill="#f1e3bf"/>
+    <ellipse cx="53.2" cy="105.0" rx="3.6" ry="3.6" fill="#263e39"/>
+    <ellipse cx="52.0" cy="103.2" rx="1.1" ry="1.1" fill="#fff9eb"/>
+    <path d="M77 100q11 14 0 30" fill="none" stroke="#a38e65" stroke-width="3"/>
+    <path d="M82 122l27 11q5 5 -4 5l-20 -5Z" fill="#a38e65" />
+    <path d="M31 119h18" fill="none" stroke="#5c6449" stroke-width="2.4"/>
+  </g>
+</svg>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Atlantic sturgeon</title>
+  <desc id="desc">Left-facing Atlantic sturgeon (Acipenser oxyrinchus oxyrinchus), a stylized, approximate UI illustration with flat muted colors and simple splotches. Not a scientifically verified identification image.</desc>
+  <defs><clipPath id="body"><path d="M27 116L73 98Q111 93.0 152 93.0Q207 93.0 239 109L239 122Q182 137.0 122 137.0Q80 139 53 125Z"/></clipPath></defs>
+  <g transform="translate(0 48)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M228 109L287 73Q294 70 289 78L270 111L280 143Q281 148 275 145L228 124Z" fill="#7b9389" />
+    <path d="M183 97.0L202 74.0L221 107.0Z" fill="#7b9389" />
+    <path d="M192 131.0L221 156.0Q228 161.0 222 131.0Z" fill="#7b9389" />
+    <path d="M112 133.0L129 154.0Q134 158.0 142 134.0Z" fill="#7b9389" />
+    <g clip-path="url(#body)">
+    <path d="M10 30H300V190H10Z" fill="#9eafaa" />
+    <path d="M15 30H291V108Q187 106.0 131 109.0Q63 104.0 15 118Z" fill="#627b75" />
+    <path d="M15 126Q90 124.0 143 125.0Q205 129.0 250 121L300 190H15Z" fill="#e2dfc7" />
+    <path d="M98 103l7 -4l8 5l-8 4Z" fill="#e2dfc7" opacity="0.8"/>
+    <path d="M117 103l7 -4l8 5l-8 4Z" fill="#e2dfc7" opacity="0.8"/>
+    <path d="M136 103l7 -4l8 5l-8 4Z" fill="#e2dfc7" opacity="0.8"/>
+    <path d="M155 103l7 -4l8 5l-8 4Z" fill="#e2dfc7" opacity="0.8"/>
+    <path d="M174 103l7 -4l8 5l-8 4Z" fill="#e2dfc7" opacity="0.8"/>
+    <path d="M193 103l7 -4l8 5l-8 4Z" fill="#e2dfc7" opacity="0.8"/>
+    <path d="M212 103l7 -4l8 5l-8 4Z" fill="#e2dfc7" opacity="0.8"/>
+    <path d="M98 122l7 -4l8 5l-8 4Z" fill="#384f4d" opacity="0.8"/>
+    <path d="M117 122l7 -4l8 5l-8 4Z" fill="#384f4d" opacity="0.8"/>
+    <path d="M136 122l7 -4l8 5l-8 4Z" fill="#384f4d" opacity="0.8"/>
+    <path d="M155 122l7 -4l8 5l-8 4Z" fill="#384f4d" opacity="0.8"/>
+    <path d="M174 122l7 -4l8 5l-8 4Z" fill="#384f4d" opacity="0.8"/>
+    <path d="M193 122l7 -4l8 5l-8 4Z" fill="#384f4d" opacity="0.8"/>
+    <path d="M212 122l7 -4l8 5l-8 4Z" fill="#384f4d" opacity="0.8"/>
+    <ellipse cx="115.7" cy="111.4" rx="1.8" ry="2.3" fill="#384f4d"/>
+    <ellipse cx="192.6" cy="108.9" rx="2.2" ry="2.1" fill="#384f4d"/>
+    <ellipse cx="202.3" cy="109.4" rx="1.9" ry="1.9" fill="#384f4d"/>
+    <ellipse cx="193.0" cy="119.7" rx="2.3" ry="2.3" fill="#384f4d"/>
+    </g>
+    <ellipse cx="72.0" cy="105.0" rx="6.0" ry="6.0" fill="#e2dfc7"/>
+    <ellipse cx="71.2" cy="105.0" rx="3.6" ry="3.6" fill="#263e39"/>
+    <ellipse cx="70.0" cy="103.2" rx="1.1" ry="1.1" fill="#fff9eb"/>
+    <path d="M89 100q11 14 0 30" fill="none" stroke="#7b9389" stroke-width="3"/>
+    <path d="M94 119l27 11q5 5 -4 5l-20 -5Z" fill="#7b9389" />
+    <path d="M31 119h18" fill="none" stroke="#384f4d" stroke-width="2.4"/>
+    <path d="M57 124l-2 10m10 -8l-1 10" fill="none" stroke="#384f4d" stroke-width="2"/>
+  </g>
+</svg>

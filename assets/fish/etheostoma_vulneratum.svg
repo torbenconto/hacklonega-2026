@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Wounded darter</title>
+  <desc id="desc">Left-facing Wounded darter (Etheostoma vulneratum), a stylized, approximate UI illustration with flat muted colors and simple splotches. Not a scientifically verified identification image.</desc>
+  <defs><clipPath id="body"><path d="M30 108C49 100.0 87 94.0 127 94.0C174 94.0 211 95 239 108L239 123C202 136.0 151 139.0 111 136.0Q57 135.0 30 120L43 114Z"/></clipPath></defs>
+  <g transform="translate(0 48)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M230 108L270 91Q289 110 271 140L230 123Z" fill="#b58e78" />
+    <path d="M97 99.0L104 84.0L113 93.0L124 74.0L143 101.0Z" fill="#b58e78" />
+    <path d="M153 99.0Q180 75.0 207 109.0Z" fill="#b58e78" />
+    <path d="M158 130.0L187 155.0Q194 160.0 188 130.0Z" fill="#b58e78" />
+    <path d="M112 132.0L129 153.0Q134 157.0 142 133.0Z" fill="#b58e78" />
+    <g clip-path="url(#body)">
+    <path d="M10 30H300V190H10Z" fill="#b9c4aa" />
+    <path d="M15 30H291V108Q187 107.0 131 110.0Q63 105.0 15 118Z" fill="#729581" />
+    <path d="M15 126Q90 123.0 143 124.0Q205 128.0 250 121L300 190H15Z" fill="#f3e7cd" />
+    <path d="M93.45509169062666 89.8l13 1l-2 14l6 13l-8 7.4l-9 -4l3 -20Z" fill="#3f6257" opacity="0.72"/>
+    <path d="M116.89434735970808 89.8l13 1l-2 14l6 13l-8 7.4l-9 -4l3 -20Z" fill="#3f6257" opacity="0.72"/>
+    <path d="M143.45339243946722 89.8l13 1l-2 14l6 13l-8 7.4l-9 -4l3 -20Z" fill="#3f6257" opacity="0.72"/>
+    <path d="M169.79414241975007 89.8l13 1l-2 14l6 13l-8 7.4l-9 -4l3 -20Z" fill="#3f6257" opacity="0.72"/>
+    <path d="M196.82923583252918 89.8l13 1l-2 14l6 13l-8 7.4l-9 -4l3 -20Z" fill="#3f6257" opacity="0.72"/>
+    <path d="M220.3877618003113 89.8l13 1l-2 14l6 13l-8 7.4l-9 -4l3 -20Z" fill="#3f6257" opacity="0.72"/>
+    <ellipse cx="156.0" cy="118.1" rx="2.6" ry="2.5" fill="#3f6257"/>
+    <ellipse cx="165.9" cy="115.9" rx="2.5" ry="2.6" fill="#3f6257"/>
+    <ellipse cx="155.8" cy="110.2" rx="2.2" ry="1.6" fill="#3f6257"/>
+    <ellipse cx="182.1" cy="115.6" rx="2.7" ry="2.5" fill="#3f6257"/>
+    </g>
+    <ellipse cx="54.0" cy="105.0" rx="6.0" ry="6.0" fill="#f3e7cd"/>
+    <ellipse cx="53.2" cy="105.0" rx="3.6" ry="3.6" fill="#263e39"/>
+    <ellipse cx="52.0" cy="103.2" rx="1.1" ry="1.1" fill="#fff9eb"/>
+    <path d="M77 100q11 14 0 30" fill="none" stroke="#b58e78" stroke-width="3"/>
+    <path d="M82 119l27 11q5 5 -4 5l-20 -5Z" fill="#b58e78" />
+    <path d="M31 119h18" fill="none" stroke="#3f6257" stroke-width="2.4"/>
+  </g>
+</svg>

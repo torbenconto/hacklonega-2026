@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Longear sunfish</title>
+  <desc id="desc">Left-facing Longear sunfish (Lepomis megalotis), a stylized, approximate UI illustration with flat muted colors and simple splotches. Not a scientifically verified identification image.</desc>
+  <defs><clipPath id="body"><path d="M30 108C49 75.5 87 69.5 127 69.5C174 69.5 211 95 239 108L239 123C202 160.5 151 163.5 111 160.5Q57 159.5 30 120L43 114Z"/></clipPath></defs>
+  <g transform="translate(0 48)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M230 108L270 91Q289 110 271 140L230 123Z" fill="#c69a68" />
+    <path d="M91 77.5L98 60.5L108 70.5L116 53.5L128 66.5L139 50.5L153 67.5Q177 49.5 198 83.5Z" fill="#c69a68" />
+    <path d="M158 154.5L187 179.5Q194 184.5 188 154.5Z" fill="#c69a68" />
+    <path d="M112 156.5L129 177.5Q134 181.5 142 157.5Z" fill="#c69a68" />
+    <g clip-path="url(#body)">
+    <path d="M10 30H300V190H10Z" fill="#d4ad78" />
+    <path d="M15 30H291V108Q187 82.5 131 85.5Q63 80.5 15 118Z" fill="#8c936a" />
+    <path d="M15 126Q90 147.5 143 148.5Q205 152.5 250 121L300 190H15Z" fill="#f4e4c0" />
+    <path d="M93.86225134487889 60.4l13 1l-2 14l6 13l-8 66.7l-9 -4l3 -20Z" fill="#52644d" opacity="0.72"/>
+    <ellipse cx="108.9" cy="121.0" rx="5.0" ry="6.0" fill="#da8e63"/>
+    <path d="M119.16367222923267 60.4l13 1l-2 14l6 13l-8 66.7l-9 -4l3 -20Z" fill="#52644d" opacity="0.72"/>
+    <ellipse cx="134.2" cy="121.0" rx="5.0" ry="6.0" fill="#da8e63"/>
+    <path d="M146.37302559519742 60.4l13 1l-2 14l6 13l-8 66.7l-9 -4l3 -20Z" fill="#52644d" opacity="0.72"/>
+    <ellipse cx="161.4" cy="121.0" rx="5.0" ry="6.0" fill="#da8e63"/>
+    <path d="M168.30696585115967 60.4l13 1l-2 14l6 13l-8 66.7l-9 -4l3 -20Z" fill="#52644d" opacity="0.72"/>
+    <ellipse cx="183.3" cy="121.0" rx="5.0" ry="6.0" fill="#da8e63"/>
+    <path d="M192.1152471313717 60.4l13 1l-2 14l6 13l-8 66.7l-9 -4l3 -20Z" fill="#52644d" opacity="0.72"/>
+    <ellipse cx="207.1" cy="121.0" rx="5.0" ry="6.0" fill="#da8e63"/>
+    <path d="M220.81870096417197 60.4l13 1l-2 14l6 13l-8 66.7l-9 -4l3 -20Z" fill="#52644d" opacity="0.72"/>
+    <ellipse cx="235.8" cy="121.0" rx="5.0" ry="6.0" fill="#da8e63"/>
+    <ellipse cx="162.1" cy="114.9" rx="2.5" ry="1.9" fill="#52644d"/>
+    <ellipse cx="190.8" cy="106.5" rx="1.8" ry="2.5" fill="#52644d"/>
+    <ellipse cx="133.6" cy="114.8" rx="2.3" ry="1.6" fill="#52644d"/>
+    <ellipse cx="209.4" cy="113.7" rx="2.4" ry="2.5" fill="#52644d"/>
+    <path d="M40 110Q57 99 80 110L77 127Q55 128 40 116Z" fill="#7aa9af" />
+    </g>
+    <ellipse cx="54.0" cy="101.0" rx="6.0" ry="6.0" fill="#f4e4c0"/>
+    <ellipse cx="53.2" cy="101.0" rx="3.6" ry="3.6" fill="#263e39"/>
+    <ellipse cx="52.0" cy="99.2" rx="1.1" ry="1.1" fill="#fff9eb"/>
+    <path d="M77 100q11 14 0 30" fill="none" stroke="#c69a68" stroke-width="3"/>
+    <path d="M82 122l27 11q5 5 -4 5l-20 -5Z" fill="#c69a68" />
+    <ellipse cx="80.0" cy="109.0" rx="12.0" ry="4.5" fill="#52644d"/>
+    <path d="M31 119h18" fill="none" stroke="#52644d" stroke-width="2.4"/>
+  </g>
+</svg>

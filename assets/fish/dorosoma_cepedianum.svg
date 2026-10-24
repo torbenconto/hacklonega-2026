@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Gizzard shad</title>
+  <desc id="desc">Left-facing Gizzard shad (Dorosoma cepedianum), a stylized, approximate UI illustration with flat muted colors and simple splotches. Not a scientifically verified identification image.</desc>
+  <defs><clipPath id="body"><path d="M30 108C49 82.0 87 76.0 127 76.0C174 76.0 211 95 239 108L239 123C202 154.0 151 157.0 111 154.0Q57 153.0 30 120L43 114Z"/></clipPath></defs>
+  <g transform="translate(0 48)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M229 108L284 78Q290 75 287 82L272 115L288 148Q290 155 283 151L229 123Z" fill="#8fa99c" />
+    <path d="M117 81.0L137 56.0Q145 52.0 155 61.0L178 86.0Z" fill="#8fa99c" />
+    <path d="M168 80.0Q187 69.0 202 56.0" fill="none" stroke="#8fa99c" stroke-width="3"/>
+    <path d="M158 148.0L187 173.0Q194 178.0 188 148.0Z" fill="#8fa99c" />
+    <path d="M112 150.0L129 171.0Q134 175.0 142 151.0Z" fill="#8fa99c" />
+    <g clip-path="url(#body)">
+    <path d="M10 30H300V190H10Z" fill="#c7d4cf" />
+    <path d="M15 30H291V108Q187 89.0 131 92.0Q63 87.0 15 118Z" fill="#7e9c94" />
+    <path d="M15 126Q90 141.0 143 142.0Q205 146.0 250 121L300 190H15Z" fill="#f2ebd8" />
+    <ellipse cx="94.0" cy="106.0" rx="7.0" ry="7.0" fill="#49675f"/>
+    <ellipse cx="140.4" cy="115.1" rx="1.9" ry="2.2" fill="#49675f"/>
+    <ellipse cx="129.5" cy="128.0" rx="1.9" ry="1.7" fill="#49675f"/>
+    <ellipse cx="114.5" cy="127.9" rx="2.4" ry="2.1" fill="#49675f"/>
+    <ellipse cx="193.1" cy="129.5" rx="2.6" ry="1.7" fill="#49675f"/>
+    </g>
+    <ellipse cx="54.0" cy="101.0" rx="6.0" ry="6.0" fill="#f2ebd8"/>
+    <ellipse cx="53.2" cy="101.0" rx="3.6" ry="3.6" fill="#263e39"/>
+    <ellipse cx="52.0" cy="99.2" rx="1.1" ry="1.1" fill="#fff9eb"/>
+    <path d="M77 100q11 14 0 30" fill="none" stroke="#8fa99c" stroke-width="3"/>
+    <path d="M82 122l27 11q5 5 -4 5l-20 -5Z" fill="#8fa99c" />
+    <path d="M31 119h18" fill="none" stroke="#49675f" stroke-width="2.4"/>
+  </g>
+</svg>

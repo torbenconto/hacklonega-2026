@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Warmouth</title>
+  <desc id="desc">Left-facing Warmouth (Lepomis gulosus), a stylized, approximate UI illustration with flat muted colors and simple splotches. Not a scientifically verified identification image.</desc>
+  <defs><clipPath id="body"><path d="M30 108C49 75.5 87 69.5 127 69.5C174 69.5 211 95 239 108L239 123C202 160.5 151 163.5 111 160.5Q57 159.5 30 120L43 114Z"/></clipPath></defs>
+  <g transform="translate(0 48)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M230 108L270 91Q289 110 271 140L230 123Z" fill="#a38e65" />
+    <path d="M91 77.5L98 60.5L108 70.5L116 53.5L128 66.5L139 50.5L153 67.5Q177 49.5 198 83.5Z" fill="#a38e65" />
+    <path d="M158 154.5L187 179.5Q194 184.5 188 154.5Z" fill="#a38e65" />
+    <path d="M112 156.5L129 177.5Q134 181.5 142 157.5Z" fill="#a38e65" />
+    <g clip-path="url(#body)">
+    <path d="M10 30H300V190H10Z" fill="#bfa978" />
+    <path d="M15 30H291V108Q187 82.5 131 85.5Q63 80.5 15 118Z" fill="#7f8862" />
+    <path d="M15 126Q90 147.5 143 148.5Q205 152.5 250 121L300 190H15Z" fill="#f1e3bf" />
+    <path d="M93.4 122.5q6.7 -6.7 11.4 0l-1 6.7q-6.7 3 -10.1 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M111.2 129.4q5.6 -5.6 9.5 0l-1 5.6q-5.6 3 -8.3 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M127.1 116.8q8.5 -8.5 14.4 0l-1 8.5q-8.5 3 -12.7 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M151.7 114.9q8.4 -8.4 14.2 0l-1 8.4q-8.4 3 -12.6 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M169.1 99.3q6.2 -6.2 10.6 0l-1 6.2q-6.2 3 -9.3 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M188.1 131.4q5.7 -5.7 9.8 0l-1 5.7q-5.7 3 -8.6 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M208.4 105.2q6.4 -6.4 10.8 0l-1 6.4q-6.4 3 -9.5 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M94.2 97.0q7.2 -7.2 12.3 0l-1 7.2q-7.2 3 -10.8 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M111.3 126.2q7.3 -7.3 12.5 0l-1 7.3q-7.3 3 -11.0 -1Z" fill="#5c6449" opacity="0.88"/>
+    <ellipse cx="174.4" cy="132.9" rx="1.7" ry="1.7" fill="#5c6449"/>
+    <ellipse cx="135.9" cy="126.7" rx="2.1" ry="2.1" fill="#5c6449"/>
+    <ellipse cx="182.7" cy="116.0" rx="1.6" ry="1.9" fill="#5c6449"/>
+    <ellipse cx="142.2" cy="118.8" rx="1.7" ry="2.6" fill="#5c6449"/>
+    </g>
+    <ellipse cx="54.0" cy="101.0" rx="6.0" ry="6.0" fill="#f1e3bf"/>
+    <ellipse cx="53.2" cy="101.0" rx="3.6" ry="3.6" fill="#263e39"/>
+    <ellipse cx="52.0" cy="99.2" rx="1.1" ry="1.1" fill="#fff9eb"/>
+    <path d="M77 100q11 14 0 30" fill="none" stroke="#a38e65" stroke-width="3"/>
+    <path d="M82 122l27 11q5 5 -4 5l-20 -5Z" fill="#a38e65" />
+    <ellipse cx="80.0" cy="109.0" rx="6.0" ry="4.5" fill="#5c6449"/>
+    <path d="M31 119h44" fill="none" stroke="#5c6449" stroke-width="2.4"/>
+  </g>
+</svg>

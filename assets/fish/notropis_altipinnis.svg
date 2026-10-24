@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Highfin shiner</title>
+  <desc id="desc">Left-facing Highfin shiner (Notropis altipinnis), a stylized, approximate UI illustration with flat muted colors and simple splotches. Not a scientifically verified identification image.</desc>
+  <defs><clipPath id="body"><path d="M30 108C49 98.5 87 92.5 127 92.5C174 92.5 211 95 239 108L239 123C202 137.5 151 140.5 111 137.5Q57 136.5 30 120L43 114Z"/></clipPath></defs>
+  <g transform="translate(0 48)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M229 108L284 78Q290 75 287 82L272 115L288 148Q290 155 283 151L229 123Z" fill="#8fa99c" />
+    <path d="M117 97.5L137 72.5Q145 68.5 155 77.5L178 102.5Z" fill="#8fa99c" />
+    <path d="M158 131.5L187 156.5Q194 161.5 188 131.5Z" fill="#8fa99c" />
+    <path d="M112 133.5L129 154.5Q134 158.5 142 134.5Z" fill="#8fa99c" />
+    <g clip-path="url(#body)">
+    <path d="M10 30H300V190H10Z" fill="#c7d4cf" />
+    <path d="M15 30H291V108Q187 105.5 131 108.5Q63 103.5 15 118Z" fill="#7e9c94" />
+    <path d="M15 126Q90 124.5 143 125.5Q205 129.5 250 121L300 190H15Z" fill="#f2ebd8" />
+    <path d="M72 112Q151 106 241 113L241 120Q153 115 72 120Z" fill="#49675f" opacity="0.78"/>
+    <ellipse cx="192.5" cy="119.7" rx="2.2" ry="2.0" fill="#49675f"/>
+    <ellipse cx="199.5" cy="119.1" rx="1.9" ry="2.2" fill="#49675f"/>
+    <ellipse cx="188.4" cy="114.5" rx="2.6" ry="1.8" fill="#49675f"/>
+    <ellipse cx="197.4" cy="123.5" rx="1.7" ry="2.0" fill="#49675f"/>
+    </g>
+    <ellipse cx="54.0" cy="105.0" rx="6.0" ry="6.0" fill="#f2ebd8"/>
+    <ellipse cx="53.2" cy="105.0" rx="3.6" ry="3.6" fill="#263e39"/>
+    <ellipse cx="52.0" cy="103.2" rx="1.1" ry="1.1" fill="#fff9eb"/>
+    <path d="M77 100q11 14 0 30" fill="none" stroke="#8fa99c" stroke-width="3"/>
+    <path d="M82 119l27 11q5 5 -4 5l-20 -5Z" fill="#8fa99c" />
+    <path d="M31 119h18" fill="none" stroke="#49675f" stroke-width="2.4"/>
+  </g>
+</svg>

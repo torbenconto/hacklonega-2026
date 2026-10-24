@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Redfin pickerel</title>
+  <desc id="desc">Left-facing Redfin pickerel (Esox americanus), a stylized, approximate UI illustration with flat muted colors and simple splotches. Not a scientifically verified identification image.</desc>
+  <defs><clipPath id="body"><path d="M22 111L53 101Q94 96.5 149 96.5Q209 96.5 239 108L239 122Q183 133.5 112 133.5Q61 135 25 122L38 116Z"/></clipPath></defs>
+  <g transform="translate(0 48)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M229 108L284 78Q290 75 287 82L272 115L288 148Q290 155 283 151L229 123Z" fill="#718464" />
+    <path d="M184 102.5L209 79.5Q216 79.5 222 111.5Z" fill="#718464" />
+    <path d="M192 127.5L221 152.5Q228 157.5 222 127.5Z" fill="#bd8165" />
+    <path d="M112 129.5L129 150.5Q134 154.5 142 130.5Z" fill="#bd8165" />
+    <g clip-path="url(#body)">
+    <path d="M10 30H300V190H10Z" fill="#8c9b7d" />
+    <path d="M15 30H291V108Q187 109.5 131 112.5Q63 107.5 15 118Z" fill="#526c59" />
+    <path d="M15 126Q90 120.5 143 121.5Q205 125.5 250 121L300 190H15Z" fill="#dfdbb9" />
+    <path d="M91.35286392622628 92.8l13 1l-2 14l6 13l-8 11.1l-9 -4l3 -20Z" fill="#344c3e" opacity="0.72"/>
+    <path d="M120.212128139371 92.8l13 1l-2 14l6 13l-8 11.1l-9 -4l3 -20Z" fill="#344c3e" opacity="0.72"/>
+    <path d="M144.9824793554579 92.8l13 1l-2 14l6 13l-8 11.1l-9 -4l3 -20Z" fill="#344c3e" opacity="0.72"/>
+    <path d="M170.0706687552189 92.8l13 1l-2 14l6 13l-8 11.1l-9 -4l3 -20Z" fill="#344c3e" opacity="0.72"/>
+    <path d="M196.6442283214857 92.8l13 1l-2 14l6 13l-8 11.1l-9 -4l3 -20Z" fill="#344c3e" opacity="0.72"/>
+    <path d="M221.3877823514281 92.8l13 1l-2 14l6 13l-8 11.1l-9 -4l3 -20Z" fill="#344c3e" opacity="0.72"/>
+    <ellipse cx="206.7" cy="111.7" rx="1.7" ry="2.7" fill="#344c3e"/>
+    <ellipse cx="160.5" cy="118.7" rx="2.7" ry="1.5" fill="#344c3e"/>
+    <ellipse cx="122.7" cy="110.1" rx="1.9" ry="1.5" fill="#344c3e"/>
+    <ellipse cx="198.6" cy="117.3" rx="1.6" ry="2.6" fill="#344c3e"/>
+    </g>
+    <ellipse cx="54.0" cy="105.0" rx="6.0" ry="6.0" fill="#dfdbb9"/>
+    <ellipse cx="53.2" cy="105.0" rx="3.6" ry="3.6" fill="#263e39"/>
+    <ellipse cx="52.0" cy="103.2" rx="1.1" ry="1.1" fill="#fff9eb"/>
+    <path d="M77 100q11 14 0 30" fill="none" stroke="#718464" stroke-width="3"/>
+    <path d="M82 119l27 11q5 5 -4 5l-20 -5Z" fill="#bd8165" />
+    <path d="M31 119h18" fill="none" stroke="#344c3e" stroke-width="2.4"/>
+  </g>
+</svg>

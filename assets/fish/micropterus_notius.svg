@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Suwannee bass</title>
+  <desc id="desc">Left-facing Suwannee bass (Micropterus notius), a stylized, approximate UI illustration with flat muted colors and simple splotches. Not a scientifically verified identification image.</desc>
+  <defs><clipPath id="body"><path d="M30 108C49 88.5 87 82.5 127 82.5C174 82.5 211 95 239 108L239 123C202 147.5 151 150.5 111 147.5Q57 146.5 30 120L43 114Z"/></clipPath></defs>
+  <g transform="translate(0 48)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M229 108L283 87Q288 86 286 91L278 115L287 140Q289 145 283 143L229 123Z" fill="#718464" />
+    <path d="M91 90.5L98 73.5L108 83.5L116 66.5L128 79.5L139 63.5L153 80.5Q177 62.5 198 96.5Z" fill="#718464" />
+    <path d="M158 141.5L187 166.5Q194 171.5 188 141.5Z" fill="#718464" />
+    <path d="M112 143.5L129 164.5Q134 168.5 142 144.5Z" fill="#718464" />
+    <g clip-path="url(#body)">
+    <path d="M10 30H300V190H10Z" fill="#8c9b7d" />
+    <path d="M15 30H291V108Q187 95.5 131 98.5Q63 93.5 15 118Z" fill="#526c59" />
+    <path d="M15 126Q90 134.5 143 135.5Q205 139.5 250 121L300 190H15Z" fill="#dfdbb9" />
+    <path d="M94.78673396753854 76.0l13 1l-2 14l6 13l-8 39.9l-9 -4l3 -20Z" fill="#344c3e" opacity="0.72"/>
+    <path d="M120.8740198152691 76.0l13 1l-2 14l6 13l-8 39.9l-9 -4l3 -20Z" fill="#344c3e" opacity="0.72"/>
+    <path d="M142.9067013015535 76.0l13 1l-2 14l6 13l-8 39.9l-9 -4l3 -20Z" fill="#344c3e" opacity="0.72"/>
+    <path d="M169.2672550128352 76.0l13 1l-2 14l6 13l-8 39.9l-9 -4l3 -20Z" fill="#344c3e" opacity="0.72"/>
+    <path d="M192.8577802571153 76.0l13 1l-2 14l6 13l-8 39.9l-9 -4l3 -20Z" fill="#344c3e" opacity="0.72"/>
+    <path d="M220.13234724739578 76.0l13 1l-2 14l6 13l-8 39.9l-9 -4l3 -20Z" fill="#344c3e" opacity="0.72"/>
+    <ellipse cx="173.4" cy="112.8" rx="2.3" ry="1.9" fill="#344c3e"/>
+    <ellipse cx="135.9" cy="126.2" rx="2.7" ry="1.8" fill="#344c3e"/>
+    <ellipse cx="132.3" cy="123.9" rx="1.6" ry="2.4" fill="#344c3e"/>
+    <ellipse cx="136.3" cy="108.8" rx="2.2" ry="1.9" fill="#344c3e"/>
+    </g>
+    <ellipse cx="54.0" cy="101.0" rx="6.0" ry="6.0" fill="#dfdbb9"/>
+    <ellipse cx="53.2" cy="101.0" rx="3.6" ry="3.6" fill="#263e39"/>
+    <ellipse cx="52.0" cy="99.2" rx="1.1" ry="1.1" fill="#fff9eb"/>
+    <path d="M77 100q11 14 0 30" fill="none" stroke="#718464" stroke-width="3"/>
+    <path d="M82 122l27 11q5 5 -4 5l-20 -5Z" fill="#718464" />
+    <path d="M31 119h18" fill="none" stroke="#344c3e" stroke-width="2.4"/>
+  </g>
+</svg>

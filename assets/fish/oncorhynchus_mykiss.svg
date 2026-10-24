@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Rainbow trout</title>
+  <desc id="desc">A simple left-facing rainbow trout with a sage green back, creamy belly, coral pink stripe, and dark irregular spots on a transparent background.</desc>
+  <defs>
+    <clipPath id="body">
+      <path d="M30 108C48 85 83 75 121 77C166 71 207 84 239 106L239 123C205 146 155 153 112 145C74 143 45 135 30 119L43 113Z"/>
+    </clipPath>
+  </defs>
+  <g transform="translate(0 48)" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Broad, readable fin shapes. -->
+    <path d="M118 81L137 57Q143 53 150 57L179 83Z" fill="#638f81"/>
+    <path d="M202 94Q209 77 220 88L227 104Z" fill="#638f81"/>
+    <path d="M225 107L283 73Q288 72 286 78L275 113L287 147Q289 154 283 151L225 123Z" fill="#7aa393"/>
+    <path d="M165 143L193 163Q199 164 197 157L189 139Z" fill="#be8e87"/>
+    <path d="M115 142L130 162Q134 166 137 160L147 144Z" fill="#be8e87"/>
+
+    <!-- Flat patches clipped to the fish's body. -->
+    <g clip-path="url(#body)">
+      <path d="M20 67H248V156H20Z" fill="#b9cbb2"/>
+      <path d="M23 98Q72 57 147 72Q207 75 245 108L245 114Q198 92 151 95Q84 89 23 113Z" fill="#709c87"/>
+      <path d="M20 123Q72 131 124 132Q190 140 247 120V160H20Z" fill="#f4e9cb"/>
+      <path d="M68 111Q119 98 173 109Q207 118 246 111L246 121Q205 130 170 122Q119 112 74 121Z" fill="#dc8f9a"/>
+      <path d="M95 112Q132 106 160 111" fill="none" stroke="#edb1b0" stroke-width="5"/>
+
+      <!-- A few chunky, irregular splotches instead of fine scale detail. -->
+      <g fill="#395d55">
+        <path d="M89 85Q94 81 98 85L96 90Q90 92 89 85Z"/>
+        <path d="M112 82Q118 80 120 85Q116 90 112 87Z"/>
+        <path d="M138 81Q145 78 147 84Q146 89 140 88Z"/>
+        <path d="M163 85Q168 81 172 87L170 92Q163 94 163 85Z"/>
+        <path d="M188 91Q194 88 197 94Q194 99 189 97Z"/>
+        <path d="M209 101Q215 97 218 103Q216 108 211 107Z"/>
+        <path d="M101 99Q106 94 110 99Q109 105 103 104Z"/>
+        <path d="M127 96Q132 91 136 97Q134 102 129 101Z"/>
+        <path d="M151 99Q157 96 159 102Q155 107 151 104Z"/>
+        <path d="M179 104Q184 101 186 107Q182 111 179 109Z"/>
+        <path d="M103 128Q108 125 110 130Q106 135 102 132Z"/>
+        <path d="M135 132Q141 128 144 134Q140 139 135 136Z"/>
+        <path d="M169 133Q175 129 178 135Q174 140 169 138Z"/>
+        <path d="M201 129Q205 125 208 130Q206 135 202 134Z"/>
+      </g>
+    </g>
+
+    <!-- Minimal facial details and one foreground fin. -->
+    <path d="M78 96Q89 114 78 133" fill="none" stroke="#608477" stroke-width="3"/>
+    <path d="M86 120L112 130Q116 134 108 136L89 132Z" fill="#799b86"/>
+    <circle cx="59" cy="104" r="7" fill="#f4e9cb"/>
+    <circle cx="58" cy="104" r="4" fill="#263e39"/>
+    <circle cx="57" cy="102" r="1.3" fill="#fff9eb"/>
+    <path d="M32 119L49 119" fill="none" stroke="#395d55" stroke-width="2.5"/>
+
+    <!-- Sparse tail markings echo the body splotches. -->
+    <g fill="#456e60">
+      <ellipse cx="269" cy="92" rx="3" ry="4" transform="rotate(28 269 92)"/>
+      <ellipse cx="259" cy="105" rx="3" ry="4" transform="rotate(20 259 105)"/>
+      <ellipse cx="260" cy="123" rx="3" ry="4" transform="rotate(-20 260 123)"/>
+      <ellipse cx="271" cy="137" rx="3" ry="4" transform="rotate(-28 271 137)"/>
+    </g>
+  </g>
+</svg>

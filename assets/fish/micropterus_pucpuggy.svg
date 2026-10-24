@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Bartram&#x27;s bass</title>
+  <desc id="desc">Left-facing Bartram&#x27;s bass (Micropterus pucpuggy), a stylized, approximate UI illustration with flat muted colors and simple splotches. Not a scientifically verified identification image.</desc>
+  <defs><clipPath id="body"><path d="M30 108C49 88.5 87 82.5 127 82.5C174 82.5 211 95 239 108L239 123C202 147.5 151 150.5 111 147.5Q57 146.5 30 120L43 114Z"/></clipPath></defs>
+  <g transform="translate(0 48)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M229 108L283 87Q288 86 286 91L278 115L287 140Q289 145 283 143L229 123Z" fill="#799b86" />
+    <path d="M91 90.5L98 73.5L108 83.5L116 66.5L128 79.5L139 63.5L153 80.5Q177 62.5 198 96.5Z" fill="#799b86" />
+    <path d="M158 141.5L187 166.5Q194 171.5 188 141.5Z" fill="#c7a16c" />
+    <path d="M112 143.5L129 164.5Q134 168.5 142 144.5Z" fill="#c7a16c" />
+    <g clip-path="url(#body)">
+    <path d="M10 30H300V190H10Z" fill="#b9cbb2" />
+    <path d="M15 30H291V108Q187 95.5 131 98.5Q63 93.5 15 118Z" fill="#709c87" />
+    <path d="M15 126Q90 134.5 143 135.5Q205 139.5 250 121L300 190H15Z" fill="#f4e9cb" />
+    <path d="M87.3 101.5q7.4 -7.4 12.6 0l-1 7.4q-7.4 3 -11.1 -1Z" fill="#395d55" opacity="0.88"/>
+    <path d="M107.5 122.4q5.5 -5.5 9.3 0l-1 5.5q-5.5 3 -8.2 -1Z" fill="#395d55" opacity="0.88"/>
+    <path d="M131.4 123.5q8.4 -8.4 14.3 0l-1 8.4q-8.4 3 -12.7 -1Z" fill="#395d55" opacity="0.88"/>
+    <path d="M150.0 129.0q5.8 -5.8 9.9 0l-1 5.8q-5.8 3 -8.7 -1Z" fill="#395d55" opacity="0.88"/>
+    <path d="M167.9 103.2q6.8 -6.8 11.6 0l-1 6.8q-6.8 3 -10.2 -1Z" fill="#395d55" opacity="0.88"/>
+    <path d="M193.0 112.3q7.6 -7.6 12.9 0l-1 7.6q-7.6 3 -11.4 -1Z" fill="#395d55" opacity="0.88"/>
+    <path d="M210.7 134.5q6.5 -6.5 11.1 0l-1 6.5q-6.5 3 -9.8 -1Z" fill="#395d55" opacity="0.88"/>
+    <path d="M94.5 107.0q7.3 -7.3 12.4 0l-1 7.3q-7.3 3 -11.0 -1Z" fill="#395d55" opacity="0.88"/>
+    <path d="M111.5 133.8q7.4 -7.4 12.7 0l-1 7.4q-7.4 3 -11.2 -1Z" fill="#395d55" opacity="0.88"/>
+    <ellipse cx="168.0" cy="107.4" rx="2.0" ry="2.1" fill="#395d55"/>
+    <ellipse cx="174.6" cy="107.8" rx="1.7" ry="2.1" fill="#395d55"/>
+    <ellipse cx="112.1" cy="124.0" rx="2.1" ry="1.6" fill="#395d55"/>
+    <ellipse cx="149.3" cy="120.7" rx="2.4" ry="2.0" fill="#395d55"/>
+    </g>
+    <ellipse cx="54.0" cy="101.0" rx="6.0" ry="6.0" fill="#f4e9cb"/>
+    <ellipse cx="53.2" cy="101.0" rx="3.6" ry="3.6" fill="#263e39"/>
+    <ellipse cx="52.0" cy="99.2" rx="1.1" ry="1.1" fill="#fff9eb"/>
+    <path d="M77 100q11 14 0 30" fill="none" stroke="#799b86" stroke-width="3"/>
+    <path d="M82 122l27 11q5 5 -4 5l-20 -5Z" fill="#c7a16c" />
+    <path d="M31 119h18" fill="none" stroke="#395d55" stroke-width="2.4"/>
+  </g>
+</svg>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Flier</title>
+  <desc id="desc">Left-facing Flier (Centrarchus macropterus), a stylized, approximate UI illustration with flat muted colors and simple splotches. Not a scientifically verified identification image.</desc>
+  <defs><clipPath id="body"><path d="M30 108C49 73.5 87 67.5 127 67.5C174 67.5 211 95 239 108L239 123C202 162.5 151 165.5 111 162.5Q57 161.5 30 120L43 114Z"/></clipPath></defs>
+  <g transform="translate(0 48)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M230 108L270 91Q289 110 271 140L230 123Z" fill="#799b86" />
+    <path d="M91 75.5L98 58.5L108 68.5L116 51.5L128 64.5L139 48.5L153 65.5Q177 47.5 198 81.5Z" fill="#799b86" />
+    <path d="M158 156.5L187 181.5Q194 186.5 188 156.5Z" fill="#799b86" />
+    <path d="M112 158.5L129 179.5Q134 183.5 142 159.5Z" fill="#799b86" />
+    <g clip-path="url(#body)">
+    <path d="M10 30H300V190H10Z" fill="#b9cbb2" />
+    <path d="M15 30H291V108Q187 80.5 131 83.5Q63 78.5 15 118Z" fill="#709c87" />
+    <path d="M15 126Q90 149.5 143 150.5Q205 154.5 250 121L300 190H15Z" fill="#f4e9cb" />
+    <path d="M92.1 97.3q4.8 -4.8 8.1 0l-1 4.8q-4.8 3 -7.2 -1Z" fill="#395d55" opacity="0.88"/>
+    <path d="M109.6 114.9q4.9 -4.9 8.4 0l-1 4.9q-4.9 3 -7.4 -1Z" fill="#395d55" opacity="0.88"/>
+    <path d="M132.9 134.6q3.8 -3.8 6.5 0l-1 3.8q-3.8 3 -5.8 -1Z" fill="#395d55" opacity="0.88"/>
+    <path d="M147.2 143.3q3.9 -3.9 6.7 0l-1 3.9q-3.9 3 -5.9 -1Z" fill="#395d55" opacity="0.88"/>
+    <path d="M171.7 100.3q3.3 -3.3 5.5 0l-1 3.3q-3.3 3 -4.9 -1Z" fill="#395d55" opacity="0.88"/>
+    <path d="M188.1 123.2q3.5 -3.5 6.0 0l-1 3.5q-3.5 3 -5.3 -1Z" fill="#395d55" opacity="0.88"/>
+    <path d="M213.1 123.2q3.1 -3.1 5.2 0l-1 3.1q-3.1 3 -4.6 -1Z" fill="#395d55" opacity="0.88"/>
+    <path d="M88.2 107.1q3.9 -3.9 6.6 0l-1 3.9q-3.9 3 -5.8 -1Z" fill="#395d55" opacity="0.88"/>
+    <path d="M109.6 97.2q3.0 -3.0 5.1 0l-1 3.0q-3.0 3 -4.5 -1Z" fill="#395d55" opacity="0.88"/>
+    <path d="M127.6 106.4q4.3 -4.3 7.2 0l-1 4.3q-4.3 3 -6.4 -1Z" fill="#395d55" opacity="0.88"/>
+    <path d="M150.3 135.9q3.6 -3.6 6.1 0l-1 3.6q-3.6 3 -5.4 -1Z" fill="#395d55" opacity="0.88"/>
+    <path d="M167.7 109.2q3.3 -3.3 5.7 0l-1 3.3q-3.3 3 -5.0 -1Z" fill="#395d55" opacity="0.88"/>
+    <path d="M191.6 103.0q4.2 -4.2 7.2 0l-1 4.2q-4.2 3 -6.3 -1Z" fill="#395d55" opacity="0.88"/>
+    <path d="M214.4 86.8q3.7 -3.7 6.4 0l-1 3.7q-3.7 3 -5.6 -1Z" fill="#395d55" opacity="0.88"/>
+    <path d="M87.8 116.4q3.2 -3.2 5.4 0l-1 3.2q-3.2 3 -4.8 -1Z" fill="#395d55" opacity="0.88"/>
+    <path d="M113.9 88.7q4.3 -4.3 7.3 0l-1 4.3q-4.3 3 -6.5 -1Z" fill="#395d55" opacity="0.88"/>
+    <path d="M129.8 108.2q4.3 -4.3 7.3 0l-1 4.3q-4.3 3 -6.4 -1Z" fill="#395d55" opacity="0.88"/>
+    <ellipse cx="158.9" cy="133.6" rx="2.0" ry="2.2" fill="#395d55"/>
+    <ellipse cx="146.9" cy="105.2" rx="1.9" ry="1.7" fill="#395d55"/>
+    <ellipse cx="130.1" cy="105.4" rx="2.6" ry="1.9" fill="#395d55"/>
+    <ellipse cx="189.6" cy="108.8" rx="2.0" ry="2.5" fill="#395d55"/>
+    </g>
+    <ellipse cx="54.0" cy="101.0" rx="6.0" ry="6.0" fill="#f4e9cb"/>
+    <ellipse cx="53.2" cy="101.0" rx="3.6" ry="3.6" fill="#263e39"/>
+    <ellipse cx="52.0" cy="99.2" rx="1.1" ry="1.1" fill="#fff9eb"/>
+    <path d="M77 100q11 14 0 30" fill="none" stroke="#799b86" stroke-width="3"/>
+    <path d="M82 122l27 11q5 5 -4 5l-20 -5Z" fill="#799b86" />
+    <ellipse cx="80.0" cy="109.0" rx="6.0" ry="4.5" fill="#395d55"/>
+    <path d="M31 119h18" fill="none" stroke="#395d55" stroke-width="2.4"/>
+  </g>
+</svg>

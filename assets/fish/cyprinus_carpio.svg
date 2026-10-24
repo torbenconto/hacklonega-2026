@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Common carp</title>
+  <desc id="desc">Left-facing Common carp (Cyprinus carpio), a stylized, approximate UI illustration with flat muted colors and simple splotches. Not a scientifically verified identification image.</desc>
+  <defs><clipPath id="body"><path d="M30 108C49 79.0 87 73.0 127 73.0C174 73.0 211 95 239 108L239 123C202 157.0 151 160.0 111 157.0Q57 156.0 30 120L43 114Z"/></clipPath></defs>
+  <g transform="translate(0 48)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M229 108L284 78Q290 75 287 82L272 115L288 148Q290 155 283 151L229 123Z" fill="#b4a16c" />
+    <path d="M101 80.0L119 49.0Q150 55.0 213 90.0Z" fill="#b4a16c" />
+    <path d="M158 151.0L187 176.0Q194 181.0 188 151.0Z" fill="#b4a16c" />
+    <path d="M112 153.0L129 174.0Q134 178.0 142 154.0Z" fill="#b4a16c" />
+    <g clip-path="url(#body)">
+    <path d="M10 30H300V190H10Z" fill="#d4bc77" />
+    <path d="M15 30H291V108Q187 86.0 131 89.0Q63 84.0 15 118Z" fill="#93945e" />
+    <path d="M15 126Q90 144.0 143 145.0Q205 149.0 250 121L300 190H15Z" fill="#f5e6b9" />
+    <path d="M88.3 139.0q8.6 -8.6 14.6 0l-1 8.6q-8.6 3 -12.9 -1Z" fill="#586449" opacity="0.88"/>
+    <path d="M113.3 101.1q6.0 -6.0 10.2 0l-1 6.0q-6.0 3 -9.0 -1Z" fill="#586449" opacity="0.88"/>
+    <path d="M129.3 122.3q7.5 -7.5 12.8 0l-1 7.5q-7.5 3 -11.3 -1Z" fill="#586449" opacity="0.88"/>
+    <path d="M154.3 110.9q8.0 -8.0 13.5 0l-1 8.0q-8.0 3 -11.9 -1Z" fill="#586449" opacity="0.88"/>
+    <path d="M168.9 102.5q5.8 -5.8 9.9 0l-1 5.8q-5.8 3 -8.7 -1Z" fill="#586449" opacity="0.88"/>
+    <path d="M187.1 109.8q6.8 -6.8 11.5 0l-1 6.8q-6.8 3 -10.2 -1Z" fill="#586449" opacity="0.88"/>
+    <path d="M211.2 127.5q5.2 -5.2 8.9 0l-1 5.2q-5.2 3 -7.8 -1Z" fill="#586449" opacity="0.88"/>
+    <path d="M92.5 98.3q5.2 -5.2 8.8 0l-1 5.2q-5.2 3 -7.8 -1Z" fill="#586449" opacity="0.88"/>
+    <path d="M109.7 113.7q7.4 -7.4 12.6 0l-1 7.4q-7.4 3 -11.1 -1Z" fill="#586449" opacity="0.88"/>
+    <ellipse cx="209.7" cy="127.4" rx="1.8" ry="1.6" fill="#586449"/>
+    <ellipse cx="133.8" cy="118.4" rx="1.7" ry="2.2" fill="#586449"/>
+    <ellipse cx="205.6" cy="128.9" rx="2.2" ry="2.6" fill="#586449"/>
+    <ellipse cx="200.7" cy="123.2" rx="2.3" ry="2.5" fill="#586449"/>
+    </g>
+    <ellipse cx="54.0" cy="101.0" rx="6.0" ry="6.0" fill="#f5e6b9"/>
+    <ellipse cx="53.2" cy="101.0" rx="3.6" ry="3.6" fill="#263e39"/>
+    <ellipse cx="52.0" cy="99.2" rx="1.1" ry="1.1" fill="#fff9eb"/>
+    <path d="M77 100q11 14 0 30" fill="none" stroke="#b4a16c" stroke-width="3"/>
+    <path d="M82 122l27 11q5 5 -4 5l-20 -5Z" fill="#b4a16c" />
+    <path d="M31 119h18" fill="none" stroke="#586449" stroke-width="2.4"/>
+    <path d="M35 122q-5 9 2 12" fill="none" stroke="#586449" stroke-width="2"/>
+  </g>
+</svg>

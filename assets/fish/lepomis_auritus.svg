@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Redbreast sunfish</title>
+  <desc id="desc">Left-facing Redbreast sunfish (Lepomis auritus), a stylized, approximate UI illustration with flat muted colors and simple splotches. Not a scientifically verified identification image.</desc>
+  <defs><clipPath id="body"><path d="M30 108C49 75.5 87 69.5 127 69.5C174 69.5 211 95 239 108L239 123C202 160.5 151 163.5 111 160.5Q57 159.5 30 120L43 114Z"/></clipPath></defs>
+  <g transform="translate(0 48)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M230 108L270 91Q289 110 271 140L230 123Z" fill="#7c9b93" />
+    <path d="M91 77.5L98 60.5L108 70.5L116 53.5L128 66.5L139 50.5L153 67.5Q177 49.5 198 83.5Z" fill="#7c9b93" />
+    <path d="M158 154.5L187 179.5Q194 184.5 188 154.5Z" fill="#7c9b93" />
+    <path d="M112 156.5L129 177.5Q134 181.5 142 157.5Z" fill="#7c9b93" />
+    <g clip-path="url(#body)">
+    <path d="M10 30H300V190H10Z" fill="#a8c3ba" />
+    <path d="M15 30H291V108Q187 82.5 131 85.5Q63 80.5 15 118Z" fill="#648b85" />
+    <path d="M15 126Q90 147.5 143 148.5Q205 152.5 250 121L300 190H15Z" fill="#eee7cd" />
+    <path d="M51 123Q82 120 122 131L143 163.5H42Z" fill="#d28b65" />
+    <path d="M94.06253734120952 60.4l13 1l-2 14l6 13l-8 66.7l-9 -4l3 -20Z" fill="#365a57" opacity="0.72"/>
+    <path d="M121.54936401517384 60.4l13 1l-2 14l6 13l-8 66.7l-9 -4l3 -20Z" fill="#365a57" opacity="0.72"/>
+    <path d="M144.53201210874843 60.4l13 1l-2 14l6 13l-8 66.7l-9 -4l3 -20Z" fill="#365a57" opacity="0.72"/>
+    <path d="M167.89564013553206 60.4l13 1l-2 14l6 13l-8 66.7l-9 -4l3 -20Z" fill="#365a57" opacity="0.72"/>
+    <path d="M194.42934395296675 60.4l13 1l-2 14l6 13l-8 66.7l-9 -4l3 -20Z" fill="#365a57" opacity="0.72"/>
+    <path d="M220.31149816740648 60.4l13 1l-2 14l6 13l-8 66.7l-9 -4l3 -20Z" fill="#365a57" opacity="0.72"/>
+    <ellipse cx="115.2" cy="111.8" rx="1.9" ry="1.6" fill="#365a57"/>
+    <ellipse cx="180.7" cy="120.1" rx="2.2" ry="2.5" fill="#365a57"/>
+    <ellipse cx="142.0" cy="131.8" rx="1.6" ry="1.7" fill="#365a57"/>
+    <ellipse cx="204.7" cy="114.4" rx="1.7" ry="2.2" fill="#365a57"/>
+    </g>
+    <ellipse cx="54.0" cy="101.0" rx="6.0" ry="6.0" fill="#eee7cd"/>
+    <ellipse cx="53.2" cy="101.0" rx="3.6" ry="3.6" fill="#263e39"/>
+    <ellipse cx="52.0" cy="99.2" rx="1.1" ry="1.1" fill="#fff9eb"/>
+    <path d="M77 100q11 14 0 30" fill="none" stroke="#7c9b93" stroke-width="3"/>
+    <path d="M82 122l27 11q5 5 -4 5l-20 -5Z" fill="#7c9b93" />
+    <ellipse cx="80.0" cy="109.0" rx="12.0" ry="4.5" fill="#365a57"/>
+    <path d="M31 119h18" fill="none" stroke="#365a57" stroke-width="2.4"/>
+  </g>
+</svg>

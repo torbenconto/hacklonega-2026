@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Western blacknose dace</title>
+  <desc id="desc">Left-facing Western blacknose dace (Rhinichthys obtusus), a stylized, approximate UI illustration with flat muted colors and simple splotches. Not a scientifically verified identification image.</desc>
+  <defs><clipPath id="body"><path d="M30 108C49 102.5 87 96.5 127 96.5C174 96.5 211 95 239 108L239 123C202 133.5 151 136.5 111 133.5Q57 132.5 30 120L43 114Z"/></clipPath></defs>
+  <g transform="translate(0 48)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M229 108L283 87Q288 86 286 91L278 115L287 140Q289 145 283 143L229 123Z" fill="#a38e65" />
+    <path d="M117 101.5L137 76.5Q145 72.5 155 81.5L178 106.5Z" fill="#a38e65" />
+    <path d="M158 127.5L187 152.5Q194 157.5 188 127.5Z" fill="#a38e65" />
+    <path d="M112 129.5L129 150.5Q134 154.5 142 130.5Z" fill="#a38e65" />
+    <g clip-path="url(#body)">
+    <path d="M10 30H300V190H10Z" fill="#bfa978" />
+    <path d="M15 30H291V108Q187 109.5 131 112.5Q63 107.5 15 118Z" fill="#7f8862" />
+    <path d="M15 126Q90 120.5 143 121.5Q205 125.5 250 121L300 190H15Z" fill="#f1e3bf" />
+    <path d="M72 112Q151 106 241 113L241 120Q153 115 72 120Z" fill="#5c6449" opacity="0.78"/>
+    <ellipse cx="124.4" cy="112.1" rx="2.2" ry="2.2" fill="#5c6449"/>
+    <ellipse cx="197.5" cy="112.0" rx="2.0" ry="1.6" fill="#5c6449"/>
+    <ellipse cx="158.9" cy="110.2" rx="2.0" ry="1.9" fill="#5c6449"/>
+    <ellipse cx="208.4" cy="114.2" rx="1.5" ry="1.9" fill="#5c6449"/>
+    </g>
+    <ellipse cx="54.0" cy="105.0" rx="6.0" ry="6.0" fill="#f1e3bf"/>
+    <ellipse cx="53.2" cy="105.0" rx="3.6" ry="3.6" fill="#263e39"/>
+    <ellipse cx="52.0" cy="103.2" rx="1.1" ry="1.1" fill="#fff9eb"/>
+    <path d="M77 100q11 14 0 30" fill="none" stroke="#a38e65" stroke-width="3"/>
+    <path d="M82 119l27 11q5 5 -4 5l-20 -5Z" fill="#a38e65" />
+    <path d="M31 119h18" fill="none" stroke="#5c6449" stroke-width="2.4"/>
+  </g>
+</svg>

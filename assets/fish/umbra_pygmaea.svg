@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Eastern mudminnow</title>
+  <desc id="desc">Left-facing Eastern mudminnow (Umbra pygmaea), a stylized, approximate UI illustration with flat muted colors and simple splotches. Not a scientifically verified identification image.</desc>
+  <defs><clipPath id="body"><path d="M30 108C49 99.5 87 93.5 127 93.5C174 93.5 211 95 239 108L239 123C202 136.5 151 139.5 111 136.5Q57 135.5 30 120L43 114Z"/></clipPath></defs>
+  <g transform="translate(0 48)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M230 108L270 91Q289 110 271 140L230 123Z" fill="#718464" />
+    <path d="M163 97.5Q181 76.5 205 103.5Z" fill="#718464" />
+    <path d="M158 130.5L187 155.5Q194 160.5 188 130.5Z" fill="#718464" />
+    <path d="M112 132.5L129 153.5Q134 157.5 142 133.5Z" fill="#718464" />
+    <g clip-path="url(#body)">
+    <path d="M10 30H300V190H10Z" fill="#8c9b7d" />
+    <path d="M15 30H291V108Q187 106.5 131 109.5Q63 104.5 15 118Z" fill="#526c59" />
+    <path d="M15 126Q90 123.5 143 124.5Q205 128.5 250 121L300 190H15Z" fill="#dfdbb9" />
+    <path d="M96.44681313881183 89.2l13 1l-2 14l6 13l-8 17.3l-9 -4l3 -20Z" fill="#344c3e" opacity="0.72"/>
+    <path d="M118.70292595032976 89.2l13 1l-2 14l6 13l-8 17.3l-9 -4l3 -20Z" fill="#344c3e" opacity="0.72"/>
+    <path d="M145.95984018897957 89.2l13 1l-2 14l6 13l-8 17.3l-9 -4l3 -20Z" fill="#344c3e" opacity="0.72"/>
+    <path d="M166.42824020948578 89.2l13 1l-2 14l6 13l-8 17.3l-9 -4l3 -20Z" fill="#344c3e" opacity="0.72"/>
+    <path d="M194.5046365946753 89.2l13 1l-2 14l6 13l-8 17.3l-9 -4l3 -20Z" fill="#344c3e" opacity="0.72"/>
+    <path d="M218.02527831127946 89.2l13 1l-2 14l6 13l-8 17.3l-9 -4l3 -20Z" fill="#344c3e" opacity="0.72"/>
+    <ellipse cx="112.7" cy="123.2" rx="1.8" ry="1.5" fill="#344c3e"/>
+    <ellipse cx="174.1" cy="111.6" rx="2.5" ry="1.6" fill="#344c3e"/>
+    <ellipse cx="155.9" cy="112.9" rx="1.6" ry="2.5" fill="#344c3e"/>
+    <ellipse cx="118.4" cy="122.6" rx="1.8" ry="2.1" fill="#344c3e"/>
+    </g>
+    <ellipse cx="54.0" cy="105.0" rx="6.0" ry="6.0" fill="#dfdbb9"/>
+    <ellipse cx="53.2" cy="105.0" rx="3.6" ry="3.6" fill="#263e39"/>
+    <ellipse cx="52.0" cy="103.2" rx="1.1" ry="1.1" fill="#fff9eb"/>
+    <path d="M77 100q11 14 0 30" fill="none" stroke="#718464" stroke-width="3"/>
+    <path d="M82 119l27 11q5 5 -4 5l-20 -5Z" fill="#718464" />
+    <path d="M31 119h18" fill="none" stroke="#344c3e" stroke-width="2.4"/>
+  </g>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Southern brook lamprey</title>
+  <desc id="desc">Left-facing Southern brook lamprey (Ichthyomyzon gagei), a stylized, approximate UI illustration with flat muted colors and simple splotches. Not a scientifically verified identification image.</desc>
+  <defs><clipPath id="body"><path d="M28 105Q51 95 77 107C119 132 186 161 266 114Q281 104 286 110C264 151 193 170 133 151Q87 138 66 122L30 121Q21 114 28 105Z"/></clipPath></defs>
+  <g transform="translate(0 48)" stroke-linecap="round" stroke-linejoin="round">
+    <g clip-path="url(#body)">
+    <path d="M10 30H300V190H10Z" fill="#9eafaa" />
+    <path d="M20 83H291V113Q217 160 132 139Q70 105 20 113Z" fill="#627b75" />
+    <path d="M20 118Q75 111 121 141Q202 169 286 117L296 185H20Z" fill="#e2dfc7" />
+    <path d="M88.0 115.8q4.4 -4.4 7.5 0l-1 4.4q-4.4 3 -6.7 -1Z" fill="#384f4d" opacity="0.36"/>
+    <path d="M107.2 108.8q4.2 -4.2 7.1 0l-1 4.2q-4.2 3 -6.3 -1Z" fill="#384f4d" opacity="0.36"/>
+    <path d="M133.0 110.5q4.4 -4.4 7.4 0l-1 4.4q-4.4 3 -6.6 -1Z" fill="#384f4d" opacity="0.36"/>
+    <path d="M148.4 119.4q4.6 -4.6 7.8 0l-1 4.6q-4.6 3 -6.9 -1Z" fill="#384f4d" opacity="0.36"/>
+    <ellipse cx="134.9" cy="138.0" rx="1.8" ry="2.1" fill="#384f4d"/>
+    <ellipse cx="141.6" cy="139.4" rx="1.5" ry="2.4" fill="#384f4d"/>
+    <ellipse cx="105.5" cy="141.5" rx="2.3" ry="2.6" fill="#384f4d"/>
+    <ellipse cx="152.4" cy="142.8" rx="2.6" ry="1.8" fill="#384f4d"/>
+    </g>
+    <ellipse cx="54.0" cy="105.0" rx="6.0" ry="6.0" fill="#e2dfc7"/>
+    <ellipse cx="53.2" cy="105.0" rx="3.6" ry="3.6" fill="#263e39"/>
+    <ellipse cx="52.0" cy="103.2" rx="1.1" ry="1.1" fill="#fff9eb"/>
+    <ellipse cx="27.0" cy="113.0" rx="4.3" ry="8.0" fill="#384f4d"/>
+    <ellipse cx="26.5" cy="113.0" rx="2.3" ry="5.0" fill="#e2dfc7"/>
+    <ellipse cx="66.0" cy="116.0" rx="1.6" ry="2.4" fill="#384f4d"/>
+    <ellipse cx="71.0" cy="117.2" rx="1.6" ry="2.4" fill="#384f4d"/>
+    <ellipse cx="76.0" cy="118.4" rx="1.6" ry="2.4" fill="#384f4d"/>
+    <ellipse cx="81.0" cy="119.6" rx="1.6" ry="2.4" fill="#384f4d"/>
+    <ellipse cx="86.0" cy="120.8" rx="1.6" ry="2.4" fill="#384f4d"/>
+    <ellipse cx="91.0" cy="122.0" rx="1.6" ry="2.4" fill="#384f4d"/>
+    <ellipse cx="96.0" cy="123.2" rx="1.6" ry="2.4" fill="#384f4d"/>
+  </g>
+</svg>

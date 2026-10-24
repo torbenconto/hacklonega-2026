@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Brook silverside</title>
+  <desc id="desc">Left-facing Brook silverside (Labidesthes sicculus), a stylized, approximate UI illustration with flat muted colors and simple splotches. Not a scientifically verified identification image.</desc>
+  <defs><clipPath id="body"><path d="M30 108C49 107.0 87 101.0 127 101.0C174 101.0 211 95 239 108L239 123C202 129.0 151 132.0 111 129.0Q57 128.0 30 120L43 114Z"/></clipPath></defs>
+  <g transform="translate(0 48)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M229 108L284 78Q290 75 287 82L272 115L288 148Q290 155 283 151L229 123Z" fill="#8fa99c" />
+    <path d="M117 106.0L137 81.0Q145 77.0 155 86.0L178 111.0Z" fill="#8fa99c" />
+    <path d="M158 123.0L187 148.0Q194 153.0 188 123.0Z" fill="#8fa99c" />
+    <path d="M112 125.0L129 146.0Q134 150.0 142 126.0Z" fill="#8fa99c" />
+    <g clip-path="url(#body)">
+    <path d="M10 30H300V190H10Z" fill="#c7d4cf" />
+    <path d="M15 30H291V108Q187 114.0 131 117.0Q63 112.0 15 118Z" fill="#7e9c94" />
+    <path d="M15 126Q90 116.0 143 117.0Q205 121.0 250 121L300 190H15Z" fill="#f2ebd8" />
+    <path d="M72 112Q151 106 241 113L241 120Q153 115 72 120Z" fill="#49675f" opacity="0.78"/>
+    <ellipse cx="189.9" cy="119.6" rx="2.0" ry="2.6" fill="#49675f"/>
+    <ellipse cx="142.2" cy="113.2" rx="2.0" ry="2.1" fill="#49675f"/>
+    <ellipse cx="139.0" cy="111.7" rx="1.5" ry="2.4" fill="#49675f"/>
+    <ellipse cx="130.6" cy="119.8" rx="1.6" ry="1.9" fill="#49675f"/>
+    </g>
+    <ellipse cx="54.0" cy="105.0" rx="6.0" ry="6.0" fill="#f2ebd8"/>
+    <ellipse cx="53.2" cy="105.0" rx="3.6" ry="3.6" fill="#263e39"/>
+    <ellipse cx="52.0" cy="103.2" rx="1.1" ry="1.1" fill="#fff9eb"/>
+    <path d="M77 100q11 14 0 30" fill="none" stroke="#8fa99c" stroke-width="3"/>
+    <path d="M82 119l27 11q5 5 -4 5l-20 -5Z" fill="#8fa99c" />
+    <path d="M31 119h18" fill="none" stroke="#49675f" stroke-width="2.4"/>
+  </g>
+</svg>

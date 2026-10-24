@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Pugnose minnow</title>
+  <desc id="desc">Left-facing Pugnose minnow (Opsopoeodus emiliae), a stylized, approximate UI illustration with flat muted colors and simple splotches. Not a scientifically verified identification image.</desc>
+  <defs><clipPath id="body"><path d="M30 108C49 103.5 87 97.5 127 97.5C174 97.5 211 95 239 108L239 123C202 132.5 151 135.5 111 132.5Q57 131.5 30 120L43 114Z"/></clipPath></defs>
+  <g transform="translate(0 48)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M229 108L284 78Q290 75 287 82L272 115L288 148Q290 155 283 151L229 123Z" fill="#718464" />
+    <path d="M117 102.5L137 77.5Q145 73.5 155 82.5L178 107.5Z" fill="#718464" />
+    <path d="M158 126.5L187 151.5Q194 156.5 188 126.5Z" fill="#718464" />
+    <path d="M112 128.5L129 149.5Q134 153.5 142 129.5Z" fill="#718464" />
+    <g clip-path="url(#body)">
+    <path d="M10 30H300V190H10Z" fill="#8c9b7d" />
+    <path d="M15 30H291V108Q187 110.5 131 113.5Q63 108.5 15 118Z" fill="#526c59" />
+    <path d="M15 126Q90 119.5 143 120.5Q205 124.5 250 121L300 190H15Z" fill="#dfdbb9" />
+    <path d="M72 112Q151 106 241 113L241 120Q153 115 72 120Z" fill="#344c3e" opacity="0.78"/>
+    <ellipse cx="170.7" cy="117.6" rx="2.4" ry="1.7" fill="#344c3e"/>
+    <ellipse cx="198.2" cy="113.5" rx="2.4" ry="2.5" fill="#344c3e"/>
+    <ellipse cx="165.7" cy="116.9" rx="1.7" ry="2.5" fill="#344c3e"/>
+    <ellipse cx="111.6" cy="110.7" rx="2.2" ry="2.3" fill="#344c3e"/>
+    </g>
+    <ellipse cx="54.0" cy="105.0" rx="6.0" ry="6.0" fill="#dfdbb9"/>
+    <ellipse cx="53.2" cy="105.0" rx="3.6" ry="3.6" fill="#263e39"/>
+    <ellipse cx="52.0" cy="103.2" rx="1.1" ry="1.1" fill="#fff9eb"/>
+    <path d="M77 100q11 14 0 30" fill="none" stroke="#718464" stroke-width="3"/>
+    <path d="M82 119l27 11q5 5 -4 5l-20 -5Z" fill="#718464" />
+    <path d="M31 119h18" fill="none" stroke="#344c3e" stroke-width="2.4"/>
+  </g>
+</svg>

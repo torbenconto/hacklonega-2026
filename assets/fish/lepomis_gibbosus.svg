@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Pumpkinseed</title>
+  <desc id="desc">Left-facing Pumpkinseed (Lepomis gibbosus), a stylized, approximate UI illustration with flat muted colors and simple splotches. Not a scientifically verified identification image.</desc>
+  <defs><clipPath id="body"><path d="M30 108C49 75.5 87 69.5 127 69.5C174 69.5 211 95 239 108L239 123C202 160.5 151 163.5 111 160.5Q57 159.5 30 120L43 114Z"/></clipPath></defs>
+  <g transform="translate(0 48)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M230 108L270 91Q289 110 271 140L230 123Z" fill="#c69a68" />
+    <path d="M91 77.5L98 60.5L108 70.5L116 53.5L128 66.5L139 50.5L153 67.5Q177 49.5 198 83.5Z" fill="#c69a68" />
+    <path d="M158 154.5L187 179.5Q194 184.5 188 154.5Z" fill="#c69a68" />
+    <path d="M112 156.5L129 177.5Q134 181.5 142 157.5Z" fill="#c69a68" />
+    <g clip-path="url(#body)">
+    <path d="M10 30H300V190H10Z" fill="#d4ad78" />
+    <path d="M15 30H291V108Q187 82.5 131 85.5Q63 80.5 15 118Z" fill="#8c936a" />
+    <path d="M15 126Q90 147.5 143 148.5Q205 152.5 250 121L300 190H15Z" fill="#f4e4c0" />
+    <path d="M96.21513083873684 60.4l13 1l-2 14l6 13l-8 66.7l-9 -4l3 -20Z" fill="#52644d" opacity="0.72"/>
+    <ellipse cx="111.2" cy="121.0" rx="5.0" ry="6.0" fill="#da8e63"/>
+    <path d="M120.24596681034599 60.4l13 1l-2 14l6 13l-8 66.7l-9 -4l3 -20Z" fill="#52644d" opacity="0.72"/>
+    <ellipse cx="135.2" cy="121.0" rx="5.0" ry="6.0" fill="#da8e63"/>
+    <path d="M142.97933579431987 60.4l13 1l-2 14l6 13l-8 66.7l-9 -4l3 -20Z" fill="#52644d" opacity="0.72"/>
+    <ellipse cx="158.0" cy="121.0" rx="5.0" ry="6.0" fill="#da8e63"/>
+    <path d="M169.08935327945878 60.4l13 1l-2 14l6 13l-8 66.7l-9 -4l3 -20Z" fill="#52644d" opacity="0.72"/>
+    <ellipse cx="184.1" cy="121.0" rx="5.0" ry="6.0" fill="#da8e63"/>
+    <path d="M196.9657661027522 60.4l13 1l-2 14l6 13l-8 66.7l-9 -4l3 -20Z" fill="#52644d" opacity="0.72"/>
+    <ellipse cx="212.0" cy="121.0" rx="5.0" ry="6.0" fill="#da8e63"/>
+    <path d="M220.17666292330244 60.4l13 1l-2 14l6 13l-8 66.7l-9 -4l3 -20Z" fill="#52644d" opacity="0.72"/>
+    <ellipse cx="235.2" cy="121.0" rx="5.0" ry="6.0" fill="#da8e63"/>
+    <ellipse cx="127.6" cy="118.1" rx="2.4" ry="1.8" fill="#52644d"/>
+    <ellipse cx="195.3" cy="128.2" rx="2.3" ry="2.5" fill="#52644d"/>
+    <ellipse cx="163.1" cy="124.7" rx="2.5" ry="1.7" fill="#52644d"/>
+    <ellipse cx="187.0" cy="120.8" rx="1.7" ry="2.5" fill="#52644d"/>
+    <path d="M40 110Q57 99 80 110L77 127Q55 128 40 116Z" fill="#83b1b0" />
+    </g>
+    <ellipse cx="54.0" cy="101.0" rx="6.0" ry="6.0" fill="#f4e4c0"/>
+    <ellipse cx="53.2" cy="101.0" rx="3.6" ry="3.6" fill="#263e39"/>
+    <ellipse cx="52.0" cy="99.2" rx="1.1" ry="1.1" fill="#fff9eb"/>
+    <path d="M77 100q11 14 0 30" fill="none" stroke="#c69a68" stroke-width="3"/>
+    <path d="M82 122l27 11q5 5 -4 5l-20 -5Z" fill="#c69a68" />
+    <ellipse cx="80.0" cy="109.0" rx="6.0" ry="4.5" fill="#52644d"/>
+    <path d="M82 105q7 3 0 8" fill="none" stroke="#ca806a" stroke-width="3"/>
+    <path d="M31 119h18" fill="none" stroke="#52644d" stroke-width="2.4"/>
+  </g>
+</svg>

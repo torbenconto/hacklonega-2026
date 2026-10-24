@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Sailfin molly</title>
+  <desc id="desc">Left-facing Sailfin molly (Poecilia latipinna), a stylized, approximate UI illustration with flat muted colors and simple splotches. Not a scientifically verified identification image.</desc>
+  <defs><clipPath id="body"><path d="M30 108C49 97.0 87 91.0 127 91.0C174 91.0 211 95 239 108L239 123C202 139.0 151 142.0 111 139.0Q57 138.0 30 120L43 114Z"/></clipPath></defs>
+  <g transform="translate(0 48)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M230 108L270 91Q289 110 271 140L230 123Z" fill="#7b9389" />
+    <path d="M106 96.0L111 59.0Q161 43.0 202 104.0Z" fill="#7b9389" />
+    <path d="M158 133.0L187 158.0Q194 163.0 188 133.0Z" fill="#7b9389" />
+    <path d="M112 135.0L129 156.0Q134 160.0 142 136.0Z" fill="#7b9389" />
+    <g clip-path="url(#body)">
+    <path d="M10 30H300V190H10Z" fill="#9eafaa" />
+    <path d="M15 30H291V108Q187 104.0 131 107.0Q63 102.0 15 118Z" fill="#627b75" />
+    <path d="M15 126Q90 126.0 143 127.0Q205 131.0 250 121L300 190H15Z" fill="#e2dfc7" />
+    <path d="M92.0 108.3q3.5 -3.5 5.9 0l-1 3.5q-3.5 3 -5.2 -1Z" fill="#384f4d" opacity="0.88"/>
+    <path d="M107.4 111.1q4.1 -4.1 6.9 0l-1 4.1q-4.1 3 -6.1 -1Z" fill="#384f4d" opacity="0.88"/>
+    <path d="M128.0 105.4q3.9 -3.9 6.7 0l-1 3.9q-3.9 3 -5.9 -1Z" fill="#384f4d" opacity="0.88"/>
+    <path d="M149.0 120.9q3.5 -3.5 5.9 0l-1 3.5q-3.5 3 -5.2 -1Z" fill="#384f4d" opacity="0.88"/>
+    <path d="M173.0 111.2q4.3 -4.3 7.3 0l-1 4.3q-4.3 3 -6.5 -1Z" fill="#384f4d" opacity="0.88"/>
+    <path d="M194.7 119.9q4.9 -4.9 8.3 0l-1 4.9q-4.9 3 -7.4 -1Z" fill="#384f4d" opacity="0.88"/>
+    <path d="M213.6 128.0q3.2 -3.2 5.5 0l-1 3.2q-3.2 3 -4.9 -1Z" fill="#384f4d" opacity="0.88"/>
+    <path d="M87.5 120.7q4.0 -4.0 6.7 0l-1 4.0q-4.0 3 -6.0 -1Z" fill="#384f4d" opacity="0.88"/>
+    <path d="M111.4 99.8q4.8 -4.8 8.2 0l-1 4.8q-4.8 3 -7.2 -1Z" fill="#384f4d" opacity="0.88"/>
+    <path d="M129.3 118.9q3.2 -3.2 5.5 0l-1 3.2q-3.2 3 -4.8 -1Z" fill="#384f4d" opacity="0.88"/>
+    <path d="M154.4 109.3q3.6 -3.6 6.1 0l-1 3.6q-3.6 3 -5.4 -1Z" fill="#384f4d" opacity="0.88"/>
+    <path d="M172.0 124.1q5.0 -5.0 8.5 0l-1 5.0q-5.0 3 -7.5 -1Z" fill="#384f4d" opacity="0.88"/>
+    <path d="M188.0 107.6q4.3 -4.3 7.3 0l-1 4.3q-4.3 3 -6.5 -1Z" fill="#384f4d" opacity="0.88"/>
+    <path d="M211.3 115.0q4.7 -4.7 7.9 0l-1 4.7q-4.7 3 -7.0 -1Z" fill="#384f4d" opacity="0.88"/>
+    <path d="M94.9 128.6q3.7 -3.7 6.3 0l-1 3.7q-3.7 3 -5.5 -1Z" fill="#384f4d" opacity="0.88"/>
+    <path d="M111.7 122.3q4.5 -4.5 7.7 0l-1 4.5q-4.5 3 -6.8 -1Z" fill="#384f4d" opacity="0.88"/>
+    <path d="M130.6 103.9q3.7 -3.7 6.3 0l-1 3.7q-3.7 3 -5.6 -1Z" fill="#384f4d" opacity="0.88"/>
+    <ellipse cx="125.9" cy="109.6" rx="1.8" ry="2.1" fill="#384f4d"/>
+    <ellipse cx="178.4" cy="124.0" rx="1.7" ry="2.5" fill="#384f4d"/>
+    <ellipse cx="163.4" cy="117.0" rx="1.7" ry="2.6" fill="#384f4d"/>
+    <ellipse cx="175.5" cy="114.5" rx="2.4" ry="2.3" fill="#384f4d"/>
+    </g>
+    <ellipse cx="54.0" cy="105.0" rx="6.0" ry="6.0" fill="#e2dfc7"/>
+    <ellipse cx="53.2" cy="105.0" rx="3.6" ry="3.6" fill="#263e39"/>
+    <ellipse cx="52.0" cy="103.2" rx="1.1" ry="1.1" fill="#fff9eb"/>
+    <path d="M77 100q11 14 0 30" fill="none" stroke="#7b9389" stroke-width="3"/>
+    <path d="M82 119l27 11q5 5 -4 5l-20 -5Z" fill="#7b9389" />
+    <path d="M31 119h18" fill="none" stroke="#384f4d" stroke-width="2.4"/>
+  </g>
+</svg>

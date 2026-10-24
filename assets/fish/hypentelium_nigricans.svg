@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Northern hog sucker</title>
+  <desc id="desc">Left-facing Northern hog sucker (Hypentelium nigricans), a stylized, approximate UI illustration with flat muted colors and simple splotches. Not a scientifically verified identification image.</desc>
+  <defs><clipPath id="body"><path d="M30 108C49 95.5 87 89.5 127 89.5C174 89.5 211 95 239 108L239 123C202 140.5 151 143.5 111 140.5Q57 139.5 30 120L43 114Z"/></clipPath></defs>
+  <g transform="translate(0 48)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M229 108L284 78Q290 75 287 82L272 115L288 148Q290 155 283 151L229 123Z" fill="#a38e65" />
+    <path d="M117 94.5L137 69.5Q145 65.5 155 74.5L178 99.5Z" fill="#a38e65" />
+    <path d="M158 134.5L187 159.5Q194 164.5 188 134.5Z" fill="#a38e65" />
+    <path d="M112 136.5L129 157.5Q134 161.5 142 137.5Z" fill="#a38e65" />
+    <g clip-path="url(#body)">
+    <path d="M10 30H300V190H10Z" fill="#bfa978" />
+    <path d="M15 30H291V108Q187 102.5 131 105.5Q63 100.5 15 118Z" fill="#7f8862" />
+    <path d="M15 126Q90 127.5 143 128.5Q205 132.5 250 121L300 190H15Z" fill="#f1e3bf" />
+    <path d="M92.97687656763216 84.4l13 1l-2 14l6 13l-8 14.8l-9 -4l3 -20Z" fill="#5c6449" opacity="0.72"/>
+    <path d="M121.33143773456767 84.4l13 1l-2 14l6 13l-8 14.8l-9 -4l3 -20Z" fill="#5c6449" opacity="0.72"/>
+    <path d="M141.57976703634185 84.4l13 1l-2 14l6 13l-8 14.8l-9 -4l3 -20Z" fill="#5c6449" opacity="0.72"/>
+    <path d="M171.20261082620635 84.4l13 1l-2 14l6 13l-8 14.8l-9 -4l3 -20Z" fill="#5c6449" opacity="0.72"/>
+    <path d="M195.5372194571386 84.4l13 1l-2 14l6 13l-8 14.8l-9 -4l3 -20Z" fill="#5c6449" opacity="0.72"/>
+    <path d="M217.37431910850935 84.4l13 1l-2 14l6 13l-8 14.8l-9 -4l3 -20Z" fill="#5c6449" opacity="0.72"/>
+    <ellipse cx="131.3" cy="118.8" rx="2.0" ry="1.7" fill="#5c6449"/>
+    <ellipse cx="191.7" cy="117.0" rx="2.5" ry="1.7" fill="#5c6449"/>
+    <ellipse cx="169.2" cy="118.2" rx="1.8" ry="2.6" fill="#5c6449"/>
+    <ellipse cx="142.7" cy="113.7" rx="1.9" ry="2.2" fill="#5c6449"/>
+    </g>
+    <ellipse cx="54.0" cy="105.0" rx="6.0" ry="6.0" fill="#f1e3bf"/>
+    <ellipse cx="53.2" cy="105.0" rx="3.6" ry="3.6" fill="#263e39"/>
+    <ellipse cx="52.0" cy="103.2" rx="1.1" ry="1.1" fill="#fff9eb"/>
+    <path d="M77 100q11 14 0 30" fill="none" stroke="#a38e65" stroke-width="3"/>
+    <path d="M82 122l27 11q5 5 -4 5l-20 -5Z" fill="#a38e65" />
+    <ellipse cx="35.0" cy="126.0" rx="5.0" ry="3.0" fill="#a38e65"/>
+  </g>
+</svg>
