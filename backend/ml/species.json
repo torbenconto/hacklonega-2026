@@ -1,0 +1,23 @@
+[
+  {"species_id": "micropterus_salmoides", "common_name": "Largemouth bass", "scientific_name": "Micropterus salmoides"},
+  {"species_id": "micropterus_dolomieu", "common_name": "Smallmouth bass", "scientific_name": "Micropterus dolomieu"},
+  {"species_id": "micropterus_punctulatus", "common_name": "Spotted bass", "scientific_name": "Micropterus punctulatus"},
+  {"species_id": "morone_saxatilis", "common_name": "Striped bass", "scientific_name": "Morone saxatilis"},
+  {"species_id": "morone_chrysops", "common_name": "White bass", "scientific_name": "Morone chrysops"},
+  {"species_id": "lepomis_macrochirus", "common_name": "Bluegill", "scientific_name": "Lepomis macrochirus"},
+  {"species_id": "lepomis_microlophus", "common_name": "Redear sunfish", "scientific_name": "Lepomis microlophus"},
+  {"species_id": "lepomis_auritus", "common_name": "Redbreast sunfish", "scientific_name": "Lepomis auritus"},
+  {"species_id": "lepomis_cyanellus", "common_name": "Green sunfish", "scientific_name": "Lepomis cyanellus"},
+  {"species_id": "pomoxis_nigromaculatus", "common_name": "Black crappie", "scientific_name": "Pomoxis nigromaculatus"},
+  {"species_id": "pomoxis_annularis", "common_name": "White crappie", "scientific_name": "Pomoxis annularis"},
+  {"species_id": "ictalurus_punctatus", "common_name": "Channel catfish", "scientific_name": "Ictalurus punctatus"},
+  {"species_id": "ictalurus_furcatus", "common_name": "Blue catfish", "scientific_name": "Ictalurus furcatus"},
+  {"species_id": "pylodictis_olivaris", "common_name": "Flathead catfish", "scientific_name": "Pylodictis olivaris"},
+  {"species_id": "oncorhynchus_mykiss", "common_name": "Rainbow trout", "scientific_name": "Oncorhynchus mykiss"},
+  {"species_id": "salmo_trutta", "common_name": "Brown trout", "scientific_name": "Salmo trutta"},
+  {"species_id": "salvelinus_fontinalis", "common_name": "Brook trout", "scientific_name": "Salvelinus fontinalis"},
+  {"species_id": "sander_vitreus", "common_name": "Walleye", "scientific_name": "Sander vitreus"},
+  {"species_id": "perca_flavescens", "common_name": "Yellow perch", "scientific_name": "Perca flavescens"},
+  {"species_id": "esox_niger", "common_name": "Chain pickerel", "scientific_name": "Esox niger"},
+  {"species_id": "cyprinus_carpio", "common_name": "Common carp", "scientific_name": "Cyprinus carpio"}
+]

@@ -1,2 +1,7 @@
 fastapi>=0.115,<1.0
 uvicorn>=0.30,<1.0
+python-multipart>=0.0.20,<1.0
+Pillow>=11.0,<13.0
+torch>=2.6,<3.0
+torchvision>=0.21,<1.0
+open-clip-torch>=3.3,<4.0
