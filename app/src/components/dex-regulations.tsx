@@ -27,8 +27,8 @@ export function DexRegulations({ species, length: measuredLength, logs }: { spec
   const closed = rules?.season.status === 'closed_year_round';
   const lengthLabel = size?.status === 'minimum' ? `${size.minimum_inches} in min`
     : size?.status === 'maximum' ? `${size.maximum_inches} in max`
-    : size?.status === 'range' ? `${size.minimum_inches}–${size.maximum_inches} in`
-    : size?.status === 'no_verified_restriction' ? 'No baseline limit' : 'Not reviewed';
+    : size?.status === 'range' ? `${size.minimum_inches}-${size.maximum_inches} in`
+    : size?.status === 'no_verified_restriction' ? 'No baseline' : 'Not reviewed';
   const seasonLabel = closed ? 'Closed all year' : rules?.season.status === 'year_round' ? 'Year-round'
     : rules?.season.status === 'restricted' ? `${rules.season.opens_on}–${rules.season.closes_on}` : 'Not reviewed';
   const outside = valid && ((size?.minimum_inches !== undefined && inches < size.minimum_inches) || (size?.maximum_inches !== undefined && inches > size.maximum_inches));
@@ -42,7 +42,7 @@ export function DexRegulations({ species, length: measuredLength, logs }: { spec
       <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 12 }}>
         {[
           ['Length', lengthLabel],
-          ['Daily limit', rules.daily_limit.status === 'specified' ? `${rules.daily_limit.limit} fish` : rules.daily_limit.status === 'no_statewide_limit' ? 'No baseline limit' : 'Not reviewed'],
+          ['Daily limit', rules.daily_limit.status === 'specified' ? `${rules.daily_limit.limit} fish` : rules.daily_limit.status === 'no_statewide_limit' ? 'No baseline' : 'Not reviewed'],
           ['Season', seasonLabel],
         ].map(([label, value]) => <View key={label} style={{ flex: 1, minWidth: 85, gap: 5 }}><Text style={ui.small}>{label}</Text><Text style={[ui.name, { fontSize: 16 }]}>{value}</Text></View>)}
       </View>
