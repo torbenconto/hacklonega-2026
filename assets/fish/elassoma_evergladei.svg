@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Everglades pygmy sunfish</title>
+  <desc id="desc">Left-facing Everglades pygmy sunfish (Elassoma evergladei), a stylized, approximate UI illustration with flat muted colors and simple splotches. Not a scientifically verified identification image.</desc>
+  <defs><clipPath id="body"><path d="M30 108C49 88.0 87 82.0 127 82.0C174 82.0 211 95 239 108L239 123C202 148.0 151 151.0 111 148.0Q57 147.0 30 120L43 114Z"/></clipPath></defs>
+  <g transform="translate(0 48)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M230 108L270 91Q289 110 271 140L230 123Z" fill="#718464" />
+    <path d="M91 90.0L98 73.0L108 83.0L116 66.0L128 79.0L139 63.0L153 80.0Q177 62.0 198 96.0Z" fill="#718464" />
+    <path d="M158 142.0L187 167.0Q194 172.0 188 142.0Z" fill="#718464" />
+    <path d="M112 144.0L129 165.0Q134 169.0 142 145.0Z" fill="#718464" />
+    <g clip-path="url(#body)">
+    <path d="M10 30H300V190H10Z" fill="#8c9b7d" />
+    <path d="M15 30H291V108Q187 95.0 131 98.0Q63 93.0 15 118Z" fill="#526c59" />
+    <path d="M15 126Q90 135.0 143 136.0Q205 140.0 250 121L300 190H15Z" fill="#dfdbb9" />
+    <path d="M90.1 119.7q3.0 -3.0 5.2 0l-1 3.0q-3.0 3 -4.6 -1Z" fill="#dfdbb9" opacity="0.88"/>
+    <path d="M114.8 125.6q3.9 -3.9 6.6 0l-1 3.9q-3.9 3 -5.8 -1Z" fill="#dfdbb9" opacity="0.88"/>
+    <path d="M130.2 108.5q3.6 -3.6 6.2 0l-1 3.6q-3.6 3 -5.4 -1Z" fill="#dfdbb9" opacity="0.88"/>
+    <path d="M151.5 135.1q4.5 -4.5 7.7 0l-1 4.5q-4.5 3 -6.8 -1Z" fill="#dfdbb9" opacity="0.88"/>
+    <path d="M167.9 105.2q3.2 -3.2 5.5 0l-1 3.2q-3.2 3 -4.8 -1Z" fill="#dfdbb9" opacity="0.88"/>
+    <path d="M188.6 125.4q3.7 -3.7 6.3 0l-1 3.7q-3.7 3 -5.6 -1Z" fill="#dfdbb9" opacity="0.88"/>
+    <path d="M209.8 132.5q4.0 -4.0 6.8 0l-1 4.0q-4.0 3 -6.0 -1Z" fill="#dfdbb9" opacity="0.88"/>
+    <path d="M88.8 102.0q4.7 -4.7 8.0 0l-1 4.7q-4.7 3 -7.0 -1Z" fill="#dfdbb9" opacity="0.88"/>
+    <path d="M114.5 108.0q3.0 -3.0 5.1 0l-1 3.0q-3.0 3 -4.5 -1Z" fill="#dfdbb9" opacity="0.88"/>
+    <path d="M127.1 131.8q4.2 -4.2 7.2 0l-1 4.2q-4.2 3 -6.3 -1Z" fill="#dfdbb9" opacity="0.88"/>
+    <path d="M147.9 128.5q4.0 -4.0 6.9 0l-1 4.0q-4.0 3 -6.1 -1Z" fill="#dfdbb9" opacity="0.88"/>
+    <path d="M174.5 124.1q4.4 -4.4 7.4 0l-1 4.4q-4.4 3 -6.5 -1Z" fill="#dfdbb9" opacity="0.88"/>
+    <path d="M187.1 124.6q4.8 -4.8 8.1 0l-1 4.8q-4.8 3 -7.2 -1Z" fill="#dfdbb9" opacity="0.88"/>
+    <path d="M207.2 109.9q4.5 -4.5 7.6 0l-1 4.5q-4.5 3 -6.7 -1Z" fill="#dfdbb9" opacity="0.88"/>
+    <path d="M93.2 103.4q3.4 -3.4 5.8 0l-1 3.4q-3.4 3 -5.1 -1Z" fill="#dfdbb9" opacity="0.88"/>
+    <path d="M112.9 106.4q4.6 -4.6 7.7 0l-1 4.6q-4.6 3 -6.8 -1Z" fill="#dfdbb9" opacity="0.88"/>
+    <path d="M127.2 93.9q5.0 -5.0 8.4 0l-1 5.0q-5.0 3 -7.4 -1Z" fill="#dfdbb9" opacity="0.88"/>
+    <ellipse cx="145.1" cy="105.8" rx="2.7" ry="1.7" fill="#344c3e"/>
+    <ellipse cx="160.9" cy="113.9" rx="2.4" ry="2.4" fill="#344c3e"/>
+    <ellipse cx="200.1" cy="125.2" rx="1.7" ry="2.5" fill="#344c3e"/>
+    <ellipse cx="198.0" cy="116.1" rx="2.4" ry="1.8" fill="#344c3e"/>
+    </g>
+    <ellipse cx="54.0" cy="101.0" rx="6.0" ry="6.0" fill="#dfdbb9"/>
+    <ellipse cx="53.2" cy="101.0" rx="3.6" ry="3.6" fill="#263e39"/>
+    <ellipse cx="52.0" cy="99.2" rx="1.1" ry="1.1" fill="#fff9eb"/>
+    <path d="M77 100q11 14 0 30" fill="none" stroke="#718464" stroke-width="3"/>
+    <path d="M82 122l27 11q5 5 -4 5l-20 -5Z" fill="#718464" />
+    <ellipse cx="80.0" cy="109.0" rx="6.0" ry="4.5" fill="#344c3e"/>
+    <path d="M31 119h18" fill="none" stroke="#344c3e" stroke-width="2.4"/>
+  </g>
+</svg>

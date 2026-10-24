@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Spotted sunfish</title>
+  <desc id="desc">Left-facing Spotted sunfish (Lepomis punctatus), a stylized, approximate UI illustration with flat muted colors and simple splotches. Not a scientifically verified identification image.</desc>
+  <defs><clipPath id="body"><path d="M30 108C49 75.5 87 69.5 127 69.5C174 69.5 211 95 239 108L239 123C202 160.5 151 163.5 111 160.5Q57 159.5 30 120L43 114Z"/></clipPath></defs>
+  <g transform="translate(0 48)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M230 108L270 91Q289 110 271 140L230 123Z" fill="#a38e65" />
+    <path d="M91 77.5L98 60.5L108 70.5L116 53.5L128 66.5L139 50.5L153 67.5Q177 49.5 198 83.5Z" fill="#a38e65" />
+    <path d="M158 154.5L187 179.5Q194 184.5 188 154.5Z" fill="#a38e65" />
+    <path d="M112 156.5L129 177.5Q134 181.5 142 157.5Z" fill="#a38e65" />
+    <g clip-path="url(#body)">
+    <path d="M10 30H300V190H10Z" fill="#bfa978" />
+    <path d="M15 30H291V108Q187 82.5 131 85.5Q63 80.5 15 118Z" fill="#7f8862" />
+    <path d="M15 126Q90 147.5 143 148.5Q205 152.5 250 121L300 190H15Z" fill="#f1e3bf" />
+    <path d="M93.5 120.9q3.1 -3.1 5.3 0l-1 3.1q-3.1 3 -4.7 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M110.6 119.9q3.5 -3.5 6.0 0l-1 3.5q-3.5 3 -5.3 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M130.2 129.9q4.4 -4.4 7.4 0l-1 4.4q-4.4 3 -6.5 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M154.7 118.3q3.8 -3.8 6.4 0l-1 3.8q-3.8 3 -5.7 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M174.3 116.7q3.9 -3.9 6.6 0l-1 3.9q-3.9 3 -5.8 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M188.3 133.0q4.2 -4.2 7.1 0l-1 4.2q-4.2 3 -6.3 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M207.7 124.9q3.2 -3.2 5.4 0l-1 3.2q-3.2 3 -4.8 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M90.1 124.2q4.8 -4.8 8.2 0l-1 4.8q-4.8 3 -7.3 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M111.9 97.6q3.7 -3.7 6.2 0l-1 3.7q-3.7 3 -5.5 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M128.0 104.7q3.8 -3.8 6.5 0l-1 3.8q-3.8 3 -5.8 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M151.2 125.3q4.5 -4.5 7.6 0l-1 4.5q-4.5 3 -6.7 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M174.3 135.8q3.1 -3.1 5.2 0l-1 3.1q-3.1 3 -4.6 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M192.9 119.3q4.1 -4.1 7.0 0l-1 4.1q-4.1 3 -6.2 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M214.1 116.2q3.2 -3.2 5.4 0l-1 3.2q-3.2 3 -4.8 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M88.2 97.4q4.1 -4.1 7.0 0l-1 4.1q-4.1 3 -6.1 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M113.8 107.5q3.7 -3.7 6.3 0l-1 3.7q-3.7 3 -5.5 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M131.7 137.2q3.6 -3.6 6.0 0l-1 3.6q-3.6 3 -5.3 -1Z" fill="#5c6449" opacity="0.88"/>
+    <ellipse cx="149.5" cy="109.6" rx="2.3" ry="1.9" fill="#5c6449"/>
+    <ellipse cx="131.2" cy="116.3" rx="2.5" ry="1.6" fill="#5c6449"/>
+    <ellipse cx="199.4" cy="132.9" rx="2.5" ry="1.9" fill="#5c6449"/>
+    <ellipse cx="175.7" cy="120.5" rx="1.7" ry="2.0" fill="#5c6449"/>
+    </g>
+    <ellipse cx="54.0" cy="101.0" rx="6.0" ry="6.0" fill="#f1e3bf"/>
+    <ellipse cx="53.2" cy="101.0" rx="3.6" ry="3.6" fill="#263e39"/>
+    <ellipse cx="52.0" cy="99.2" rx="1.1" ry="1.1" fill="#fff9eb"/>
+    <path d="M77 100q11 14 0 30" fill="none" stroke="#a38e65" stroke-width="3"/>
+    <path d="M82 122l27 11q5 5 -4 5l-20 -5Z" fill="#a38e65" />
+    <ellipse cx="80.0" cy="109.0" rx="6.0" ry="4.5" fill="#5c6449"/>
+    <path d="M31 119h18" fill="none" stroke="#5c6449" stroke-width="2.4"/>
+  </g>
+</svg>

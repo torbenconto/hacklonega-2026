@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Yellow bass</title>
+  <desc id="desc">Left-facing Yellow bass (Morone mississippiensis), a stylized, approximate UI illustration with flat muted colors and simple splotches. Not a scientifically verified identification image.</desc>
+  <defs><clipPath id="body"><path d="M30 108C49 87.5 87 81.5 127 81.5C174 81.5 211 95 239 108L239 123C202 148.5 151 151.5 111 148.5Q57 147.5 30 120L43 114Z"/></clipPath></defs>
+  <g transform="translate(0 48)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M229 108L284 78Q290 75 287 82L272 115L288 148Q290 155 283 151L229 123Z" fill="#b4a16c" />
+    <path d="M91 89.5L98 72.5L108 82.5L116 65.5L128 78.5L139 62.5L153 79.5Q177 61.5 198 95.5Z" fill="#b4a16c" />
+    <path d="M158 142.5L187 167.5Q194 172.5 188 142.5Z" fill="#b4a16c" />
+    <path d="M112 144.5L129 165.5Q134 169.5 142 145.5Z" fill="#b4a16c" />
+    <g clip-path="url(#body)">
+    <path d="M10 30H300V190H10Z" fill="#d4bc77" />
+    <path d="M15 30H291V108Q187 94.5 131 97.5Q63 92.5 15 118Z" fill="#93945e" />
+    <path d="M15 126Q90 135.5 143 136.5Q205 140.5 250 121L300 190H15Z" fill="#f5e6b9" />
+    <path d="M85 101Q156 96 235 101" fill="none" stroke="#586449" stroke-width="3.3"/>
+    <path d="M85 110Q156 105 235 110" fill="none" stroke="#586449" stroke-width="3.3"/>
+    <path d="M85 120Q156 115 235 120" fill="none" stroke="#586449" stroke-width="3.3"/>
+    <path d="M85 129Q156 124 235 129" fill="none" stroke="#586449" stroke-width="3.3"/>
+    <ellipse cx="127.9" cy="118.7" rx="1.7" ry="2.0" fill="#586449"/>
+    <ellipse cx="131.3" cy="125.3" rx="2.3" ry="1.7" fill="#586449"/>
+    <ellipse cx="112.9" cy="121.7" rx="2.1" ry="1.8" fill="#586449"/>
+    <ellipse cx="205.0" cy="118.6" rx="2.5" ry="2.0" fill="#586449"/>
+    </g>
+    <ellipse cx="54.0" cy="101.0" rx="6.0" ry="6.0" fill="#f5e6b9"/>
+    <ellipse cx="53.2" cy="101.0" rx="3.6" ry="3.6" fill="#263e39"/>
+    <ellipse cx="52.0" cy="99.2" rx="1.1" ry="1.1" fill="#fff9eb"/>
+    <path d="M77 100q11 14 0 30" fill="none" stroke="#b4a16c" stroke-width="3"/>
+    <path d="M82 122l27 11q5 5 -4 5l-20 -5Z" fill="#b4a16c" />
+    <path d="M31 119h18" fill="none" stroke="#586449" stroke-width="2.4"/>
+  </g>
+</svg>

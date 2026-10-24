@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">American eel</title>
+  <desc id="desc">Left-facing American eel (Anguilla rostrata), a stylized, approximate UI illustration with flat muted colors and simple splotches. Not a scientifically verified identification image.</desc>
+  <defs><clipPath id="body"><path d="M28 105Q51 95 77 107C119 132 186 161 266 114Q281 104 286 110C264 151 193 170 133 151Q87 138 66 122L30 121Q21 114 28 105Z"/></clipPath></defs>
+  <g transform="translate(0 48)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M113 125Q198 150 273 112L284 110Q255 163 177 163L133 149Z" fill="#a38e65" />
+    <g clip-path="url(#body)">
+    <path d="M10 30H300V190H10Z" fill="#bfa978" />
+    <path d="M20 83H291V113Q217 160 132 139Q70 105 20 113Z" fill="#7f8862" />
+    <path d="M20 118Q75 111 121 141Q202 169 286 117L296 185H20Z" fill="#f1e3bf" />
+    <path d="M94.2 116.9q6.9 -6.9 11.8 0l-1 6.9q-6.9 3 -10.4 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M107.8 120.2q6.8 -6.8 11.6 0l-1 6.8q-6.8 3 -10.2 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M131.7 114.1q7.3 -7.3 12.4 0l-1 7.3q-7.3 3 -10.9 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M149.3 105.9q6.2 -6.2 10.6 0l-1 6.2q-6.2 3 -9.4 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M169.0 121.4q7.2 -7.2 12.2 0l-1 7.2q-7.2 3 -10.8 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M190.2 121.7q8.6 -8.6 14.6 0l-1 8.6q-8.6 3 -12.9 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M209.4 123.0q8.2 -8.2 13.9 0l-1 8.2q-8.2 3 -12.3 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M90.2 113.0q8.6 -8.6 14.6 0l-1 8.6q-8.6 3 -12.9 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M111.2 112.4q8.1 -8.1 13.8 0l-1 8.1q-8.1 3 -12.2 -1Z" fill="#5c6449" opacity="0.88"/>
+    <ellipse cx="179.4" cy="139.4" rx="2.2" ry="2.3" fill="#5c6449"/>
+    <ellipse cx="150.2" cy="139.5" rx="2.0" ry="1.6" fill="#5c6449"/>
+    <ellipse cx="138.7" cy="147.6" rx="2.3" ry="2.1" fill="#5c6449"/>
+    <ellipse cx="151.0" cy="146.3" rx="1.9" ry="1.9" fill="#5c6449"/>
+    </g>
+    <ellipse cx="54.0" cy="105.0" rx="6.0" ry="6.0" fill="#f1e3bf"/>
+    <ellipse cx="53.2" cy="105.0" rx="3.6" ry="3.6" fill="#263e39"/>
+    <ellipse cx="52.0" cy="103.2" rx="1.1" ry="1.1" fill="#fff9eb"/>
+  </g>
+</svg>

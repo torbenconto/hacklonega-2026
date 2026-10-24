@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Flame chub</title>
+  <desc id="desc">Left-facing Flame chub (Hemitremia flammea), a stylized, approximate UI illustration with flat muted colors and simple splotches. Not a scientifically verified identification image.</desc>
+  <defs><clipPath id="body"><path d="M30 108C49 103.0 87 97.0 127 97.0C174 97.0 211 95 239 108L239 123C202 133.0 151 136.0 111 133.0Q57 132.0 30 120L43 114Z"/></clipPath></defs>
+  <g transform="translate(0 48)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M229 108L283 87Q288 86 286 91L278 115L287 140Q289 145 283 143L229 123Z" fill="#b58e78" />
+    <path d="M117 102.0L137 77.0Q145 73.0 155 82.0L178 107.0Z" fill="#b58e78" />
+    <path d="M158 127.0L187 152.0Q194 157.0 188 127.0Z" fill="#b58e78" />
+    <path d="M112 129.0L129 150.0Q134 154.0 142 130.0Z" fill="#b58e78" />
+    <g clip-path="url(#body)">
+    <path d="M10 30H300V190H10Z" fill="#b9c4aa" />
+    <path d="M15 30H291V108Q187 110.0 131 113.0Q63 108.0 15 118Z" fill="#729581" />
+    <path d="M15 126Q90 120.0 143 121.0Q205 125.0 250 121L300 190H15Z" fill="#f3e7cd" />
+    <path d="M72 112Q151 106 241 113L241 120Q153 115 72 120Z" fill="#d88783" opacity="0.78"/>
+    <ellipse cx="139.4" cy="121.4" rx="2.3" ry="2.7" fill="#3f6257"/>
+    <ellipse cx="180.8" cy="116.4" rx="2.7" ry="1.7" fill="#3f6257"/>
+    <ellipse cx="147.5" cy="120.6" rx="1.8" ry="2.4" fill="#3f6257"/>
+    <ellipse cx="171.8" cy="115.4" rx="1.8" ry="2.3" fill="#3f6257"/>
+    </g>
+    <ellipse cx="54.0" cy="105.0" rx="6.0" ry="6.0" fill="#f3e7cd"/>
+    <ellipse cx="53.2" cy="105.0" rx="3.6" ry="3.6" fill="#263e39"/>
+    <ellipse cx="52.0" cy="103.2" rx="1.1" ry="1.1" fill="#fff9eb"/>
+    <path d="M77 100q11 14 0 30" fill="none" stroke="#b58e78" stroke-width="3"/>
+    <path d="M82 119l27 11q5 5 -4 5l-20 -5Z" fill="#b58e78" />
+    <path d="M31 119h18" fill="none" stroke="#3f6257" stroke-width="2.4"/>
+  </g>
+</svg>

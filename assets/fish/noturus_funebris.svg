@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Black madtom</title>
+  <desc id="desc">Left-facing Black madtom (Noturus funebris), a stylized, approximate UI illustration with flat muted colors and simple splotches. Not a scientifically verified identification image.</desc>
+  <defs><clipPath id="body"><path d="M25 109Q52 88 91 94Q136 93.5 166 93.5Q211 97 239 108L239 123Q188 136.5 125 136.5Q66 147 27 124L40 118Z"/></clipPath></defs>
+  <g transform="translate(0 48)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M230 108L270 91Q289 110 271 140L230 123Z" fill="#a38e65" />
+    <path d="M117 98.5L137 73.5Q145 69.5 155 78.5L178 103.5Z" fill="#a38e65" />
+    <path d="M199 108.5Q211 92.5 220 110.5Z" fill="#a38e65" />
+    <path d="M158 130.5L187 155.5Q194 160.5 188 130.5Z" fill="#a38e65" />
+    <path d="M112 132.5L129 153.5Q134 157.5 142 133.5Z" fill="#a38e65" />
+    <g clip-path="url(#body)">
+    <path d="M10 30H300V190H10Z" fill="#bfa978" />
+    <path d="M15 30H291V108Q187 106.5 131 109.5Q63 104.5 15 118Z" fill="#7f8862" />
+    <path d="M15 126Q90 123.5 143 124.5Q205 128.5 250 121L300 190H15Z" fill="#f1e3bf" />
+    <path d="M93.68549157417385 89.2l13 1l-2 14l6 13l-8 8.3l-9 -4l3 -20Z" fill="#5c6449" opacity="0.72"/>
+    <path d="M117.61849359943116 89.2l13 1l-2 14l6 13l-8 8.3l-9 -4l3 -20Z" fill="#5c6449" opacity="0.72"/>
+    <path d="M143.44751242813754 89.2l13 1l-2 14l6 13l-8 8.3l-9 -4l3 -20Z" fill="#5c6449" opacity="0.72"/>
+    <path d="M167.61256067119518 89.2l13 1l-2 14l6 13l-8 8.3l-9 -4l3 -20Z" fill="#5c6449" opacity="0.72"/>
+    <path d="M193.7712625194885 89.2l13 1l-2 14l6 13l-8 8.3l-9 -4l3 -20Z" fill="#5c6449" opacity="0.72"/>
+    <path d="M220.3148341036292 89.2l13 1l-2 14l6 13l-8 8.3l-9 -4l3 -20Z" fill="#5c6449" opacity="0.72"/>
+    <ellipse cx="170.6" cy="119.8" rx="1.7" ry="2.4" fill="#5c6449"/>
+    <ellipse cx="140.9" cy="119.8" rx="2.6" ry="2.7" fill="#5c6449"/>
+    <ellipse cx="198.4" cy="120.4" rx="1.8" ry="2.4" fill="#5c6449"/>
+    <ellipse cx="131.4" cy="115.3" rx="2.4" ry="2.4" fill="#5c6449"/>
+    </g>
+    <ellipse cx="54.0" cy="105.0" rx="6.0" ry="6.0" fill="#f1e3bf"/>
+    <ellipse cx="53.2" cy="105.0" rx="3.6" ry="3.6" fill="#263e39"/>
+    <ellipse cx="52.0" cy="103.2" rx="1.1" ry="1.1" fill="#fff9eb"/>
+    <path d="M77 100q11 14 0 30" fill="none" stroke="#a38e65" stroke-width="3"/>
+    <path d="M82 119l27 11q5 5 -4 5l-20 -5Z" fill="#a38e65" />
+    <path d="M31 119h18" fill="none" stroke="#5c6449" stroke-width="2.4"/>
+    <path d="M39 119Q22 122 19 134" fill="none" stroke="#5c6449" stroke-width="2.5"/>
+    <path d="M49 122Q42 138 29 140" fill="none" stroke="#5c6449" stroke-width="2.5"/>
+    <path d="M43 113Q25 106 17 112" fill="none" stroke="#5c6449" stroke-width="2.5"/>
+  </g>
+</svg>

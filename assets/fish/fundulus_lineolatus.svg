@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Lined topminnow</title>
+  <desc id="desc">Left-facing Lined topminnow (Fundulus lineolatus), a stylized, approximate UI illustration with flat muted colors and simple splotches. Not a scientifically verified identification image.</desc>
+  <defs><clipPath id="body"><path d="M30 108C49 101.5 87 95.5 127 95.5C174 95.5 211 95 239 108L239 123C202 134.5 151 137.5 111 134.5Q57 133.5 30 120L43 114Z"/></clipPath></defs>
+  <g transform="translate(0 48)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M230 108L270 91Q289 110 271 140L230 123Z" fill="#8fa99c" />
+    <path d="M163 99.5Q181 78.5 205 105.5Z" fill="#8fa99c" />
+    <path d="M158 128.5L187 153.5Q194 158.5 188 128.5Z" fill="#8fa99c" />
+    <path d="M112 130.5L129 151.5Q134 155.5 142 131.5Z" fill="#8fa99c" />
+    <g clip-path="url(#body)">
+    <path d="M10 30H300V190H10Z" fill="#c7d4cf" />
+    <path d="M15 30H291V108Q187 108.5 131 111.5Q63 106.5 15 118Z" fill="#7e9c94" />
+    <path d="M15 126Q90 121.5 143 122.5Q205 126.5 250 121L300 190H15Z" fill="#f2ebd8" />
+    <path d="M85 101Q156 96 235 101" fill="none" stroke="#49675f" stroke-width="3.3"/>
+    <path d="M85 110Q156 105 235 110" fill="none" stroke="#49675f" stroke-width="3.3"/>
+    <path d="M85 120Q156 115 235 120" fill="none" stroke="#49675f" stroke-width="3.3"/>
+    <path d="M85 129Q156 124 235 129" fill="none" stroke="#49675f" stroke-width="3.3"/>
+    <ellipse cx="186.0" cy="109.8" rx="2.5" ry="2.3" fill="#49675f"/>
+    <ellipse cx="110.8" cy="113.3" rx="1.7" ry="2.4" fill="#49675f"/>
+    <ellipse cx="106.3" cy="113.5" rx="2.1" ry="1.6" fill="#49675f"/>
+    <ellipse cx="105.9" cy="117.0" rx="2.0" ry="2.4" fill="#49675f"/>
+    </g>
+    <ellipse cx="54.0" cy="105.0" rx="6.0" ry="6.0" fill="#f2ebd8"/>
+    <ellipse cx="53.2" cy="105.0" rx="3.6" ry="3.6" fill="#263e39"/>
+    <ellipse cx="52.0" cy="103.2" rx="1.1" ry="1.1" fill="#fff9eb"/>
+    <path d="M77 100q11 14 0 30" fill="none" stroke="#8fa99c" stroke-width="3"/>
+    <path d="M82 119l27 11q5 5 -4 5l-20 -5Z" fill="#8fa99c" />
+    <path d="M31 119h18" fill="none" stroke="#49675f" stroke-width="2.4"/>
+  </g>
+</svg>

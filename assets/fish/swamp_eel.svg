@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Swamp eel</title>
+  <desc id="desc">Left-facing Swamp eel (Monopterus sp. cf. M. albus), a stylized, approximate UI illustration with flat muted colors and simple splotches. Not a scientifically verified identification image.</desc>
+  <defs><clipPath id="body"><path d="M28 105Q51 95 77 107C119 132 186 161 266 114Q281 104 286 110C264 151 193 170 133 151Q87 138 66 122L30 121Q21 114 28 105Z"/></clipPath></defs>
+  <g transform="translate(0 48)" stroke-linecap="round" stroke-linejoin="round">
+    <g clip-path="url(#body)">
+    <path d="M10 30H300V190H10Z" fill="#bfa978" />
+    <path d="M20 83H291V113Q217 160 132 139Q70 105 20 113Z" fill="#7f8862" />
+    <path d="M20 118Q75 111 121 141Q202 169 286 117L296 185H20Z" fill="#f1e3bf" />
+    <path d="M90.8 111.7q5.4 -5.4 9.2 0l-1 5.4q-5.4 3 -8.1 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M112.8 115.4q7.0 -7.0 11.9 0l-1 7.0q-7.0 3 -10.5 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M127.2 107.8q8.5 -8.5 14.5 0l-1 8.5q-8.5 3 -12.8 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M151.5 113.1q6.7 -6.7 11.3 0l-1 6.7q-6.7 3 -10.0 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M173.0 108.2q6.0 -6.0 10.1 0l-1 6.0q-6.0 3 -9.0 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M191.8 121.1q8.0 -8.0 13.6 0l-1 8.0q-8.0 3 -12.0 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M208.0 119.7q8.2 -8.2 13.9 0l-1 8.2q-8.2 3 -12.3 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M89.3 117.1q8.4 -8.4 14.4 0l-1 8.4q-8.4 3 -12.7 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M107.7 110.7q5.9 -5.9 10.0 0l-1 5.9q-5.9 3 -8.9 -1Z" fill="#5c6449" opacity="0.88"/>
+    <ellipse cx="144.4" cy="142.6" rx="1.7" ry="1.6" fill="#5c6449"/>
+    <ellipse cx="182.7" cy="137.4" rx="2.5" ry="2.2" fill="#5c6449"/>
+    <ellipse cx="105.4" cy="138.4" rx="1.9" ry="1.8" fill="#5c6449"/>
+    <ellipse cx="110.0" cy="147.0" rx="2.2" ry="1.9" fill="#5c6449"/>
+    </g>
+    <ellipse cx="54.0" cy="105.0" rx="6.0" ry="6.0" fill="#f1e3bf"/>
+    <ellipse cx="53.2" cy="105.0" rx="3.6" ry="3.6" fill="#263e39"/>
+    <ellipse cx="52.0" cy="103.2" rx="1.1" ry="1.1" fill="#fff9eb"/>
+  </g>
+</svg>

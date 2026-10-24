@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Shadow bass</title>
+  <desc id="desc">Left-facing Shadow bass (Ambloplites ariommus), a stylized, approximate UI illustration with flat muted colors and simple splotches. Not a scientifically verified identification image.</desc>
+  <defs><clipPath id="body"><path d="M30 108C49 79.5 87 73.5 127 73.5C174 73.5 211 95 239 108L239 123C202 156.5 151 159.5 111 156.5Q57 155.5 30 120L43 114Z"/></clipPath></defs>
+  <g transform="translate(0 48)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M230 108L270 91Q289 110 271 140L230 123Z" fill="#a38e65" />
+    <path d="M91 81.5L98 64.5L108 74.5L116 57.5L128 70.5L139 54.5L153 71.5Q177 53.5 198 87.5Z" fill="#a38e65" />
+    <path d="M158 150.5L187 175.5Q194 180.5 188 150.5Z" fill="#a38e65" />
+    <path d="M112 152.5L129 173.5Q134 177.5 142 153.5Z" fill="#a38e65" />
+    <g clip-path="url(#body)">
+    <path d="M10 30H300V190H10Z" fill="#bfa978" />
+    <path d="M15 30H291V108Q187 86.5 131 89.5Q63 84.5 15 118Z" fill="#7f8862" />
+    <path d="M15 126Q90 143.5 143 144.5Q205 148.5 250 121L300 190H15Z" fill="#f1e3bf" />
+    <path d="M93.1 107.7q4.3 -4.3 7.3 0l-1 4.3q-4.3 3 -6.5 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M111.1 106.5q3.1 -3.1 5.4 0l-1 3.1q-3.1 3 -4.7 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M134.2 92.5q4.5 -4.5 7.7 0l-1 4.5q-4.5 3 -6.8 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M150.9 94.7q3.7 -3.7 6.3 0l-1 3.7q-3.7 3 -5.5 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M173.6 123.3q3.3 -3.3 5.6 0l-1 3.3q-3.3 3 -4.9 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M191.2 118.0q4.8 -4.8 8.2 0l-1 4.8q-4.8 3 -7.3 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M207.7 130.5q3.7 -3.7 6.2 0l-1 3.7q-3.7 3 -5.5 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M94.9 131.4q3.3 -3.3 5.5 0l-1 3.3q-3.3 3 -4.9 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M112.0 97.7q4.5 -4.5 7.6 0l-1 4.5q-4.5 3 -6.7 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M128.8 129.3q5.0 -5.0 8.5 0l-1 5.0q-5.0 3 -7.5 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M149.3 88.6q4.5 -4.5 7.7 0l-1 4.5q-4.5 3 -6.8 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M168.9 113.4q4.6 -4.6 7.8 0l-1 4.6q-4.6 3 -6.9 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M189.6 130.8q4.2 -4.2 7.2 0l-1 4.2q-4.2 3 -6.4 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M208.6 103.7q4.8 -4.8 8.2 0l-1 4.8q-4.8 3 -7.3 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M92.9 94.1q4.3 -4.3 7.3 0l-1 4.3q-4.3 3 -6.4 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M111.4 115.5q3.6 -3.6 6.1 0l-1 3.6q-3.6 3 -5.4 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M132.9 122.2q3.7 -3.7 6.2 0l-1 3.7q-3.7 3 -5.5 -1Z" fill="#5c6449" opacity="0.88"/>
+    <ellipse cx="149.7" cy="129.1" rx="1.8" ry="1.8" fill="#5c6449"/>
+    <ellipse cx="210.8" cy="127.3" rx="1.6" ry="1.6" fill="#5c6449"/>
+    <ellipse cx="144.2" cy="114.3" rx="1.8" ry="2.1" fill="#5c6449"/>
+    <ellipse cx="131.0" cy="108.4" rx="2.2" ry="2.3" fill="#5c6449"/>
+    </g>
+    <ellipse cx="54.0" cy="101.0" rx="6.0" ry="6.0" fill="#f1e3bf"/>
+    <ellipse cx="53.2" cy="101.0" rx="3.6" ry="3.6" fill="#263e39"/>
+    <ellipse cx="52.0" cy="99.2" rx="1.1" ry="1.1" fill="#fff9eb"/>
+    <path d="M77 100q11 14 0 30" fill="none" stroke="#a38e65" stroke-width="3"/>
+    <path d="M82 122l27 11q5 5 -4 5l-20 -5Z" fill="#a38e65" />
+    <ellipse cx="80.0" cy="109.0" rx="6.0" ry="4.5" fill="#5c6449"/>
+    <path d="M31 119h18" fill="none" stroke="#5c6449" stroke-width="2.4"/>
+  </g>
+</svg>
