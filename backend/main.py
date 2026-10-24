@@ -4,11 +4,11 @@ from fastapi import Depends, FastAPI, File, HTTPException, Query, UploadFile
 from starlette.concurrency import run_in_threadpool
 
 if __package__:
-    from .routes import auth, catches, regulations
+    from .routes import auth, catches, leaderboards, regulations
     from .ml.classifier import MODEL_ID, catalog_metadata, get_classifier, species_catalog
     from .ml.images import MAX_UPLOAD_BYTES, decode_image
 else:
-    from routes import auth, catches, regulations
+    from routes import auth, catches, leaderboards, regulations
     from ml.classifier import MODEL_ID, catalog_metadata, get_classifier, species_catalog
     from ml.images import MAX_UPLOAD_BYTES, decode_image
 
@@ -17,6 +17,7 @@ logger = logging.getLogger(__name__)
 app = FastAPI(title="Demo API")
 app.include_router(auth.router)
 app.include_router(catches.router)
+app.include_router(leaderboards.router)
 app.include_router(regulations.router)
 
 

@@ -76,3 +76,7 @@ export type RegulationSummary = {
   sources: RegulationResult['sources'];
   reviewed_on: string;
 };
+
+export type LeaderboardEntry = { rank: number; display_name: string; is_you: boolean; score: number; catch_count: number | null };
+export type LeaderboardBoard = { entries: LeaderboardEntry[]; personal: LeaderboardEntry | null; total: number };
+export type LeaderboardData = { display_name: string; xp: LeaderboardBoard };

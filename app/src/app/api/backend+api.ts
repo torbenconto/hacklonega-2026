@@ -1,6 +1,6 @@
 // Browser requests stay on the Expo origin; native clients call FastAPI directly.
 const allowed = new Map([
-  ['/species', 'GET'], ['/predict', 'POST'], ['/auth/me', 'GET'],
+  ['/leaderboards', 'GET'], ['/species', 'GET'], ['/predict', 'POST'], ['/auth/me', 'GET'],
   ['/auth/login', 'POST'], ['/catches', 'GET POST'],
   ['/regulations/check', 'POST'], ['/regulations/summary', 'GET'],
 ]);

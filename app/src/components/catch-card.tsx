@@ -39,16 +39,18 @@ export function CatchCard({ log, species, best, longest, onSaved }: { log: FishL
     } catch (e) { setError((e as Error).message); }
     finally { setSaving(false); }
   }
-  return <Reveal style={[ui.card, { paddingVertical: 12 }]}>
+  return <Reveal style={[ui.card, { paddingVertical: 18 }]}>
+    {(best || longest) && <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 6 }}>
+      {best && <Badge gold>★ HEAVIEST CATCH</Badge>}
+      {longest && <Badge gold>★ LONGEST CATCH</Badge>}
+    </View>}
     <View style={{ flexDirection: 'row', gap: 16 }}>
-      {log.photo_data ? <Image accessibilityLabel={`Your ${log.species} catch photo`} source={{ uri: log.photo_data }} style={{ width: 100, height: 140, borderRadius: 8, alignSelf: 'center', backgroundColor: colors.soft }} resizeMode="cover" /> : <View style={{ width: 100, justifyContent: 'center' }}>{species && <FishImage speciesId={species.species_id} name={species.common_name} height={100} unlocked animated={false} />}<Text style={[ui.small, { textAlign: 'center' }]}>No saved photo</Text></View>}
+      {log.photo_data ? <Image accessibilityLabel={`Your ${log.species} catch photo`} source={{ uri: log.photo_data }} style={{ width: 88, height: 112, borderRadius: 8, alignSelf: 'center', backgroundColor: colors.soft }} resizeMode="cover" /> : <View style={{ width: 88, justifyContent: 'center' }}>{species && <FishImage speciesId={species.species_id} name={species.common_name} height={100} unlocked animated={false} />}<Text style={[ui.small, { textAlign: 'center' }]}>No saved photo</Text></View>}
       <View style={{ flex: 1, minWidth: 0, gap: 8 }}>
         <Text style={ui.small}>{new Date(log.created_at).toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'America/New_York' })} · {new Date(log.created_at).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', timeZone: 'America/New_York', timeZoneName: 'short' })}</Text>
         <Text style={ui.name}>{log.species}</Text>
         <Text style={ui.body}>{measurement(log.weight_lbs, 'lb')} · {measurement(log.length_inches, 'in')}<Text style={ui.small}> · {log.disposition === 'kept' ? 'Kept' : log.disposition === 'released' ? 'Released' : 'Outcome not recorded'}</Text></Text>
-        {best && <Badge gold>★ HEAVIEST CATCH</Badge>}
-        {longest && <Badge gold>★ LONGEST CATCH</Badge>}
-        {!editing && <SpringPressable accessibilityRole="button" accessibilityLabel={`Edit ${log.species} catch`} onPress={edit} style={{ alignSelf: 'flex-start', minHeight: 44, justifyContent: 'center', paddingHorizontal: 10, borderRadius: 4, backgroundColor: colors.soft }}><Text style={{ color: colors.green, fontSize: 13, fontWeight: '600' }}>Edit catch</Text></SpringPressable>}
+        {!editing && <SpringPressable accessibilityRole="button" accessibilityLabel={`Edit ${log.species} catch`} onPress={edit} hitSlop={8} style={{ alignSelf: 'flex-start', minHeight: 28, justifyContent: 'center', paddingHorizontal: 10, borderRadius: 6, borderWidth: 1, borderColor: colors.line, backgroundColor: colors.white }}><Text style={{ color: colors.green, fontSize: 13, fontWeight: '600' }}>Edit</Text></SpringPressable>}
       </View>
     </View>
     {editing && <View style={{ gap: 12 }}>
