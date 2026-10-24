@@ -47,7 +47,8 @@ export function DexRegulations({ species, length: measuredLength }: { species: S
       </View>
       {rules.daily_limit.status !== 'not_evaluated' && <Text style={ui.small}>{rules.daily_limit.guidance}</Text>}
       {rules.exception_notes.map(note => <Text key={note} style={ui.small}>{note}</Text>)}
-      {!closed && measuredLength === undefined && <MeasurementInput label="Your fish’s length" unit="in" value={length} onChangeText={setLength} />}
+      {!enteredLength.trim() && <Text style={ui.small}>Length not provided. Available rules are shown without a length comparison.</Text>}
+      {!closed && measuredLength === undefined && <MeasurementInput label="Length (optional)" unit="in" placeholder="N/A" value={length} onChangeText={setLength} />}
       {!closed && !!enteredLength.trim() && <Text accessibilityLiveRegion="polite" style={outside || !valid ? ui.error : ui.small}>{!valid ? 'Length must be above zero.' : outside ? 'Outside the statewide length limit.' : size?.status === 'not_reviewed' ? 'Length rules not reviewed.' : size?.status === 'no_verified_restriction' ? 'No verified statewide length restriction.' : 'Meets the statewide length limit only.'}</Text>}
       <Text style={ui.small}>Statewide only. Check local rules, licenses, and seasons before keeping.</Text>
       <Pressable accessibilityRole="button" accessibilityState={{ expanded }} onPress={() => setExpanded(value => !value)} style={{ minHeight: 44, justifyContent: 'center' }}><Text style={{ fontSize: 13, color: colors.green, fontWeight: '600' }}>{expanded ? 'Hide sources' : 'Sources & details'}</Text></Pressable>

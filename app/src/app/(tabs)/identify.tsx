@@ -9,7 +9,7 @@ import { Asset } from 'expo-asset';
 import { api, type Prediction, type Species } from '@/lib/api';
 import { preparePhoto } from '@/lib/photos';
 import { DEMO_PHOTOS } from '@/lib/demo-photos';
-import { collectionProgress, measurement, speciesKey, summarizeCatches } from '@/lib/collection';
+import { collectionProgress, measurement, parseMeasurement, personalBestChanges, speciesKey, summarizeCatches } from '@/lib/collection';
 import { useSession } from '@/lib/session';
 import { useCatalog } from '@/hooks/use-catalog';
 import { useJournal } from '@/hooks/use-journal';
@@ -90,18 +90,18 @@ export default function Identify() {
 
   async function save() {
     if (!photo || !selected || !username || saved || busy) return;
-    const pounds = Number(weight), inches = Number(length);
-    if (!Number.isFinite(pounds) || pounds <= 0 || !Number.isFinite(inches) || inches <= 0) {
-      setError('Enter weight and length above zero.');
+    let pounds: number | null, inches: number | null;
+    try {
+      pounds = parseMeasurement(weight); inches = parseMeasurement(length);
+    } catch (e) {
+      setError((e as Error).message);
       return;
     }
     const progressKnown = journal.logs !== null && !journal.loading;
     const milestone = {
       discovery: progressKnown && !record,
       xpBefore: !progressKnown || journal.logs === null ? null : collectionProgress(journal.logs).xp,
-      weightBest: progressKnown && record && pounds > record.heaviest.weight_lbs ? record.heaviest.weight_lbs : null,
-      lengthBest: progressKnown && record && inches > record.longest.length_inches ? record.longest.length_inches : null,
-      best: progressKnown && !!record && (pounds > record.heaviest.weight_lbs || inches > record.longest.length_inches),
+      ...personalBestChanges(record, progressKnown ? pounds : null, progressKnown ? inches : null),
     };
     setBusy('Saving catch…'); setError('');
     try {
@@ -143,10 +143,11 @@ export default function Identify() {
     {selected && <Reveal key={selected.species_id} style={{ gap: 16 }}>
       {!result?.candidates.some(candidate => candidate.species_id === selected.species_id) && <Text style={ui.name}>{selected.common_name}</Text>}
       <View style={{ flexDirection: 'row', gap: 12 }}>
-        <MeasurementInput label="Weight" unit="lb" value={weight} onChangeText={setWeight} editable={!busy} />
-        <MeasurementInput label="Total length" unit="in" value={length} onChangeText={setLength} editable={!busy} />
+        <MeasurementInput label="Weight (optional)" unit="lb" placeholder="N/A" value={weight} onChangeText={setWeight} editable={!busy} />
+        <MeasurementInput label="Length (optional)" unit="in" placeholder="N/A" value={length} onChangeText={setLength} editable={!busy} />
       </View>
-      {record && <Text style={ui.small}>Your best: {measurement(record.heaviest.weight_lbs)} lb · {measurement(record.longest.length_inches)} in</Text>}
+      <Text style={ui.small}>Measurements are optional. Leave them blank to log a discovery without a size record.</Text>
+      {record && <Text style={ui.small}>Your best: {measurement(record.heaviest?.weight_lbs, 'lb')} · {measurement(record.longest?.length_inches, 'in')}</Text>}
       <RegulationCheck species={selected} length={length} />
       <ErrorMessage message={error} />
       <Button title="Save catch" onPress={() => void save()} busy={!!busy} />
