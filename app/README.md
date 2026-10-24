@@ -1,4 +1,4 @@
-# Reel Georgia frontend
+# Fishnerd frontend
 
 A small Expo SDK 58 app with four tabs: Identify, Fishdex, Journal, and Rules.
 A single journal-name entry uses

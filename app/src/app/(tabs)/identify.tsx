@@ -1,18 +1,21 @@
+import { CatchCelebration, type SavedMilestone } from '@/components/catch-celebration';
+import { Reveal, SpringPressable } from '@/components/motion';
+import { CameraCapture } from '@/components/camera-capture';
+import { MeasurementInput } from '@/components/measurement-input';
 import { useEffect, useMemo, useState } from 'react';
-import { ActivityIndicator, Image, Platform, Pressable, ScrollView, Text, View } from 'react-native';
+import { ActivityIndicator, Image, Platform, Text, View } from 'react-native';
 import * as ImagePicker from 'expo-image-picker';
 import { Asset } from 'expo-asset';
-import { router } from 'expo-router';
 import { api, type Prediction, type Species } from '@/lib/api';
 import { preparePhoto } from '@/lib/photos';
 import { DEMO_PHOTOS } from '@/lib/demo-photos';
-import { measurement, speciesKey, summarizeCatches } from '@/lib/collection';
+import { collectionProgress, measurement, speciesKey, summarizeCatches } from '@/lib/collection';
 import { useSession } from '@/lib/session';
 import { useCatalog } from '@/hooks/use-catalog';
 import { useJournal } from '@/hooks/use-journal';
 import { FishImage } from '@/components/fish-image';
-import { OFFICIAL_RULES, RegulationCheck } from '@/components/regulation-check';
-import { Badge, Button, ErrorMessage, Heading, Input, Page, TextLink, colors, ui } from '@/components/fishing-ui';
+import { RegulationCheck } from '@/components/regulation-check';
+import { Button, ErrorMessage, Input, Page, colors, ui } from '@/components/fishing-ui';
 
 type Photo = { uri: string };
 export default function Identify() {
@@ -25,7 +28,7 @@ export default function Identify() {
   const [selected, setSelected] = useState<Species | null>(null);
   const [busy, setBusy] = useState('');
   const [error, setError] = useState('');
-  const [saved, setSaved] = useState<{ discovery: boolean; best: boolean } | null>(null);
+  const [saved, setSaved] = useState<SavedMilestone | null>(null);
   const [manual, setManual] = useState(false);
   const [query, setQuery] = useState('');
   const [weight, setWeight] = useState('');
@@ -47,23 +50,12 @@ export default function Identify() {
     setManual(false); setQuery(''); setWeight(''); setLength(''); setError('');
   }
 
-  async function pick(camera: boolean) {
+  async function pick() {
     if (busy) return;
-    setBusy('Opening photos'); setError('');
+    setBusy('Opening library…'); setError('');
     try {
-      if (camera && Platform.OS !== 'web') {
-        const permission = await ImagePicker.requestCameraPermissionsAsync();
-        if (!permission.granted) {
-          setError('Allow camera access in Settings, or choose a photo from your library.');
-          return;
-        }
-      }
-      const options: ImagePicker.ImagePickerOptions = { mediaTypes: ['images'], quality: 1, allowsEditing: false };
-      const picked = camera ? await ImagePicker.launchCameraAsync(options) : await ImagePicker.launchImageLibraryAsync(options);
-      if (!picked.canceled && picked.assets[0]) {
-        setBusy('Getting your photo ready…');
-        await choose(picked.assets[0].uri);
-      }
+      const picked = await ImagePicker.launchImageLibraryAsync({ mediaTypes: ['images'], quality: 1, allowsEditing: false });
+      if (!picked.canceled && picked.assets[0]) await choose(picked.assets[0].uri);
     } catch (e) { setError((e as Error).message); }
     finally { setBusy(''); }
   }
@@ -100,14 +92,18 @@ export default function Identify() {
     if (!photo || !selected || !username || saved || busy) return;
     const pounds = Number(weight), inches = Number(length);
     if (!Number.isFinite(pounds) || pounds <= 0 || !Number.isFinite(inches) || inches <= 0) {
-      setError('Enter a positive measured weight in pounds and total length in inches.');
+      setError('Enter weight and length above zero.');
       return;
     }
+    const progressKnown = journal.logs !== null && !journal.loading;
     const milestone = {
-      discovery: journal.logs !== null && !record,
-      best: !!record && (pounds > record.heaviest.weight_lbs || inches > record.longest.length_inches),
+      discovery: progressKnown && !record,
+      xpBefore: !progressKnown || journal.logs === null ? null : collectionProgress(journal.logs).xp,
+      weightBest: progressKnown && record && pounds > record.heaviest.weight_lbs ? record.heaviest.weight_lbs : null,
+      lengthBest: progressKnown && record && inches > record.longest.length_inches ? record.longest.length_inches : null,
+      best: progressKnown && !!record && (pounds > record.heaviest.weight_lbs || inches > record.longest.length_inches),
     };
-    setBusy('Adding your catch to the journal…'); setError('');
+    setBusy('Saving catch…'); setError('');
     try {
       await api('/catches', { method: 'POST', body: JSON.stringify({
         species: selected.common_name, weight_lbs: pounds, length_inches: inches,
@@ -118,83 +114,42 @@ export default function Identify() {
   }
 
   const matches = catalog.species.filter(s => `${s.common_name} ${s.scientific_name}`.toLowerCase().includes(query.trim().toLowerCase()));
-  const steps = ['Add a photo', 'Confirm the fish', 'Log your catch'];
+  if (saved && selected) return <CatchCelebration species={selected} milestone={saved} weight={weight} length={length} onAgain={reset} />;
+  if (!photo) return <CameraCapture busy={busy} error={error} onCapture={choose} onLibrary={() => void pick()} onDemo={item => void demo(item)} />;
   return <Page>
-    <Heading eyebrow="Reel Georgia / Scan & discover" title="What’s on your line?" subtitle="Turn a moment on the water into your next discovery." />
-    <View style={[ui.row, { gap: 6 }]}>{steps.map((step, index) => {
-      const complete = index === 0 ? !!photo : index === 1 ? !!selected : !!saved;
-      const active = index === 0 ? !photo : index === 1 ? !!photo && !selected : !!selected;
-      return <View key={step} style={{ flex: 1, gap: 8 }}><View style={{ height: 4, borderRadius: 4, backgroundColor: complete ? colors.green : active ? colors.orange : colors.line }} /><Text style={[ui.small, { fontSize: 11, fontWeight: active ? '800' : '400' }]}>{complete ? '✓' : index + 1} {step}</Text></View>;
-    })}</View>
-    {!photo && <>
-      <View style={ui.hero}>
-        <Badge gold>YOUR NEXT FIELD DISCOVERY</Badge>
-        <Text style={ui.heroTitle}>{'A little curiosity.\nA whole world of fish.'}</Text>
-        <Text style={ui.heroBody}>Photograph one fish, side-on, with its whole body in frame. We’ll suggest the closest matches.</Text>
-        <Button title="＋ Take a fish photo" accent disabled={!!busy} onPress={() => void pick(true)} />
-        <Pressable accessibilityRole="button" disabled={!!busy} onPress={() => void pick(false)} style={{ alignItems: 'center', padding: 10 }}><Text style={{ color: colors.white, fontWeight: '700', fontSize: 15 }}>Choose from your photos ↗</Text></Pressable>
-      </View>
-      <View style={ui.row}><Text style={ui.section}>Give it a try</Text><Badge>REAL PHOTO SAMPLES</Badge></View>
-      <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: 12 }}>
-        {DEMO_PHOTOS.map(item => <Pressable key={item.id} accessibilityRole="button" accessibilityLabel={`Choose ${item.name}`} disabled={!!busy} onPress={() => void demo(item)} style={{ width: 126, backgroundColor: colors.white, borderRadius: 16, overflow: 'hidden' }}>
-          <Image source={item.asset} style={{ width: 126, height: 126 }} resizeMode="cover" /><Text style={[ui.small, { padding: 10 }]}>{item.name} ↗</Text>
-        </Pressable>)}
-      </ScrollView>
-      <View style={[ui.card, { backgroundColor: colors.soft }]}><Text style={ui.name}>Collect discoveries. Protect the water.</Text><Text style={ui.small}>A photo can help you learn. It never replaces an official regulation check before keeping a fish.</Text><TextLink title="Read Georgia’s fishing rules" url={OFFICIAL_RULES} /></View>
-    </>}
-    {photo && <View style={[ui.card, { padding: 12 }]}>
-      <Image source={{ uri: photo.uri }} style={[ui.photo, { height: 280 }]} resizeMode="contain" />
-      {!saved && <Button title={result ? 'Identify again' : 'Find my fish →'} secondary={!!result} accent={!result} disabled={!!busy} onPress={() => void identify()} />}
-      <Button title={saved ? 'Discover another fish' : 'Choose another photo'} secondary disabled={!!busy} onPress={reset} />
-    </View>}
-    {!!busy && <View accessibilityLiveRegion="polite" style={[ui.card, { flexDirection: 'row', gap: 12, alignItems: 'center' }]}><ActivityIndicator color={colors.green} /><Text style={[ui.body, { flex: 1 }]}>{busy}</Text></View>}
-    <ErrorMessage message={error} />
-    {result && <View style={{ gap: 14 }}>
-      <View style={ui.row}><Text style={ui.section}>{result.status === 'unsupported' ? 'Let’s try a closer photo.' : 'Here’s what we found.'}</Text><Badge>{result.status === 'candidate' ? 'MATCH SUGGESTED' : 'NEEDS A CLOSER LOOK'}</Badge></View>
-      <Text style={ui.body}>{result.status === 'unsupported'
-        ? 'We don’t have a reliable match. Try a clearer photo, or choose a fish you recognize from the catalog.'
-        : result.status === 'uncertain'
-          ? 'The first fish is our most likely suggestion, but several look similar. Confirm only a species you recognize.'
-          : 'The first fish is the most likely match. Compare it with your photo and select it only if you can confirm the species.'}</Text>
+    <View style={ui.row}><Text style={ui.section}>Identify</Text><Button title="Retake" secondary disabled={!!busy} onPress={reset} /></View>
+    <Image source={{ uri: photo.uri }} style={{ width: '100%', height: result ? 170 : 300, backgroundColor: colors.soft }} resizeMode="contain" />
+    {!result && <Button title="Identify fish" onPress={() => void identify()} busy={!!busy} />}
+    {!!busy && !!result && <ActivityIndicator accessibilityLabel={busy} color={colors.green} />}
+    {!selected && <ErrorMessage message={error} />}
+    {result && <View style={{ gap: 10 }}>
+      <Text style={ui.name}>{result.status === 'unsupported' ? 'No clear match. Try another photo.' : result.status === 'uncertain' ? 'Not sure. Which fish is it?' : 'Which fish is it?'}</Text>
       {result.status !== 'unsupported' && result.candidates.map((s, index) => {
         const checked = selected?.species_id === s.species_id;
-        return <Pressable key={s.species_id} accessibilityRole="radio" accessibilityLabel={`${s.common_name}, ${index === 0 ? 'most likely match' : 'alternative match'}`} accessibilityState={{ checked }} disabled={!!busy || !!saved} onPress={() => setSelected(s)} style={[ui.card, { padding: 14, borderWidth: index === 0 || checked ? 2 : 1, borderColor: checked ? colors.green : index === 0 ? colors.orange : colors.line, backgroundColor: checked ? colors.soft : colors.white }]}>
-          <Badge gold={index === 0}>{index === 0 ? '★ MOST LIKELY MATCH' : `ALTERNATIVE ${index + 1}`}</Badge>
-          <View style={{ flexDirection: 'row', alignItems: 'center', gap: 12 }}><View style={{ width: 85, borderRadius: 12, overflow: 'hidden' }}><FishImage speciesId={s.species_id} name={s.common_name} height={70} /></View><View style={{ flex: 1, gap: 5 }}><Text style={ui.name}>{s.common_name}</Text><Text style={[ui.small, { fontStyle: 'italic' }]}>{s.scientific_name}</Text></View><Text style={{ fontSize: 24, color: colors.green }}>{checked ? '●' : '○'}</Text></View>
-        </Pressable>;
+        return <SpringPressable key={s.species_id} accessibilityRole="radio" accessibilityLabel={`${s.common_name}${index === 0 ? ', best match' : ''}`} accessibilityState={{ checked }} disabled={!!busy} onPress={() => setSelected(s)} style={{ flexDirection: 'row', alignItems: 'center', gap: 12, paddingVertical: 12, paddingHorizontal: 8, borderBottomWidth: 1, borderBottomColor: colors.line, backgroundColor: checked ? colors.soft : 'transparent' }}>
+          <View style={{ width: 70 }}><FishImage speciesId={s.species_id} name={s.common_name} height={60} /></View>
+          <View style={{ flex: 1, gap: 3 }}><Text style={[ui.name, { fontSize: 17 }]}>{s.common_name}</Text><Text style={ui.small}>{index === 0 ? 'Best match' : s.scientific_name}</Text></View>
+          <Text style={{ fontSize: 24, color: colors.green }}>{checked ? '●' : '○'}</Text>
+        </SpringPressable>;
       })}
-      <Text style={ui.small}>Ranked suggestions, not verified identifications or confidence percentages.</Text>
     </View>}
-    {photo && !saved && <>
-      <Button title={manual ? 'Hide catalog' : 'Not your fish? Choose from the Fishdex'} secondary disabled={!!busy} onPress={() => setManual(value => !value)} />
-      {manual && <View style={ui.card}>
-        <Input accessibilityLabel="Find species to confirm" value={query} onChangeText={setQuery} placeholder="Search Georgia’s freshwater fish" />
-        <ErrorMessage message={catalog.error} />{catalog.error && <Button title="Retry catalog" secondary onPress={catalog.refresh} />}
-        {matches.slice(0, 8).map(s => <Pressable key={s.species_id} disabled={!!busy} accessibilityRole="radio" accessibilityState={{ checked: selected?.species_id === s.species_id }} onPress={() => { setSelected(s); setManual(false); }} style={{ paddingVertical: 12, borderBottomWidth: 1, borderColor: colors.line }}><Text style={[ui.name, { fontSize: 16 }]}>{selected?.species_id === s.species_id ? '● ' : '○ '}{s.common_name}</Text><Text style={ui.small}>{s.scientific_name}</Text></Pressable>)}
-        {!matches.length && <Text style={ui.small}>No fish match that search.</Text>}
-      </View>}
-    </>}
-    {selected && !saved && <>
-      <View style={ui.card}>
-        <Badge gold>{journal.logs !== null && !record ? 'A FIRST FOR YOUR FISHDEX' : 'YOUR CONFIRMED IDENTIFICATION'}</Badge>
-        <Text style={ui.section}>{selected.common_name}</Text>
-        {record && <Text style={ui.small}>Your best so far: {measurement(record.heaviest.weight_lbs)} lb heaviest · {measurement(record.longest.length_inches)} in longest.</Text>}
-        <Text style={ui.body}>Add measured weight and total length. Your record will update automatically.</Text>
-        <View style={{ flexDirection: 'row', gap: 12 }}>
-          <View style={{ flex: 1, gap: 8 }}><Text style={ui.small}>Weight · pounds</Text><Input accessibilityLabel="Weight in pounds" value={weight} onChangeText={setWeight} keyboardType="decimal-pad" placeholder="2.5" editable={!busy} /></View>
-          <View style={{ flex: 1, gap: 8 }}><Text style={ui.small}>Length · inches</Text><Input accessibilityLabel="Total length in inches" value={length} onChangeText={setLength} keyboardType="decimal-pad" placeholder="16" editable={!busy} /></View>
-        </View>
+    <Button title={manual ? 'Close species list' : 'Choose species'} secondary disabled={!!busy} onPress={() => setManual(value => !value)} />
+    {manual && <View style={{ gap: 8 }}>
+      <Input accessibilityLabel="Search species" value={query} onChangeText={setQuery} placeholder="Search fish" />
+      <ErrorMessage message={catalog.error} />{catalog.error && <Button title="Retry" secondary onPress={catalog.refresh} />}
+      {matches.slice(0, 8).map(s => <SpringPressable key={s.species_id} disabled={!!busy} accessibilityRole="radio" accessibilityState={{ checked: selected?.species_id === s.species_id }} onPress={() => { setSelected(s); setManual(false); }} style={{ paddingVertical: 14, borderBottomWidth: 1, borderColor: colors.line }}><Text style={[ui.name, { fontSize: 16 }]}>{selected?.species_id === s.species_id ? '● ' : '○ '}{s.common_name}</Text></SpringPressable>)}
+      {!catalog.loading && !matches.length && <Text style={ui.small}>No matches.</Text>}
+    </View>}
+    {selected && <Reveal key={selected.species_id} style={{ gap: 16 }}>
+      {!result?.candidates.some(candidate => candidate.species_id === selected.species_id) && <Text style={ui.name}>{selected.common_name}</Text>}
+      <View style={{ flexDirection: 'row', gap: 12 }}>
+        <MeasurementInput label="Weight" unit="lb" value={weight} onChangeText={setWeight} editable={!busy} />
+        <MeasurementInput label="Total length" unit="in" value={length} onChangeText={setLength} editable={!busy} />
       </View>
+      {record && <Text style={ui.small}>Your best: {measurement(record.heaviest.weight_lbs)} lb · {measurement(record.longest.length_inches)} in</Text>}
       <RegulationCheck species={selected} length={length} />
-      <Button title="Confirm & add to my Fishdex →" accent onPress={() => void save()} disabled={!!busy} />
-      <Text style={[ui.small, { textAlign: 'center' }]}>Saving records a catch, not a decision to keep it.</Text>
-    </>}
-    {saved && <View style={ui.hero}>
-      <Badge gold>{saved.discovery ? '✦ NEW FISHDEX DISCOVERY' : saved.best ? '★ NEW PERSONAL BEST' : '✓ CATCH RECORDED'}</Badge>
-      <Text style={ui.heroTitle}>{saved.discovery ? 'A new story unlocked.' : saved.best ? 'That one’s a record.' : 'One for the journal.'}</Text>
-      <Text style={ui.heroBody}>{selected?.common_name} · {weight} lb · {length} in. {saved.discovery ? 'Your collection just grew.' : 'Your catch and personal bests are up to date.'}</Text>
-      <Button title="See my Fishdex →" accent onPress={() => router.navigate('/(tabs)/species')} />
-      <Button title="Discover another fish" onPress={reset} />
-    </View>}
+      <ErrorMessage message={error} />
+      <Button title="Save catch" onPress={() => void save()} busy={!!busy} />
+    </Reveal>}
   </Page>;
 }

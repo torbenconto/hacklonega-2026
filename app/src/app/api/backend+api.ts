@@ -2,7 +2,7 @@
 const allowed = new Map([
   ['/species', 'GET'], ['/predict', 'POST'], ['/auth/me', 'GET'],
   ['/auth/login', 'POST'], ['/catches', 'GET POST'],
-  ['/regulations/check', 'POST'],
+  ['/regulations/check', 'POST'], ['/regulations/summary', 'GET'],
 ]);
 
 async function forward(request: Request) {

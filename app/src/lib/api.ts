@@ -59,3 +59,18 @@ export async function api<T>(path: string, options: RequestInit = {}, username?:
   return response.json();
 }
 
+
+export type RegulationSummary = {
+  species_id: string;
+  scope: 'statewide_baseline';
+  season: { status: 'year_round' | 'restricted' | 'closed_year_round' | 'not_reviewed'; opens_on?: string; closes_on?: string };
+  size: {
+    length: { status: string; minimum_inches?: number; maximum_inches?: number };
+    weight: { status: string; minimum_lbs?: number; maximum_lbs?: number };
+  };
+  daily_limit: RegulationResult['daily_limit'];
+  exception_notes: string[];
+  warnings: string[];
+  sources: RegulationResult['sources'];
+  reviewed_on: string;
+};

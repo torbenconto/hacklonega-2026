@@ -1,13 +1,13 @@
 from datetime import date
 from typing import Literal
 
-from fastapi import APIRouter
+from fastapi import APIRouter, HTTPException, Query
 from pydantic import BaseModel, ConfigDict, Field, field_validator
 
 if __package__.startswith("backend."):
-    from ..regulations.service import catalog_ids, check_regulations
+    from ..regulations.service import catalog_ids, check_regulations, load_rules
 else:
-    from regulations.service import catalog_ids, check_regulations
+    from regulations.service import catalog_ids, check_regulations, load_rules
 
 router = APIRouter(prefix="/regulations", tags=["regulations"])
 
@@ -65,3 +65,29 @@ def check(fish: RegulationCheckInput):
     a fish. No authentication, prediction, or catch-storage side effects.
     """
     return check_regulations(fish.species_id, fish.length_inches)
+
+
+@router.get("/summary")
+def summary(species_id: str = Query(...)):
+    """Descriptive rules for a dex entry; no measured catch or harvest verdict."""
+    if species_id not in catalog_ids():
+        raise HTTPException(status_code=422, detail="Choose a species_id from GET /species.")
+    rules = load_rules()
+    profile = rules["profiles"][rules["species_profiles"].get(species_id, "unreviewed")]
+    parameters = rules["species_parameters"][species_id]
+    group = rules["groups"].get(profile["daily_limit_group"])
+    source_ids = list(dict.fromkeys(parameters["source_ids"] + profile["source_ids"] + (group["source_ids"] if group else [])))
+    return {
+        "species_id": species_id,
+        "scope": "statewide_baseline",
+        "season": parameters["season"],
+        "size": parameters["size"],
+        "daily_limit": {"status": group["status"], "limit": group["limit"], "guidance": group["guidance"]} if group else {
+            "status": "not_evaluated", "limit": None, "guidance": "Daily limit guidance has not been reviewed for this species."
+        },
+        "exception_notes": profile["exception_notes"],
+        "warnings": rules["warnings"],
+        "sources": [rules["sources"][key] for key in source_ids],
+        "reviewed_on": rules["reviewed_on"],
+        "legal_status": "undetermined",
+    }

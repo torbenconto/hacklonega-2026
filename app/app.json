@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "Reel Georgia",
+    "name": "Fishnerd",
     "slug": "app",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -8,11 +8,11 @@
     "scheme": "app",
     "userInterfaceStyle": "light",
     "ios": {
-      "icon": "./assets/expo.icon"
+      "icon": "./assets/images/icon.png"
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#285B48",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
@@ -28,7 +28,7 @@
       [
         "expo-splash-screen",
         {
-          "backgroundColor": "#F5F4EC",
+          "backgroundColor": "#FAF9F3",
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 76
         }
@@ -36,12 +36,21 @@
       [
         "expo-image-picker",
         {
-          "photosPermission": "Allow Reel Georgia to select a fish photo for identification.",
-          "cameraPermission": "Allow Reel Georgia to photograph your catch.",
+          "photosPermission": "Allow Fishnerd to select a fish photo for identification.",
+          "cameraPermission": "Allow Fishnerd to photograph your catch.",
           "microphonePermission": false
         }
       ],
-      "expo-asset"
+      "expo-asset",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Fishnerd to photograph your catch.",
+          "microphonePermission": false,
+          "recordAudioAndroid": false,
+          "barcodeScannerEnabled": false
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true,

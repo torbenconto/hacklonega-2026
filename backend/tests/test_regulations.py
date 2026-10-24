@@ -164,3 +164,27 @@ def test_openapi_documents_route_without_header_auth(client):
     assert not operation.get("security")
     assert not operation.get("parameters")
     assert operation["responses"]["200"]["content"]["application/json"]["schema"]
+
+
+def test_dex_summary_exposes_rules_without_a_measured_catch(client):
+    result = client.get('/regulations/summary', params={'species_id': 'micropterus_salmoides'})
+    assert result.status_code == 200
+    rules = result.json()
+    assert rules['size']['length']['minimum_inches'] == 12
+    assert rules['season']['status'] == 'year_round'
+    assert rules['daily_limit']['limit'] == 10
+    assert 'Combined' in rules['daily_limit']['guidance']
+    assert rules['scope'] == 'statewide_baseline'
+    assert rules['legal_status'] == 'undetermined'
+    assert rules['exception_notes'] and rules['sources']
+    assert 'length_result' not in rules
+
+
+def test_dex_summary_preserves_closed_and_unreviewed_species(client):
+    closed = client.get('/regulations/summary', params={'species_id': 'acipenser_brevirostrum'}).json()
+    assert closed['season']['status'] == 'closed_year_round'
+    unreviewed = client.get('/regulations/summary', params={'species_id': 'ictalurus_furcatus'}).json()
+    assert unreviewed['size']['length']['status'] == 'not_reviewed'
+    assert unreviewed['daily_limit']['status'] == 'not_evaluated'
+    assert client.get('/regulations/summary', params={'species_id': 'unknown'}).status_code == 422
+    assert client.get('/regulations/summary').status_code == 422
