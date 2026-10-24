@@ -21,10 +21,10 @@ export default function History() {
     <Text style={ui.title}>Journal</Text>
     <View style={{ paddingVertical: 16, borderBottomWidth: 1, borderBottomColor: colors.line }}><View style={ui.row}><Stat value={journal.logs ? String(logs.length) : '—'} label="catches logged" /><Stat value={journal.logs ? String(records.size) : '—'} label="unique entries" /><Stat value={biggest === null ? '—' : `${measurement(biggest)} lb`} label="heaviest catch" /></View></View>
     <DailyLimitProgress logs={journal.logs} />
-    <CollectionJourney loading={journal.loading} logs={journal.logs} />
+    <CollectionJourney loading={journal.loading} logs={journal.logs} showDiscoveryGoal={false} />
     <View style={ui.row}><Text style={ui.section}>Catches</Text><Button title="Refresh" secondary disabled={journal.loading} onPress={journal.refresh} /></View>
     <ErrorMessage message={journal.error || catalog.error} />{journal.loading && <ActivityIndicator color={colors.green} />}
-    {!journal.loading && !journal.error && !logs.length && <View style={ui.card}><Text style={ui.name}>No catches yet.</Text><Button title="Log your first catch" onPress={() => router.navigate('/(tabs)/identify')} /></View>}
+    {!journal.loading && !journal.error && !logs.length && <View style={ui.card}><Text style={ui.name}>No history</Text><Button title="Log your first catch" onPress={() => router.navigate('/(tabs)/identify')} /></View>}
     {logs.map(log => {
       const species = byName.get(speciesKey(log.species));
       const record = records.get(speciesKey(log.species));
