@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Striped mullet</title>
+  <desc id="desc">Left-facing Striped mullet (Mugil cephalus), a stylized, approximate UI illustration with flat muted colors and simple splotches. Not a scientifically verified identification image.</desc>
+  <defs><clipPath id="body"><path d="M30 108C49 96.5 87 90.5 127 90.5C174 90.5 211 95 239 108L239 123C202 139.5 151 142.5 111 139.5Q57 138.5 30 120L43 114Z"/></clipPath></defs>
+  <g transform="translate(0 48)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M229 108L284 78Q290 75 287 82L272 115L288 148Q290 155 283 151L229 123Z" fill="#8fa99c" />
+    <path d="M97 95.5L104 80.5L113 89.5L124 70.5L143 97.5Z" fill="#8fa99c" />
+    <path d="M153 95.5Q180 71.5 207 105.5Z" fill="#8fa99c" />
+    <path d="M158 133.5L187 158.5Q194 163.5 188 133.5Z" fill="#8fa99c" />
+    <path d="M112 135.5L129 156.5Q134 160.5 142 136.5Z" fill="#8fa99c" />
+    <g clip-path="url(#body)">
+    <path d="M10 30H300V190H10Z" fill="#c7d4cf" />
+    <path d="M15 30H291V108Q187 103.5 131 106.5Q63 101.5 15 118Z" fill="#7e9c94" />
+    <path d="M15 126Q90 126.5 143 127.5Q205 131.5 250 121L300 190H15Z" fill="#f2ebd8" />
+    <path d="M85 101Q156 96 235 101" fill="none" stroke="#49675f" stroke-width="3.3"/>
+    <path d="M85 110Q156 105 235 110" fill="none" stroke="#49675f" stroke-width="3.3"/>
+    <path d="M85 120Q156 115 235 120" fill="none" stroke="#49675f" stroke-width="3.3"/>
+    <path d="M85 129Q156 124 235 129" fill="none" stroke="#49675f" stroke-width="3.3"/>
+    <ellipse cx="178.8" cy="112.1" rx="1.5" ry="1.6" fill="#49675f"/>
+    <ellipse cx="120.6" cy="120.6" rx="2.2" ry="2.4" fill="#49675f"/>
+    <ellipse cx="117.2" cy="121.2" rx="2.3" ry="2.5" fill="#49675f"/>
+    <ellipse cx="119.0" cy="113.0" rx="1.9" ry="2.1" fill="#49675f"/>
+    </g>
+    <ellipse cx="54.0" cy="105.0" rx="6.0" ry="6.0" fill="#f2ebd8"/>
+    <ellipse cx="53.2" cy="105.0" rx="3.6" ry="3.6" fill="#263e39"/>
+    <ellipse cx="52.0" cy="103.2" rx="1.1" ry="1.1" fill="#fff9eb"/>
+    <path d="M77 100q11 14 0 30" fill="none" stroke="#8fa99c" stroke-width="3"/>
+    <path d="M82 119l27 11q5 5 -4 5l-20 -5Z" fill="#8fa99c" />
+    <path d="M31 119h18" fill="none" stroke="#49675f" stroke-width="2.4"/>
+  </g>
+</svg>

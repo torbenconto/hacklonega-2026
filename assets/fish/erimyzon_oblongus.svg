@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Creek chubsucker</title>
+  <desc id="desc">Left-facing Creek chubsucker (Erimyzon oblongus), a stylized, approximate UI illustration with flat muted colors and simple splotches. Not a scientifically verified identification image.</desc>
+  <defs><clipPath id="body"><path d="M30 108C49 86.5 87 80.5 127 80.5C174 80.5 211 95 239 108L239 123C202 149.5 151 152.5 111 149.5Q57 148.5 30 120L43 114Z"/></clipPath></defs>
+  <g transform="translate(0 48)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M229 108L284 78Q290 75 287 82L272 115L288 148Q290 155 283 151L229 123Z" fill="#a38e65" />
+    <path d="M117 85.5L137 60.5Q145 56.5 155 65.5L178 90.5Z" fill="#a38e65" />
+    <path d="M158 143.5L187 168.5Q194 173.5 188 143.5Z" fill="#a38e65" />
+    <path d="M112 145.5L129 166.5Q134 170.5 142 146.5Z" fill="#a38e65" />
+    <g clip-path="url(#body)">
+    <path d="M10 30H300V190H10Z" fill="#bfa978" />
+    <path d="M15 30H291V108Q187 93.5 131 96.5Q63 91.5 15 118Z" fill="#7f8862" />
+    <path d="M15 126Q90 136.5 143 137.5Q205 141.5 250 121L300 190H15Z" fill="#f1e3bf" />
+    <path d="M72 112Q151 106 241 113L241 120Q153 115 72 120Z" fill="#5c6449" opacity="0.78"/>
+    <ellipse cx="110.9" cy="121.8" rx="2.4" ry="2.4" fill="#5c6449"/>
+    <ellipse cx="157.9" cy="113.5" rx="2.4" ry="2.1" fill="#5c6449"/>
+    <ellipse cx="156.3" cy="124.5" rx="2.5" ry="1.9" fill="#5c6449"/>
+    <ellipse cx="110.4" cy="113.6" rx="2.2" ry="1.9" fill="#5c6449"/>
+    </g>
+    <ellipse cx="54.0" cy="101.0" rx="6.0" ry="6.0" fill="#f1e3bf"/>
+    <ellipse cx="53.2" cy="101.0" rx="3.6" ry="3.6" fill="#263e39"/>
+    <ellipse cx="52.0" cy="99.2" rx="1.1" ry="1.1" fill="#fff9eb"/>
+    <path d="M77 100q11 14 0 30" fill="none" stroke="#a38e65" stroke-width="3"/>
+    <path d="M82 122l27 11q5 5 -4 5l-20 -5Z" fill="#a38e65" />
+    <ellipse cx="35.0" cy="126.0" rx="5.0" ry="3.0" fill="#a38e65"/>
+  </g>
+</svg>

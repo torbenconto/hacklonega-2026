@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Blacktip shiner</title>
+  <desc id="desc">Left-facing Blacktip shiner (Lythrurus atrapiculus), a stylized, approximate UI illustration with flat muted colors and simple splotches. Not a scientifically verified identification image.</desc>
+  <defs><clipPath id="body"><path d="M30 108C49 102.0 87 96.0 127 96.0C174 96.0 211 95 239 108L239 123C202 134.0 151 137.0 111 134.0Q57 133.0 30 120L43 114Z"/></clipPath></defs>
+  <g transform="translate(0 48)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M229 108L284 78Q290 75 287 82L272 115L288 148Q290 155 283 151L229 123Z" fill="#b58e78" />
+    <path d="M117 101.0L137 76.0Q145 72.0 155 81.0L178 106.0Z" fill="#b58e78" />
+    <path d="M158 128.0L187 153.0Q194 158.0 188 128.0Z" fill="#b58e78" />
+    <path d="M112 130.0L129 151.0Q134 155.0 142 131.0Z" fill="#b58e78" />
+    <g clip-path="url(#body)">
+    <path d="M10 30H300V190H10Z" fill="#b9c4aa" />
+    <path d="M15 30H291V108Q187 109.0 131 112.0Q63 107.0 15 118Z" fill="#729581" />
+    <path d="M15 126Q90 121.0 143 122.0Q205 126.0 250 121L300 190H15Z" fill="#f3e7cd" />
+    <path d="M92.1 113.4q7.5 -7.5 12.7 0l-1 7.5q-7.5 3 -11.2 -1Z" fill="#3f6257" opacity="0.88"/>
+    <path d="M107.6 122.8q8.2 -8.2 13.9 0l-1 8.2q-8.2 3 -12.3 -1Z" fill="#3f6257" opacity="0.88"/>
+    <path d="M130.1 104.2q8.8 -8.8 15.0 0l-1 8.8q-8.8 3 -13.2 -1Z" fill="#3f6257" opacity="0.88"/>
+    <path d="M154.8 124.0q5.1 -5.1 8.6 0l-1 5.1q-5.1 3 -7.6 -1Z" fill="#3f6257" opacity="0.88"/>
+    <path d="M171.7 125.6q5.1 -5.1 8.7 0l-1 5.1q-5.1 3 -7.7 -1Z" fill="#3f6257" opacity="0.88"/>
+    <path d="M190.9 121.0q8.3 -8.3 14.1 0l-1 8.3q-8.3 3 -12.4 -1Z" fill="#3f6257" opacity="0.88"/>
+    <path d="M214.8 113.8q6.3 -6.3 10.8 0l-1 6.3q-6.3 3 -9.5 -1Z" fill="#3f6257" opacity="0.88"/>
+    <path d="M92.3 121.2q7.8 -7.8 13.2 0l-1 7.8q-7.8 3 -11.7 -1Z" fill="#3f6257" opacity="0.88"/>
+    <path d="M108.7 110.1q8.7 -8.7 14.8 0l-1 8.7q-8.7 3 -13.0 -1Z" fill="#3f6257" opacity="0.88"/>
+    <ellipse cx="159.8" cy="110.6" rx="1.5" ry="2.7" fill="#3f6257"/>
+    <ellipse cx="175.7" cy="114.6" rx="2.6" ry="2.5" fill="#3f6257"/>
+    <ellipse cx="123.0" cy="111.6" rx="2.5" ry="2.0" fill="#3f6257"/>
+    <ellipse cx="132.5" cy="117.4" rx="1.6" ry="2.1" fill="#3f6257"/>
+    </g>
+    <ellipse cx="54.0" cy="105.0" rx="6.0" ry="6.0" fill="#f3e7cd"/>
+    <ellipse cx="53.2" cy="105.0" rx="3.6" ry="3.6" fill="#263e39"/>
+    <ellipse cx="52.0" cy="103.2" rx="1.1" ry="1.1" fill="#fff9eb"/>
+    <path d="M77 100q11 14 0 30" fill="none" stroke="#b58e78" stroke-width="3"/>
+    <path d="M82 119l27 11q5 5 -4 5l-20 -5Z" fill="#b58e78" />
+    <path d="M31 119h18" fill="none" stroke="#3f6257" stroke-width="2.4"/>
+  </g>
+</svg>

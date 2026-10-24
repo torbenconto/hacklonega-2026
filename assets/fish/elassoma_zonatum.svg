@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Banded pygmy sunfish</title>
+  <desc id="desc">Left-facing Banded pygmy sunfish (Elassoma zonatum), a stylized, approximate UI illustration with flat muted colors and simple splotches. Not a scientifically verified identification image.</desc>
+  <defs><clipPath id="body"><path d="M30 108C49 88.0 87 82.0 127 82.0C174 82.0 211 95 239 108L239 123C202 148.0 151 151.0 111 148.0Q57 147.0 30 120L43 114Z"/></clipPath></defs>
+  <g transform="translate(0 48)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M230 108L270 91Q289 110 271 140L230 123Z" fill="#a38e65" />
+    <path d="M91 90.0L98 73.0L108 83.0L116 66.0L128 79.0L139 63.0L153 80.0Q177 62.0 198 96.0Z" fill="#a38e65" />
+    <path d="M158 142.0L187 167.0Q194 172.0 188 142.0Z" fill="#a38e65" />
+    <path d="M112 144.0L129 165.0Q134 169.0 142 145.0Z" fill="#a38e65" />
+    <g clip-path="url(#body)">
+    <path d="M10 30H300V190H10Z" fill="#bfa978" />
+    <path d="M15 30H291V108Q187 95.0 131 98.0Q63 93.0 15 118Z" fill="#7f8862" />
+    <path d="M15 126Q90 135.0 143 136.0Q205 140.0 250 121L300 190H15Z" fill="#f1e3bf" />
+    <path d="M93.67269968022083 75.4l13 1l-2 14l6 13l-8 41.0l-9 -4l3 -20Z" fill="#5c6449" opacity="0.72"/>
+    <path d="M117.48294950425998 75.4l13 1l-2 14l6 13l-8 41.0l-9 -4l3 -20Z" fill="#5c6449" opacity="0.72"/>
+    <path d="M144.0499266461891 75.4l13 1l-2 14l6 13l-8 41.0l-9 -4l3 -20Z" fill="#5c6449" opacity="0.72"/>
+    <path d="M171.010287810342 75.4l13 1l-2 14l6 13l-8 41.0l-9 -4l3 -20Z" fill="#5c6449" opacity="0.72"/>
+    <path d="M196.20623407038573 75.4l13 1l-2 14l6 13l-8 41.0l-9 -4l3 -20Z" fill="#5c6449" opacity="0.72"/>
+    <path d="M218.27665824937716 75.4l13 1l-2 14l6 13l-8 41.0l-9 -4l3 -20Z" fill="#5c6449" opacity="0.72"/>
+    <ellipse cx="204.6" cy="106.5" rx="2.7" ry="1.7" fill="#5c6449"/>
+    <ellipse cx="121.1" cy="122.5" rx="2.5" ry="2.2" fill="#5c6449"/>
+    <ellipse cx="149.8" cy="124.2" rx="2.3" ry="1.7" fill="#5c6449"/>
+    <ellipse cx="151.0" cy="121.5" rx="1.6" ry="2.5" fill="#5c6449"/>
+    </g>
+    <ellipse cx="54.0" cy="101.0" rx="6.0" ry="6.0" fill="#f1e3bf"/>
+    <ellipse cx="53.2" cy="101.0" rx="3.6" ry="3.6" fill="#263e39"/>
+    <ellipse cx="52.0" cy="99.2" rx="1.1" ry="1.1" fill="#fff9eb"/>
+    <path d="M77 100q11 14 0 30" fill="none" stroke="#a38e65" stroke-width="3"/>
+    <path d="M82 122l27 11q5 5 -4 5l-20 -5Z" fill="#a38e65" />
+    <ellipse cx="80.0" cy="109.0" rx="6.0" ry="4.5" fill="#5c6449"/>
+    <path d="M31 119h18" fill="none" stroke="#5c6449" stroke-width="2.4"/>
+  </g>
+</svg>

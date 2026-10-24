@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Grass carp</title>
+  <desc id="desc">Left-facing Grass carp (Ctenopharyngodon idella), a stylized, approximate UI illustration with flat muted colors and simple splotches. Not a scientifically verified identification image.</desc>
+  <defs><clipPath id="body"><path d="M30 108C49 93.5 87 87.5 127 87.5C174 87.5 211 95 239 108L239 123C202 142.5 151 145.5 111 142.5Q57 141.5 30 120L43 114Z"/></clipPath></defs>
+  <g transform="translate(0 48)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M229 108L284 78Q290 75 287 82L272 115L288 148Q290 155 283 151L229 123Z" fill="#799b86" />
+    <path d="M117 92.5L137 67.5Q145 63.5 155 72.5L178 97.5Z" fill="#799b86" />
+    <path d="M158 136.5L187 161.5Q194 166.5 188 136.5Z" fill="#799b86" />
+    <path d="M112 138.5L129 159.5Q134 163.5 142 139.5Z" fill="#799b86" />
+    <g clip-path="url(#body)">
+    <path d="M10 30H300V190H10Z" fill="#b9cbb2" />
+    <path d="M15 30H291V108Q187 100.5 131 103.5Q63 98.5 15 118Z" fill="#709c87" />
+    <path d="M15 126Q90 129.5 143 130.5Q205 134.5 250 121L300 190H15Z" fill="#f4e9cb" />
+    <path d="M88.1 122.2q7.5 -7.5 12.8 0l-1 7.5q-7.5 3 -11.3 -1Z" fill="#395d55" opacity="0.88"/>
+    <path d="M114.1 106.7q8.8 -8.8 14.9 0l-1 8.8q-8.8 3 -13.2 -1Z" fill="#395d55" opacity="0.88"/>
+    <path d="M133.0 104.2q7.6 -7.6 12.9 0l-1 7.6q-7.6 3 -11.4 -1Z" fill="#395d55" opacity="0.88"/>
+    <path d="M150.1 105.5q7.9 -7.9 13.5 0l-1 7.9q-7.9 3 -11.9 -1Z" fill="#395d55" opacity="0.88"/>
+    <path d="M173.3 110.0q5.6 -5.6 9.5 0l-1 5.6q-5.6 3 -8.4 -1Z" fill="#395d55" opacity="0.88"/>
+    <path d="M190.9 124.1q6.9 -6.9 11.8 0l-1 6.9q-6.9 3 -10.4 -1Z" fill="#395d55" opacity="0.88"/>
+    <path d="M214.3 112.4q6.6 -6.6 11.3 0l-1 6.6q-6.6 3 -9.9 -1Z" fill="#395d55" opacity="0.88"/>
+    <path d="M90.0 102.8q8.3 -8.3 14.1 0l-1 8.3q-8.3 3 -12.4 -1Z" fill="#395d55" opacity="0.88"/>
+    <path d="M113.8 109.5q6.4 -6.4 10.9 0l-1 6.4q-6.4 3 -9.6 -1Z" fill="#395d55" opacity="0.88"/>
+    <ellipse cx="179.1" cy="109.2" rx="1.8" ry="2.0" fill="#395d55"/>
+    <ellipse cx="197.7" cy="125.5" rx="2.5" ry="2.4" fill="#395d55"/>
+    <ellipse cx="175.8" cy="112.4" rx="2.7" ry="1.7" fill="#395d55"/>
+    <ellipse cx="199.0" cy="125.0" rx="2.0" ry="2.2" fill="#395d55"/>
+    </g>
+    <ellipse cx="54.0" cy="105.0" rx="6.0" ry="6.0" fill="#f4e9cb"/>
+    <ellipse cx="53.2" cy="105.0" rx="3.6" ry="3.6" fill="#263e39"/>
+    <ellipse cx="52.0" cy="103.2" rx="1.1" ry="1.1" fill="#fff9eb"/>
+    <path d="M77 100q11 14 0 30" fill="none" stroke="#799b86" stroke-width="3"/>
+    <path d="M82 122l27 11q5 5 -4 5l-20 -5Z" fill="#799b86" />
+    <path d="M31 119h18" fill="none" stroke="#395d55" stroke-width="2.4"/>
+  </g>
+</svg>

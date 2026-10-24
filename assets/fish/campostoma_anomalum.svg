@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Central stoneroller</title>
+  <desc id="desc">Left-facing Central stoneroller (Campostoma anomalum), a stylized, approximate UI illustration with flat muted colors and simple splotches. Not a scientifically verified identification image.</desc>
+  <defs><clipPath id="body"><path d="M30 108C49 96.5 87 90.5 127 90.5C174 90.5 211 95 239 108L239 123C202 139.5 151 142.5 111 139.5Q57 138.5 30 120L43 114Z"/></clipPath></defs>
+  <g transform="translate(0 48)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M229 108L284 78Q290 75 287 82L272 115L288 148Q290 155 283 151L229 123Z" fill="#a38e65" />
+    <path d="M117 95.5L137 70.5Q145 66.5 155 75.5L178 100.5Z" fill="#a38e65" />
+    <path d="M158 133.5L187 158.5Q194 163.5 188 133.5Z" fill="#a38e65" />
+    <path d="M112 135.5L129 156.5Q134 160.5 142 136.5Z" fill="#a38e65" />
+    <g clip-path="url(#body)">
+    <path d="M10 30H300V190H10Z" fill="#bfa978" />
+    <path d="M15 30H291V108Q187 103.5 131 106.5Q63 101.5 15 118Z" fill="#7f8862" />
+    <path d="M15 126Q90 126.5 143 127.5Q205 131.5 250 121L300 190H15Z" fill="#f1e3bf" />
+    <path d="M87.4 106.1q7.0 -7.0 11.9 0l-1 7.0q-7.0 3 -10.5 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M114.2 104.4q7.9 -7.9 13.4 0l-1 7.9q-7.9 3 -11.9 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M134.8 123.7q5.6 -5.6 9.5 0l-1 5.6q-5.6 3 -8.4 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M154.1 104.9q5.4 -5.4 9.2 0l-1 5.4q-5.4 3 -8.1 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M170.1 99.3q8.6 -8.6 14.5 0l-1 8.6q-8.6 3 -12.8 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M187.4 129.4q6.9 -6.9 11.7 0l-1 6.9q-6.9 3 -10.4 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M210.4 120.9q6.7 -6.7 11.3 0l-1 6.7q-6.7 3 -10.0 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M92.0 120.1q5.0 -5.0 8.6 0l-1 5.0q-5.0 3 -7.6 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M114.9 117.8q7.5 -7.5 12.8 0l-1 7.5q-7.5 3 -11.3 -1Z" fill="#5c6449" opacity="0.88"/>
+    <ellipse cx="120.6" cy="110.9" rx="2.7" ry="2.6" fill="#5c6449"/>
+    <ellipse cx="209.4" cy="118.8" rx="2.3" ry="2.5" fill="#5c6449"/>
+    <ellipse cx="108.3" cy="124.0" rx="1.9" ry="2.6" fill="#5c6449"/>
+    <ellipse cx="158.3" cy="120.7" rx="2.6" ry="1.9" fill="#5c6449"/>
+    </g>
+    <ellipse cx="54.0" cy="105.0" rx="6.0" ry="6.0" fill="#f1e3bf"/>
+    <ellipse cx="53.2" cy="105.0" rx="3.6" ry="3.6" fill="#263e39"/>
+    <ellipse cx="52.0" cy="103.2" rx="1.1" ry="1.1" fill="#fff9eb"/>
+    <path d="M77 100q11 14 0 30" fill="none" stroke="#a38e65" stroke-width="3"/>
+    <path d="M82 119l27 11q5 5 -4 5l-20 -5Z" fill="#a38e65" />
+    <path d="M31 119h18" fill="none" stroke="#5c6449" stroke-width="2.4"/>
+  </g>
+</svg>

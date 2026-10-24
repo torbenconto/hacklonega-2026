@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Tallapoosa bass</title>
+  <desc id="desc">Left-facing Tallapoosa bass (Micropterus tallapoosae), a stylized, approximate UI illustration with flat muted colors and simple splotches. Not a scientifically verified identification image.</desc>
+  <defs><clipPath id="body"><path d="M30 108C49 88.5 87 82.5 127 82.5C174 82.5 211 95 239 108L239 123C202 147.5 151 150.5 111 147.5Q57 146.5 30 120L43 114Z"/></clipPath></defs>
+  <g transform="translate(0 48)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M229 108L283 87Q288 86 286 91L278 115L287 140Q289 145 283 143L229 123Z" fill="#a38e65" />
+    <path d="M91 90.5L98 73.5L108 83.5L116 66.5L128 79.5L139 63.5L153 80.5Q177 62.5 198 96.5Z" fill="#a38e65" />
+    <path d="M158 141.5L187 166.5Q194 171.5 188 141.5Z" fill="#bf8e6b" />
+    <path d="M112 143.5L129 164.5Q134 168.5 142 144.5Z" fill="#bf8e6b" />
+    <g clip-path="url(#body)">
+    <path d="M10 30H300V190H10Z" fill="#bfa978" />
+    <path d="M15 30H291V108Q187 95.5 131 98.5Q63 93.5 15 118Z" fill="#7f8862" />
+    <path d="M15 126Q90 134.5 143 135.5Q205 139.5 250 121L300 190H15Z" fill="#f1e3bf" />
+    <path d="M92.6 119.2q7.0 -7.0 12.0 0l-1 7.0q-7.0 3 -10.6 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M114.9 118.1q9.0 -9.0 15.3 0l-1 9.0q-9.0 3 -13.5 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M129.4 111.3q7.5 -7.5 12.7 0l-1 7.5q-7.5 3 -11.2 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M150.1 108.1q8.5 -8.5 14.4 0l-1 8.5q-8.5 3 -12.7 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M170.5 98.7q6.8 -6.8 11.6 0l-1 6.8q-6.8 3 -10.3 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M187.0 94.3q7.6 -7.6 13.0 0l-1 7.6q-7.6 3 -11.5 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M208.4 126.1q6.4 -6.4 10.8 0l-1 6.4q-6.4 3 -9.6 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M88.3 113.9q7.5 -7.5 12.7 0l-1 7.5q-7.5 3 -11.2 -1Z" fill="#5c6449" opacity="0.88"/>
+    <path d="M109.8 106.1q8.2 -8.2 14.0 0l-1 8.2q-8.2 3 -12.4 -1Z" fill="#5c6449" opacity="0.88"/>
+    <ellipse cx="159.7" cy="124.6" rx="2.0" ry="2.5" fill="#5c6449"/>
+    <ellipse cx="180.0" cy="121.1" rx="2.6" ry="2.2" fill="#5c6449"/>
+    <ellipse cx="125.1" cy="108.2" rx="2.6" ry="2.7" fill="#5c6449"/>
+    <ellipse cx="170.7" cy="107.5" rx="2.7" ry="2.4" fill="#5c6449"/>
+    </g>
+    <ellipse cx="54.0" cy="101.0" rx="6.0" ry="6.0" fill="#f1e3bf"/>
+    <ellipse cx="53.2" cy="101.0" rx="3.6" ry="3.6" fill="#263e39"/>
+    <ellipse cx="52.0" cy="99.2" rx="1.1" ry="1.1" fill="#fff9eb"/>
+    <path d="M77 100q11 14 0 30" fill="none" stroke="#a38e65" stroke-width="3"/>
+    <path d="M82 122l27 11q5 5 -4 5l-20 -5Z" fill="#bf8e6b" />
+    <path d="M31 119h18" fill="none" stroke="#5c6449" stroke-width="2.4"/>
+  </g>
+</svg>

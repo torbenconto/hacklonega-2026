@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Muscadine darter</title>
+  <desc id="desc">Left-facing Muscadine darter (Percina smithvanizi), a stylized, approximate UI illustration with flat muted colors and simple splotches. Not a scientifically verified identification image.</desc>
+  <defs><clipPath id="body"><path d="M30 108C49 101.0 87 95.0 127 95.0C174 95.0 211 95 239 108L239 123C202 135.0 151 138.0 111 135.0Q57 134.0 30 120L43 114Z"/></clipPath></defs>
+  <g transform="translate(0 48)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M230 108L270 91Q289 110 271 140L230 123Z" fill="#a38e65" />
+    <path d="M97 100.0L104 85.0L113 94.0L124 75.0L143 102.0Z" fill="#a38e65" />
+    <path d="M153 100.0Q180 76.0 207 110.0Z" fill="#a38e65" />
+    <path d="M158 129.0L187 154.0Q194 159.0 188 129.0Z" fill="#a38e65" />
+    <path d="M112 131.0L129 152.0Q134 156.0 142 132.0Z" fill="#a38e65" />
+    <g clip-path="url(#body)">
+    <path d="M10 30H300V190H10Z" fill="#bfa978" />
+    <path d="M15 30H291V108Q187 108.0 131 111.0Q63 106.0 15 118Z" fill="#7f8862" />
+    <path d="M15 126Q90 122.0 143 123.0Q205 127.0 250 121L300 190H15Z" fill="#f1e3bf" />
+    <path d="M94.84894060878202 91.0l13 1l-2 14l6 13l-8 5.8l-9 -4l3 -20Z" fill="#5c6449" opacity="0.72"/>
+    <path d="M121.57248272788436 91.0l13 1l-2 14l6 13l-8 5.8l-9 -4l3 -20Z" fill="#5c6449" opacity="0.72"/>
+    <path d="M146.2053225092351 91.0l13 1l-2 14l6 13l-8 5.8l-9 -4l3 -20Z" fill="#5c6449" opacity="0.72"/>
+    <path d="M169.64875708492076 91.0l13 1l-2 14l6 13l-8 5.8l-9 -4l3 -20Z" fill="#5c6449" opacity="0.72"/>
+    <path d="M194.90097364711283 91.0l13 1l-2 14l6 13l-8 5.8l-9 -4l3 -20Z" fill="#5c6449" opacity="0.72"/>
+    <path d="M217.03040142813737 91.0l13 1l-2 14l6 13l-8 5.8l-9 -4l3 -20Z" fill="#5c6449" opacity="0.72"/>
+    <ellipse cx="151.2" cy="117.6" rx="1.6" ry="1.6" fill="#5c6449"/>
+    <ellipse cx="151.2" cy="115.6" rx="2.0" ry="2.0" fill="#5c6449"/>
+    <ellipse cx="184.9" cy="110.8" rx="2.3" ry="1.7" fill="#5c6449"/>
+    <ellipse cx="184.5" cy="122.7" rx="2.2" ry="2.6" fill="#5c6449"/>
+    </g>
+    <ellipse cx="54.0" cy="105.0" rx="6.0" ry="6.0" fill="#f1e3bf"/>
+    <ellipse cx="53.2" cy="105.0" rx="3.6" ry="3.6" fill="#263e39"/>
+    <ellipse cx="52.0" cy="103.2" rx="1.1" ry="1.1" fill="#fff9eb"/>
+    <path d="M77 100q11 14 0 30" fill="none" stroke="#a38e65" stroke-width="3"/>
+    <path d="M82 119l27 11q5 5 -4 5l-20 -5Z" fill="#a38e65" />
+    <path d="M31 119h18" fill="none" stroke="#5c6449" stroke-width="2.4"/>
+  </g>
+</svg>

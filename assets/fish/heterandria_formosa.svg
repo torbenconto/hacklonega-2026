@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Least killifish</title>
+  <desc id="desc">Left-facing Least killifish (Heterandria formosa), a stylized, approximate UI illustration with flat muted colors and simple splotches. Not a scientifically verified identification image.</desc>
+  <defs><clipPath id="body"><path d="M30 108C49 104.5 87 98.5 127 98.5C174 98.5 211 95 239 108L239 123C202 131.5 151 134.5 111 131.5Q57 130.5 30 120L43 114Z"/></clipPath></defs>
+  <g transform="translate(0 48)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M230 108L270 91Q289 110 271 140L230 123Z" fill="#8fa99c" />
+    <path d="M163 102.5Q181 81.5 205 108.5Z" fill="#8fa99c" />
+    <path d="M158 125.5L187 150.5Q194 155.5 188 125.5Z" fill="#8fa99c" />
+    <g clip-path="url(#body)">
+    <path d="M10 30H300V190H10Z" fill="#c7d4cf" />
+    <path d="M15 30H291V108Q187 111.5 131 114.5Q63 109.5 15 118Z" fill="#7e9c94" />
+    <path d="M15 126Q90 118.5 143 119.5Q205 123.5 250 121L300 190H15Z" fill="#f2ebd8" />
+    <path d="M72 112Q151 106 241 113L241 120Q153 115 72 120Z" fill="#49675f" opacity="0.78"/>
+    <ellipse cx="222.0" cy="115.0" rx="10.0" ry="10.0" fill="#b9b5aa"/>
+    <ellipse cx="222.0" cy="115.0" rx="6.5" ry="6.5" fill="#49675f"/>
+    <ellipse cx="172.1" cy="112.2" rx="1.7" ry="1.8" fill="#49675f"/>
+    <ellipse cx="131.8" cy="113.4" rx="2.3" ry="2.0" fill="#49675f"/>
+    <ellipse cx="119.9" cy="114.6" rx="1.6" ry="2.3" fill="#49675f"/>
+    <ellipse cx="190.8" cy="113.8" rx="2.7" ry="2.4" fill="#49675f"/>
+    </g>
+    <ellipse cx="54.0" cy="105.0" rx="6.0" ry="6.0" fill="#f2ebd8"/>
+    <ellipse cx="53.2" cy="105.0" rx="3.6" ry="3.6" fill="#263e39"/>
+    <ellipse cx="52.0" cy="103.2" rx="1.1" ry="1.1" fill="#fff9eb"/>
+    <path d="M77 100q11 14 0 30" fill="none" stroke="#8fa99c" stroke-width="3"/>
+    <path d="M82 119l27 11q5 5 -4 5l-20 -5Z" fill="#8fa99c" />
+    <path d="M31 119h18" fill="none" stroke="#49675f" stroke-width="2.4"/>
+  </g>
+</svg>

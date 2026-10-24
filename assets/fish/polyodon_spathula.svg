@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Paddlefish</title>
+  <desc id="desc">Left-facing Paddlefish (Polyodon spathula), a stylized, approximate UI illustration with flat muted colors and simple splotches. Not a scientifically verified identification image.</desc>
+  <defs><clipPath id="body"><path d="M16 105Q43 101 84 106Q116 92.0 157 92.0Q210 92.0 240 109L240 122Q188 138.0 136 138.0Q104 138.0 80 120Q40 119 16 114Z"/></clipPath></defs>
+  <g transform="translate(0 48)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M228 109L287 73Q294 70 289 78L270 111L280 143Q281 148 275 145L228 124Z" fill="#7b9389" />
+    <path d="M183 96.0L202 73.0L221 106.0Z" fill="#7b9389" />
+    <path d="M192 132.0L221 157.0Q228 162.0 222 132.0Z" fill="#7b9389" />
+    <path d="M112 134.0L129 155.0Q134 159.0 142 135.0Z" fill="#7b9389" />
+    <g clip-path="url(#body)">
+    <path d="M10 30H300V190H10Z" fill="#9eafaa" />
+    <path d="M15 30H291V108Q187 105.0 131 108.0Q63 103.0 15 118Z" fill="#627b75" />
+    <path d="M15 126Q90 125.0 143 126.0Q205 130.0 250 121L300 190H15Z" fill="#e2dfc7" />
+    <path d="M92.3 101.9q3.8 -3.8 6.4 0l-1 3.8q-3.8 3 -5.6 -1Z" fill="#384f4d" opacity="0.36"/>
+    <path d="M110.3 119.4q3.4 -3.4 5.8 0l-1 3.4q-3.4 3 -5.1 -1Z" fill="#384f4d" opacity="0.36"/>
+    <path d="M134.3 122.6q3.6 -3.6 6.1 0l-1 3.6q-3.6 3 -5.4 -1Z" fill="#384f4d" opacity="0.36"/>
+    <path d="M148.4 119.2q4.4 -4.4 7.4 0l-1 4.4q-4.4 3 -6.6 -1Z" fill="#384f4d" opacity="0.36"/>
+    <ellipse cx="136.4" cy="121.2" rx="2.3" ry="1.6" fill="#384f4d"/>
+    <ellipse cx="119.2" cy="114.6" rx="1.8" ry="1.7" fill="#384f4d"/>
+    <ellipse cx="129.7" cy="108.7" rx="2.2" ry="1.9" fill="#384f4d"/>
+    <ellipse cx="189.2" cy="108.8" rx="2.6" ry="1.7" fill="#384f4d"/>
+    </g>
+    <ellipse cx="94.0" cy="105.0" rx="6.0" ry="6.0" fill="#e2dfc7"/>
+    <ellipse cx="93.2" cy="105.0" rx="3.6" ry="3.6" fill="#263e39"/>
+    <ellipse cx="92.0" cy="103.2" rx="1.1" ry="1.1" fill="#fff9eb"/>
+    <path d="M114 100q11 14 0 30" fill="none" stroke="#7b9389" stroke-width="3"/>
+    <path d="M119 119l27 11q5 5 -4 5l-20 -5Z" fill="#7b9389" />
+  </g>
+</svg>

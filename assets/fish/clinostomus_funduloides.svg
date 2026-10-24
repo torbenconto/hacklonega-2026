@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Rosyside dace</title>
+  <desc id="desc">Left-facing Rosyside dace (Clinostomus funduloides), a stylized, approximate UI illustration with flat muted colors and simple splotches. Not a scientifically verified identification image.</desc>
+  <defs><clipPath id="body"><path d="M30 108C49 100.0 87 94.0 127 94.0C174 94.0 211 95 239 108L239 123C202 136.0 151 139.0 111 136.0Q57 135.0 30 120L43 114Z"/></clipPath></defs>
+  <g transform="translate(0 48)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M229 108L284 78Q290 75 287 82L272 115L288 148Q290 155 283 151L229 123Z" fill="#b58e78" />
+    <path d="M117 99.0L137 74.0Q145 70.0 155 79.0L178 104.0Z" fill="#b58e78" />
+    <path d="M158 130.0L187 155.0Q194 160.0 188 130.0Z" fill="#b58e78" />
+    <path d="M112 132.0L129 153.0Q134 157.0 142 133.0Z" fill="#b58e78" />
+    <g clip-path="url(#body)">
+    <path d="M10 30H300V190H10Z" fill="#b9c4aa" />
+    <path d="M15 30H291V108Q187 107.0 131 110.0Q63 105.0 15 118Z" fill="#729581" />
+    <path d="M15 126Q90 123.0 143 124.0Q205 128.0 250 121L300 190H15Z" fill="#f3e7cd" />
+    <path d="M72 112Q151 106 241 113L241 120Q153 115 72 120Z" fill="#d88783" opacity="0.78"/>
+    <ellipse cx="135.4" cy="121.0" rx="2.5" ry="2.7" fill="#3f6257"/>
+    <ellipse cx="184.9" cy="117.9" rx="2.1" ry="2.5" fill="#3f6257"/>
+    <ellipse cx="129.5" cy="123.3" rx="2.6" ry="2.1" fill="#3f6257"/>
+    <ellipse cx="201.1" cy="109.8" rx="2.2" ry="2.1" fill="#3f6257"/>
+    </g>
+    <ellipse cx="54.0" cy="105.0" rx="6.0" ry="6.0" fill="#f3e7cd"/>
+    <ellipse cx="53.2" cy="105.0" rx="3.6" ry="3.6" fill="#263e39"/>
+    <ellipse cx="52.0" cy="103.2" rx="1.1" ry="1.1" fill="#fff9eb"/>
+    <path d="M77 100q11 14 0 30" fill="none" stroke="#b58e78" stroke-width="3"/>
+    <path d="M82 119l27 11q5 5 -4 5l-20 -5Z" fill="#b58e78" />
+    <path d="M31 119h18" fill="none" stroke="#3f6257" stroke-width="2.4"/>
+  </g>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Sauger</title>
+  <desc id="desc">Left-facing Sauger (Sander canadensis), a stylized, approximate UI illustration with flat muted colors and simple splotches. Not a scientifically verified identification image.</desc>
+  <defs><clipPath id="body"><path d="M30 108C49 91.5 87 85.5 127 85.5C174 85.5 211 95 239 108L239 123C202 144.5 151 147.5 111 144.5Q57 143.5 30 120L43 114Z"/></clipPath></defs>
+  <g transform="translate(0 48)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M229 108L284 78Q290 75 287 82L272 115L288 148Q290 155 283 151L229 123Z" fill="#a38e65" />
+    <path d="M97 90.5L104 75.5L113 84.5L124 65.5L143 92.5Z" fill="#a38e65" />
+    <path d="M153 90.5Q180 66.5 207 100.5Z" fill="#a38e65" />
+    <path d="M158 138.5L187 163.5Q194 168.5 188 138.5Z" fill="#a38e65" />
+    <path d="M112 140.5L129 161.5Q134 165.5 142 141.5Z" fill="#a38e65" />
+    <g clip-path="url(#body)">
+    <path d="M10 30H300V190H10Z" fill="#bfa978" />
+    <path d="M15 30H291V108Q187 98.5 131 101.5Q63 96.5 15 118Z" fill="#7f8862" />
+    <path d="M15 126Q90 131.5 143 132.5Q205 136.5 250 121L300 190H15Z" fill="#f1e3bf" />
+    <path d="M91.34817063454899 79.6l13 1l-2 14l6 13l-8 21.4l-9 -4l3 -20Z" fill="#5c6449" opacity="0.72"/>
+    <path d="M118.57131236186764 79.6l13 1l-2 14l6 13l-8 21.4l-9 -4l3 -20Z" fill="#5c6449" opacity="0.72"/>
+    <path d="M145.12842496449966 79.6l13 1l-2 14l6 13l-8 21.4l-9 -4l3 -20Z" fill="#5c6449" opacity="0.72"/>
+    <path d="M166.6580693731867 79.6l13 1l-2 14l6 13l-8 21.4l-9 -4l3 -20Z" fill="#5c6449" opacity="0.72"/>
+    <path d="M191.16575109060696 79.6l13 1l-2 14l6 13l-8 21.4l-9 -4l3 -20Z" fill="#5c6449" opacity="0.72"/>
+    <path d="M218.24873276012997 79.6l13 1l-2 14l6 13l-8 21.4l-9 -4l3 -20Z" fill="#5c6449" opacity="0.72"/>
+    <ellipse cx="189.4" cy="121.6" rx="2.3" ry="2.7" fill="#5c6449"/>
+    <ellipse cx="182.9" cy="118.6" rx="2.4" ry="1.8" fill="#5c6449"/>
+    <ellipse cx="196.9" cy="124.7" rx="2.5" ry="2.7" fill="#5c6449"/>
+    <ellipse cx="107.7" cy="121.4" rx="2.1" ry="2.5" fill="#5c6449"/>
+    </g>
+    <ellipse cx="54.0" cy="105.0" rx="6.0" ry="6.0" fill="#f1e3bf"/>
+    <ellipse cx="53.2" cy="105.0" rx="3.6" ry="3.6" fill="#263e39"/>
+    <ellipse cx="52.0" cy="103.2" rx="1.1" ry="1.1" fill="#fff9eb"/>
+    <path d="M77 100q11 14 0 30" fill="none" stroke="#a38e65" stroke-width="3"/>
+    <path d="M82 122l27 11q5 5 -4 5l-20 -5Z" fill="#a38e65" />
+    <path d="M31 119h18" fill="none" stroke="#5c6449" stroke-width="2.4"/>
+    <ellipse cx="265.0" cy="101.0" rx="2.5" ry="3.3" fill="#5c6449"/>
+    <ellipse cx="259.0" cy="114.0" rx="2.5" ry="3.3" fill="#5c6449"/>
+    <ellipse cx="267.0" cy="130.0" rx="2.5" ry="3.3" fill="#5c6449"/>
+  </g>
+</svg>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 320 320" role="img" aria-labelledby="title desc">
+  <title id="title">Flat bullhead</title>
+  <desc id="desc">Left-facing Flat bullhead (Ameiurus platycephalus), a stylized, approximate UI illustration with flat muted colors and simple splotches. Not a scientifically verified identification image.</desc>
+  <defs><clipPath id="body"><path d="M25 109Q52 88 91 94Q136 85.0 166 85.0Q211 97 239 108L239 123Q188 145.0 125 145.0Q66 147 27 124L40 118Z"/></clipPath></defs>
+  <g transform="translate(0 48)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M230 108L270 91Q289 110 271 140L230 123Z" fill="#7b9389" />
+    <path d="M117 90.0L137 65.0Q145 61.0 155 70.0L178 95.0Z" fill="#7b9389" />
+    <path d="M199 100.0Q211 84.0 220 102.0Z" fill="#7b9389" />
+    <path d="M158 139.0L187 164.0Q194 169.0 188 139.0Z" fill="#7b9389" />
+    <path d="M112 141.0L129 162.0Q134 166.0 142 142.0Z" fill="#7b9389" />
+    <g clip-path="url(#body)">
+    <path d="M10 30H300V190H10Z" fill="#9eafaa" />
+    <path d="M15 30H291V108Q187 98.0 131 101.0Q63 96.0 15 118Z" fill="#627b75" />
+    <path d="M15 126Q90 132.0 143 133.0Q205 137.0 250 121L300 190H15Z" fill="#e2dfc7" />
+    <path d="M93.7 133.0q5.3 -5.3 9.1 0l-1 5.3q-5.3 3 -8.0 -1Z" fill="#384f4d" opacity="0.88"/>
+    <path d="M114.8 130.7q6.4 -6.4 10.8 0l-1 6.4q-6.4 3 -9.5 -1Z" fill="#384f4d" opacity="0.88"/>
+    <path d="M131.8 130.2q8.2 -8.2 13.9 0l-1 8.2q-8.2 3 -12.3 -1Z" fill="#384f4d" opacity="0.88"/>
+    <path d="M152.6 106.3q7.9 -7.9 13.5 0l-1 7.9q-7.9 3 -11.9 -1Z" fill="#384f4d" opacity="0.88"/>
+    <path d="M174.7 104.9q5.0 -5.0 8.6 0l-1 5.0q-5.0 3 -7.6 -1Z" fill="#384f4d" opacity="0.88"/>
+    <path d="M191.9 97.7q8.6 -8.6 14.6 0l-1 8.6q-8.6 3 -12.9 -1Z" fill="#384f4d" opacity="0.88"/>
+    <path d="M208.9 127.7q7.6 -7.6 12.8 0l-1 7.6q-7.6 3 -11.3 -1Z" fill="#384f4d" opacity="0.88"/>
+    <path d="M89.2 120.0q6.7 -6.7 11.3 0l-1 6.7q-6.7 3 -10.0 -1Z" fill="#384f4d" opacity="0.88"/>
+    <path d="M114.0 100.0q7.3 -7.3 12.5 0l-1 7.3q-7.3 3 -11.0 -1Z" fill="#384f4d" opacity="0.88"/>
+    <ellipse cx="121.8" cy="107.4" rx="2.2" ry="1.9" fill="#384f4d"/>
+    <ellipse cx="110.1" cy="109.9" rx="1.9" ry="1.9" fill="#384f4d"/>
+    <ellipse cx="120.9" cy="126.7" rx="2.6" ry="2.3" fill="#384f4d"/>
+    <ellipse cx="170.9" cy="112.7" rx="1.7" ry="2.3" fill="#384f4d"/>
+    </g>
+    <ellipse cx="54.0" cy="105.0" rx="6.0" ry="6.0" fill="#e2dfc7"/>
+    <ellipse cx="53.2" cy="105.0" rx="3.6" ry="3.6" fill="#263e39"/>
+    <ellipse cx="52.0" cy="103.2" rx="1.1" ry="1.1" fill="#fff9eb"/>
+    <path d="M77 100q11 14 0 30" fill="none" stroke="#7b9389" stroke-width="3"/>
+    <path d="M82 122l27 11q5 5 -4 5l-20 -5Z" fill="#7b9389" />
+    <path d="M31 119h18" fill="none" stroke="#384f4d" stroke-width="2.4"/>
+    <path d="M39 119Q22 122 19 134" fill="none" stroke="#384f4d" stroke-width="2.5"/>
+    <path d="M49 122Q42 138 29 140" fill="none" stroke="#384f4d" stroke-width="2.5"/>
+    <path d="M43 113Q25 106 17 112" fill="none" stroke="#384f4d" stroke-width="2.5"/>
+  </g>
+</svg>
