@@ -54,3 +54,52 @@ Join our community of developers creating universal apps.
 
 - [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
 - [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+
+## Reel Georgia frontend
+
+The app uses the existing FastAPI service. No frontend-owned database, mock
+predictions, or replacement backend routes are used.
+
+| Screen | Backend API |
+| --- | --- |
+| Sign in | `GET /auth/me` with `X-Username` |
+| Create account | Check `/auth/me`, then `POST /auth/login` |
+| Species browser | `GET /species` |
+| Photo identification | `POST /predict?top_k=3`, multipart `file` |
+| Confirm catch | `POST /catches`, `species`, `weight_lbs`, `length_inches` |
+| Fishing history | `GET /catches` with `X-Username` |
+
+Usernames use the frontend's requested letters/underscores/spaces validation.
+The current backend rejects spaces, so spaces need backend-team support before
+those usernames can be created. Existing names containing digits/hyphens can be
+used for sign-in. Account creation checks for existing users first, but the backend's
+create-or-reuse endpoint cannot guarantee exclusive registration during a race.
+
+The five team-provided `IMG_*.png` photos in `assets/images` are the demo choices.
+There is currently no demo-photo API on main. Expo serves those assets; selections
+are resized and converted to JPEG on-device and sent to the real ML endpoint,
+exactly like camera/library photos. There are no hardcoded identifications.
+
+History displays the server's saved catch records and measurements. The current
+backend does not store photos. The session is in memory; reopening the app asks
+for your username again, while catches remain in the backend database.
+
+Start your backend using its README, then start the frontend:
+
+```bash
+cd app
+npm ci
+npx expo start
+```
+
+The app defaults to port 8000 on the Expo development host (or browser hostname).
+Set `EXPO_PUBLIC_API_URL=http://YOUR_BACKEND_HOST:8000` in `app/.env.local` to override
+it, and restart Expo. A physical phone must be able to reach that host. Expo's
+tunnel does not tunnel the backend. Browser use requires the backend to allow the
+frontend origin with CORS; main currently has no CORS configuration. Native apps
+do not require browser CORS. Hosted web deployments need an HTTPS backend URL.
+
+The first real identification may take several minutes to download and initialize
+BioCLIP. Backend ML dependencies and model access are managed by the backend team.
+Camera/library handling follows the Expo SDK 58 image-picker documentation; verify
+native camera permissions on a physical device.
