@@ -116,6 +116,38 @@ candidate. Thresholds need evaluation on real fishing photos before broader use.
 Model/download failures return HTTP 503; invalid images return 422 and oversized
 files return 413.
 
+## Demo usernames and saved catches
+
+Login creates or reuses a username, without a password. Anyone knowing a username
+can access its data: this demo does not verify identity or issue tokens or sessions.
+Usernames are trimmed and lowercased, and must contain 1–32 ASCII letters,
+numbers, underscores, or hyphens. Use the returned username in `X-Username`.
+
+| Endpoint | Purpose |
+| --- | --- |
+| `POST /auth/login` | Create or reuse a user with JSON `{"username":"colin"}` |
+| `GET /auth/me` | Fetch the user identified by `X-Username` |
+| `POST /catches` | Create a catch for that user (HTTP 201) |
+| `GET /catches` | List that user's catches newest first, or `[]` |
+
+```powershell
+Invoke-RestMethod http://127.0.0.1:8000/auth/login -Method Post -ContentType 'application/json' -Body '{"username":"colin"}'
+$demoHeaders = @{ 'X-Username' = 'colin' }
+Invoke-RestMethod http://127.0.0.1:8000/auth/me -Headers $demoHeaders
+Invoke-RestMethod http://127.0.0.1:8000/catches -Method Post -Headers $demoHeaders -ContentType 'application/json' -Body '{"species":"largemouth bass","weight_lbs":2.5,"length_inches":16}'
+Invoke-RestMethod http://127.0.0.1:8000/catches -Headers $demoHeaders
+```
+
+Catches require a nonempty free-text species and positive finite measurements in
+pounds and inches. Each saved record includes an integer `id` and UTC `created_at`.
+Ownership comes from the header; owner fields in catch requests are rejected.
+Missing or unknown usernames return 401; malformed fields return 422.
+There is no automatic prediction saving or regulation evaluation.
+
+Users and catches persist across restarts in the automatically created, gitignored
+`backend/data/demo.sqlite3`. Set `DEMO_DB_PATH` before starting the server to use a
+different SQLite file. No database service or additional dependencies are needed.
+
 ## Model configuration
 
 Set environment variables **before** starting the server:

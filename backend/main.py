@@ -13,6 +13,8 @@ else:
 logger = logging.getLogger(__name__)
 
 app = FastAPI(title="Demo API")
+app.include_router(auth.router)
+app.include_router(catches.router)
 
 
 @app.get("/")
