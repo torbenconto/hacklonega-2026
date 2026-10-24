@@ -121,9 +121,8 @@ def test_catfish_no_count_limit_does_not_imply_length_reviewed():
 @pytest.mark.parametrize("payload", [
     {}, {"species_id": "unknown", "length_inches": 12},
     {"species_id": "Largemouth bass", "length_inches": 12},
-    {"species_id": "micropterus_salmoides"},
     *[{"species_id": "micropterus_salmoides", "length_inches": value}
-      for value in [0, -1, "NaN", "Infinity", "-Infinity", None]],
+      for value in [0, -1, "NaN", "Infinity", "-Infinity", "N/A", ""]],
     {"species_id": "micropterus_salmoides", "length_inches": 12, "retained_count": 5},
 ])
 def test_invalid_inputs(client, payload):

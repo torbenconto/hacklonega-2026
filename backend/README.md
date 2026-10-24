@@ -157,8 +157,11 @@ Invoke-RestMethod http://127.0.0.1:8000/catches -Method Post -Headers $demoHeade
 Invoke-RestMethod http://127.0.0.1:8000/catches -Headers $demoHeaders
 ```
 
-Catches require a nonempty free-text species and positive finite measurements in
-pounds and inches. Each saved record includes an integer `id` and UTC `created_at`.
+Catches require a nonempty free-text species. `weight_lbs` and `length_inches` are
+optional: omit either field or send JSON `null` when unknown. Supplied measurements
+must be positive and finite, in pounds and inches. Do not send `"N/A"`, empty strings,
+or zero for missing measurements. Responses always include both fields, with
+`null` where unknown. Each saved record includes an integer `id` and UTC `created_at`.
 An optional `photo_data` field accepts a JPEG, PNG, or WebP base64 data URL
 (up to 3,000,000 characters). It is validated and stored as a JPEG thumbnail up
 to 640 × 640 pixels, then returned only with that user's catch records. Existing
@@ -168,8 +171,8 @@ species remain explicitly unreviewed.
 
 The app counts saved timestamps within the current `America/New_York` calendar
 day and combines species in the same daily-limit group. Counts reset at Georgia
-midnight, including daylight-saving changes. This tracks logged observations,
-including released fish, rather than retained harvest; local rules and sublimits
+midnight, including daylight-saving changes. Only catches marked kept count toward the retained total; released fish and
+entries with an unknown outcome do not consume the allowance; local rules and sublimits
 still need checking.
 Ownership comes from the header; owner fields in catch requests are rejected.
 Missing or unknown usernames return 401; malformed fields return 422.
@@ -178,11 +181,24 @@ There is no automatic prediction saving or regulation evaluation.
 Users and catches persist across restarts in the automatically created, gitignored
 `backend/data/demo.sqlite3`. Set `DEMO_DB_PATH` before starting the server to use a
 different SQLite file. No database service or additional dependencies are needed.
+Legacy databases migrate automatically to nullable measurement columns while
+preserving catches, ownership, IDs, timestamps, indexes, and the ID sequence.
+
+For a discovery without measurements:
+
+```powershell
+Invoke-RestMethod http://127.0.0.1:8000/catches -Method Post -Headers $demoHeaders -ContentType 'application/json' -Body '{"species":"largemouth bass"}'
+```
+
+The app displays missing measurements as `N/A`. Unmeasured catches still unlock
+Fishdex discoveries and existing catch/discovery XP, but never size records or
+personal-best celebrations. Weight-only and length-only catches are eligible only
+for their corresponding best; missing values never replace measured records.
 
 ## Regulation baseline checks
 
-Recommended flow: **upload → predict → user confirms species and measures total
-length → check regulations → optionally save the catch**. The frontend should call
+Recommended flow: **upload → predict → user confirms species and optionally adds
+measurements → view regulations → optionally save the catch**. The frontend should call
 the check after confirmation, not automatically treat the top model candidate as
 confirmed. Changing species or length only requires repeating the check, not ML.
 
@@ -192,9 +208,13 @@ confirmed. Changing species or length only requires repeating the check, not ML.
 Invoke-RestMethod http://127.0.0.1:8000/regulations/check -Method Post -ContentType 'application/json' -Body '{"species_id":"micropterus_salmoides","length_inches":13}'
 ```
 
-Use an exact ID from `GET /species` and positive finite total length in inches.
-Unknown IDs, missing fields, extra fields, and invalid lengths return HTTP 422.
-Weight is not an input to this baseline check. Existing prediction and catch APIs
+Use an exact ID from `GET /species`. Both `length_inches` and `weight_lbs` may be
+omitted or `null`; supplied measurements must be positive and finite. Unknown IDs,
+missing species IDs, extra fields, and invalid measurements return HTTP 422.
+With no length, the check returns `length_result: "not_evaluated"`, explains that
+length was not provided, and still returns available minimums, daily guidance and
+sources. Both measurements are echoed as numbers or `null`. Weight is informational
+only; weight and season checking are not added. Existing prediction and catch APIs
 remain independent: saving a catch does not check regulations or imply permission
 to keep a fish. No database record, username, or model initialization is needed.
 
@@ -207,7 +227,7 @@ URLs and rule references, `ruleset_version`, and `reviewed_on`. `length_result` 
 | `below_baseline` | Shorter than the encoded statewide minimum |
 | `meets_baseline` | At or above that minimum, without evaluating local overrides |
 | `no_baseline_length_limit` | Reviewed statewide guidance has no length restriction; local rules may apply |
-| `not_evaluated` | No reviewed length rule for this species |
+| `not_evaluated` | Length was not provided, or no reviewed length rule exists; see guidance |
 
 Every result has `legal_status: "undetermined"`. Daily limits are displayed only
 (`daily_limit.evaluated: false`); saved catches do not represent retained counts.

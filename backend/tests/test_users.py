@@ -199,9 +199,9 @@ def test_edit_catch_preserves_metadata_and_ownership(client):
 
 
 @pytest.mark.parametrize('changes', [
-    {}, {'species': '  '}, {'species': None}, {'weight_lbs': None},
+    {}, {'species': '  '}, {'species': None},
     {'weight_lbs': 0}, {'weight_lbs': -1}, {'weight_lbs': 'Infinity'},
-    {'length_inches': 0}, {'length_inches': 'NaN'}, {'length_inches': None},
+    {'length_inches': 0}, {'length_inches': 'NaN'},
     {'disposition': None}, {'username': 'bob'}, {'photo_data': None},
 ])
 def test_invalid_catch_edits_do_not_change_record(client, changes):

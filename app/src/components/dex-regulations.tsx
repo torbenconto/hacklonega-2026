@@ -47,7 +47,14 @@ export function DexRegulations({ species, length: measuredLength, logs }: { spec
         ].map(([label, value]) => <View key={label} style={{ flex: 1, minWidth: 85, gap: 5 }}><Text style={ui.small}>{label}</Text><Text style={[ui.name, { fontSize: 16 }]}>{value}</Text></View>)}
       </View>
       {logs !== undefined && <DailyLimitProgress logs={logs} rule={rules.daily_limit} />}
-      {!closed && measuredLength === undefined && <MeasurementInput label="Your fish’s length" unit="in" value={length} onChangeText={setLength} />}
+      {rules.daily_limit.status !== 'not_evaluated' && <Text style={ui.small}>{rules.daily_limit.guidance}</Text>}
+      {rules.exception_notes.map(note => <Text key={note} style={ui.small}>{note}</Text>)}
+      {!closed && measuredLength === undefined && <View style={{ gap: 8 }}>
+        <Text style={[ui.small, { fontWeight: '700', color: colors.ink }]}>Compare a fish’s length</Text>
+        <Text style={ui.small}>Enter a length in inches to compare it with the statewide size rule above. Results update as you type.</Text>
+        <MeasurementInput label="Fish length (optional)" unit="in" placeholder="N/A" value={length} onChangeText={setLength} />
+      </View>}
+      {!closed && !enteredLength.trim() && <Text style={ui.small}>No length entered. No length comparison has been made.</Text>}
       {!closed && !!enteredLength.trim() && <Text accessibilityLiveRegion="polite" style={outside || !valid ? ui.error : ui.small}>{!valid ? 'Length must be above zero.' : outside ? 'Outside the statewide length limit.' : size?.status === 'not_reviewed' ? 'Length rules not reviewed.' : size?.status === 'no_verified_restriction' ? 'No verified statewide length restriction.' : 'Meets the statewide length limit only.'}</Text>}
       <Text style={ui.small}>Statewide only. Check local rules, licenses, and seasons before keeping.</Text>
       <Pressable accessibilityRole="button" accessibilityState={{ expanded }} onPress={() => setExpanded(value => !value)} style={{ minHeight: 44, justifyContent: 'center' }}><Text style={{ fontSize: 13, color: colors.green, fontWeight: '600' }}>{expanded ? 'Hide sources' : 'Sources & details'}</Text></Pressable>

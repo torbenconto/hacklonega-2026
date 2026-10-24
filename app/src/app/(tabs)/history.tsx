@@ -15,7 +15,8 @@ export default function History() {
   const records = useMemo(() => summarizeCatches(journal.logs || []), [journal.logs]);
   const byName = useMemo(() => new Map(catalog.species.map(s => [speciesKey(s.common_name), s])), [catalog.species]);
   const logs = journal.logs || [];
-  const biggest = logs.length ? Math.max(...logs.map(log => log.weight_lbs)) : null;
+  const weights = logs.flatMap(log => log.weight_lbs === null ? [] : [log.weight_lbs]);
+  const biggest = weights.length ? Math.max(...weights) : null;
   return <Page>
     <Text style={ui.title}>Journal</Text>
     <View style={{ paddingVertical: 16, borderBottomWidth: 1, borderBottomColor: colors.line }}><View style={ui.row}><Stat value={journal.logs ? String(logs.length) : '—'} label="catches logged" /><Stat value={journal.logs ? String(records.size) : '—'} label="unique entries" /><Stat value={biggest === null ? '—' : `${measurement(biggest)} lb`} label="heaviest catch" /></View></View>
@@ -27,8 +28,8 @@ export default function History() {
     {logs.map(log => {
       const species = byName.get(speciesKey(log.species));
       const record = records.get(speciesKey(log.species));
-      const best = record?.heaviest.id === log.id;
-      return <CatchCard key={log.id} log={log} species={species} best={best} onSaved={journal.refresh} />;
+      const best = record?.heaviest?.id === log.id;
+      return <CatchCard key={log.id} log={log} species={species} best={best} longest={record?.longest?.id === log.id} onSaved={journal.refresh} />;
     })}
   </Page>;
 }

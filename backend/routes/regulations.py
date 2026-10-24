@@ -16,7 +16,8 @@ class RegulationCheckInput(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
     species_id: str = Field(description="Catalog ID selected after user confirmation of the species.")
-    length_inches: float = Field(gt=0, allow_inf_nan=False, description="Measured total length in inches.")
+    length_inches: float | None = Field(default=None, gt=0, allow_inf_nan=False, description="Optional measured total length in inches.")
+    weight_lbs: float | None = Field(default=None, gt=0, allow_inf_nan=False, description="Optional weight in pounds; informational only.")
 
     @field_validator("species_id")
     @classmethod
@@ -41,7 +42,8 @@ class DailyLimit(BaseModel):
 
 class RegulationCheckResult(BaseModel):
     species_id: str
-    length_inches: float
+    length_inches: float | None
+    weight_lbs: float | None
     jurisdiction: Literal["Georgia"]
     water_type: Literal["freshwater"]
     scope: Literal["statewide_baseline"]
@@ -64,7 +66,7 @@ def check(fish: RegulationCheckInput):
     Informational statewide baseline only; does not determine permission to keep
     a fish. No authentication, prediction, or catch-storage side effects.
     """
-    return check_regulations(fish.species_id, fish.length_inches)
+    return check_regulations(fish.species_id, fish.length_inches, fish.weight_lbs)
 
 
 @router.get("/summary")

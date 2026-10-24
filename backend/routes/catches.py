@@ -28,8 +28,8 @@ class CatchInput(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
     species: str = Field(min_length=1)
-    weight_lbs: float = Field(gt=0, allow_inf_nan=False)
-    length_inches: float = Field(gt=0, allow_inf_nan=False)
+    weight_lbs: float | None = Field(default=None, gt=0, allow_inf_nan=False)
+    length_inches: float | None = Field(default=None, gt=0, allow_inf_nan=False)
     photo_data: str | None = Field(default=None, max_length=3_000_000)
     disposition: Literal["kept", "released", "unknown"] = "unknown"
 
@@ -66,8 +66,8 @@ class CatchInput(BaseModel):
 class Catch(BaseModel):
     id: int
     species: str
-    weight_lbs: float
-    length_inches: float
+    weight_lbs: float | None
+    length_inches: float | None
     photo_data: str | None
     created_at: datetime
     daily_limit: dict
@@ -118,8 +118,8 @@ def list_catches(user: Annotated[User, Depends(current_user)]):
 class CatchUpdate(BaseModel):
     model_config = ConfigDict(extra="forbid")
     species: str = Field(default=None, min_length=1)
-    weight_lbs: float = Field(default=None, gt=0, allow_inf_nan=False)
-    length_inches: float = Field(default=None, gt=0, allow_inf_nan=False)
+    weight_lbs: float | None = Field(default=None, gt=0, allow_inf_nan=False)
+    length_inches: float | None = Field(default=None, gt=0, allow_inf_nan=False)
     disposition: Literal["kept", "released"] = None
 
     @field_validator("species")
