@@ -2,8 +2,26 @@
 
 FastAPI + pretrained, MIT-licensed [BioCLIP](https://huggingface.co/imageomics/bioclip).
 No training or paid inference API is required. All ML code lives in `backend/ml/`.
-The initial catalog contains 21 freshwater species; it is a starter list, not an
-exhaustive regional inventory. Edit `ml/species.json` to change it and restart the server.
+The catalog targets **Georgia, USA freshwater fish**, with **290 candidate taxa**:
+267 species, 2 subspecies, 17 provisional taxa, 2 hybrids, and 2 species groups.
+It covers rainbow/brown/brook trout, all 10 Georgia Bass Slam black bass plus
+Alabama bass, temperate bass and hybrid striped bass, sunfish, crappie, catfish,
+gar, bowfin, shad, carp, suckers, minnows, darters, sculpins, and other nongame fish.
+
+The baseline is the [Georgia Museum of Natural History fish atlas](https://fishesofgeorgia.org/index.php?class=fish&page=speciespages/list_species),
+supplemented by [Georgia DNR's identification guide](https://georgiawildlife.com/fishing/identification).
+Mainly marine/coastal entries and five taxa DNR lists as extirpated were excluded.
+Migratory freshwater visitors and introductions are included. This is broad label
+coverage, **not a claim of exhaustive modern taxonomy or validated recognition**.
+Some atlas names reflect historical taxonomy, and provisional/group/hybrid labels
+are marked with `taxon_rank`. In particular, similar bass, minnows and darters may
+not be distinguishable from one photo. Native status, protection status, and local
+occurrence must come from separate authoritative records.
+
+See `ml/catalog_sources.json` for source URLs, review date, rank counts, curation
+notes and exclusions. All previous species IDs are preserved. Edit
+`ml/species.json` and the accompanying metadata to change the catalog, then restart
+the server to rebuild cached species embeddings. Predictions include `catalog_id`.
 
 ## Setup
 
@@ -42,7 +60,7 @@ each additional worker loads its own model into memory.
 | `GET /` | Existing greeting |
 | `GET /health` | Server liveness; does not load the model |
 | `GET /health/ml` | Reports `not_loaded` or `ready`; does not trigger downloads |
-| `GET /species` | Supported species IDs and names |
+| `GET /species` | Georgia catalog, source metadata, IDs, names, families and taxon ranks |
 | `POST /predict?top_k=3` | Classify multipart field `file`; `top_k` is 1–5 |
 
 ```bash
@@ -61,6 +79,7 @@ Example response shape (illustrative scores, not an accuracy claim):
 
 ```json
 {
+  "catalog_id": "georgia_freshwater_v1",
   "status": "candidate",
   "reason": "Best matching supported species; user confirmation is required.",
   "candidates": [
@@ -68,6 +87,8 @@ Example response shape (illustrative scores, not an accuracy claim):
       "species_id": "micropterus_salmoides",
       "common_name": "Largemouth bass",
       "scientific_name": "Micropterus salmoides",
+      "family": "Centrarchidae",
+      "taxon_rank": "species",
       "similarity": 0.35
     }
   ],
@@ -143,7 +164,9 @@ Set environment variables **before** starting the server:
 Example: `FISH_MODEL_ID=imageomics/bioclip-2 python -m uvicorn backend.main:app`.
 Benchmark before choosing the larger model. Species embeddings average common-name
 and scientific-name prompts. Rejection prompts compete against species scores.
-Inference is serialized within a worker to bound model memory use.
+Text encoding is batched for the larger Georgia catalog. Inference is serialized
+within a worker to bound model memory use. The expanded candidate set changes
+ranking and margins; the existing heuristic thresholds have not been recalibrated.
 
 ## Verify
 
