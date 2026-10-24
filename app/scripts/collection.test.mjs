@@ -1,8 +1,46 @@
 import assert from 'node:assert/strict';
 import test from 'node:test';
-import { summarizeCatches, speciesKey, collectionProgress } from '../src/lib/collection.ts';
+import { summarizeCatches, speciesKey, collectionProgress, measurement, parseMeasurement, personalBestChanges } from '../src/lib/collection.ts';
 
 const fish = (id, species, pounds, inches, date) => ({ id, species, weight_lbs: pounds, length_inches: inches, created_at: date });
+
+test('unmeasured catches unlock discoveries and XP without size records', () => {
+  const log = fish(1, 'Bluegill', null, null, '2026-10-24');
+  const record = summarizeCatches([log]).get('bluegill');
+  assert.equal(record.count, 1);
+  assert.equal(record.heaviest, null);
+  assert.equal(record.longest, null);
+  assert.equal(collectionProgress([log]).discoveries, 1);
+  assert.equal(collectionProgress([log]).xp, 100);
+  assert.equal(personalBestChanges(record, null, null).best, false);
+});
+
+test('independent size records ignore missing measurements in either input order', () => {
+  const logs = [fish(1, 'Bass', 3, null, '2026-10-22'), fish(2, 'Bass', null, 16, '2026-10-23'), fish(3, 'Bass', null, null, '2026-10-24')];
+  for (const ordered of [logs, [...logs].reverse()]) {
+    const record = summarizeCatches(ordered).get('bass');
+    assert.equal(record.count, 3);
+    assert.equal(record.heaviest.id, 1);
+    assert.equal(record.longest.id, 2);
+    assert.equal(personalBestChanges(record, null, null).best, false);
+    assert.equal(personalBestChanges(record, 4, null).weightImproved, true);
+    assert.equal(personalBestChanges(record, 4, null).lengthImproved, false);
+    assert.equal(personalBestChanges(record, null, 17).lengthImproved, true);
+    assert.equal(personalBestChanges(record, 3, 16).best, false);
+  }
+  assert.equal(personalBestChanges(undefined, null, 10).lengthImproved, true);
+  assert.equal(personalBestChanges(undefined, null, null).best, false);
+});
+
+test('blank input is null and missing display values are N/A without units', () => {
+  assert.equal(parseMeasurement(''), null);
+  assert.equal(parseMeasurement('  '), null);
+  assert.equal(parseMeasurement('2.5'), 2.5);
+  assert.equal(measurement(null, 'lb'), 'N/A');
+  assert.equal(measurement(undefined, 'in'), 'N/A');
+  assert.equal(measurement(2, 'lb'), '2 lb');
+  for (const value of ['0', '-1', 'N/A', 'Infinity', 'NaN', 'abc']) assert.throws(() => parseMeasurement(value));
+});
 
 test('heaviest and longest records can belong to different catches', () => {
   const records = summarizeCatches([

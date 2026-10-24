@@ -30,8 +30,8 @@ export default function FishDetails() {
       <Reveal><FishImage speciesId={species.species_id} name={species.common_name} height={260} unlocked={!!record} /></Reveal>
       <DexRegulations key={species.species_id} species={species} />
       {record ? <View style={{ gap: 16, paddingVertical: 20, borderTopWidth: 2, borderTopColor: colors.orange }}>
-        <Badge gold>YOUR PERSONAL BESTS</Badge>
-        <View style={ui.row}><Stat value={`${measurement(record.heaviest.weight_lbs)} lb`} label="heaviest catch" /><Stat value={`${measurement(record.longest.length_inches)} in`} label="longest catch" /><Stat value={String(record.count)} label="catches logged" /></View>
+        {record.heaviest || record.longest ? <Badge gold>YOUR PERSONAL BESTS</Badge> : <Text style={ui.name}>Discovered — no measured catches yet</Text>}
+        <View style={ui.row}><Stat value={measurement(record.heaviest?.weight_lbs, 'lb')} label="heaviest catch" /><Stat value={measurement(record.longest?.length_inches, 'in')} label="longest catch" /><Stat value={String(record.count)} label="catches logged" /></View>
         <Text style={ui.small}>First discovery {new Date(record.firstCaught).toLocaleDateString()}.</Text>
       </View> : <View style={ui.card}>
         <Text style={ui.name}>{journal.logs !== null ? 'No catches logged yet.' : !username ? 'Make this field guide yours.' : journal.loading ? 'Your records are loading.' : 'Your journal is unavailable.'}</Text>

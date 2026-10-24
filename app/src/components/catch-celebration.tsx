@@ -8,7 +8,7 @@ import { FishImage } from './fish-image';
 import { Button, colors, Page, ui } from './fishing-ui';
 import { ProgressBar, Reveal } from './motion';
 
-export type SavedMilestone = { discovery: boolean; best: boolean; xpBefore: number | null; weightBest: number | null; lengthBest: number | null };
+export type SavedMilestone = { discovery: boolean; best: boolean; xpBefore: number | null; weightBest: number | null; lengthBest: number | null; weightImproved: boolean; lengthImproved: boolean };
 function Spark({ index, gold }: { index: number; gold: boolean }) {
   const travel = useSharedValue(0);
   useEffect(() => { travel.set(withDelay(180, withTiming(1, { duration: 1100, reduceMotion: ReduceMotion.System }))); }, [travel]);
@@ -37,11 +37,11 @@ export function CatchCelebration({ species, milestone, weight, length, onAgain }
         {!reduced && (milestone.discovery || milestone.best || levelUp) && <View pointerEvents="none" accessible={false} style={{ position: 'absolute', width: '100%', height: '100%' }}>{Array.from({ length: 14 }, (_, i) => <Spark key={i} index={i} gold={milestone.best} />)}</View>}
         <Animated.View style={[{ width: '88%', borderBottomWidth: 3, borderBottomColor: milestone.best ? '#CC8A2F' : colors.green }, fishStyle]}><FishImage speciesId={species.species_id} name={species.common_name} height={170} unlocked reveal={milestone.discovery} /></Animated.View>
       </View>
-      <Reveal delay={180} style={{ alignItems: 'center', gap: 6 }}><Text style={[ui.section, { textAlign: 'center', fontSize: 26 }]}>{species.common_name}</Text><Text style={ui.body}>{measurement(Number(weight))} lb · {measurement(Number(length))} in</Text></Reveal>
+      <Reveal delay={180} style={{ alignItems: 'center', gap: 6 }}><Text style={[ui.section, { textAlign: 'center', fontSize: 26 }]}>{species.common_name}</Text><Text style={ui.body}>Weight: {measurement(weight.trim() ? Number(weight) : null, 'lb')} · Length: {measurement(length.trim() ? Number(length) : null, 'in')}</Text></Reveal>
     </View>
     {milestone.best && <Reveal delay={260} style={{ gap: 10, paddingVertical: 12, borderBottomWidth: 1, borderBottomColor: colors.line }}>
-      {milestone.weightBest !== null && <Text style={ui.body}>Heaviest catch: {measurement(milestone.weightBest)} → <Text style={{ fontWeight: '800', color: colors.ink }}>{measurement(Number(weight))} lb</Text></Text>}
-      {milestone.lengthBest !== null && <Text style={ui.body}>Longest catch: {measurement(milestone.lengthBest)} → <Text style={{ fontWeight: '800', color: colors.ink }}>{measurement(Number(length))} in</Text></Text>}
+      {milestone.weightImproved && <Text style={ui.body}>Heaviest catch: {milestone.weightBest === null ? 'First measured weight' : measurement(milestone.weightBest, 'lb')} → <Text style={{ fontWeight: '800', color: colors.ink }}>{measurement(Number(weight), 'lb')}</Text></Text>}
+      {milestone.lengthImproved && <Text style={ui.body}>Longest catch: {milestone.lengthBest === null ? 'First measured length' : measurement(milestone.lengthBest, 'in')} → <Text style={{ fontWeight: '800', color: colors.ink }}>{measurement(Number(length), 'in')}</Text></Text>}
     </Reveal>}
     <Reveal delay={320} style={{ gap: 12 }}>
       {gained !== null && total !== null && <>

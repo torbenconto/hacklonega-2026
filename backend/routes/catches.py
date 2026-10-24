@@ -18,8 +18,8 @@ class CatchInput(BaseModel):
     model_config = ConfigDict(extra="forbid")
 
     species: str = Field(min_length=1)
-    weight_lbs: float = Field(gt=0, allow_inf_nan=False)
-    length_inches: float = Field(gt=0, allow_inf_nan=False)
+    weight_lbs: float | None = Field(default=None, gt=0, allow_inf_nan=False)
+    length_inches: float | None = Field(default=None, gt=0, allow_inf_nan=False)
 
     @field_validator("species")
     @classmethod

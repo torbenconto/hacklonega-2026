@@ -14,13 +14,15 @@ def catalog_ids():
     return frozenset(item["species_id"] for item in json.loads(catalog.read_text(encoding="utf-8")))
 
 
-def check_regulations(species_id: str, length_inches: float):
+def check_regulations(species_id: str, length_inches: float | None = None, weight_lbs: float | None = None):
     """Compare only the supplied length with a reviewed statewide baseline."""
     rules = load_rules()
     profile_id = rules["species_profiles"].get(species_id, "unreviewed")
     profile = rules["profiles"][profile_id]
     minimum = profile["minimum_length_inches"]
-    if profile["length_rule"] == "minimum":
+    if length_inches is None:
+        result = "not_evaluated"
+    elif profile["length_rule"] == "minimum":
         result = "below_baseline" if length_inches < minimum else "meets_baseline"
     elif profile["length_rule"] == "none":
         result = "no_baseline_length_limit"
@@ -40,12 +42,13 @@ def check_regulations(species_id: str, length_inches: float):
     return {
         "species_id": species_id,
         "length_inches": length_inches,
+        "weight_lbs": weight_lbs,
         "jurisdiction": "Georgia",
         "water_type": "freshwater",
         "scope": "statewide_baseline",
         "length_result": result,
         "minimum_length_inches": minimum,
-        "length_guidance": {
+        "length_guidance": "Length was not provided; no length comparison was performed." if length_inches is None else {
             "minimum": "Compare total length with this baseline minimum; local overrides can change the result.",
             "none": "No statewide baseline length restriction identified; local restrictions may apply.",
             "not_evaluated": "Length guidance has not been reviewed for this species.",
